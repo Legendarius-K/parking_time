@@ -7,12 +7,15 @@ interface ContactBtnProps {
     colors: string
 }
 
-const ContactBtn = ({ btnText, colors }:ContactBtnProps) => {
+const ContactBtn = ({ btnText, colors }: ContactBtnProps) => {
     return (
-        <div className={`${colors} px-8 py-3 rounded-full font-light m-4`}>
-            {btnText}
-        </div>
+        <a href="/contact">
+            <div className={`${colors} px-8 py-3 rounded-full font-light m-4 transition`}>
+                {btnText}
+            </div>
+        </a>
     )
 };
 
 export default ContactBtn
+ 
