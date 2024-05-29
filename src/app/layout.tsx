@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer"; 
+import { Roboto } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({ subsets: ['latin'], weight: '400' })
+
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Parking Time",
@@ -18,7 +21,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className="h-screen">
-            <body className={`${inter.className} ${'flex flex-col min-h-full'}`}>
+            <head>
+                <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+            </head>
+            <body className={`${'font-sans font-thin flex flex-col min-h-full'}`}>
                 <Header />
                 <section className="grow">
                     {children}
