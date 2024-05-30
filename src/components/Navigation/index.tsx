@@ -9,17 +9,19 @@ import { useState } from "react";
 import sweflag from '../../../public/sweflag.png'
 import ContactBtnMobile from "../ContactBtnMobile";
 
-const Navigation = () => {
+interface NavigationProps {
+    openBurger: () => void
+}
+
+const Navigation = ({ openBurger }:NavigationProps) => {
 
     const [isOpen, setOpen] = useState(false)
-    const [burgerOpen, setBurgerOpen] = useState(false)
     const path = usePathname();
 
     const handleClick = () => {
-        setBurgerOpen(!burgerOpen)
+        openBurger()
     }
 
-    console.log(burgerOpen);
 
     const menuItems = [
         {
@@ -48,18 +50,8 @@ const Navigation = () => {
                 <ContactBtn btnText="Contact Us" colors="bg-white text-black hover:bg-pt-gray1 hover:text-white" />
             </nav>
             <nav onClick={handleClick} className="md:hidden">
-                <Hamburger rounded color="#fff" toggled={isOpen} toggle={setOpen} />
+                <Hamburger duration={0.6} rounded color="#fff" toggled={isOpen} toggle={setOpen} />
             </nav>
-            <div className={`absolute ${burgerOpen ? 'top-full' : 'top-full'} p-6 flex flex-col left-0 bg-rose-500 w-full z-20 md:hidden`}>
-                {menuItems.map((item, index) => <Link className="text-white m-4 font-light relative " key={index} href={item.link}>{item.name}</Link>)}
-                <div className="flex">
-                    <div className="m-4 w-6 cursor-pointer">
-                        <Image className="rounded-full" src={sweflag} alt="Swedish flag" />
-                    </div>
-                    <p className="my-4 text-white">Change Language</p>
-                </div>
-                <ContactBtnMobile btnText="Contact us" colors="bg-white text-black" />
-            </div>
         </>
     )
 };
