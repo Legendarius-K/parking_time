@@ -5,18 +5,24 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import ContactBtn from "../ContactBtn";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import sweflag from '../../../public/sweflag.png'
 import ContactBtnMobile from "../ContactBtnMobile";
 
 interface NavigationProps {
     openBurger: () => void
+    updateIsOpen: boolean
 }
 
-const Navigation = ({ openBurger }:NavigationProps) => {
+const Navigation = ({ openBurger, updateIsOpen }:NavigationProps) => {
 
     const [isOpen, setOpen] = useState(false)
     const path = usePathname();
+
+    useEffect(() => {
+        updateIsOpen ? setOpen(true) : setOpen(false);
+    },[updateIsOpen])
+    
 
     const handleClick = () => {
         openBurger()

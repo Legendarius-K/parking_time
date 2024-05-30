@@ -9,14 +9,18 @@ import ContactBtnMobile from "../ContactBtnMobile";
 
 interface HamburgerMenuProps {
     openBurger: boolean
+    closeBurger: () => void
 }
 
-const HamburgerMenu = ({ openBurger }:HamburgerMenuProps) => {
+const HamburgerMenu = ({ openBurger, closeBurger }:HamburgerMenuProps) => {
 
     
     const path = usePathname();
 
     const burgerOpen = openBurger
+    const updateCloseBurger = () => {
+        closeBurger()
+    }
    
 
     const menuItems = [
@@ -42,7 +46,7 @@ const HamburgerMenu = ({ openBurger }:HamburgerMenuProps) => {
     return (
         <>
             <div className={`fixed ${burgerOpen ? 'top-20' : '-top-full'} transition-all ease-in-out duration-500 p-6 flex flex-col left-0 bg-pt-primary w-full z-20 md:hidden`}>
-                {menuItems.map((item, index) => <Link className="text-white m-4 font-light relative " key={index} href={item.link}>{item.name}</Link>)}
+                {menuItems.map((item, index) => <Link onClick={closeBurger} className="text-white m-4 font-light relative " key={index} href={item.link}>{item.name}</Link>)}
                 <div className="flex">
                     <div className="m-4 w-6 cursor-pointer">
                         <Image className="rounded-full" src={sweflag} alt="Swedish flag" />
