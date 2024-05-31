@@ -1,9 +1,9 @@
-
+import Hero from "@/components/Contact/Hero";
 
 const Contact = () => {
     return (
         <>
-            Contact   
+            <Hero /> 
         </>
     )
 };
