@@ -7,13 +7,13 @@ const Contact = () => {
                 <div className="">
 
                 </div>
-                <div className="">
+                <div className="pt-[100px] px-[30px] pb-[80px]">
                     <div className="">
                         <div className="">
-                            <h3>Contact</h3>
+                            <h3>Contact us</h3>
                         </div>
                         <div className="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nisi dolorem! Vitae voluptatibus repudiandae doloribus nam eius hic aspernatur! Aut cupiditate natus unde explicabo pariatur officiis sint vitae amet voluptatibus!</p>
+                            <p>Whether you have a question, feedback, or need assistance, please fill out the form below, and our team will get back to you as soon as possible.</p>
                         </div>
                     </div>
                     <div className="">
@@ -28,7 +28,7 @@ const Contact = () => {
                         <div className="">
                             <div className="">
                                 <p>First and last name</p>
-                                <input type="text" name="" id="" />
+                                <input className="" type="text" name="" id="" />
                             </div>
                             <div className="">
                                 <p>Job title</p>
