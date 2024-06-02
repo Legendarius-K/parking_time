@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      spacing: {
+        '84': '200px',
+      },
       colors: {
         'pt-primary': 'rgb(6, 67, 62)',
         'pt-secondary': 'rgb(12, 5, 29)',
@@ -19,6 +22,7 @@ const config: Config = {
         'pt-gray1': '#868686',
         'pt-lightgrayborder': '#E8E8E8',
         'pt-gray2': '#F0F0F0',
+        'custom-black': '#0B051D',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
