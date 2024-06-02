@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Hero: React.FC = () => {
+const Homehero: React.FC = () => {
   return (
     <div className="relative bg-cover bg-center h-screen" style={{ backgroundImage: 'url(/hero-bg.png)' }}>
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>
@@ -38,4 +38,4 @@ const Hero: React.FC = () => {
   );
 }
 
-export default Hero;
+export default Homehero;
