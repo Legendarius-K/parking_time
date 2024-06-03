@@ -6,6 +6,7 @@ import ptLogo from '../../../public/pt-logo.png'
 import sweflag from '../../../public/sweflag.png'
 import Navigation from "../Navigation";
 import HamburgerMenu from "../HamburgerMenu";
+import Link from "next/link";
 
 const Header = () => {
     const [burgerOpen, setBurgerOpen] = useState(false);
@@ -38,9 +39,9 @@ const Header = () => {
         <>
             <header className="h-20 bg-pt-primary flex items-center justify-between px-8 lg:px-20 fixed top-0 left-0 w-full md:relative z-30">
                 <div className="w-16">
-                    <a href="/">
+                    <Link href="/">
                         <Image src={ptLogo} alt="image" />
-                    </a>
+                    </Link>
                 </div>
                 <div className="flex items-center">
                     <Navigation openBurger={handleClick} updateIsOpen={burgerOpen}/>
