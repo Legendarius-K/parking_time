@@ -1,21 +1,32 @@
+// import createMiddleware from 'next-intl/middleware';
+// import { localePrefix, locales } from "./utils/navigation";
+
+// export default createMiddleware({
+//     locales,
+
+//     localePrefix,
+
+//     defaultLocale: 'sv',
+
+
+// });
+
+// export const config = {
+//     matcher: ['/((?!api|_next|.*\\..*).*)'],
+// };
+
 import createMiddleware from 'next-intl/middleware';
-import { localePrefix, locales } from "./utils/navigation";
 
 export default createMiddleware({
     // A list of all locales that are supported
-    locales,
-    // locales,
-
-    localePrefix,
+    locales: ['sv', 'no'],
 
     // Used when no locale matches
-    defaultLocale: 'sv',
-
-
+    defaultLocale: 'sv'
 });
 
 export const config = {
     // Match only internationalized pathnames
-    matcher: ['/((?!api|_next|.*\\..*).*)'],
+    matcher: ['/((?!api|_next|.*\\..*).*)']
     // matcher: ['/', '/(sv|no)/:path*']
 };
