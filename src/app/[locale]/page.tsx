@@ -5,6 +5,7 @@ export default function Home() {
     const t = useTranslations('navigation')
     return (
         <main className="">
+            <p>Test:</p>
             {t('home')}
         </main>
     );

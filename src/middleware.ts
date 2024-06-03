@@ -1,5 +1,5 @@
 // import createMiddleware from 'next-intl/middleware';
-// import { localePrefix, locales } from "./utils/navigation";
+import { localePrefix, locales } from "./utils/navigation";
 
 // export default createMiddleware({
 //     locales,
@@ -19,7 +19,10 @@ import createMiddleware from 'next-intl/middleware';
 
 export default createMiddleware({
     // A list of all locales that are supported
-    locales: ['sv', 'no'],
+    // locales: ['sv', 'no'],
+    locales,
+
+    localePrefix,
 
     // Used when no locale matches
     defaultLocale: 'sv'
