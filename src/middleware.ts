@@ -25,7 +25,7 @@ export default createMiddleware({
     localePrefix,
 
     // Used when no locale matches
-    defaultLocale: 'se'
+    defaultLocale: 'sv'
 });
 
 export const config = {
