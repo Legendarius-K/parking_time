@@ -29,13 +29,13 @@ export default async function LocaleLayout({
                 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
             </head>
             <body className={`${'font-sans font-thin flex flex-col min-h-full'}`}>
+                <NextIntlClientProvider messages={messages}>
                     {/* <Header /> */}
-                {/* <NextIntlClientProvider messages={messages}> */}
                     <section className="grow">
                         {children}
                     </section>
-                {/* </NextIntlClientProvider> */}
                     <Footer />
+                </NextIntlClientProvider>
             </body>
         </html>
     );
