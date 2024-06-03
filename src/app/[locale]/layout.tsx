@@ -30,11 +30,11 @@ export default async function LocaleLayout({
             </head>
             <body className={`${'font-sans font-thin flex flex-col min-h-full'}`}>
                     {/* <Header /> */}
-                <NextIntlClientProvider messages={messages}>
+                {/* <NextIntlClientProvider messages={messages}> */}
                     <section className="grow">
                         {children}
                     </section>
-                </NextIntlClientProvider>
+                {/* </NextIntlClientProvider> */}
                     <Footer />
             </body>
         </html>
