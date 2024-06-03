@@ -36,7 +36,6 @@ export default async function LocaleLayout({
                     </section>
                     <Footer />
                 </NextIntlClientProvider>
-                <p>HELLO</p>
             </body>
         </html>
     );
