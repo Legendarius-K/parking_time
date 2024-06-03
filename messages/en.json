@@ -1,0 +1,11 @@
+{
+    "Index" : {
+        "title": "hello there"
+    },
+    "About": {
+        "string1" : "Hey hey what can I do?"
+    },
+    "Header":{
+        "title": "Wakaka"
+    }
+}   
