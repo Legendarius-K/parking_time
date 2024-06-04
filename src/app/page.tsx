@@ -1,9 +1,12 @@
 import Image from "next/image";
+import SmartParkingSolution from "@/components/SmartParkingSolution"
 
-export default function Home() {
+const Home = () => {
     return (
-        <main className="">
-            Homepage
-        </main>
+        <div>
+            <SmartParkingSolution />
+        </div>
     );
 }
+
+export default Home;

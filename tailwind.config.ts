@@ -22,6 +22,7 @@ const config: Config = {
         'pt-gray1': '#868686',
         'pt-lightgrayborder': '#E8E8E8',
         'pt-gray2': '#F0F0F0',
+        'custom-black': '#0B051D',
       },
       fontFamily: {
         sans: ["Lato", "sans-serif"],
