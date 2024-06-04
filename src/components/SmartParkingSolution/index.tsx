@@ -5,7 +5,7 @@ const SmartParkingSolution: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row bg-white p-8 md:p-16 space-y-8 md:space-y-0 md:space-x-8">
       <div className="w-full md:w-1/2 flex justify-center md:justify-center">
-        <img src="/Smart-Parking-Solution2.png" alt="Smart Parking Solution" className="w-full md:w-auto"/>
+        <img src="/Smart-Parking-Solution2.png" alt="Smart Parking Solution" className="w-full md:w-auto object-contain"/>
       </div>
       <div className="w-full md:w-1/2 flex flex-col space-y-4 md:space-y-6">
         <h2 className="text-2xl md:text-4xl font-bold pt-darkblue1-900">Smart Parking Solution</h2>
