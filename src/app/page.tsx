@@ -1,9 +1,12 @@
 import Image from "next/image";
+import Hero from "@/components/Home-Hero";
 
-export default function Home() {
+const Home = () => {
     return (
-        <main className="">
-            Homepage
-        </main>
+        <div>
+            <Hero/>
+        </div>
     );
 }
+
+export default Home;
