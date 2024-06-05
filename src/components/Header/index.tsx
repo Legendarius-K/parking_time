@@ -14,7 +14,7 @@ const Header = () => {
 
     const handleClick = () => {
         setBurgerOpen(!burgerOpen);
-        setInitialScrollY(window.scrollY); // Reset initial scroll position when the menu is toggled
+        setInitialScrollY(window.scrollY); 
     };
 
     const closeBurger = () => {
@@ -24,7 +24,7 @@ const Header = () => {
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
-            if (burgerOpen && Math.abs(currentScrollY - initialScrollY) > 300) {
+            if (burgerOpen && Math.abs(currentScrollY - initialScrollY) > 200) {
                 setBurgerOpen(false);
             }
         };
@@ -52,7 +52,7 @@ const Header = () => {
                 </div>
             </header>
             <HamburgerMenu openBurger={burgerOpen} closeBurger={closeBurger} />
-            <div onClick={handleClick} className={`${burgerOpen ? 'fixed' : 'hidden'} OVERLAY top-0 left-0 w-full h-full`}></div>
+            <div onClick={handleClick} className={`${burgerOpen ? 'fixed' : 'hidden'} OVERLAY top-0 left-0 w-full h-full z-10`}></div>
         </>
     );
 };
