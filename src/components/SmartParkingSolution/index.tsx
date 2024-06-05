@@ -15,15 +15,15 @@ const SmartParkingSolution: React.FC = () => {
         <ul className="space-y-2 md:space-y-">
           <li className="flex items-center space-x-2">
             <span className="text-pt-red font-semibold">›</span>
-            <span className="text-sm md:text-base pt-darkblue1 font-semibold py-0.5">We aim to support the growth and efficiency of urban areas.</span>
+            <span className="text-sm md:text-base pt-darkblue1 font-semibold py-0.5 md:py-0">We aim to support the growth and efficiency of urban areas.</span>
           </li>
           <li className="flex items-center space-x-2">
             <span className="text-pt-red font-semibold">›</span>
-            <span className="text-sm md:text-base pt-darkblue1 font-semibold py-0.5">Our digital parking disc simplifies the parking process.</span>
+            <span className="text-sm md:text-base pt-darkblue1 font-semibold py-0.5 md:py-0">Our digital parking disc simplifies the parking process.</span>
           </li>
           <li className="flex items-center space-x-2">
             <span className="text-pt-red font-semibold">›</span>
-            <span className="text-sm md:text-base pt-darkblue1 font-semibold py-0.5">Any parking attendant systems can easily be integrated with our system.</span>
+            <span className="text-sm md:text-base pt-darkblue1 font-semibold py-0.5 md:py-0">Any parking attendant systems can easily be integrated with our system.</span>
           </li>
         </ul>
         <p className="text-sm md:text-base pt-darkblue1-700">
