@@ -9,7 +9,7 @@ const SmartParkingSolution: React.FC = () => {
         <img src="/Smart-Parking-Solution2.png" alt="Smart Parking Solution" className="w-full md:w-auto object-contain"/>
       </div>
       <div className="w-full md:w-1/2 flex flex-col space-y-4 md:space-y-6">
-        <h2 className="text-[35px] leading-[43.2px]text-2xl md:text-4xl font-bold pt-darkblue1-900">Smart Parking Solution</h2>
+        <h2 className="text-[38px] leading-[43.2px]text-2xl md:text-4xl font-bold pt-darkblue1-900">Smart Parking Solution</h2>
         <p className="text-[16px] leading-[24px]text-sm md:text-base pt-darkblue1-700">
           The parking disc has long been a tool to promote circulation and activity in city centers. It's a fantastic invention that benefits residents, visitors, and local businesses alike. We want to be part of this evolution by creating a free digital parking disc.
         </p>
