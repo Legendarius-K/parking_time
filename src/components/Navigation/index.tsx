@@ -62,4 +62,4 @@ const Navigation = ({ openBurger, updateIsOpen }: NavigationProps) => {
     )
 };
 
-export default Navigation
+export default Navigation 
