@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
 import sweflag from '../../../public/sweflag.png'
-import ButtonMobile from "../ButtonMobile";
+import Button from "../Button";
 import { motion } from "framer-motion";
 
 interface HamburgerMenuProps {
@@ -56,9 +56,9 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                     }}
                     whileInView={{
                         opacity: 1,
-                        x: 0, 
+                        x: 0,
                         transition: {
-                            duration: 0.3 
+                            duration: 0.3
                         }
                     }}
                     viewport={{ once: false }}
@@ -74,9 +74,9 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                     }}
                     whileInView={{
                         opacity: 1,
-                        x: 0, 
+                        x: 0,
                         transition: {
-                            duration: 0.4 
+                            duration: 0.4
                         }
                     }}
                     viewport={{ once: false }}
@@ -92,9 +92,9 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                     }}
                     whileInView={{
                         opacity: 1,
-                        x: 0, 
+                        x: 0,
                         transition: {
-                            duration: 0.6 
+                            duration: 0.6
                         }
                     }}
                     viewport={{ once: false }}
@@ -110,9 +110,9 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                     }}
                     whileInView={{
                         opacity: 1,
-                        x: 0, 
+                        x: 0,
                         transition: {
-                            duration: 0.8 
+                            duration: 0.8
                         }
                     }}
                     viewport={{ once: false }}
@@ -126,7 +126,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                     </div>
                     <p className="my-4 text-white">Change Language</p>
                 </div>
-                <ButtonMobile closeBurger={closeBurger} route="/contact" btnText="Contact us" colors="bg-white text-black" />
+                <Button closeBurger={closeBurger} route="/contact" btnText="Contact us" colors="bg-white text-black" />
             </div>
         </>
     )

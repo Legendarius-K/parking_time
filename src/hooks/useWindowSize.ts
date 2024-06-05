@@ -9,8 +9,8 @@ interface WindowSize {
 
 const useWindowSize = (): WindowSize => {
     const [windowSize, setWindowSize] = useState<WindowSize>({
-        width: undefined,
-        height: undefined,
+        width: typeof window !== 'undefined' ? window.innerWidth : undefined,
+        height: typeof window !== 'undefined' ? window.innerHeight : undefined,
     });
 
     useEffect(() => {
