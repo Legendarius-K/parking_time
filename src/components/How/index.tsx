@@ -20,13 +20,13 @@ const How = () => {
                 <div className="flex flex-col md:flex-row m-8 justify-between items-center">
                     <HowBox srcIcon={ptPen} altIcon='A Pen' number='01' heading='Fyll i registreringsnummer' text='Öppna appen, registrera dig med ditt registreringsnummer.' />
 
-                    <div className='flex justify-center rotate-90 m-4 md:rotate-0'>
+                    <div className='flex justify-center rotate-90 m-10 md:m-4 md:rotate-0'>
                         <Image src={arrow} alt='arrow' />
                     </div>
 
                     <HowBox srcIcon={ptPin} altIcon='A Parking pin' number='02' heading='Hitta din parkeringszon' text='Använd kartan, sökfunktionen eller zonlistan för att hitta din parkeringsplats' />
 
-                    <div className='flex justify-center rotate-90 m-4 md:rotate-0'>
+                    <div className='flex justify-center rotate-90 m-10 md:m-4 md:rotate-0'>
                         <Image src={arrow} alt='arrow' />
                     </div>
 

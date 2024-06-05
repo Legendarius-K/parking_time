@@ -14,7 +14,7 @@ interface HowBoxProps {
 const HowBox = ({ srcIcon, altIcon, number, heading, text }:HowBoxProps) => {
     return (
         <>
-            <motion.div className="bg-white rounded-[20px] w-[100%] md:w-[29%] overflow-hidden h-full pb-3 drop-shadow-2xl"
+            <motion.div className="bg-white rounded-[20px] w-[100%] md:w-[29%] overflow-hidden h-full pb-3 drop-shadow-xl"
                 initial={{
                     opacity: 0,
                     y: 50
