@@ -1,4 +1,7 @@
+"use client"
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 interface HowBoxProps {
     srcIcon: string
@@ -11,16 +14,29 @@ interface HowBoxProps {
 const HowBox = ({ srcIcon, altIcon, number, heading, text }:HowBoxProps) => {
     return (
         <>
-            <div className="bg-white rounded-[20px] basis-1/4 overflow-hidden ">
-                <div className="flex relative">
+            <motion.div className="bg-white rounded-[20px] w-[100%] md:w-[29%] sm:w-[70%] overflow-hidden h-full pb-3"
+                initial={{
+                    opacity: 0,
+                    y: 50
+                }}
+                whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                        duration: 1 
+                    }
+                }}
+                viewport={{ once: true }}
+            >
+                <div className="flex relative h-[91px]">
                     <div className="m-6">
                         <Image src={srcIcon} alt={altIcon}/> 
                     </div>
                     <p className="absolute font-mono -right-6 -top-5 text-9xl font-extrabold text-pt-gray2">{number}</p>
                 </div>
-                <h3 className="font-bold text-3xl m-7">{heading}</h3>
-                <p className="m-7 font-thin">{text}</p>
-            </div>   
+                <h3 className="font-bold text-3xl m-6">{heading}</h3>
+                <p className="m-6 font-thin">{text}</p>
+            </motion.div>   
         </>
     )
 };

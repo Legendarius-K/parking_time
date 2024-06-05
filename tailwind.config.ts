@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'md': '960px',
+      },
       transitionDuration: {
         400: '400ms', 
       },

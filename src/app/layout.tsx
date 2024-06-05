@@ -26,7 +26,7 @@ export default function RootLayout({
             </head>
             <body className={`${'font-sans font-thin flex flex-col min-h-full box-border'}`}>
                 <Header />
-                <section className="grow mt-[80px]">
+                <section className="grow">
                     {children}
                 </section>
                 <Footer />

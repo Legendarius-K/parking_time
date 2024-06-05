@@ -26,7 +26,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
     const menuItems = [
         {
             name: 'Why Parking Time?',
-            link: '/'
+            link: '/' //scroll to why component
         },
         {
             name: 'About us',
@@ -38,7 +38,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
         },
         {
             name: 'FAQ',
-            link: '/privacy'
+            link: '/' //scroll to faq component
         },
 
     ]

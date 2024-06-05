@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-
 interface ContactBtnProps {
     route: string
     btnText: string
