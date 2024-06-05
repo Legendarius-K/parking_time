@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import ptLogo from '../../../public/pt-logo.png'
+import ptLogo from '../../../public/Logotype-1.svg'
 import sweflag from '../../../public/sweflag.png'
 import Navigation from "../Navigation";
 import HamburgerMenu from "../HamburgerMenu";
@@ -32,8 +32,6 @@ const Header = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [burgerOpen]);
-
-    console.log(burgerOpen);
 
     return (
         <>

@@ -53,7 +53,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                     </div>
                     <p className="my-4 text-white">Change Language</p>
                 </div>
-                <ButtonMobile route="/contact" btnText="Contact us" colors="bg-white text-black" />
+                <ButtonMobile closeBurger={closeBurger} route="/contact" btnText="Contact us" colors="bg-white text-black" />
             </div>
         </>
     )

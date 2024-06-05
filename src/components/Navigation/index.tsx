@@ -32,7 +32,7 @@ const Navigation = ({ openBurger, updateIsOpen }: NavigationProps) => {
     const menuItems = [
         {
             name: 'Why Parking Time?',
-            link: '/'
+            link: '/' //Should lead to home and scroll to why-component
         },
         {
             name: 'About us',
@@ -44,7 +44,7 @@ const Navigation = ({ openBurger, updateIsOpen }: NavigationProps) => {
         },
         {
             name: 'FAQ',
-            link: '/privacy'
+            link: '/' //Should lead to home and scroll to faq-component
         },
 
     ]
