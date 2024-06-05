@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Button from '../Button';
 
 const SmartParkingSolution: React.FC = () => {
   return (
@@ -29,9 +30,7 @@ const SmartParkingSolution: React.FC = () => {
         <p className="text-sm md:text-base pt-darkblue1-700">
           We're excited to share more about our solution in a meeting.
         </p>
-        <Link href="/contact">
-          <button className="bg-custom-black text-white text-sm md:text-base px-6 py-3 rounded-full text-center md:self-start">Contact us</button>
-        </Link>
+        <Button route="/contact" btnText="Contact us" colors="bg-custom-black text-white"/>
       </div>
     </div>
   );
