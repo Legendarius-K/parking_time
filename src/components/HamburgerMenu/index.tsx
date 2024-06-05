@@ -63,7 +63,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                     }}
                     viewport={{ once: false }}
                 >
-                    <Link href={'/'} className="text-white  font-light relative ">Varför Parking Time?</Link>
+                    <Link onClick={updateCloseBurger} href={'/'} className="text-white  font-light relative ">Varför Parking Time?</Link>
                 </motion.div>
 
                 <motion.div className="m-4"
@@ -81,7 +81,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                     }}
                     viewport={{ once: false }}
                 >
-                    <Link href={'/'} className="text-white  font-light relative ">Om oss</Link>
+                    <Link onClick={updateCloseBurger} href={'/about'} className="text-white  font-light relative ">Om oss</Link>
                 </motion.div>
 
                 <motion.div className="m-4"
@@ -99,7 +99,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                     }}
                     viewport={{ once: false }}
                 >
-                    <Link href={'/'} className="text-white  font-light relative ">Nyheter</Link>
+                    <Link onClick={updateCloseBurger} href={'/news'} className="text-white  font-light relative ">Nyheter</Link>
                 </motion.div>
 
                 <motion.div className="m-4"
@@ -117,7 +117,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                     }}
                     viewport={{ once: false }}
                 >
-                    <Link href={'/'} className="text-white  font-light relative ">FAQ</Link>
+                    <Link onClick={updateCloseBurger} href={'/'} className="text-white  font-light relative ">FAQ</Link>
                 </motion.div>
 
                 <div className="flex">

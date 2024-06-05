@@ -2,26 +2,29 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import ptLogo from '../../../public/Logotype-1.svg'
-import sweflag from '../../../public/sweflag.png'
+import ptLogo from '../../../public/Logotype-1.svg';
+import sweflag from '../../../public/sweflag.png';
 import Navigation from "../Navigation";
 import HamburgerMenu from "../HamburgerMenu";
 import Link from "next/link";
 
 const Header = () => {
     const [burgerOpen, setBurgerOpen] = useState(false);
+    const [initialScrollY, setInitialScrollY] = useState(0);
 
     const handleClick = () => {
         setBurgerOpen(!burgerOpen);
+        setInitialScrollY(window.scrollY); // Reset initial scroll position when the menu is toggled
     };
-    
+
     const closeBurger = () => {
         setBurgerOpen(false);
     };
 
     useEffect(() => {
         const handleScroll = () => {
-            if (burgerOpen && window.scrollY > window.innerHeight / 4) {
+            const currentScrollY = window.scrollY;
+            if (burgerOpen && Math.abs(currentScrollY - initialScrollY) > 300) {
                 setBurgerOpen(false);
             }
         };
@@ -31,7 +34,7 @@ const Header = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [burgerOpen]);
+    }, [burgerOpen, initialScrollY]);
 
     return (
         <>
@@ -42,7 +45,7 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className="flex items-center">
-                    <Navigation openBurger={handleClick} updateIsOpen={burgerOpen}/>
+                    <Navigation openBurger={handleClick} updateIsOpen={burgerOpen} />
                     <div className="w-6 cursor-pointer hidden md:block">
                         <Image className="rounded-full" src={sweflag} alt="Swedish flag" />
                     </div>
