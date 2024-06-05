@@ -13,15 +13,15 @@ const SmartParkingSolution: React.FC = () => {
           The parking disc has long been a tool to promote circulation and activity in city centers. It's a fantastic invention that benefits residents, visitors, and local businesses alike. We want to be part of this evolution by creating a free digital parking disc.
         </p>
         <ul className="space-y-2 md:space-y-">
-          <li className="flex items-start space-x-2">
+          <li className="flex items-center space-x-2">
             <span className="text-pt-red font-semibold">›</span>
             <span className="text-sm md:text-base pt-darkblue1 font-semibold py-0.5">We aim to support the growth and efficiency of urban areas.</span>
           </li>
-          <li className="flex items-start space-x-2">
+          <li className="flex items-center space-x-2">
             <span className="text-pt-red font-semibold">›</span>
             <span className="text-sm md:text-base pt-darkblue1 font-semibold py-0.5">Our digital parking disc simplifies the parking process.</span>
           </li>
-          <li className="flex items-start space-x-2">
+          <li className="flex items-center space-x-2">
             <span className="text-pt-red font-semibold">›</span>
             <span className="text-sm md:text-base pt-darkblue1 font-semibold py-0.5">Any parking attendant systems can easily be integrated with our system.</span>
           </li>
