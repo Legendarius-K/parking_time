@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useState } from "react";
 import sweflag from '../../../public/sweflag.png'
 import ButtonMobile from "../ButtonMobile";
+import { motion } from "framer-motion";
 
 interface HamburgerMenuProps {
     openBurger: boolean
@@ -46,7 +47,79 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
     return (
         <>
             <div className={`fixed ${burgerOpen ? 'top-20' : '-top-[335px]'} transition-all ease-in-out duration-500 p-6 flex flex-col left-0 bg-pt-primary w-full z-20 md:hidden`}>
-                {menuItems.map((item, index) => <Link onClick={closeBurger} className="text-white m-4 font-light relative " key={index} href={item.link}>{item.name}</Link>)}
+
+                <motion.div className="m-4"
+
+                    initial={{
+                        opacity: 0,
+                        x: 100
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                        x: 0, 
+                        transition: {
+                            duration: 0.3 
+                        }
+                    }}
+                    viewport={{ once: false }}
+                >
+                    <Link href={'/'} className="text-white  font-light relative ">Varför Parking Time?</Link>
+                </motion.div>
+
+                <motion.div className="m-4"
+
+                    initial={{
+                        opacity: 0,
+                        x: 100
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                        x: 0, 
+                        transition: {
+                            duration: 0.4 
+                        }
+                    }}
+                    viewport={{ once: false }}
+                >
+                    <Link href={'/'} className="text-white  font-light relative ">Om oss</Link>
+                </motion.div>
+
+                <motion.div className="m-4"
+
+                    initial={{
+                        opacity: 0,
+                        x: 100
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                        x: 0, 
+                        transition: {
+                            duration: 0.6 
+                        }
+                    }}
+                    viewport={{ once: false }}
+                >
+                    <Link href={'/'} className="text-white  font-light relative ">Nyheter</Link>
+                </motion.div>
+
+                <motion.div className="m-4"
+
+                    initial={{
+                        opacity: 0,
+                        x: 100
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                        x: 0, 
+                        transition: {
+                            duration: 0.8 
+                        }
+                    }}
+                    viewport={{ once: false }}
+                >
+                    <Link href={'/'} className="text-white  font-light relative ">FAQ</Link>
+                </motion.div>
+
                 <div className="flex">
                     <div className="m-4 w-6 cursor-pointer">
                         <Image className="rounded-full" src={sweflag} alt="Swedish flag" />

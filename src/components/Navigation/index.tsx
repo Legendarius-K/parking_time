@@ -1,12 +1,9 @@
 'use client'
 
 import Hamburger from "hamburger-react";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import sweflag from '../../../public/sweflag.png'
-import ContactBtnMobile from "../ButtonMobile";
 import Button from "../Button";
 
 interface NavigationProps {
