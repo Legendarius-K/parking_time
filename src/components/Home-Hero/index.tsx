@@ -26,12 +26,12 @@ const Homehero: React.FC = () => {
         </Link>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 w-full bg-pt-green p-4 text-center text-white bg-opacity-80">
+      <div className="absolute bottom-0 left-0 w-full bg-pt-green px-8 py-3.5 text-center text-white bg-opacity-80">
         <ul className="grid grid-cols-2 md:flex md:justify-around text-xs md:text-sm lg:text-base list-disc list-inside gap-4">
-          <li className="font-roboto font-medium leading-8">Easy to use</li>
-          <li className="font-roboto font-medium leading-8">Free to download</li>
-          <li className="font-roboto font-medium leading-8">Avoid fines</li>
-          <li className="font-roboto font-medium leading-8">Reduce Stress</li>
+          <li className="font-roboto font-medium leading-8 text-left px-4">Easy to use</li>
+          <li className="font-roboto font-medium leading-8 text-left px-4">Free to download</li>
+          <li className="font-roboto font-medium leading-8 text-left px-4">Avoid fines</li>
+          <li className="font-roboto font-medium leading-8 text-left px-4">Reduce Stress</li>
         </ul>
       </div>
     </div>
