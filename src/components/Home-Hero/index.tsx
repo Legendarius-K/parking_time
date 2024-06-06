@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../Button';
+import Link from 'next/link';
 
 const Homehero: React.FC = () => {
   return (
@@ -13,12 +14,17 @@ const Homehero: React.FC = () => {
           Digital parking disc - directly on your mobile. <br />
           A winning concept in a new, digitalized format.
         </p>
-        <div className="w-full flex justify-start"></div>
-        <div className="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-2">
-        <Button route="/contact" btnText="Contact us" colors="bg-white text-custom-black" />
-        <Button targetBlank={true} route={'https://apps.apple.com/se/app/parking-time/id1611019108'} btnText="Download app" colors="bg-custom-black text-white" />
-        </div>
+      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+        <Link href="/contact">
+          <button className="bg-white text-custom-black  w-full max-w-[400px] flex justify-center px-8 py-3 rounded-full font-light transition" style={{ opacity: 1 }}>Contact us</button>
+        </Link>
+        <Link href="https://apps.apple.com/se/app/parking-time/id1611019108" legacyBehavior>
+          <a target="_blank" rel="noopener noreferrer">
+          <button className="bg-custom-black text-white w-full max-w-[400px] flex justify-center px-12 py-3 rounded-full font-light transition" style={{ opacity: 1 }}>Download app</button>
+          </a>
+        </Link>
       </div>
+    </div>
       <div className="absolute bottom-0 left-0 w-full bg-pt-green px-8 py-3.5 text-center text-white bg-opacity-80">
         <ul className="grid grid-cols-2 md:flex md:justify-around text-xs md:text-sm lg:text-base list-disc list-inside gap-4">
           <li className="font-roboto font-medium leading-8 text-left px-4">Easy to use</li>
