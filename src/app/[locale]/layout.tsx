@@ -10,7 +10,7 @@ const roboto = Roboto({ subsets: ['latin'], weight: '400' })
 
 // const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+export const metadata: Metadata = { 
     title: "Parking Time",
     description: "What time is it? Parking Time!",
 };
