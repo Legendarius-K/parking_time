@@ -10,9 +10,37 @@ const Footer = () => {
     const [copied, setCopied] = useState(false);
 
     const handleCopy = () => {
-        navigator.clipboard.writeText("info@parkingtime.se");
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText("info@parkingtime.se")
+                .then(() => {
+                    setCopied(true);
+                    setTimeout(() => setCopied(false), 2000); 
+                })
+                .catch(err => {
+                    console.error('Failed to copy: ', err);
+                    fallbackCopyTextToClipboard("info@parkingtime.se");
+                });
+        } else {
+            fallbackCopyTextToClipboard("info@parkingtime.se");
+        }
+    };
+
+    const fallbackCopyTextToClipboard = (text) => {
+        const textArea = document.createElement("textarea");
+        textArea.value = text;
+        textArea.style.position = "fixed";
+        textArea.style.top = "-9999px";
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        try {
+            document.execCommand('copy');
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2000); 
+        } catch (err) {
+            console.error('Fallback: Oops, unable to copy', err);
+        }
+        document.body.removeChild(textArea);
     };
 
     return (
