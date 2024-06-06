@@ -52,7 +52,7 @@ const Footer = () => {
             <div className="border-solid border-0 border-t">
                 <div className="flex flex-col-reverse md:flex-row gap-6 justify-between pt-6">
                     <div className="text-sm font-normal">© 2024 Parking Time AB</div>
-                    <a href="/privacy-policy" className="underline font-normal md:font-medium text-sm md:text-base">Privacy Policy</a>
+                    <a href="/privacy" className="underline font-normal md:font-medium text-sm md:text-base">Privacy Policy</a>
                 </div>
             </div>
         </footer>
