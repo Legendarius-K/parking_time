@@ -1,3 +1,5 @@
+import Button from "@/components/Button";
+
 const Why = () => {
     return (
         <>
@@ -26,7 +28,7 @@ const Why = () => {
                         <span>The digital parking disc can eventually optimize parking resources and urban planning through valuable usage data and behavior patterns, leading to a safer society with better control and access to parking spaces.</span>
                     </li>
                 </ul>
-                <button className="text-black bg-white rounded-full w-60 p-4">Learn more about us</button>
+                <Button route="/about" btnText="Learn more about us" colors="bg-white text-custom-black" />
             </div>
         </>
     )
