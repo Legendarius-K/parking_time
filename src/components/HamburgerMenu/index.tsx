@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import { useState } from "react";
 import sweflag from '../../../public/sweflag.png'
 import Button from "../Button";

@@ -6,7 +6,7 @@ import ptLogo from '../../../public/Logotype-1.svg';
 import sweflag from '../../../public/sweflag.png';
 import Navigation from "../Navigation";
 import HamburgerMenu from "../HamburgerMenu";
-import Link from "next/link";
+import { Link } from "@/navigation";
 
 const Header = () => {
     const [burgerOpen, setBurgerOpen] = useState(false);
