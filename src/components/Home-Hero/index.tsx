@@ -16,7 +16,7 @@ const Homehero: React.FC = () => {
         </p>
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
         <Link href="/contact">
-          <button className="bg-white text-custom-black  w-full max-w-[400px] flex justify-center px-8 py-3 rounded-full font-light transition" style={{ opacity: 1 }}>Contact us</button>
+          <button className="bg-white text-custom-black  w-full max-w-[400px] flex justify-center px-12 py-3 rounded-full font-light transition" style={{ opacity: 1 }}>Contact us</button>
         </Link>
         <Link href="https://apps.apple.com/se/app/parking-time/id1611019108" legacyBehavior>
           <a target="_blank" rel="noopener noreferrer">
