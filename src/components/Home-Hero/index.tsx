@@ -13,17 +13,18 @@ const Homehero: React.FC = () => {
           Digital parking disc - directly on your mobile. <br />
           A winning concept in a new, digitalized format.
         </p>
-        <div className="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
+        <div className="w-full flex justify-start"></div>
+        <div className="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-2">
         <Button route="/contact" btnText="Contact us" colors="bg-white text-custom-black" />
         <Button targetBlank={true} route={'https://apps.apple.com/se/app/parking-time/id1611019108'} btnText="Download app" colors="bg-custom-black text-white" />
         </div>
       </div>
       <div className="absolute bottom-0 left-0 w-full bg-pt-green p-4 text-center text-white bg-opacity-80">
-        <ul className="grid grid-cols-2 md:flex md:justify-around text-xs md:text-sm lg:text-base list-disc list-inside gap-4">
-          <li className="font-roboto font-medium leading-8">Easy to use</li>
-          <li className="font-roboto font-medium leading-8">Free to download</li>
-          <li className="font-roboto font-medium leading-8">Avoid fines</li>
-          <li className="font-roboto font-medium leading-8">Reduce Stress</li>
+        <ul className="flex md:flex md:justify-around md: p-4 text-[16px] leading-[32px] text-xs md:text-sm lg:text-base list-disc list-inside p-0 m-0">
+          <li className="flex justify-start items-center h-12 md:h-auto font-roboto font-medium leading-8">Easy to use</li>
+          <li className="flex justify-start items-center h-12 md:h-auto font-roboto font-medium leading-8">Free to download</li>
+          <li className="flex justify-start items-center h-12 md:h-auto font-roboto font-medium leading-8">Avoid fines</li>
+          <li className="flex justify-start items-center h-12 md:h-auto font-roboto font-medium leading-8text-left">Reduce Stress</li>
         </ul>
       </div>
     </div>
