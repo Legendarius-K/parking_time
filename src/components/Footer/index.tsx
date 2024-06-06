@@ -1,9 +1,20 @@
+"use client";
+
 import Image from "next/image";
 import ptLogo from '../../../public/pt-logo-v2.svg'
 import instagramIcon from '../../../public/Instagram.svg'
 import linkedInIcon from '../../../public/LinkedIn.svg'
+import { useState } from "react";
 
 const Footer = () => {
+    const [copied, setCopied] = useState(false);
+
+    const handleCopy = () => {
+        navigator.clipboard.writeText("info@parkingtime.se");
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+    };
+
     return (
         <footer className="py-12 px-8 md:p-20 bg-pt-primary text-white gap-12 md:gap-5 flex flex-col font-mono">
             <div className="flex justify-between flex-col gap-12 md:gap-8 md:flex-row">
@@ -22,7 +33,10 @@ const Footer = () => {
                             <p className="font-normal underline cursor-pointer ">
                                 <a href="tel:+46 72 722 44 00">+46 72 722 44 00</a>
                             </p>
-                            <p className="font-normal underline cursor-pointer">info@parkingtime.se</p>
+                            <p className="font-normal underline cursor-pointer" onClick={handleCopy}>
+                                info@parkingtime.se
+                                {copied && <span className="ml-2 text-sm text-green-500">Copied!</span>}
+                            </p>
                         </div>
                         <div className="flex gap-3">
                             <a target="_blank" href="https://www.instagram.com/parkingtimesweden/">
