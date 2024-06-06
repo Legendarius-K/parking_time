@@ -6,7 +6,7 @@ const Homehero: React.FC = () => {
   return (
     <div className="relative bg-cover bg-center h-screen" style={{ backgroundImage: 'url(/hero-bg.png)' }}>
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-      <div className="relative flex flex-col items-start justify-center h-full text-white px-4 md:px-8 lg:px-16" style={{ marginLeft: '40px' }}>
+      <div className="relative flex flex-col items-start justify-center h-full text-white md:px-8 lg:px-16" style={{ marginLeft: '40px' }}>
         <h1 className="text-[42px] text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 leading-tight w-full md:w-3/4 lg:w-2/3 xl:w-1/2" style={{ opacity: 1 }}>
           What time is it? <br /> Parking Time!
         </h1>
