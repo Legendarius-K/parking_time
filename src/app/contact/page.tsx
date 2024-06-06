@@ -5,15 +5,10 @@ import PhoneIcon from "../../../public/Phone.svg"
 import PinIcon from "../../../public/Pin.svg"
 import Chevronicon from "../../../public/Chevron.svg"
 import Image from "next/image";
+import Button from "../../components/Button"
 import { useEffect, useState } from "react";
 
 const Contact = () => {
-
-    const [ischecked, toggleCheck] = useState(false);
-
-    const handleToggle = () => {
-
-    }
 
     const [openAccordion, toggleAccordion] = useState(false);
 
@@ -82,9 +77,10 @@ const Contact = () => {
                     <textarea name="" id="" placeholder="Type your message..." className="rounded-[10px] border-pt-darkblue2 border-[1px] p-3 min-h-24 font-medium "></textarea>
                 </div>
                 <div className="flex align-middle gap-3 text-sm text-pt-darkblue2">
-                <div  className=" h-[18px] w-[18px] border-pt-darkblue2 border-[1px] rounded-[3px] peer-checked:bg-pt-green">
-                <input className="left-[-1px] top-[-1px] h-[19px] w-[19px] rounded-[3px] opacity-0 cursor-pointer" type="checkbox" name="checkbox" id="" /> 
-                </div>
+                    <div className="relative flex">
+                        <input className="peer  top-0 left-0 cursor-pointer" type="checkbox" name="" id="" />
+                        <span className=" top-0 left-0 h-[18px] w-[18px] rounded-[3px] border-[1.5px] border-pt-darkblue2 peer-checked:bg-pt-green"></span>
+                    </div>
                     <span className="flex align-middle font-medium">
                         <p >I accept the</p>
                         <a className="px-1 cursor-pointer underline" href="">
@@ -103,9 +99,9 @@ export default Contact
 
 /*
 
-<input className="peer  left-[-1px] top-[-1px] h-[19px] w-[19px] rounded-[3px]  cursor-pointer" type="checkbox" name="checkbox" id="" /> 
-                    <span  className=" h-[28px] w-[28px] border-pt-darkblue2 border-[1px] rounded-[3px]peer-checked:border-3">
-                    </span>
+ <div  className=" h-[18px] w-[18px] border-pt-darkblue2 border-[1px] rounded-[3px] peer-checked:bg-pt-green">
+                <input className="left-[-1px] top-[-1px] h-[19px] w-[19px] rounded-[3px] opacity-0 cursor-pointer" type="checkbox" name="checkbox" id="" /> 
+                </div>
 
 <span className="relative z-20 h-[18px] w-[18px] border-pt-darkblue2 bg-pt-green rounded-[3px]">
                     <input className="absolute hidden z-10 top-0 left-0 h-[18px] w-[18px]" type="checkbox" name="checkbox" id="" /> 
