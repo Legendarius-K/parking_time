@@ -22,6 +22,10 @@ const Homehero: React.FC = () => {
           <a target="_blank" rel="noopener noreferrer">
           <button className="bg-custom-black text-white w-full max-w-[400px] flex justify-center px-12 py-3 rounded-full font-light transition" style={{ opacity: 1 }}>Download app</button>
           </a>
+            <button className="bg-white text-custom-black w-full md:w-auto px-8 md:px-10 py-3 md:py-4 rounded-full font-light transition">Contact us</button>
+        </Link>
+        <Link href="/download">
+            <button className="bg-custom-black text-white w-full md:w-auto px-8 md:px-10 py-3 md:py-4 rounded-full font-light transition">Download app</button>
         </Link>
       </div>
     </div>
