@@ -38,7 +38,7 @@ const Header = () => {
 
     return (
         <>
-            <header className="h-20 bg-pt-primary flex items-center justify-between px-8 lg:px-20 fixed top-0 left-0 w-full md:relative z-30">
+            <header className="md:h-20 h-16 bg-pt-primary/50 md:bg-pt-primary flex items-center justify-between px-8 lg:px-20 fixed top-0 left-0 w-full md:relative z-40 backdrop-blur">
                 <div className="w-16">
                     <Link href="/">
                         <Image src={ptLogo} alt="image" />

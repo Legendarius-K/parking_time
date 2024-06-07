@@ -46,7 +46,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
 
     return (
         <>
-            <div className={`fixed ${burgerOpen ? 'top-20' : '-top-[335px]'} transition-all ease-in-out duration-500 p-6 flex flex-col left-0 bg-pt-primary w-full z-20 md:hidden`}>
+            <div className={`fixed ${burgerOpen ? 'top-[62.9px]' : '-top-full'} font-nunito transition-all ease-in-out duration-700 p-6 flex flex-col left-0 bg-pt-primary/50 backdrop-blur w-full z-20 md:hidden`}>
 
                 <motion.div className="m-4"
 

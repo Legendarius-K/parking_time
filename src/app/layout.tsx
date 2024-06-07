@@ -31,6 +31,7 @@ export default function RootLayout({
                     {children}
                 </section>
                 <Footer />
+                {/* <div className="HEADER-BG absolute top-0 left-0 h-16 bg-pt-primary w-full z-30"></div> */}
             </body>
         </html>
     );
