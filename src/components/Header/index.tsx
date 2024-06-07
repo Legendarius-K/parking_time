@@ -52,7 +52,7 @@ const Header = () => {
                 </div>
             </header>
             <HamburgerMenu openBurger={burgerOpen} closeBurger={closeBurger} />
-            <div onClick={handleClick} className={`${burgerOpen ? 'fixed' : 'hidden'} OVERLAY top-0 left-0 w-full h-full`}></div>
+            <div onClick={handleClick} className={`${burgerOpen ? 'fixed' : 'hidden'} OVERLAY z-10 top-0 left-0 w-full h-full`}></div>
         </>
     );
 };
