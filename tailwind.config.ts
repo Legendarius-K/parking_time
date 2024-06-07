@@ -33,6 +33,7 @@ const config: Config = {
       fontFamily: {
         sans: ["Lato", "sans-serif"],
         mono: ["Roboto", "monospace"],
+        nunito: ["Nunito", "sans-serif"]
       },
       fontSize: {
         heading1: ["64px", { lineHeight: "80px" }],
