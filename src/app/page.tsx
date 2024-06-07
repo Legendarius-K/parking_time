@@ -4,6 +4,7 @@ import Hero from "@/components/Home-Hero";
 import SmartParkingSolution from "@/components/SmartParkingSolution"
 import Why from "@/components/Home/Why";
 
+
 const Home = () => {
     return (
         <main className="">
