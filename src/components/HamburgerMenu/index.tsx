@@ -46,7 +46,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
 
     return (
         <>
-            <div className={`fixed ${burgerOpen ? 'top-[62.9px]' : '-top-full'} border-t-[2px] border-grey font-nunito transition-all ease-in-out duration-700 p-6 flex flex-col left-0 bg-pt-primary/50 backdrop-blur-lg w-full z-20 md:hidden`}>
+            <div className={`fixed ${burgerOpen ? 'top-[62.9px]' : '-top-full'} border-t-[2px] border-grey font-nunito transition-all ease-in-out duration-700 p-6 pt-16 pb-10 flex flex-col left-0 bg-pt-primary/50 backdrop-blur-[10px] webkit-blur-10 w-full z-20 md:hidden`}>
 
                 <motion.div className="m-4"
 
@@ -120,7 +120,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                     <Link onClick={updateCloseBurger} href={'/'} className="text-white  font-light relative ">FAQ</Link>
                 </motion.div>
 
-                <div className="flex">
+                <div className="flex mt-4">
                     <div className="m-4 w-6 cursor-pointer">
                         <Image className="rounded-full" src={sweflag} alt="Swedish flag" />
                     </div>
