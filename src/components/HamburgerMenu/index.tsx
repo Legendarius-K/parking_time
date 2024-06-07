@@ -46,7 +46,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
 
     return (
         <>
-            <div className={`fixed ${burgerOpen ? 'top-[62.9px]' : '-top-full'} font-nunito transition-all ease-in-out duration-700 p-6 flex flex-col left-0 bg-pt-primary/50 backdrop-blur w-full z-20 md:hidden`}>
+            <div className={`fixed ${burgerOpen ? 'top-[62.9px]' : '-top-full'} border-t-[2px] border-grey font-nunito transition-all ease-in-out duration-700 p-6 flex flex-col left-0 bg-pt-primary/50 backdrop-blur-lg w-full z-20 md:hidden`}>
 
                 <motion.div className="m-4"
 
@@ -58,7 +58,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                         opacity: 1,
                         x: 0,
                         transition: {
-                            duration: 0.3
+                            duration: 0.4
                         }
                     }}
                     viewport={{ once: false }}
@@ -76,7 +76,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                         opacity: 1,
                         x: 0,
                         transition: {
-                            duration: 0.4
+                            duration: 0.5
                         }
                     }}
                     viewport={{ once: false }}
@@ -94,7 +94,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                         opacity: 1,
                         x: 0,
                         transition: {
-                            duration: 0.6
+                            duration: 0.7
                         }
                     }}
                     viewport={{ once: false }}
@@ -112,7 +112,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                         opacity: 1,
                         x: 0,
                         transition: {
-                            duration: 0.8
+                            duration: 0.9
                         }
                     }}
                     viewport={{ once: false }}

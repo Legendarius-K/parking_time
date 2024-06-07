@@ -38,7 +38,7 @@ const Header = () => {
 
     return (
         <>
-            <header className="md:h-20 h-16 bg-pt-primary/50 md:bg-pt-primary flex items-center justify-between px-8 lg:px-20 fixed top-0 left-0 w-full md:relative z-40 backdrop-blur">
+            <header className=" md:h-20 h-16 bg-pt-primary/50 md:bg-pt-primary flex items-center justify-between px-8 lg:px-20 fixed top-0 left-0 w-full md:relative z-40 backdrop-blur-lg">
                 <div className="w-16">
                     <Link href="/">
                         <Image src={ptLogo} alt="image" />
@@ -52,7 +52,7 @@ const Header = () => {
                 </div>
             </header>
             <HamburgerMenu openBurger={burgerOpen} closeBurger={closeBurger} />
-            <div onClick={handleClick} className={`${burgerOpen ? 'fixed' : 'hidden'} OVERLAY z-10 top-0 left-0 w-full h-full`}></div>
+            <div onClick={handleClick} className={`${burgerOpen ? 'opacity-100' : 'opacity-0'} fixed bg-slate-600/20 backdrop-blur-[1px] transition-all duration-400 OVERLAY z-10 top-0 left-0 w-full h-full`}></div>
         </>
     );
 };
