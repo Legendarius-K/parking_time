@@ -23,6 +23,7 @@ export default function RootLayout({
         <html lang="en" className="h-screen">
             <head>
                 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+                <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet"/>
             </head>
             <body className={`${'font-sans font-thin flex flex-col min-h-full box-border'}`}>
                 <Header />
