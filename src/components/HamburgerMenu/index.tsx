@@ -1,28 +1,25 @@
-'use client'
-
+// HamburgerMenu.tsx
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Link } from "@/navigation";
 import { useState } from "react";
-import sweflag from '../../../public/sweflag.png'
 import Button from "../Button";
 import { motion } from "framer-motion";
+import LanguageSelector from "../LanguageSelector";
 
 interface HamburgerMenuProps {
-    openBurger: boolean
-    closeBurger: () => void
+    openBurger: boolean;
+    closeBurger: () => void;
 }
 
 const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
-
-
+    const [hideContactBtn, setHideContactBtn] = useState(false);
     const path = usePathname();
+    const burgerOpen = openBurger;
 
-    const burgerOpen = openBurger
     const updateCloseBurger = () => {
-        closeBurger()
+        closeBurger();
     }
-
 
     const menuItems = [
         {
@@ -41,95 +38,25 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
             name: 'FAQ',
             link: '/' //scroll to faq component
         },
-
-    ]
+    ];
 
     return (
         <>
             <div className={`fixed ${burgerOpen ? 'top-20' : '-top-[335px]'} transition-all ease-in-out duration-500 p-6 flex flex-col left-0 bg-pt-primary w-full z-20 md:hidden`}>
-
-                <motion.div className="m-4"
-
-                    initial={{
-                        opacity: 0,
-                        x: 100
-                    }}
-                    whileInView={{
-                        opacity: 1,
-                        x: 0,
-                        transition: {
-                            duration: 0.3
-                        }
-                    }}
-                    viewport={{ once: false }}
-                >
-                    <Link onClick={updateCloseBurger} href={'/'} className="text-white  font-light relative ">Varför Parking Time?</Link>
-                </motion.div>
-
-                <motion.div className="m-4"
-
-                    initial={{
-                        opacity: 0,
-                        x: 100
-                    }}
-                    whileInView={{
-                        opacity: 1,
-                        x: 0,
-                        transition: {
-                            duration: 0.4
-                        }
-                    }}
-                    viewport={{ once: false }}
-                >
-                    <Link onClick={updateCloseBurger} href={'/about'} className="text-white  font-light relative ">Om oss</Link>
-                </motion.div>
-
-                <motion.div className="m-4"
-
-                    initial={{
-                        opacity: 0,
-                        x: 100
-                    }}
-                    whileInView={{
-                        opacity: 1,
-                        x: 0,
-                        transition: {
-                            duration: 0.6
-                        }
-                    }}
-                    viewport={{ once: false }}
-                >
-                    <Link onClick={updateCloseBurger} href={'/news'} className="text-white  font-light relative ">Nyheter</Link>
-                </motion.div>
-
-                <motion.div className="m-4"
-
-                    initial={{
-                        opacity: 0,
-                        x: 100
-                    }}
-                    whileInView={{
-                        opacity: 1,
-                        x: 0,
-                        transition: {
-                            duration: 0.8
-                        }
-                    }}
-                    viewport={{ once: false }}
-                >
-                    <Link onClick={updateCloseBurger} href={'/'} className="text-white  font-light relative ">FAQ</Link>
-                </motion.div>
-
-                <div className="flex">
-                    <div className="m-4 w-6 cursor-pointer">
-                        <Image className="rounded-full" src={sweflag} alt="Swedish flag" />
-                    </div>
-                    <p className="my-4 text-white">Change Language</p>
-                </div>
-                <Button closeBurger={closeBurger} route="/contact" btnText="Contact us" colors="bg-white text-black" />
+                {menuItems.map((item, index) => (
+                    <motion.div key={index} className="m-4"
+                        initial={{ opacity: 0, x: 100 }}
+                        whileInView={{ opacity: 1, x: 0, transition: { duration: 0.3 + index * 0.1 } }}
+                        viewport={{ once: false }}
+                    >
+                        <Link onClick={updateCloseBurger} href={item.link} className="text-white font-light relative">{item.name}</Link>
+                    </motion.div>
+                ))}
+                <LanguageSelector closeSelector={burgerOpen} hamburgerMargin="mt-10" hideClass="flex ml-4 mt-6 mb-4" hideContact={setHideContactBtn} />
+                {!hideContactBtn && <Button closeBurger={closeBurger} route="/contact" btnText="Contact us" colors="bg-white text-black" />}
             </div>
         </>
-    )
+    );
 };
 
-export default HamburgerMenu
+export default HamburgerMenu;

@@ -3,10 +3,10 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import ptLogo from '../../../public/Logotype-1.svg';
-import sweflag from '../../../public/sweflag.png';
 import Navigation from "../Navigation";
 import HamburgerMenu from "../HamburgerMenu";
 import { Link } from "@/navigation";
+import LanguageSelector from "../LanguageSelector";
 
 const Header = () => {
     const [burgerOpen, setBurgerOpen] = useState(false);
@@ -46,9 +46,7 @@ const Header = () => {
                 </div>
                 <div className="flex items-center">
                     <Navigation openBurger={handleClick} updateIsOpen={burgerOpen} />
-                    <div className="w-6 cursor-pointer hidden md:block">
-                        <Image className="rounded-full" src={sweflag} alt="Swedish flag" />
-                    </div>
+                    <LanguageSelector closeSelector={burgerOpen} hideClass="hidden md:block"/>
                 </div>
             </header>
             <HamburgerMenu openBurger={burgerOpen} closeBurger={closeBurger} />
