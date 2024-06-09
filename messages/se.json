@@ -59,6 +59,17 @@
         "message": "Skriv ett meddelande",
         "terms1": "Jag accepterar",
         "terms2": "villkoren"
+    },
+    "why": {
+        "headline": "Varför Parking Time?",
+        "heading1": "Undvik böter och minska stress",
+        "text1": "Vår digitala lösning lockar fler besökare genom att eliminera fysiska skivor och minska böter. Detta förenklar parkering, ökar fottrafiken, ekonomisk aktivitet och stadens livlighet samtidigt som stressen minskar.",
+        "heading2": "Förenklad parkering för användarna",
+        "text2": "Vår app låter dig enkelt ställa in, justera och övervaka parkeringstid. Med ett användarvänligt gränssnitt kan du snabbt hitta platser och hantera parkering. Vi uppdaterar kontinuerligt baserat på kundfeedback för att säkerställa en effektiv och problemfri upplevelse.",
+        "heading3": "Integration med befintliga system",
+        "text3": "Vårt system för parkeringsvakter integreras sömlöst med din befintliga uppsättning. Ett enhetligt system gynnar dig genom att strömlinjeforma driften och förbättra upplevelsen för personalen genom att eliminera behovet av två olika system och enheter. Vi gör denna integration effektiv, intuitiv och enkel!",
+        "heading4": "Datadriven stadsplanering",
+        "text4": "Den digitala parkeringsskivan kan så småningom optimera parkeringsresurser och stadsplanering genom värdefull användningsdata och beteendemönster, vilket leder till ett säkrare samhälle med bättre kontroll och tillgång till parkeringsplatser.",
+        "about": "Mer om oss"
     }
-    
 }
