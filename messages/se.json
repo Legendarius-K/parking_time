@@ -3,6 +3,40 @@
         "home": "Varför Parking Time?",
         "about": "Om oss",
         "news": "Nyheter",
-        "faq": "FAQ"
+        "faq": "FAQ",
+        "contact": "Kontakta oss",
+        "app": "Hämta appen"
+    },
+    "button": {
+        "contact": "Kontakta oss",
+        "app": "Hämta appen"
+    },
+    "footer": {
+        "address": "Adress",
+        "contact": "Kontakt",
+        "links": "Länkar",
+        "about": "Om oss",
+        "news": "Nyheter",
+        "policy": "Integritetspolicy"
+    },
+    "home-hero": {
+        "text1": "Digital parkeringsskiva - direkt i din mobil.",
+        "text2": "Ett vinnande koncept i ett nytt, digitaliserat format.",
+        "contact":"Kontakta oss",
+        "app":"Hämta appen",
+        "bullet1": "Enkel att använda",
+        "bullet2": "Gratis nedladding",
+        "bullet3": "Undvik böter",
+        "bullet4": "Reducera stress"
+    },
+    "how" : {
+
+    },
+    "smart-parking": {
+
+    },
+    "contact": {
+
     }
+    
 }

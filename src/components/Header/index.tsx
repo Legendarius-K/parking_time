@@ -46,7 +46,7 @@ const Header = () => {
                 </div>
                 <div className="flex items-center">
                     <Navigation openBurger={handleClick} updateIsOpen={burgerOpen} />
-                    <LanguageSelector closeSelector={burgerOpen} hideClass="hidden md:block"/>
+                    <LanguageSelector closeSelector={burgerOpen} hideClass="hidden md:block" hamburgerMargin="mt-2"/>
                 </div>
             </header>
             <HamburgerMenu openBurger={burgerOpen} closeBurger={closeBurger} />

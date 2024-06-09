@@ -6,6 +6,7 @@ import { useState } from "react";
 import Button from "../Button";
 import { motion } from "framer-motion";
 import LanguageSelector from "../LanguageSelector";
+import { useTranslations } from "next-intl";
 
 interface HamburgerMenuProps {
     openBurger: boolean;
@@ -15,6 +16,7 @@ interface HamburgerMenuProps {
 const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
     const [hideContactBtn, setHideContactBtn] = useState(false);
     const path = usePathname();
+    const t = useTranslations('navigation')
     const burgerOpen = openBurger;
 
     const updateCloseBurger = () => {
@@ -23,20 +25,20 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
 
     const menuItems = [
         {
-            name: 'Why Parking Time?',
-            link: '/' //scroll to why component
+            name: t('home'),
+            link: '/' //Should lead to home and scroll to why-component
         },
         {
-            name: 'About us',
+            name: t('about'),
             link: '/about'
         },
         {
-            name: 'News',
+            name: t('news'),
             link: '/news'
         },
         {
-            name: 'FAQ',
-            link: '/' //scroll to faq component
+            name: t('faq'),
+            link: '/' //Should lead to home and scroll to faq-component
         },
     ];
 
@@ -52,8 +54,10 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                         <Link onClick={updateCloseBurger} href={item.link} className="text-white font-light relative">{item.name}</Link>
                     </motion.div>
                 ))}
-                <LanguageSelector closeSelector={burgerOpen} hamburgerMargin="mt-10" hideClass="flex ml-4 mt-6 mb-4" hideContact={setHideContactBtn} />
-                {!hideContactBtn && <Button closeBurger={closeBurger} route="/contact" btnText="Contact us" colors="bg-white text-black" />}
+                <LanguageSelector closeSelector={burgerOpen} hamburgerMargin="mt-12" hideClass="flex ml-4 mt-6 mb-4" hideContact={setHideContactBtn} />
+                <div className={`transition-all ${hideContactBtn ? 'h-56' : 'h-20'}`}>
+                    {!hideContactBtn && <Button closeBurger={closeBurger} route="/contact" btnText={t('contact')} colors="bg-white text-black" />}
+                </div>
             </div>
         </>
     );
