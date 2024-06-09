@@ -14,12 +14,12 @@ const Homehero: React.FC = () => {
         <h1 className="text-[42px] text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight w-full md:w-3/4 lg:w-2/3 xl:w-1/2" style={{ opacity: 1 }}>
           What time is it? <br /> Parking Time!
         </h1>
-        <p className="text-[16px] leading-[30px] text-sm md:text-base lg:text-lg xl:text-xl w-full md:w-3/4 lg:w-2/3 xl:w-1/2" style={{ opacity: 1 }}>
+        <div className="text-[16px] leading-[30px] text-sm md:text-base lg:text-lg xl:text-xl w-full md:w-3/4 lg:w-2/3 xl:w-1/2" style={{ opacity: 1 }}>
           <p>{t('text1')}</p>
           <p>{t('text2')}</p>
           {/* Digital parking disc - directly on your mobile. <br />
           A winning concept in a new, digitalized format. */}
-        </p>
+        </div>
         <div className="flex flex-col md:flex-row w-full gap-4 px-3 md:px-0">
           <Link className='max-w-[300px]' href="/contact">
             <button className="bg-white text-custom-black  w-full max-w-[400px] flex justify-center px-12 py-3 rounded-full font-light transition" style={{ opacity: 1 }}>{t('contact')}</button>
