@@ -10,6 +10,7 @@ import fiflag from '../../../public/flags/fiflag.png';
 import gerflag from '../../../public/flags/gerflag.png';
 import engflag from '../../../public/flags/engflag.png';
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { useLocale } from "next-intl";
 
 interface LanguageSelectorProps {
     hideClass: string;
@@ -23,7 +24,10 @@ export default function LanguageSelector({ hideClass, hamburgerMargin, closeSele
     const [scope, animate] = useAnimate();
     const router = useRouter();
     const pathname = usePathname();
+    const locale = useLocale();
     const searchParams = useSearchParams();
+
+    console.log(locale);
 
     useEffect(() => {
         setOpen(closeSelector && false);
@@ -82,11 +86,18 @@ export default function LanguageSelector({ hideClass, hamburgerMargin, closeSele
         setOpen(false);
     };
 
+
+
     return (
         <div className={`App z-50 ${hideClass}`} ref={scope}>
             <motion.button onClick={() => setOpen(!open)} whileTap={{ scale: 0.95 }} className="flex justify-center items-center">
                 <div className={`w-7 cursor-pointer flex`}>
-                    <Image className="rounded-full w-8" src={sweflag} alt="Swedish flag" />
+                    {locale === 'se' && <Image className="rounded-full w-8" src={sweflag} alt="Swedish flag" />}
+                    {locale === 'en' && <Image className="rounded-full w-8" src={engflag} alt="English flag" />}
+                    {locale === 'no' && <Image className="rounded-full w-8" src={norflag} alt="Norwegian flag" />}
+                    {locale === 'de' && <Image className="rounded-full w-8" src={gerflag} alt="German flag" />}
+                    {locale === 'da' && <Image className="rounded-full w-8" src={denflag} alt="Danish flag" />}
+                    {locale === 'fi' && <Image className="rounded-full w-8" src={fiflag} alt="Finnish flag" />}
                 </div>
             </motion.button>
             <section className={`flex flex-col justify-evenly absolute max-w-24 rounded-lg p-2 shadow-2xl min-h-fit bg-pt-background ${hamburgerMargin}`}>
