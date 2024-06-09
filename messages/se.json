@@ -30,13 +30,35 @@
         "bullet4": "Reducera stress"
     },
     "how" : {
-
+        "headline": "Hur det fungerar",
+        "heading1": "Fyll i registrerings-nummer",
+        "text1": "Öppna appen, registrera dig med ditt registreringsnummer.",
+        "heading2": "Hitta din parkeringszon",
+        "text2": "Använd kartan, sökfunktionen eller zonlistan för att hitta din parkeringsplats",
+        "heading3": "Starta din digitala p-skiva",
+        "text3": "När du har hittat din parkeringszon kan du se över parkeringens regler, starta parkering och stänga appen.",
+        "app": "Hämta appen"
     },
     "smart-parking": {
-
+        "headline": "Smart parkeringslösning",
+        "text1": "Parkeringsskivan har länge varit ett verktyg för att främja cirkulation och aktivitet i stadskärnor. Det är en fantastisk uppfinning som gynnar både invånare, besökare och lokala företag. Vi vill vara en del av denna utveckling genom att skapa en gratis digital parkeringsskiva.",
+        "bullet1": "Vi strävar efter att stödja tillväxten och effektiviteten i urbana områden.",
+        "bullet2": "Vår digitala parkeringsskiva förenklar parkeringsprocessen.",
+        "bullet3": "Vilket parkeringsvaktsystem som helst kan enkelt integreras med vårt system.",
+        "text2": "Vi ser fram emot att berätta mer om vår lösning vid ett möte.",
+        "contact":"Kontakta oss"
     },
     "contact": {
-
+        "contact":"Kontakta oss",
+        "text1": "Oavsett om du har en fråga, feedback eller behöver hjälp, vänligen fyll i formuläret nedan så återkommer vårt team till dig så snart som möjligt.",
+        "name": "För- och efternamn",
+        "title": "Arbetstitel",
+        "phone": "Telefonnummer",
+        "reason": "Ämne",
+        "choose": "Välj",
+        "message": "Skriv ett meddelande",
+        "terms1": "Jag accepterar",
+        "terms2": "villkoren"
     }
     
 }
