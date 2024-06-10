@@ -5,7 +5,8 @@
         "news": "News",
         "faq": "FAQ",
         "contact": "Contact Us",
-        "app": "Download App"
+        "app": "Download App",
+        "language": "Choose language"
     },
     "button": {
         "contact": "Contact Us",

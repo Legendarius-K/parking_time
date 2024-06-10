@@ -5,7 +5,8 @@
         "news": "Nyheter",
         "faq": "FAQ",
         "contact": "Kontakta oss",
-        "app": "Hämta appen"
+        "app": "Hämta appen",
+        "language": "Välj språk"
     },
     "button": {
         "contact": "Kontakta oss",

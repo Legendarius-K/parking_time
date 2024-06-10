@@ -53,7 +53,10 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                         <Link onClick={updateCloseBurger} href={item.link} className="text-white font-light relative">{item.name}</Link>
                     </motion.div>
                 ))}
+                <div className="flex">
                 <LanguageSelector closeSelector={burgerOpen} hamburgerMargin="mt-12" addClass="flex ml-4 mt-6 mb-4" hideContact={setHideContactBtn} />
+                <p className="mt-[28px] ml-3 font-nunito font-thin text-white text-sm">{t('language')}</p>
+                </div>
                 <div className={`transition-all ${hideContactBtn ? 'h-56' : 'h-20'}`}>
                     {!hideContactBtn && <Button closeBurger={closeBurger} route="/contact" btnText={t('contact')} colors="bg-white text-black" />}
                 </div>

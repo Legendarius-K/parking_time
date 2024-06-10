@@ -5,7 +5,8 @@
         "news": "Uutiset",
         "faq": "FAQ",
         "contact": "Ota yhteyttä",
-        "app": "Lataa sovellus"
+        "app": "Lataa sovellus",
+        "language": "Valitse kieli"
     },
     "button": {
         "contact": "Ota yhteyttä",

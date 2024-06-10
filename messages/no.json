@@ -5,7 +5,8 @@
         "news": "Nyheter",
         "faq": "FAQ",
         "contact": "Kontakt oss",
-        "app": "Last ned appen"
+        "app": "Last ned appen",
+        "language": "Velg språk"
     },
     "button": {
         "contact": "Kontakt oss",
