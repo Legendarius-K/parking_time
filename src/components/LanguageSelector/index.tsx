@@ -13,13 +13,13 @@ import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { useLocale } from "next-intl";
 
 interface LanguageSelectorProps {
-    hideClass: string;
+    addClass: string;
     hamburgerMargin?: string;
     closeSelector: boolean;
     hideContact?: (hide: boolean) => void;
 }
 
-export default function LanguageSelector({ hideClass, hamburgerMargin, closeSelector, hideContact }: LanguageSelectorProps) {
+export default function LanguageSelector({ addClass, hamburgerMargin, closeSelector, hideContact }: LanguageSelectorProps) {
     const [open, setOpen] = useState(false);
     const [scope, animate] = useAnimate();
     const router = useRouter();
@@ -43,7 +43,7 @@ export default function LanguageSelector({ hideClass, hamburgerMargin, closeSele
         animate(
             "section",
             {
-                width: open ? 150 : 0,
+                width: open ? 100 : 0,
                 height: open ? 232 : 0,
                 opacity: open ? 1 : 0
             },
@@ -69,13 +69,10 @@ export default function LanguageSelector({ hideClass, hamburgerMargin, closeSele
         const currentPath = pathname || "/";
         const currentSearchParams = searchParams.toString();
 
-        // Extract the current locale from the URL
         const pathSegments = currentPath.split('/');
         if (pathSegments.length > 1 && pathSegments[1].length === 2) {
-            // Remove the current locale segment
             pathSegments[1] = value;
         } else {
-            // Add the new locale segment
             pathSegments.splice(1, 0, value);
         }
 
@@ -89,9 +86,9 @@ export default function LanguageSelector({ hideClass, hamburgerMargin, closeSele
 
 
     return (
-        <div className={`App z-50 ${hideClass}`} ref={scope}>
+        <div className={`App z-50 ${addClass}`} ref={scope}>
             <motion.button onClick={() => setOpen(!open)} whileTap={{ scale: 0.95 }} className="flex justify-center items-center">
-                <div className={`w-7 cursor-pointer flex`}>
+                <div className={`w-7 cursor-pointer flex hover:border-neutral-300 hover:border-[2px] rounded-full`}>
                     {locale === 'se' && <Image className="rounded-full w-8" src={sweflag} alt="Swedish flag" />}
                     {locale === 'en' && <Image className="rounded-full w-8" src={engflag} alt="English flag" />}
                     {locale === 'no' && <Image className="rounded-full w-8" src={norflag} alt="Norwegian flag" />}
@@ -100,30 +97,33 @@ export default function LanguageSelector({ hideClass, hamburgerMargin, closeSele
                     {locale === 'fi' && <Image className="rounded-full w-8" src={fiflag} alt="Finnish flag" />}
                 </div>
             </motion.button>
-            <section className={`flex flex-col justify-evenly absolute max-w-24 rounded-lg p-2 shadow-2xl min-h-fit bg-pt-background ${hamburgerMargin}`}>
+            <section
+                className={`flex flex-col justify-evenly absolute min-w-[90%] md:min-w-[30px] rounded-lg p-2 shadow-2xl min-h-fit bg-pt-background overflow-hidden ${hamburgerMargin}`}
+                style={{ width: 0, height: 0, opacity: 0 }}
+            >
                 <li onClick={() => handleItemClick('se')} className="w-7 m-1 cursor-pointer flex items-center">
-                    <Image className="rounded-full mr-3" src={sweflag} alt="Swedish flag" />
-                    <p>Sv</p>
+                    <Image className="rounded-full hover:border-neutral-600 hover:border-[2px]" src={sweflag} alt="Swedish flag" />
+                    <p className="pl-3">SV</p>
                 </li>
                 <li onClick={() => handleItemClick('en')} className="w-7 m-1 cursor-pointer flex items-center">
-                    <Image className="rounded-full mr-3" src={engflag} alt="English flag" />
-                    <p>En</p>
+                    <Image className="rounded-full hover:border-neutral-600 hover:border-[2px]" src={engflag} alt="English flag" />
+                    <p className="pl-3">EN</p>
                 </li>
                 <li onClick={() => handleItemClick('no')} className="w-7 m-1 cursor-pointer flex items-center">
-                    <Image className="rounded-full mr-3" src={norflag} alt="Norwegian flag" />
-                    <p>No</p>
+                    <Image className="rounded-full hover:border-neutral-600 hover:border-[2px]" src={norflag} alt="Norwegian flag" />
+                    <p className="pl-3">NO</p>
                 </li>
                 <li onClick={() => handleItemClick('da')} className="w-7 m-1 cursor-pointer flex items-center">
-                    <Image className="rounded-full mr-3" src={denflag} alt="Danish flag" />
-                    <p>Da</p>
+                    <Image className="rounded-full hover:border-neutral-600 hover:border-[2px]" src={denflag} alt="Danish flag" />
+                    <p className="pl-3">DA</p>
                 </li>
                 <li onClick={() => handleItemClick('fi')} className="w-7 m-1 cursor-pointer flex items-center">
-                    <Image className="rounded-full mr-3" src={fiflag} alt="Finnish flag" />
-                    <p>Fi</p>
+                    <Image className="rounded-full hover:border-neutral-600 hover:border-[2px]" src={fiflag} alt="Finnish flag" />
+                    <p className="pl-3">FI</p>
                 </li>
                 <li onClick={() => handleItemClick('de')} className="w-7 m-1 cursor-pointer flex items-center">
-                    <Image className="rounded-full mr-3" src={gerflag} alt="German flag" />
-                    <p>De</p>
+                    <Image className="rounded-full hover:border-neutral-600 hover:border-[2px]" src={gerflag} alt="German flag" />
+                    <p className="pl-3">DE</p>
                 </li>
             </section>
         </div>

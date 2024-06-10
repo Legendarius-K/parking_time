@@ -1,4 +1,3 @@
-// HamburgerMenu.tsx
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Link } from "@/navigation";
@@ -44,7 +43,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
 
     return (
         <>
-            <div className={`fixed ${burgerOpen ? 'top-20' : '-top-[335px]'} transition-all ease-in-out duration-500 p-6 flex flex-col left-0 bg-pt-primary w-full z-20 md:hidden`}>
+            <div className={`fixed ${burgerOpen ? 'top-20' : '-top-[345px]'} transition-all ease-in-out duration-500 p-6 flex flex-col left-0 bg-pt-primary w-full z-20 md:hidden`}>
                 {menuItems.map((item, index) => (
                     <motion.div key={index} className="m-4"
                         initial={{ opacity: 0, x: 100 }}
@@ -54,7 +53,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                         <Link onClick={updateCloseBurger} href={item.link} className="text-white font-light relative">{item.name}</Link>
                     </motion.div>
                 ))}
-                <LanguageSelector closeSelector={burgerOpen} hamburgerMargin="mt-12" hideClass="flex ml-4 mt-6 mb-4" hideContact={setHideContactBtn} />
+                <LanguageSelector closeSelector={burgerOpen} hamburgerMargin="mt-12" addClass="flex ml-4 mt-6 mb-4" hideContact={setHideContactBtn} />
                 <div className={`transition-all ${hideContactBtn ? 'h-56' : 'h-20'}`}>
                     {!hideContactBtn && <Button closeBurger={closeBurger} route="/contact" btnText={t('contact')} colors="bg-white text-black" />}
                 </div>
