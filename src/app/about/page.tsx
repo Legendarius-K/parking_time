@@ -1,15 +1,11 @@
 import React from 'react';
-import Hero from '@/components/Hero';
+import AboutHero from '@/components/AboutHero';
 
 const About = () => {
     return (
         <div>
-            <Hero
-               title="Parking Time Sweden" 
-               subtitle="About us"
-               imageSrc="./Images/pink.jpeg"
-               paragraf="We are a tech startup dedicated to transforming the parking experience for all stakeholders - parkers, parking attendants, municipalities, and property owners."
-            />
+            <AboutHero />
+            {/* Add additional About Us content here */}
         </div>
     );
 }
