@@ -52,7 +52,7 @@ const Header = () => {
                 </div>
             </header>
             <HamburgerMenu openBurger={burgerOpen} closeBurger={closeBurger} />
-            <div onClick={handleClick} className={`${burgerOpen ? 'opacity-100' : 'opacity-0'} fixed bg-gray-900/50 backdrop-blur-[3px] webkit-blur-3 transition-all duration-400 OVERLAY z-10 top-0 left-0 w-full h-full`}></div>
+            <div onClick={handleClick} className={`${burgerOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'} fixed bg-gray-900/50 backdrop-blur-[3px] webkit-blur-3 transition-all duration-400 OVERLAY z-10 top-0 left-0 w-full h-full`}></div>
         </>
     );
 };
