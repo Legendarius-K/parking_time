@@ -24,7 +24,7 @@ const Header = () => {
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
-            if (burgerOpen && Math.abs(currentScrollY - initialScrollY) > 300) {
+            if (burgerOpen && Math.abs(currentScrollY - initialScrollY) > 100) {
                 setBurgerOpen(false);
             }
         };
