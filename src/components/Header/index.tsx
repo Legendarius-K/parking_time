@@ -14,7 +14,7 @@ const Header = () => {
 
     const handleClick = () => {
         setBurgerOpen(!burgerOpen);
-        setInitialScrollY(window.scrollY); // Reset initial scroll position when the menu is toggled
+        setInitialScrollY(window.scrollY); 
     };
 
     const closeBurger = () => {

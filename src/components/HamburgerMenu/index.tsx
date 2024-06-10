@@ -66,6 +66,8 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                     <Link onClick={updateCloseBurger} href={'/'} className="text-white  font-light relative ">Varför Parking Time?</Link>
                 </motion.div>
 
+                <div className="h-[0.1px] w-3/5 bg-white"></div>
+
                 <motion.div className="m-4"
 
                     initial={{
@@ -83,6 +85,8 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                 >
                     <Link onClick={updateCloseBurger} href={'/about'} className="text-white  font-light relative ">Om oss</Link>
                 </motion.div>
+
+                <div className="h-[0.1px] w-3/5 bg-white"></div>
 
                 <motion.div className="m-4"
 
@@ -102,6 +106,8 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                     <Link onClick={updateCloseBurger} href={'/news'} className="text-white  font-light relative ">Nyheter</Link>
                 </motion.div>
 
+                <div className="h-[0.1px] w-3/5 bg-white"></div>
+
                 <motion.div className="m-4"
 
                     initial={{
@@ -119,6 +125,8 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                 >
                     <Link onClick={updateCloseBurger} href={'/'} className="text-white  font-light relative ">FAQ</Link>
                 </motion.div>
+
+                <div className="h-[0.1px] w-3/5 bg-white"></div>
 
                 <div className="flex mt-4">
                     <div className="m-4 w-6 cursor-pointer">
