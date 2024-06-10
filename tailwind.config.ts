@@ -65,7 +65,7 @@ const config: Config = {
           '-webkit-backdrop-filter': 'blur(3px)',
         },
         '.webkit-blur-10': {
-          '-webkit-backdrop-filter': 'blur(10px)',
+          '-webkit-backdrop-filter': 'blur(18px)',
         },
       });
     },

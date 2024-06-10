@@ -45,7 +45,8 @@ export default function LanguageSelector({ addClass, hamburgerMargin, closeSelec
             {
                 width: open ? 100 : 0,
                 height: open ? 232 : 0,
-                opacity: open ? 1 : 0
+                opacity: open ? 1 : 0,
+                display: open ? 'flex' : 'none'
             },
             {
                 type: "spring",
@@ -98,8 +99,8 @@ export default function LanguageSelector({ addClass, hamburgerMargin, closeSelec
                 </div>
             </motion.button>
             <section
-                className={`flex flex-col justify-evenly absolute min-w-[82%] sm:min-w-[90%]  md:min-w-[30px] rounded-lg p-2 shadow-2xl min-h-fit bg-pt-background overflow-hidden ${hamburgerMargin}`}
-                style={{ width: 0, height: 0, opacity: 0 }}
+                className={`hidden h-0 flex-col justify-evenly absolute min-w-[82%] sm:min-w-[90%]  md:min-w-[30px] rounded-lg p-2 shadow-2xl min-h-fit bg-pt-background overflow-hidden ${hamburgerMargin}`}
+                // style={{ width: 0, height: 0, opacity: 0 }}
             >
                 <li onClick={() => handleItemClick('se')} className="w-7 m-1 cursor-pointer flex items-center">
                     <Image className="rounded-full hover:border-neutral-600 hover:border-[2px]" src={sweflag} alt="Swedish flag" />
