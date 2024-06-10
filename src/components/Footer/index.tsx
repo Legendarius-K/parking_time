@@ -5,42 +5,15 @@ import ptLogo from '../../../public/pt-logo-v2.svg'
 import instagramIcon from '../../../public/Instagram.svg'
 import linkedInIcon from '../../../public/LinkedIn.svg'
 import { useState } from "react";
+import { useTranslations } from "next-intl";
+import { copyToClipboard } from '/src/utils/copyToClipboard.ts';
 
 const Footer = () => {
     const [copied, setCopied] = useState(false);
+    const t = useTranslations('footer');
 
     const handleCopy = () => {
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText("info@parkingtime.se")
-                .then(() => {
-                    setCopied(true);
-                    setTimeout(() => setCopied(false), 2000); 
-                })
-                .catch(err => {
-                    console.error('Failed to copy: ', err);
-                    fallbackCopyTextToClipboard("info@parkingtime.se");
-                });
-        } else {
-            fallbackCopyTextToClipboard("info@parkingtime.se");
-        }
-    };
-
-    const fallbackCopyTextToClipboard = (text) => {
-        const textArea = document.createElement("textarea");
-        textArea.value = text;
-        textArea.style.position = "fixed";
-        textArea.style.top = "-9999px";
-        document.body.appendChild(textArea);
-        textArea.focus();
-        textArea.select();
-        try {
-            document.execCommand('copy');
-            setCopied(true);
-            setTimeout(() => setCopied(false), 2000); 
-        } catch (err) {
-            console.error('Fallback: Oops, unable to copy', err);
-        }
-        document.body.removeChild(textArea);
+        copyToClipboard("info@parkingtime.se", setCopied);
     };
 
     return (
@@ -51,13 +24,13 @@ const Footer = () => {
                         <Image src={ptLogo} alt="image" className="min-w-20" />
                     </a>
                     <div className="flex flex-col text-base">
-                        <p className="font-semibold md:font-bold text-lg font-sans pb-1 md:pb-0">Address:</p>
+                        <p className="font-semibold md:font-bold text-lg font-sans pb-1 md:pb-0">{t('address')}:</p>
                         <p className="font-normal">Nyköpingsvägen 52 | 611 50</p>
                         <p className="font-normal">NYKÖPING</p>
-                        </div>
+                    </div>
                     <div className="flex flex-col gap-8 md:gap-1">
                         <div className="text-base">
-                            <p className="font-semibold md:font-bold text-lg font-sans pb-1 md:pb-0">Contact:</p>
+                            <p className="font-semibold md:font-bold text-lg font-sans pb-1 md:pb-0">{t('contact')}:</p>
                             <p className="font-normal underline cursor-pointer ">
                                 <a href="tel:+46 72 722 44 00">+46 72 722 44 00</a>
                             </p>
@@ -77,16 +50,16 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="flex flex-col md:gap-0 gap-3">
-                    <div className="font-semibold md:font-bold text-lg">Links</div>
+                    <div className="font-semibold md:font-bold text-lg">{t('links')}</div>
                     <div className="flex flex-col md:flex-row gap-6 text-sm md:text-base font-semibold md:font-medium underline">
                         <a href="/contact">
-                            <p>Contact</p>
+                            <p>{t('contact')}</p>
                         </a>
                         <a href="/about">
-                            <p>About us</p>
+                            <p>{t('about')}</p>
                         </a>
                         <a href="/news">
-                            <p>News</p>
+                            <p>{t('news')}</p>
                         </a>
                     </div>
                 </div>
@@ -94,11 +67,11 @@ const Footer = () => {
             <div className="border-solid border-0 border-t">
                 <div className="flex flex-col-reverse md:flex-row gap-6 justify-between pt-6">
                     <div className="text-sm font-normal">© 2024 Parking Time AB</div>
-                    <a href="/privacy-policy" className="underline font-normal md:font-medium text-sm md:text-base">Privacy Policy</a>
+                    <a href="/privacy" className="underline font-normal md:font-medium text-sm md:text-base">{t('policy')}</a>
                 </div>
             </div>
         </footer>
-    )
+    );
 };
 
-export default Footer
+export default Footer;

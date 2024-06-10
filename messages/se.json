@@ -1,0 +1,76 @@
+{
+    "navigation": {
+        "home": "Varför Parking Time?",
+        "about": "Om oss",
+        "news": "Nyheter",
+        "faq": "FAQ",
+        "contact": "Kontakta oss",
+        "app": "Hämta appen",
+        "language": "Välj språk"
+    },
+    "button": {
+        "contact": "Kontakta oss",
+        "app": "Hämta appen"
+    },
+    "footer": {
+        "address": "Adress",
+        "contact": "Kontakt",
+        "links": "Länkar",
+        "about": "Om oss",
+        "news": "Nyheter",
+        "policy": "Integritetspolicy"
+    },
+    "home-hero": {
+        "text1": "Digital parkeringsskiva - direkt i din mobil.",
+        "text2": "Ett vinnande koncept i ett nytt, digitaliserat format.",
+        "contact":"Kontakta oss",
+        "app":"Hämta appen",
+        "bullet1": "Enkel att använda",
+        "bullet2": "Gratis nedladding",
+        "bullet3": "Undvik böter",
+        "bullet4": "Reducera stress"
+    },
+    "how" : {
+        "headline": "Hur det fungerar",
+        "heading1": "Fyll i registrerings-nummer",
+        "text1": "Öppna appen, registrera dig med ditt registreringsnummer.",
+        "heading2": "Hitta din parkeringszon",
+        "text2": "Använd kartan, sökfunktionen eller zonlistan för att hitta din parkeringsplats",
+        "heading3": "Starta din digitala p-skiva",
+        "text3": "När du har hittat din parkeringszon kan du se över parkeringens regler, starta parkering och stänga appen.",
+        "app": "Hämta appen"
+    },
+    "smart-parking": {
+        "headline": "Smart parkeringslösning",
+        "text1": "Parkeringsskivan har länge varit ett verktyg för att främja cirkulation och aktivitet i stadskärnor. Det är en fantastisk uppfinning som gynnar både invånare, besökare och lokala företag. Vi vill vara en del av denna utveckling genom att skapa en gratis digital parkeringsskiva.",
+        "bullet1": "Vi strävar efter att stödja tillväxten och effektiviteten i urbana områden.",
+        "bullet2": "Vår digitala parkeringsskiva förenklar parkeringsprocessen.",
+        "bullet3": "Vilket parkeringsvaktsystem som helst kan enkelt integreras med vårt system.",
+        "text2": "Vi ser fram emot att berätta mer om vår lösning vid ett möte.",
+        "contact":"Kontakta oss"
+    },
+    "contact": {
+        "contact":"Kontakta oss",
+        "text1": "Oavsett om du har en fråga, feedback eller behöver hjälp, vänligen fyll i formuläret nedan så återkommer vårt team till dig så snart som möjligt.",
+        "name": "För- och efternamn",
+        "title": "Arbetstitel",
+        "phone": "Telefonnummer",
+        "reason": "Ämne",
+        "choose": "Välj",
+        "message": "Skriv ett meddelande",
+        "terms1": "Jag accepterar",
+        "terms2": "villkoren"
+    },
+    "why": {
+        "headline": "Varför Parking Time?",
+        "heading1": "Undvik böter och minska stress",
+        "text1": "Vår digitala lösning lockar fler besökare genom att eliminera fysiska skivor och minska böter. Detta förenklar parkering, ökar fottrafiken, ekonomisk aktivitet och stadens livlighet samtidigt som stressen minskar.",
+        "heading2": "Förenklad parkering för användarna",
+        "text2": "Vår app låter dig enkelt ställa in, justera och övervaka parkeringstid. Med ett användarvänligt gränssnitt kan du snabbt hitta platser och hantera parkering. Vi uppdaterar kontinuerligt baserat på kundfeedback för att säkerställa en effektiv och problemfri upplevelse.",
+        "heading3": "Integration med befintliga system",
+        "text3": "Vårt system för parkeringsvakter integreras sömlöst med din befintliga uppsättning. Ett enhetligt system gynnar dig genom att strömlinjeforma driften och förbättra upplevelsen för personalen genom att eliminera behovet av två olika system och enheter. Vi gör denna integration effektiv, intuitiv och enkel!",
+        "heading4": "Datadriven stadsplanering",
+        "text4": "Den digitala parkeringsskivan kan så småningom optimera parkeringsresurser och stadsplanering genom värdefull användningsdata och beteendemönster, vilket leder till ett säkrare samhälle med bättre kontroll och tillgång till parkeringsplatser.",
+        "about": "Mer om oss"
+    }
+}
