@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useAnimate, stagger, motion } from "framer-motion";
 import Image from "next/image";
 import sweflag from '../../../public/flags/sweflag.png';
@@ -26,8 +26,20 @@ export default function LanguageSelector({ addClass, hamburgerMargin, closeSelec
     const pathname = usePathname();
     const locale = useLocale();
     const searchParams = useSearchParams();
+    const dropdownRef = useRef<HTMLDivElement>(null);
 
-    console.log(locale);
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+                setOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [dropdownRef]);
 
     useEffect(() => {
         setOpen(closeSelector && false);
@@ -87,45 +99,47 @@ export default function LanguageSelector({ addClass, hamburgerMargin, closeSelec
 
 
     return (
-        <div className={`App z-50 ${addClass}`} ref={scope}>
-            <motion.button onClick={() => setOpen(!open)} whileTap={{ scale: 1.3 }} className="flex justify-center items-center">
-                <div className={`w-7 cursor-pointer flex hover:border-neutral-300 hover:border-[2px] rounded-full`}>
-                    {locale === 'se' && <Image className="rounded-full w-8" src={sweflag} alt="Swedish flag" />}
-                    {locale === 'en' && <Image className="rounded-full w-8" src={engflag} alt="English flag" />}
-                    {locale === 'no' && <Image className="rounded-full w-8" src={norflag} alt="Norwegian flag" />}
-                    {locale === 'de' && <Image className="rounded-full w-8" src={gerflag} alt="German flag" />}
-                    {locale === 'da' && <Image className="rounded-full w-8" src={denflag} alt="Danish flag" />}
-                    {locale === 'fi' && <Image className="rounded-full w-8" src={fiflag} alt="Finnish flag" />}
-                </div>
-            </motion.button>
-            <section
-                className={`hidden h-0 flex-col justify-evenly absolute min-w-[82%] sm:min-w-[90%]  md:min-w-[30px] rounded-lg p-2 shadow-2xl min-h-fit bg-pt-background overflow-hidden ${hamburgerMargin}`}
-            >
-                <li onClick={() => handleItemClick('se')} className="w-7 m-1 cursor-pointer flex items-center">
-                    <Image className="rounded-full hover:border-neutral-600 hover:border-[2px]" src={sweflag} alt="Swedish flag" />
-                    <p className="pl-3">SV</p>
-                </li>
-                <li onClick={() => handleItemClick('en')} className="w-7 m-1 cursor-pointer flex items-center">
-                    <Image className="rounded-full hover:border-neutral-600 hover:border-[2px]" src={engflag} alt="English flag" />
-                    <p className="pl-3">EN</p>
-                </li>
-                <li onClick={() => handleItemClick('no')} className="w-7 m-1 cursor-pointer flex items-center">
-                    <Image className="rounded-full hover:border-neutral-600 hover:border-[2px]" src={norflag} alt="Norwegian flag" />
-                    <p className="pl-3">NO</p>
-                </li>
-                <li onClick={() => handleItemClick('da')} className="w-7 m-1 cursor-pointer flex items-center">
-                    <Image className="rounded-full hover:border-neutral-600 hover:border-[2px]" src={denflag} alt="Danish flag" />
-                    <p className="pl-3">DA</p>
-                </li>
-                <li onClick={() => handleItemClick('fi')} className="w-7 m-1 cursor-pointer flex items-center">
-                    <Image className="rounded-full hover:border-neutral-600 hover:border-[2px]" src={fiflag} alt="Finnish flag" />
-                    <p className="pl-3">FI</p>
-                </li>
-                <li onClick={() => handleItemClick('de')} className="w-7 m-1 cursor-pointer flex items-center">
-                    <Image className="rounded-full hover:border-neutral-600 hover:border-[2px]" src={gerflag} alt="German flag" />
-                    <p className="pl-3">DE</p>
-                </li>
-            </section>
+        <div ref={dropdownRef}>
+            <div className={`App z-50 ${addClass}`} ref={scope}>
+                <motion.button onClick={() => setOpen(!open)} whileTap={{ scale: 1.3 }} className="flex justify-center items-center">
+                    <div className={`w-7 cursor-pointer flex hover:border-neutral-300 hover:border-[2px] rounded-full`}>
+                        {locale === 'se' && <Image className="rounded-full w-8" src={sweflag} alt="Swedish flag" />}
+                        {locale === 'en' && <Image className="rounded-full w-8" src={engflag} alt="English flag" />}
+                        {locale === 'no' && <Image className="rounded-full w-8" src={norflag} alt="Norwegian flag" />}
+                        {locale === 'de' && <Image className="rounded-full w-8" src={gerflag} alt="German flag" />}
+                        {locale === 'da' && <Image className="rounded-full w-8" src={denflag} alt="Danish flag" />}
+                        {locale === 'fi' && <Image className="rounded-full w-8" src={fiflag} alt="Finnish flag" />}
+                    </div>
+                </motion.button>
+                <section
+                    className={`hidden h-0 flex-col justify-evenly absolute min-w-[82%] sm:min-w-[90%]  md:min-w-[30px] rounded-lg p-2 shadow-2xl min-h-fit bg-pt-background overflow-hidden ${hamburgerMargin}`}
+                >
+                    <li onClick={() => handleItemClick('se')} className="w-7 m-1 cursor-pointer flex items-center">
+                        <Image className="rounded-full hover:border-neutral-600 hover:border-[2px]" src={sweflag} alt="Swedish flag" />
+                        <p className="pl-3">SV</p>
+                    </li>
+                    <li onClick={() => handleItemClick('en')} className="w-7 m-1 cursor-pointer flex items-center">
+                        <Image className="rounded-full hover:border-neutral-600 hover:border-[2px]" src={engflag} alt="English flag" />
+                        <p className="pl-3">EN</p>
+                    </li>
+                    <li onClick={() => handleItemClick('no')} className="w-7 m-1 cursor-pointer flex items-center">
+                        <Image className="rounded-full hover:border-neutral-600 hover:border-[2px]" src={norflag} alt="Norwegian flag" />
+                        <p className="pl-3">NO</p>
+                    </li>
+                    <li onClick={() => handleItemClick('da')} className="w-7 m-1 cursor-pointer flex items-center">
+                        <Image className="rounded-full hover:border-neutral-600 hover:border-[2px]" src={denflag} alt="Danish flag" />
+                        <p className="pl-3">DA</p>
+                    </li>
+                    <li onClick={() => handleItemClick('fi')} className="w-7 m-1 cursor-pointer flex items-center">
+                        <Image className="rounded-full hover:border-neutral-600 hover:border-[2px]" src={fiflag} alt="Finnish flag" />
+                        <p className="pl-3">FI</p>
+                    </li>
+                    <li onClick={() => handleItemClick('de')} className="w-7 m-1 cursor-pointer flex items-center">
+                        <Image className="rounded-full hover:border-neutral-600 hover:border-[2px]" src={gerflag} alt="German flag" />
+                        <p className="pl-3">DE</p>
+                    </li>
+                </section>
+            </div>
         </div>
     );
 }
