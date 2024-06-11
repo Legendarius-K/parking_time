@@ -12,13 +12,13 @@ import TrustedBy from "@/components/TrustedBy";
 const Home = () => {
     const t = useTranslations('navigation')
     return (
-        <main className="">
-            <TrustedBy />
+        <main className="overflow-hidden">
             <Hero />
             <SmartParkingSolution />
             <CarDriving />
             <How />
             <Why />
+            <TrustedBy />
         </main>
     );
 }

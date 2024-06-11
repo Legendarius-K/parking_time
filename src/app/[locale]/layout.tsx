@@ -34,7 +34,7 @@ export default async function RootLayout({
             <head>
                 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
             </head>
-            <body className={`${'font-sans font-thin flex flex-col min-h-full box-border'}`}>
+            <body className={`${'font-sans font-thin flex flex-col min-h-full box-border overflow-x-hidden'}`}>
                 <NextIntlClientProvider messages={messages}>
                     <Header />
                     <section className="grow">
