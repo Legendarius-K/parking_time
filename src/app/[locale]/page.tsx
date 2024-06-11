@@ -5,12 +5,15 @@ import SmartParkingSolution from "@/components/SmartParkingSolution"
 import { useTranslations } from "next-intl";
 import Why from "@/components/Why";
 import CarDriving from "@/components/CarDriving";
+import TrustedBy from "@/components/TrustedBy";
+
 
 
 const Home = () => {
     const t = useTranslations('navigation')
     return (
         <main className="">
+            <TrustedBy />
             <Hero />
             <SmartParkingSolution />
             <CarDriving />
