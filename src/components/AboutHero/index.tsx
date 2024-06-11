@@ -2,14 +2,26 @@ import React from 'react';
 
 const AboutHero = () => {
     return (
-        <div className="relative">
-            <img className="h-80 w-full md:h-96 md:blur-none blur-sm" src="./Images/pink.jpeg" alt="hero picture" />
-            <div className="absolute inset-0 flex flex-col items-start justify-center my-24 md:my-48 mx-4 sm:mx-10 md:mx-20">
-                <p className="text-white text-base sm:text-lg md:text-xl">About us</p>
-                <h1 className="text-3xl sm:text-3xl md:text-4xl text-white mt-4 w-full sm:w-3/4 md:w-2/3 lg:w-1/2">Parking Time Sweden</h1>
-                <p className="text-white w-full lg:w-1/2 leading-loose mt-5 text-base sm:text-lg md:text-xl">We are a tech startup dedicated to transforming the parking experience for all stakeholders - parkers, parking attendants, municipalities, and property owners.</p>
-            </div>
-        </div>
+        <div className="relative flex justify-center items-start h-[50vh] md:h-[50vh] overflow-hidden">
+  <img className="w-full h-full md:block object-cover object-center" src="./Images/bild.png" alt="hero picture" />
+  <div className="absolute left-0 h-full w-full bg-slate-900/20 backdrop-blur md:bg-slate-900/20 md:backdrop-blur md:w-2/4">
+    <div className="hidden md:block absolute top-0 right-0 h-full w-1/2">
+    </div>
+  </div>
+  <div className="absolute inset-0 flex flex-col justify-center items-start z-10 p-2 sm:p-16 md:p-18">
+    <div className="flex items-center">
+      <div>
+        <p className="text-white text-sm leading-loose md:leading-loose mt-16 flex items-center ml-4"><img className="w-3 mr-3" src="/red.svg" alt="red dot" /> About us</p>
+      </div>
+    </div>
+    <div className="mt-4 ml-4">
+      <h1 className="text-5xl md:text-5xl md:w-6/12 w-full text-white">Parking Time Sweden</h1>
+      <p className="text-white font-nunito font-light w-full sm:w-[70%] md:w-[40%] lg:w-[40%] mt-5 sm:text-sm md:text-sm max-w-screen-md leading-loose md:leading-loose mr-10">We are a tech startup dedicated to transforming the parking experience for all stakeholders - parkers, parking attendants, municipalities, and property owners.</p>
+    </div>
+  </div>
+  <div className="absolute inset-0 bg-slate-900/20 opacity-50"></div> 
+</div>
+
     );
 }
 

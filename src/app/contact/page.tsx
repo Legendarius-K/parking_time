@@ -1,5 +1,4 @@
 'use client'
-
 import EmailIcon from "../../../public/Email.svg"
 import PhoneIcon from "../../../public/Phone.svg"
 import PinIcon from "../../../public/Pin.svg"
@@ -25,6 +24,7 @@ const Contact = () => {
 
     return (
         <>
+            <ContactHero />
           <div className="flex flex-col md:flex-row mt-[80px] pt-[100px] px-[30px] md:px-16 md:py-[100px] pb-[80px] font-mono gap-[70px] text-pt-darkblue1">
             <div className="flex flex-col md:w-[50%] gap-7">
                 <p className="text-5xl font-sans font-bold text-pt-secondary">Contact us</p>
@@ -99,10 +99,5 @@ const Contact = () => {
         </>
     )
 };
-        <div>
-            <ContactHero />
-        </div>
-    );
-}
 
 export default Contact;
