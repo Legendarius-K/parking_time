@@ -5,6 +5,8 @@ import SmartParkingSolution from "@/components/SmartParkingSolution"
 import { useTranslations } from "next-intl";
 import Why from "@/components/Why";
 
+import Article from "@/components/Article";
+
 
 const Home = () => {
     const t = useTranslations('navigation')
@@ -12,6 +14,7 @@ const Home = () => {
         <main className="">
             <Hero />
             <SmartParkingSolution />
+            <Article/>
             <How />
             <Why />
         </main>

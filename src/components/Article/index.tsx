@@ -5,23 +5,28 @@ import { fetchNewArticles } from "@/utils/functions";
 import { FC } from 'react'
 
 
+interface Post {
+  id: string;
+  title: string;
+}
+
 const Article: React.FC = () => {
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
+  const [newsPosts, setNewsPosts] = useState<Post[]>([]);
 
   useEffect(() => {
 
     const fetchData = async () => {
-
       try {
         const temp = await fetchNewArticles();
-        const test = temp.map((test: any) =>({
-          
+        const test = temp.map((temp: any) =>({
+          id: temp.sys.id,
+          title: temp.fields.title,
         }))
+        setNewsPosts(test);
         console.log("try i article")
         console.log(test)
       } catch (error) {
-        setError("Failed to fetch news posts.");
+        console.log("error något gick fel")
       }
 
     }
@@ -31,7 +36,13 @@ const Article: React.FC = () => {
  
   return(
     <>
-      <p>hej</p>
+      <div>
+        {newsPosts.map((post: any) => (
+          <div key={post.id}>
+            <p>{post.title}</p>
+          </div>
+        ))}
+      </div>
     </>
   )
 }
