@@ -7,6 +7,7 @@ import Navigation from "../Navigation";
 import HamburgerMenu from "../HamburgerMenu";
 import { Link } from "@/navigation";
 import LanguageSelector from "../LanguageSelector";
+import useWindowSize from "@/hooks/useWindowSize";
 
 const Header = () => {
     const [burgerOpen, setBurgerOpen] = useState(false);
@@ -15,6 +16,8 @@ const Header = () => {
     const [lastScrollY, setLastScrollY] = useState(0);
     const [hideThreshold, setHideThreshold] = useState(0);
     const [showThreshold, setShowThreshold] = useState(0);
+
+    const windowSize = useWindowSize();
 
     const handleClick = () => {
         setBurgerOpen(!burgerOpen);
@@ -27,6 +30,8 @@ const Header = () => {
 
     useEffect(() => {
         const handleScroll = () => {
+            if (windowSize.width && windowSize.width > 959) return;
+
             const currentScrollY = window.scrollY;
 
             if (burgerOpen && Math.abs(currentScrollY - initialScrollY) > 50) {
@@ -55,7 +60,7 @@ const Header = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [burgerOpen, initialScrollY, lastScrollY, hideThreshold, showThreshold]);
+    }, [burgerOpen, initialScrollY, lastScrollY, hideThreshold, showThreshold, windowSize.width]);
 
     return (
         <>

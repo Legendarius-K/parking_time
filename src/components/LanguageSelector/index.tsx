@@ -88,7 +88,7 @@ export default function LanguageSelector({ addClass, hamburgerMargin, closeSelec
 
     return (
         <div className={`App z-50 ${addClass}`} ref={scope}>
-            <motion.button onClick={() => setOpen(!open)} whileTap={{ scale: 0.95 }} className="flex justify-center items-center">
+            <motion.button onClick={() => setOpen(!open)} whileTap={{ scale: 1.3 }} className="flex justify-center items-center">
                 <div className={`w-7 cursor-pointer flex hover:border-neutral-300 hover:border-[2px] rounded-full`}>
                     {locale === 'se' && <Image className="rounded-full w-8" src={sweflag} alt="Swedish flag" />}
                     {locale === 'en' && <Image className="rounded-full w-8" src={engflag} alt="English flag" />}
@@ -100,7 +100,6 @@ export default function LanguageSelector({ addClass, hamburgerMargin, closeSelec
             </motion.button>
             <section
                 className={`hidden h-0 flex-col justify-evenly absolute min-w-[82%] sm:min-w-[90%]  md:min-w-[30px] rounded-lg p-2 shadow-2xl min-h-fit bg-pt-background overflow-hidden ${hamburgerMargin}`}
-                // style={{ width: 0, height: 0, opacity: 0 }}
             >
                 <li onClick={() => handleItemClick('se')} className="w-7 m-1 cursor-pointer flex items-center">
                     <Image className="rounded-full hover:border-neutral-600 hover:border-[2px]" src={sweflag} alt="Swedish flag" />

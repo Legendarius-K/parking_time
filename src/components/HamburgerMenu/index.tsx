@@ -25,7 +25,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
     return (
         <>
 
-            <div className={`fixed ${burgerOpen ? 'top-[64px]' : '-top-full'} border-t-[1px] border-neutral-400 font-nunito transition-all ease-in-out duration-700 p-6 pt-16 pb-10 flex flex-col left-0 bg-pt-primary/50 backdrop-blur-[10px] webkit-blur-10 w-full z-20 md:hidden shadow-2xl`}>
+            <div className={`fixed ${burgerOpen ? 'top-[64px]' : '-top-full'} border-t-[1px] border-neutral-400 font-nunito transition-all ease-in-out duration-700 p-6 pt-12 pb-10 flex flex-col left-0 bg-pt-primary/50 backdrop-blur-[10px] webkit-blur-10 w-full z-20 md:hidden shadow-2xl`}>
 
                 <motion.div className="m-4"
 
@@ -45,7 +45,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                     <Link onClick={updateCloseBurger} href={'/'} className="text-white  font-light relative ">{t('home')}</Link>
                 </motion.div>
 
-                <div className="h-[0.7px] w-3/5 bg-neutral-400 opacity-60"></div>
+                <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
 
                 <motion.div className="m-4"
 
@@ -65,7 +65,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                     <Link onClick={updateCloseBurger} href={'/about'} className="text-white  font-light relative ">{t('about')}</Link>
                 </motion.div>
 
-                <div className="h-[0.7px] w-3/5 bg-neutral-400 opacity-60"></div>
+                <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
 
                 <motion.div className="m-4"
 
@@ -85,7 +85,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                     <Link onClick={updateCloseBurger} href={'/news'} className="text-white  font-light relative ">{t('news')}</Link>
                 </motion.div>
 
-                <div className="h-[0.7px] w-3/5 bg-neutral-400 opacity-60"></div>
+                <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
 
                 <motion.div className="m-4"
 
@@ -105,7 +105,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                     <Link onClick={updateCloseBurger} href={'/'} className="text-white  font-light relative ">{t('faq')}</Link>
                 </motion.div>
 
-                <div className="h-[0.7px] w-3/5 bg-neutral-400 opacity-60"></div>
+                <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
 
                 <div className="flex">
                     <LanguageSelector closeSelector={burgerOpen} hamburgerMargin="mt-12" addClass="flex ml-4 mt-6 mb-4" hideContact={setHideContactBtn} />
