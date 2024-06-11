@@ -17,16 +17,16 @@ const HowBox = ({ srcIcon, altIcon, number, heading, text }:HowBoxProps) => {
             <motion.div className="bg-white rounded-[20px] w-[100%] md:w-[29%] overflow-hidden h-full pb-6 sm:pb-3 shadow-xl"
                 initial={{
                     opacity: 0,
-                    y: 50
+                    y: 80
                 }}
                 whileInView={{
                     opacity: 1,
                     y: 0,
                     transition: {
-                        duration: 1 
+                        duration: 1.3 
                     }
                 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
             >
                 <div className="flex relative h-[91px]">
                     <div className="m-6">

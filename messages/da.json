@@ -1,0 +1,86 @@
+{
+    "navigation": {
+        "home": "Hvorfor Parking Time?",
+        "about": "Om os",
+        "news": "Nyheder",
+        "faq": "FAQ",
+        "contact": "Kontakt os",
+        "app": "Hent appen",
+        "language": "Vælg sprog"
+    },
+    "button": {
+        "contact": "Kontakt os",
+        "app": "Hent appen"
+    },
+    "footer": {
+        "address": "Adresse",
+        "contact": "Kontakt",
+        "links": "Links",
+        "about": "Om os",
+        "news": "Nyheder",
+        "policy": "Privatlivspolitik"
+    },
+    "home-hero": {
+        "text1": "Digital parkeringsskive - direkte på din mobil.",
+        "text2": "Et vindende koncept i et nyt, digitaliseret format.",
+        "contact": "Kontakt os",
+        "app": "Hent appen",
+        "bullet1": "Let at bruge",
+        "bullet2": "Gratis download",
+        "bullet3": "Undgå bøder",
+        "bullet4": "Reducer stress"
+    },
+    "how": {
+        "headline": "Sådan fungerer det",
+        "heading1": "Indtast registreringsnummer",
+        "text1": "Åbn appen, registrer dig med dit registreringsnummer.",
+        "heading2": "Find din parkeringszone",
+        "text2": "Brug kortet, søgefunktionen eller zonelisten til at finde din parkeringsplads.",
+        "heading3": "Start din digitale p-skive",
+        "text3": "Når du har fundet din parkeringszone, kan du se parkeringsreglerne, starte parkering og lukke appen.",
+        "app": "Hent appen"
+    },
+    "smart-parking": {
+        "headline": "Smart parkeringsløsning",
+        "text1": "Parkeringsskiven har længe været et værktøj til at fremme cirkulation og aktivitet i bymidter. Det er en fantastisk opfindelse, der gavner både indbyggere, besøgende og lokale virksomheder. Vi vil være en del af denne udvikling ved at skabe en gratis digital parkeringsskive.",
+        "bullet1": "Vi stræber efter at støtte vækst og effektivitet i byområder.",
+        "bullet2": "Vores digitale parkeringsskive forenkler parkeringsprocessen.",
+        "bullet3": "Enhver parkeringsvagt system kan nemt integreres med vores system.",
+        "text2": "Vi ser frem til at fortælle mere om vores løsning på et møde.",
+        "contact": "Kontakt os"
+    },
+    "contact": {
+        "contact": "Kontakt os",
+        "text1": "Uanset om du har et spørgsmål, feedback eller har brug for hjælp, bedes du udfylde formularen nedenfor, og vores team vil vende tilbage til dig hurtigst muligt.",
+        "name": "For- og efternavn",
+        "title": "Arbejdsstilling",
+        "phone": "Telefonnummer",
+        "reason": "Emne",
+        "choose": "Vælg",
+        "message": "Skriv en besked",
+        "terms1": "Jeg accepterer",
+        "terms2": "betingelserne"
+    },
+    "why": {
+        "headline": "Hvorfor Parking Time?",
+        "heading1": "Undgå bøder og reducér stress",
+        "text1": "Vores digitale løsning tiltrækker flere besøgende ved at eliminere fysiske skiver og reducere bøder. Dette forenkler parkering, øger fodtrafik, økonomisk aktivitet og byens livlighed samtidig med at stressen reduceres.",
+        "heading2": "Forenklet parkering for brugerne",
+        "text2": "Vores app lader dig nemt indstille, justere og overvåge parkeringstid. Med en brugervenlig grænseflade kan du hurtigt finde pladser og administrere parkering. Vi opdaterer løbende baseret på kunde feedback for at sikre en effektiv og problemfri oplevelse.",
+        "heading3": "Integration med eksisterende systemer",
+        "text3": "Vores system for parkeringsvagter integreres problemfrit med din eksisterende opsætning. Et samlet system gavner dig ved at strømline driften og forbedre oplevelsen for personalet ved at eliminere behovet for to forskellige systemer og enheder. Vi gør denne integration effektiv, intuitiv og enkel!",
+        "heading4": "Datadrevet byplanlægning",
+        "text4": "Den digitale parkeringsskive kan til sidst optimere parkeringsressourcer og byplanlægning gennem værdifulde brugsdata og adfærdsmønstre, hvilket fører til et mere sikkert samfund med bedre kontrol og adgang til parkeringspladser.",
+        "about": "Mere om os"
+    },
+    "contactHero": {
+        "contact": "Kontakt",
+        "headline": "Vi ser frem til at høre fra dig!"
+    },
+    "aboutHero": {
+        "about": "Om os",
+        "title": "Parking Time Sweden",
+        "paragraf": "Vi er en tech-startup dedikeret til at transformere parkeringsoplevelsen for alle interessenter - parkerende, parkeringsvagter, kommuner og ejendomsejere."
+    }
+    
+}

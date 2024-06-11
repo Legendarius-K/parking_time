@@ -1,0 +1,87 @@
+{
+    "navigation": {
+        "home": "Miksi Parking Time?",
+        "about": "Tietoa meistä",
+        "news": "Uutiset",
+        "faq": "FAQ",
+        "contact": "Ota yhteyttä",
+        "app": "Lataa sovellus",
+        "language": "Valitse kieli"
+    },
+    "button": {
+        "contact": "Ota yhteyttä",
+        "app": "Lataa sovellus"
+    },
+    "footer": {
+        "address": "Osoite",
+        "contact": "Yhteystiedot",
+        "links": "Linkit",
+        "about": "Tietoa meistä",
+        "news": "Uutiset",
+        "policy": "Tietosuojakäytäntö"
+    },
+    "home-hero": {
+        "text1": "Digitaalinen pysäköintikiekko - suoraan mobiililaitteeseesi.",
+        "text2": "Voittava konsepti uudessa, digitaalisessa muodossa.",
+        "contact": "Ota yhteyttä",
+        "app": "Lataa sovellus",
+        "bullet1": "Helppo käyttää",
+        "bullet2": "Ilmainen lataus",
+        "bullet3": "Vältä sakkoja",
+        "bullet4": "Vähennä stressiä"
+    },
+    "how": {
+        "headline": "Kuinka se toimii",
+        "heading1": "Syötä rekisterinumero",
+        "text1": "Avaa sovellus, rekisteröidy rekisterinumerollasi.",
+        "heading2": "Etsi pysäköintialueesi",
+        "text2": "Käytä karttaa, hakutoimintoa tai vyöhykelistaa löytääksesi pysäköintipaikkasi.",
+        "heading3": "Käynnistä digitaalinen pysäköintikiekko",
+        "text3": "När du har hittat din parkeringszon kan du se över parkeringens regler, starta parkering och stänga appen.",
+        "app": "Lataa sovellus"
+    },
+    "smart-parking": {
+        "headline": "Älykäs pysäköintiratkaisu",
+        "text1": "Pysäköintikiekko on pitkään ollut työkalu liikenteen ja aktiviteetin edistämiseen kaupunkikeskuksissa. Se on fantastinen keksintö, joka hyödyttää asukkaita, vierailijoita ja paikallisia yrityksiä. Haluamme olla osa tätä kehitystä luomalla ilmaisen digitaalisen pysäköintikiekon.",
+        "bullet1": "Pyrimme tukemaan kaupunkialueiden kasvua ja tehokkuutta.",
+        "bullet2": "Digitaalinen pysäköintikiekkomme yksinkertaistaa pysäköintiprosessia.",
+        "bullet3": "Minkä tahansa pysäköintivartijajärjestelmän voi helposti integroida järjestelmäämme.",
+        "text2": "Odotamme innolla kertovamme lisää ratkaisustamme tapaamisessa.",
+        "contact": "Ota yhteyttä"
+    },
+    "contact": {
+        "contact": "Ota yhteyttä",
+        "text1": "Olitpa sitten kysymyksiä, palautetta tai tarvitset apua, täytä alla oleva lomake, ja tiimimme ottaa sinuun yhteyttä mahdollisimman pian.",
+        "name": "Etunimi ja sukunimi",
+        "title": "Työnimike",
+        "phone": "Puhelinnumero",
+        "reason": "Aihe",
+        "choose": "Valitse",
+        "message": "Viesti",
+        "terms1": "Hyväksyn",
+        "terms2": "ehdot"
+    },
+    "why": {
+        "headline": "Miksi Parking Time?",
+        "heading1": "Vältä sakkoja ja vähennä stressiä",
+        "text1": "Digitaalinen ratkaisumme houkuttelee enemmän kävijöitä poistamalla fyysiset levyt ja vähentämällä sakkoja. Tämä yksinkertaistaa pysäköintiä, lisää jalkaliikennettä, taloudellista toimintaa ja kaupungin vilkkautta samalla kun stressi vähenee.",
+        "heading2": "Käyttäjille yksinkertaistettu pysäköinti",
+        "text2": "Sovelluksemme avulla voit helposti asettaa, säätää ja seurata pysäköintiaikaa. Käyttäjäystävällisen käyttöliittymän avulla voit nopeasti löytää paikkoja ja hallita pysäköintiä. Päivitämme jatkuvasti asiakaspalautteen perusteella varmistaaksemme tehokkaan ja ongelmattoman kokemuksen.",
+        "heading3": "Integraatio olemassa olevien järjestelmien kanssa",
+        "text3": "Järjestelmämme pysäköintivartijoille integroituu saumattomasti nykyiseen järjestelmääsi. Yhtenäinen järjestelmä hyödyttää sinua virtaviivaistamalla toimintaa ja parantamalla henkilöstön kokemusta poistamalla tarpeen kahdelle eri järjestelmälle ja laitteelle. Teemme tämän integraation tehokkaaksi, intuitiiviseksi ja yksinkertaiseksi!",
+        "heading4": "Dataohjattu kaupunkisuunnittelu",
+        "text4": "Digitaalinen pysäköintikiekko voi lopulta optimoida pysäköintiresursseja ja kaupunkisuunnittelua arvokkaan käyttödatan ja käyttäytymismallien avulla, mikä johtaa turvallisempaan yhteiskuntaan paremmalla hallinnalla ja pääsylle pysäköintitiloihin.",
+        "about": "Lisätietoja meistä"
+    },
+    "contactHero": {
+        "contact": "Yhteys",
+        "headline": "Odotamme innolla yhteydenottoasi!"
+    },
+    "aboutHero": {
+        "about": "Meistä",
+        "title": "Parking Time Ruotsi",
+        "paragraf": "Olemme teknologiayritys, joka on omistautunut muuttamaan pysäköintikokemusta kaikille sidosryhmille - pysäköijille, pysäköinninvalvojille, kunnille ja kiinteistönomistajille."
+    }
+    
+    
+}

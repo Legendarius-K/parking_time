@@ -1,0 +1,86 @@
+{
+    "navigation": {
+        "home": "Why Parking Time?",
+        "about": "About Us",
+        "news": "News",
+        "faq": "FAQ",
+        "contact": "Contact Us",
+        "app": "Download App",
+        "language": "Choose language"
+    },
+    "button": {
+        "contact": "Contact Us",
+        "app": "Download App"
+    },
+    "footer": {
+        "address": "Address",
+        "contact": "Contact",
+        "links": "Links",
+        "about": "About Us",
+        "news": "News",
+        "policy": "Privacy Policy"
+    },
+    "home-hero": {
+        "text1": "Digital parking disc - directly on your mobile.",
+        "text2": "A winning concept in a new, digitalized format.",
+        "contact": "Contact Us",
+        "app": "Download App",
+        "bullet1": "Easy to use",
+        "bullet2": "Free download",
+        "bullet3": "Avoid fines",
+        "bullet4": "Reduce stress"
+    },
+    "how": {
+        "headline": "How It Works",
+        "heading1": "Enter the license plate number",
+        "text1": "Open the app, register with your license plate number.",
+        "heading2": "Find your parking zone",
+        "text2": "Use the map, search function, or zone list to find your parking spot.",
+        "heading3": "Start your digital parking disc",
+        "text3": "Once you've found your parking zone, you can review parking rules, start parking, and close the app.",
+        "app": "Download App"
+    },
+    "smart-parking": {
+        "headline": "Smart Parking Solution",
+        "text1": "The parking disc has long been a tool to promote circulation and activity in city centers. It's a fantastic invention that benefits residents, visitors, and local businesses alike. We want to be part of this evolution by creating a free digital parking disc.",
+        "bullet1": "We aim to support the growth and efficiency of urban areas.",
+        "bullet2": "Our digital parking disc simplifies the parking process.",
+        "bullet3": "Any parking attendant systems can easily be integrated with our system.",
+        "text2": "We're excited to share more about our solution in a meeting.",
+        "contact": "Contact Us"
+    },
+    "contact": {
+        "contact": "Contact Us",
+        "text1": "Whether you have a question, feedback, or need assistance, please fill out the form below, and our team will get back to you as soon as possible.",
+        "name": "First and Last Name",
+        "title": "Job Title",
+        "phone": "Phone Number",
+        "reason": "Subject",
+        "choose": "Choose",
+        "message": "Message",
+        "terms1": "I accept the",
+        "terms2": "terms"
+    },
+    "why": {
+        "headline": "Why Parking Time?",
+        "heading1": "Avoid fines & reduce stress",
+        "text1": "Our digital solution attracts more visitors by eliminating physical discs and reducing fines. This simplifies parking, boosts foot traffic, economic activity, and city vibrancy while reducing stress.",
+        "heading2": "Simplified parking for users",
+        "text2": "Our app lets you effortlessly set, adjust, and monitor parking time. With a user-friendly interface, you can quickly find spots and manage parking. We continuously update based on customer feedback to ensure an efficient and hassle-free experience.",
+        "heading3": "Integration with existing systems",
+        "text3": "Our system for parking attendants integrates seamlessly with your existing setup. A unified system benefits you by streamlining operations and enhancing the experience for personnel by eliminating the need for two different systems and devices. We make this integration efficient, intuitive, and simple!",
+        "heading4": "Data-driven urban planning",
+        "text4": "The digital parking disc can eventually optimize parking resources and urban planning through valuable usage data and behavior patterns, leading to a safer society with better control and access to parking spaces.",
+        "about": "Learn more about us"
+    },
+    "contactHero": {
+        "contact": "Contact",
+        "headline": "We would love to hear from you!"
+    },
+    "aboutHero": {
+        "about": "About Us",
+        "title": "Parking Time Sweden",
+        "paragraf": "We are a tech startup dedicated to transforming the parking experience for all stakeholders - parkers, parking attendants, municipalities, and property owners."
+    }
+        
+}

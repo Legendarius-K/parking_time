@@ -1,5 +1,9 @@
 import type { Config } from "tailwindcss";
 
+interface blurProps {
+  addUtilities: any
+}
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -51,7 +55,21 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }:blurProps) {
+      addUtilities({
+        '.webkit-blur-5': {
+          '-webkit-backdrop-filter': 'blur(5px)', 
+        },
+        '.webkit-blur-3': {
+          '-webkit-backdrop-filter': 'blur(3px)',
+        },
+        '.webkit-blur-10': {
+          '-webkit-backdrop-filter': 'blur(18px)',
+        },
+      });
+    },
+  ],
 };
 
 export default config;
