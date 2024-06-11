@@ -67,12 +67,33 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className="flex flex-col gap-2 ">
-                            <p>{t('reason')}</p>
+                            <p>{t('reason')} Accordion only</p>
                             <div onClick={handleClick} className="flex-col bg-pt-background rounded-[10px] py-3 px-[18px] text-pt-darkblue2 cursor-pointer">
                                 <div className="flex justify-between align-center">
                                     <p className="font-bold text-base">{t('choose')}</p>  <Image src={Chevronicon} alt="Pin icon" />
                                 </div>
                                 <section className={`${openAccordion ? 'flex-col' : 'hidden'} gap-2`}>
+                                    <div onClick={accordionClick} className="">1</div>
+                                    <div onClick={accordionClick} className="">2</div>
+                                    <div onClick={accordionClick} className="">3</div>
+                                </section>
+
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-2 ">
+                            <p>{t('reason')} Input only</p>
+                            <div className="flex flex-col gap-2">
+                            <input className="rounded-[10px] border-pt-darkblue2 border-[1px] p-3 font-medium" type="text" name="nameInput" id="" placeholder="Reason for contact" />
+                        </div>
+                        </div>
+                        <div className="flex flex-col gap-2 ">
+                            <p>{t('reason')} Accordion and Input</p>
+                            <div onClick={handleClick} className="flex-col bg-pt-background rounded-[10px] py-3 px-[18px] text-pt-darkblue2 cursor-pointer">
+                                <div className="flex justify-between align-center">
+                                    <p className={`${openAccordion ?'hidden' : 'flex-col' } font-bold text-base` }>{t('choose')}</p>  <Image className={`${openAccordion ? "py-[8px]" : "" } ml-auto` } src={Chevronicon} alt="Pin icon" />
+                                </div>
+                                <section className={`${openAccordion ? 'flex-col' : 'hidden'} gap-2`}>
+                                    <input className="rounded-[10px] border-pt-darkblue2 border-[1px] p-3 font-medium" type="text" name="nameInput" id="" placeholder="Reason for contact" />
                                     <div onClick={accordionClick} className="">1</div>
                                     <div onClick={accordionClick} className="">2</div>
                                     <div onClick={accordionClick} className="">3</div>
