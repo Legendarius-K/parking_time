@@ -16,6 +16,8 @@ import { useEffect, useState } from 'react';
 
 const TrustedBy = () => {
     let [ref, { width }] = useMeasure();
+    const [mustFinish, setMustFinish] = useState(false);
+    const [rerender, setRerender] = useState(false);
 
 
     const images2 = [
@@ -32,34 +34,59 @@ const TrustedBy = () => {
 
     const FAST_DURATION = 25;
     const SLOW_DURATION = 75;
-
     const [duration, setDuration] = useState(FAST_DURATION)
+
 
     const xTranslation = useMotionValue(0);
 
+
     useEffect(() => {
+        let controls;
         const finalPosition = -width / 2 - 8;
 
-        const controls = animate(xTranslation, [0, finalPosition], {
-            ease: 'linear',
-            duration: duration,
-            repeat: Infinity,
-            repeatType: 'loop',
-            repeatDelay: 0,
-        });
+        if (mustFinish) {
+            controls = animate(xTranslation, [xTranslation.get(), finalPosition], {
+                ease: 'linear',
+                duration: duration * (1 - xTranslation.get() / finalPosition),
+                onComplete: () => {
+                    setMustFinish(false);
+                    setRerender(!rerender)
+                },
+            })
+        } else {
+            controls = animate(xTranslation, [0, finalPosition], {
+                ease: 'linear',
+                duration: duration,
+                repeat: Infinity,
+                repeatType: 'loop',
+                repeatDelay: 0,
+            });
+        }
 
-        return controls.stop;
 
-    }, [xTranslation, width, duration]);
+
+        return controls?.stop;
+
+    }, [xTranslation, width, duration, rerender]);
 
     return (
         <main className='h-[216px] w-[100%] pt-4 relative overflow-hidden'>
-            <h2 className='absolute left-1/2  transform -translate-x-1/2 font-nunito text-xl underline'>Trusted By</h2>
-            <motion.div className='absolute left-0 flex gap-4'
+            <h2 className='absolute left-1/2  transform -translate-x-1/2 font-mono text-xl'>Trusted By</h2>
+            <motion.div className='absolute left-0 flex gap-4 '
                 ref={ref}
                 style={{ x: xTranslation }}
-                // onHoverStart={() => setDuration(SLOW_DURATION)}
-                // onHoverEnd={() => setDuration(FAST_DURATION)}
+                onHoverStart={() => {
+                    setMustFinish(true);
+                    setDuration(SLOW_DURATION)}}
+                onHoverEnd={() => {
+                    setMustFinish(true);
+                    setDuration(FAST_DURATION)}}
+                onTouchStart={() => {
+                    setMustFinish(true);
+                    setDuration(SLOW_DURATION)}}
+                onTouchEnd={() => {
+                    setMustFinish(true);
+                    setDuration(FAST_DURATION)}}
             >
                 {[...images2, ...images2].map((item, index) => (
                     <Card image={item} key={index} />
