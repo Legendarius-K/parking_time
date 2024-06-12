@@ -5,6 +5,7 @@ import SmartParkingSolution from "@/components/SmartParkingSolution"
 import { useTranslations } from "next-intl";
 import Why from "@/components/Why";
 import CarDriving from "@/components/CarDriving";
+import Download from "@/components/Download";
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
             <CarDriving />
             <How />
             <Why />
+            <Download />
         </main>
     );
 }
