@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import Why from "@/components/Why";
 
 import Article from "@/components/Article";
+import Testimonials from "@/components/Testimonials";
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
             <Article/>
             <How />
             <Why />
+            <Testimonials />
         </main>
     );
 }

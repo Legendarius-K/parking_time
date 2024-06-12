@@ -1,9 +1,6 @@
 'use client'
 import React, { useEffect, useState } from "react";
-import { GetStaticProps } from 'next'
 import { fetchNewArticles } from "@/utils/functions";
-import { FC } from 'react'
-
 
 interface Post {
   id: string;
