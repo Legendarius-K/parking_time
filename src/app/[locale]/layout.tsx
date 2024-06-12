@@ -37,7 +37,7 @@ export default async function RootLayout({
 
                 <script
                     async
-                    src={`https://www.googletagmanager.com/gtag/js?id=G-3X0HWDZHP0`}
+                    src={"https://www.googletagmanager.com/gtag/js?id=G-G-CZYWDJ87Z0"}
                 />
 
                 <script
@@ -46,7 +46,7 @@ export default async function RootLayout({
                         window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);} 
                         gtag('js', new Date());
-                        gtag('config', 'G-3X0HWDZHP0', {
+                        gtag('config', 'G-CZYWDJ87Z0', {
                             page_path: window.location.pathname,
                         });
                     `,
