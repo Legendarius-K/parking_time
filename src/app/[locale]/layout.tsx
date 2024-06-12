@@ -6,6 +6,7 @@ import { Roboto } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import Script from "next/script";
+import Analytics from "@/components/Analytics";
 
 const roboto = Roboto({ subsets: ['latin'], weight: '400' })
 
@@ -35,7 +36,7 @@ export default async function RootLayout({
             <head>
 
 
-                <script
+                {/* <script
                     async
                     src={"https://www.googletagmanager.com/gtag/js?id=G-G-CZYWDJ87Z0"}
                 />
@@ -52,7 +53,7 @@ export default async function RootLayout({
                     `,
                     }}
 
-                />
+                /> */}
 
 
                 {/* <Script
@@ -73,6 +74,7 @@ export default async function RootLayout({
                 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
             </head>
             <body className={`${'font-sans font-thin flex flex-col min-h-full box-border'}`}>
+                <Analytics />
                 <NextIntlClientProvider messages={messages}>
                     <Header />
                     <section className="grow">
