@@ -1,9 +1,9 @@
-
+import KnowMore from '../../../../src/components/KnowMore'
 
 const About = () => {
     return (
         <>
-            About Us   
+            < KnowMore/>   
         </>
     )
 };

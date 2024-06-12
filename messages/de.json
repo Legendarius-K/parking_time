@@ -72,5 +72,11 @@
         "heading4": "Datenbasierte Stadtplanung",
         "text4": "Die digitale Parkscheibe kann schließlich Parkressourcen und Stadtplanung durch wertvolle Nutzungsdaten und Verhaltensmuster optimieren, was zu einer sichereren Gesellschaft mit besserer Kontrolle und Zugang zu Parkplätzen führt.",
         "about": "Mer om oss"
+    },
+    "knowMore": {
+        "title": "Möchten Sie mehr erfahren?",
+        "paragraf": "Kontaktieren Sie uns, um mehr über unsere Lösung und wie wir sie in Ihrer Gemeinde umsetzen können, zu erfahren",
+        "button": "Kontaktieren Sie uns"
     }
+    
 }

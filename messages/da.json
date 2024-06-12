@@ -72,5 +72,11 @@
         "heading4": "Datadrevet byplanlægning",
         "text4": "Den digitale parkeringsskive kan til sidst optimere parkeringsressourcer og byplanlægning gennem værdifulde brugsdata og adfærdsmønstre, hvilket fører til et mere sikkert samfund med bedre kontrol og adgang til parkeringspladser.",
         "about": "Mere om os"
+    },
+    "knowMore": {
+        "title": "Vil du vide mere?",
+        "paragraf": "Kontakt os for at finde ud af mere om vores løsning og hvordan vi kan implementere den i din kommune",
+        "button": "Kontakt os"
     }
+    
 }

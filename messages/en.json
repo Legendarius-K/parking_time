@@ -72,5 +72,11 @@
         "heading4": "Data-driven urban planning",
         "text4": "The digital parking disc can eventually optimize parking resources and urban planning through valuable usage data and behavior patterns, leading to a safer society with better control and access to parking spaces.",
         "about": "Learn more about us"
+    },
+    "knowMore": {
+        "title": "Want to know more?",
+        "paragraf": "Contact us to find out more about our solution and how we can implement it in your municipality",
+        "button": "Contact us"
     }
+    
 }
