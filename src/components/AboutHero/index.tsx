@@ -5,7 +5,7 @@ const AboutHero = () => {
     const t = useTranslations("aboutHero")
     return (
         <div className="relative flex justify-center items-start h-[50vh] md:h-[50vh] overflow-hidden">
-  <img className="w-full h-full md:block object-cover object-center" src="/Images/bild.png" alt="hero picture" />
+  <img className="w-full h-full md:block object-cover object-center" src="/bild.png" alt="hero picture" />
   <div className="absolute left-0 h-full w-full bg-slate-900/20 backdrop-blur md:bg-slate-900/20 md:backdrop-blur md:w-2/4">
     <div className="hidden md:block absolute top-0 right-0 h-full w-1/2">
     </div>
