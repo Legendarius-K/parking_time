@@ -33,7 +33,29 @@ export default async function RootLayout({
     return (
         <html lang={locale} className="h-screen">
             <head>
-                <Script
+
+
+                <script
+                    async
+                    src={`https://www.googletagmanager.com/gtag/js?id=G-CZYWDJ87Z0`}
+                />
+
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);} 
+                        gtag('js', new Date());
+                        gtag('config', 'G-CZYWDJ87Z0', {
+                            page_path: window.location.pathname,
+                        });
+                    `,
+                    }}
+
+                />
+
+
+                {/* <Script
                     strategy="lazyOnload"
                     src={`https://www.googletagmanager.com/gtag/js?id=G-CZYWDJ87Z0`}
                 />
@@ -41,13 +63,13 @@ export default async function RootLayout({
                 <Script id="ga-script" strategy="lazyOnload">
                     {`
                         window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
+                        function gtag(){dataLayer.push(arguments);} 
                         gtag('js', new Date());
                         gtag('config', 'G-CZYWDJ87Z0', {
                         page_path: window.location.pathname,
                         });
                     `}
-                </Script>
+                </Script> */}
                 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
             </head>
             <body className={`${'font-sans font-thin flex flex-col min-h-full box-border'}`}>
