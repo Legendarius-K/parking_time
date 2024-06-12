@@ -72,5 +72,16 @@
         "heading4": "Dataohjattu kaupunkisuunnittelu",
         "text4": "Digitaalinen pysäköintikiekko voi lopulta optimoida pysäköintiresursseja ja kaupunkisuunnittelua arvokkaan käyttödatan ja käyttäytymismallien avulla, mikä johtaa turvallisempaan yhteiskuntaan paremmalla hallinnalla ja pääsylle pysäköintitiloihin.",
         "about": "Lisätietoja meistä"
+    },
+    "contactHero": {
+        "contact": "Yhteys",
+        "headline": "Odotamme innolla yhteydenottoasi!"
+    },
+    "aboutHero": {
+        "about": "Meistä",
+        "title": "Parking Time Ruotsi",
+        "paragraf": "Olemme teknologiayritys, joka on omistautunut muuttamaan pysäköintikokemusta kaikille sidosryhmille - pysäköijille, pysäköinninvalvojille, kunnille ja kiinteistönomistajille."
     }
+    
+    
 }
