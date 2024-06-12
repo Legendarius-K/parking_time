@@ -72,5 +72,10 @@
         "heading4": "Datadrevet byplanlægning",
         "text4": "Den digitale parkeringsskive kan til sidst optimere parkeringsressourcer og byplanlægning gennem værdifulde brugsdata og adfærdsmønstre, hvilket fører til et mere sikkert samfund med bedre kontrol og adgang til parkeringspladser.",
         "about": "Mere om os"
+    },
+    "download": {
+        "title": "Download nu",
+        "paragraf": "Appen er gratis at downloade for dig som bruger. Din kommune skal dog være registreret som kunde hos os, for at vores app er gyldig i dit område. Hvis vores app ikke er tilgængelig i din kommune, er du velkommen til at kontakte os eller foreslå os til din kommune!"
     }
+    
 }

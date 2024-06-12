@@ -72,5 +72,10 @@
         "heading4": "Data-driven urban planning",
         "text4": "The digital parking disc can eventually optimize parking resources and urban planning through valuable usage data and behavior patterns, leading to a safer society with better control and access to parking spaces.",
         "about": "Learn more about us"
+    },
+    "download": {
+        "title": "Download now",
+        "paragraf": "The app is free to download for you as a user. However, your municipality must be registered as a customer with us for our app to be valid in your area. If our app is not available in your municipality, you are welcome to contact us or suggest us to your municipality!"
     }
+    
 }

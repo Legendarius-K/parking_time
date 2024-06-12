@@ -72,5 +72,9 @@
         "heading4": "Datadriven stadsplanering",
         "text4": "Den digitala parkeringsskivan kan så småningom optimera parkeringsresurser och stadsplanering genom värdefull användningsdata och beteendemönster, vilket leder till ett säkrare samhälle med bättre kontroll och tillgång till parkeringsplatser.",
         "about": "Mer om oss"
+    },
+    "download": {
+        "title": "Ladda ned nu",
+        "paragraf": "Appen är gratis att ladda ner för dig som användare. Din kommun måste dock vara registrerad som kund hos oss för att vår app ska vara giltig i ditt område. Om vår app inte är tillgänglig i din kommun är du välkommen att kontakta oss eller föreslå oss för din kommun!"
     }
 }

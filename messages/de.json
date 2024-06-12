@@ -72,5 +72,10 @@
         "heading4": "Datenbasierte Stadtplanung",
         "text4": "Die digitale Parkscheibe kann schließlich Parkressourcen und Stadtplanung durch wertvolle Nutzungsdaten und Verhaltensmuster optimieren, was zu einer sichereren Gesellschaft mit besserer Kontrolle und Zugang zu Parkplätzen führt.",
         "about": "Mer om oss"
+    },
+    "download": {
+        "title": "Jetzt herunterladen",
+        "paragraf": "Die App ist für dich als Benutzer kostenlos herunterzuladen. Deine Gemeinde muss jedoch als Kunde bei uns registriert sein, damit unsere App in deinem Gebiet gültig ist. Wenn unsere App in deiner Gemeinde nicht verfügbar ist, kannst du uns gerne kontaktieren oder uns deiner Gemeinde vorschlagen!"
     }
+    
 }
