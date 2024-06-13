@@ -73,6 +73,11 @@
         "text4": "Die digitale Parkscheibe kann schließlich Parkressourcen und Stadtplanung durch wertvolle Nutzungsdaten und Verhaltensmuster optimieren, was zu einer sichereren Gesellschaft mit besserer Kontrolle und Zugang zu Parkplätzen führt.",
         "about": "Mer om oss"
     },
+    "stats": {
+        "downloads": "Downloads",
+        "sessions": "Parkvorgänge",
+        "zones": "Parkzonen"
+    },
     "contactHero": {
         "contact": "Kontakt",
         "headline": "Wir freuen uns darauf, von Ihnen zu hören!"
@@ -81,11 +86,6 @@
         "about": "Über uns",
         "title": "Parking Time Schweden",
         "paragraf": "Wir sind ein Technologie-Startup, das sich der Transformation des Parkerlebnisses für alle Beteiligten widmet - Parker, Parkwächter, Gemeinden und Immobilieneigentümer."
-    },
-    "stats": {
-        "downloads": "Downloads",
-        "sessions": "Parkvorgänge",
-        "zones": "Parkzonen"
     }
     
     

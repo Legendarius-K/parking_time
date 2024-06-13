@@ -73,6 +73,11 @@
         "text4": "Den digitale parkeringsskiven kan til slutt optimalisere parkeringsressurser og byplanlegging gjennom verdifull bruksdata og atferdsmønstre, noe som fører til et tryggere samfunn med bedre kontroll og tilgang til parkeringsplasser.",
         "about": "Om oss"
     },
+    "stats": {
+        "downloads": "Nedlastinger",
+        "sessions": "Parkeringsøkter",
+        "zones": "Parkeringssoner"
+    },
     "contactHero": {
         "contact": "Kontakt",
         "headline": "Vi ser frem til å høre fra deg!"
@@ -81,11 +86,6 @@
         "about": "Om oss",
         "title": "Parking Time Sverige",
         "paragraf": "Vi er et teknologiselskap dedikert til å transformere parkeringsopplevelsen for alle interessenter - bilister, parkeringsvakter, kommuner og eiendomseiere."
-    },
-    "stats": {
-        "downloads": "Nedlastinger",
-        "sessions": "Parkeringsøkter",
-        "zones": "Parkeringssoner"
     }
     
     
