@@ -77,5 +77,16 @@
         "downloads": "Lataukset",
         "sessions": "Pysäköintikerrat",
         "zones": "Pysäköintivyöhykkeet"
+    },
+    "contactHero": {
+        "contact": "Yhteys",
+        "headline": "Odotamme innolla yhteydenottoasi!"
+    },
+    "aboutHero": {
+        "about": "Meistä",
+        "title": "Parking Time Ruotsi",
+        "paragraf": "Olemme teknologiayritys, joka on omistautunut muuttamaan pysäköintikokemusta kaikille sidosryhmille - pysäköijille, pysäköinninvalvojille, kunnille ja kiinteistönomistajille."
     }
+    
+    
 }
