@@ -1,11 +1,13 @@
-
+import React from 'react';
+import AboutHero from '@/components/AboutHero';
 
 const About = () => {
     return (
-        <>
-            About Us   
-        </>
-    )
-};
+        <div>
+            <AboutHero />
+            {/* Add additional About Us content here */}
+        </div>
+    );
+}
 
-export default About
+export default About;
