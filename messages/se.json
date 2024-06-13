@@ -72,5 +72,10 @@
         "heading4": "Datadriven stadsplanering",
         "text4": "Den digitala parkeringsskivan kan så småningom optimera parkeringsresurser och stadsplanering genom värdefull användningsdata och beteendemönster, vilket leder till ett säkrare samhälle med bättre kontroll och tillgång till parkeringsplatser.",
         "about": "Mer om oss"
+    },
+    "stats": {
+        "downloads": "Nedladdningar",
+        "sessions": "Parkeringstillfällen",
+        "zones": "Parkeringszoner"
     }
 }

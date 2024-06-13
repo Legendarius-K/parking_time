@@ -72,5 +72,10 @@
         "heading4": "Dataohjattu kaupunkisuunnittelu",
         "text4": "Digitaalinen pysäköintikiekko voi lopulta optimoida pysäköintiresursseja ja kaupunkisuunnittelua arvokkaan käyttödatan ja käyttäytymismallien avulla, mikä johtaa turvallisempaan yhteiskuntaan paremmalla hallinnalla ja pääsylle pysäköintitiloihin.",
         "about": "Lisätietoja meistä"
+    },
+    "stats": {
+        "downloads": "Lataukset",
+        "sessions": "Pysäköintikerrat",
+        "zones": "Pysäköintivyöhykkeet"
     }
 }

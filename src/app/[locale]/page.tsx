@@ -14,13 +14,13 @@ const Home = () => {
     const t = useTranslations('navigation')
     return (
         <main className="overflow-hidden">
-            <Stats />
             <Hero />
             <SmartParkingSolution />
             <CarDriving />
             <How />
             <Why />
             <TrustedBy />
+            <Stats />
         </main>
     );
 }

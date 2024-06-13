@@ -1,13 +1,16 @@
 'use client'
 
 import Image from "next/image";
-import arrow from '../../../public/stats-arrow.png'
-import p from '../../../public/stats-p.png'
-import zones from '../../../public/stats-zones.png'
-import { motion, useMotionValue, useTransform, animate } from "framer-motion";
-import { useEffect, useState } from "react";
+import arrow from '../../../public/stats-arrow.png';
+import p from '../../../public/stats-p.png';
+import zones from '../../../public/stats-zones.png';
+import { motion, useMotionValue, useTransform, animate, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
 
 const Stats = () => {
+    const t = useTranslations('stats');
+
     const downloadCount = useMotionValue(0);
     const downloads = useTransform(downloadCount, Math.round);
 
@@ -17,29 +20,33 @@ const Stats = () => {
     const pZoneCount = useMotionValue(0);
     const pZones = useTransform(pZoneCount, Math.round);
 
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
     useEffect(() => {
-        const downloadAnimation = animate(downloadCount, 5000, {
-            duration: 6,
-        });
+        if (isInView) {
+            const downloadAnimation = animate(downloadCount, 5000, {
+                duration: 5,
+            });
 
-        const sessionAnimation = animate(sessionCount, 4700, {
-            duration: 5,
-        });
+            const sessionAnimation = animate(sessionCount, 4700, {
+                duration: 4.5,
+            });
 
-        const pZoneAnimation = animate(pZoneCount, 30, {
-            duration: 4,
-        });
+            const pZoneAnimation = animate(pZoneCount, 30, {
+                duration: 4,
+            });
 
-        // Cleanup animations
-        return () => {
-            downloadAnimation.stop();
-            sessionAnimation.stop();
-            pZoneAnimation.stop();
-        };
-    }, []);
+            return () => {
+                downloadAnimation.stop();
+                sessionAnimation.stop();
+                pZoneAnimation.stop();
+            };
+        }
+    }, [isInView]);
 
     return (
-        <div className="bg-pt-background py-28 w-full flex justify-center items-center">
+        <div ref={ref} className="bg-pt-background py-28 w-full flex justify-center items-center">
             <div className="bg-white rounded-3xl min-h-[200px] w-11/12 max-w-[1500px] flex flex-col md:flex-row justify-evenly items-center shadow-xl">
                 <div className="my-12 flex items-center">
                     <div className="mx-2 w-16">
@@ -55,7 +62,7 @@ const Stats = () => {
                             <motion.h2 className="text-2xl font-bold">{downloads}</motion.h2>
                             <p className="text-2xl ml-1">+</p>
                         </div>
-                        <p>Downloads</p>
+                        <p>{t('downloads')}</p>
                     </div>
                 </div>
                 <div className="my-12 flex items-center">
@@ -72,7 +79,7 @@ const Stats = () => {
                             <motion.h2 className="text-2xl font-bold">{sessions}</motion.h2>
                             <p className="text-2xl ml-1">+</p>
                         </div>
-                        <p>Parking sessions</p>
+                        <p>{t('sessions')}</p>
                     </div>
                 </div>
                 <div className="my-12 flex items-center">
@@ -89,12 +96,12 @@ const Stats = () => {
                             <motion.h2 className="text-2xl font-bold">{pZones}</motion.h2>
                             <p className="text-2xl ml-1">+</p>
                         </div>
-                        <p>Parking zones</p>
+                        <p>{t('zones')}</p>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 };
 
 export default Stats;
