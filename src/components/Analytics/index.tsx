@@ -1,25 +1,3 @@
-// 'use client';
-
-// import { GoogleAnalytics } from 'nextjs-google-analytics';
-// import { useEffect } from 'react';
-
-// const GoogleAnalyticsClient = () => {
-//     useEffect(() => {
-//         // Optionally, you can add any additional setup or logging here
-//         console.log('Google Analytics initialized');
-//     }, []);
-
-//     return <GoogleAnalytics trackPageViews />;
-// };
-
-// export default GoogleAnalyticsClient;
-
-
-
-
-
-
-
 'use client';
 
 import Script from 'next/script';

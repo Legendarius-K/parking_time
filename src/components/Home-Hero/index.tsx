@@ -17,8 +17,6 @@ const Homehero: React.FC = () => {
         <div className="text-[16px] leading-[30px] text-sm md:text-base lg:text-lg xl:text-xl w-full md:w-3/4 lg:w-2/3 xl:w-1/2" style={{ opacity: 1 }}>
           <p>{t('text1')}</p>
           <p>{t('text2')}</p>
-          {/* Digital parking disc - directly on your mobile. <br />
-          A winning concept in a new, digitalized format. */}
         </div>
         <div className="flex flex-col md:flex-row w-full gap-4 px-3 md:px-0">
           <Link className='max-w-[300px]' href="/contact">
