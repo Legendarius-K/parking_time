@@ -5,6 +5,9 @@ import Why from "@/components/Why";
 import CarDriving from "@/components/CarDriving";
 import TrustedBy from "@/components/TrustedBy";
 import Faq from "@/components/Faq";
+import Stats from "@/components/Stats";
+
+
 
 const Home = () => {
     return (
@@ -17,6 +20,7 @@ const Home = () => {
                 <Why />
             </div>
             <TrustedBy />
+            <Stats />
             <div id="faq-component">
                 <Faq />
             </div>

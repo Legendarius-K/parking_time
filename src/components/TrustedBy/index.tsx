@@ -20,7 +20,16 @@ const TrustedBy = () => {
     const [rerender, setRerender] = useState(false);
 
 
-    const images2 = [
+    const partnersarray = [
+        partner1,
+        partner2,
+        partner3,
+        partner4,
+        partner5,
+        partner6,
+        partner7,
+        partner8,
+        partner9,
         partner1,
         partner2,
         partner3,
@@ -32,7 +41,7 @@ const TrustedBy = () => {
         partner9
     ];
 
-    const FAST_DURATION = 25;
+    const FAST_DURATION =40;
     const SLOW_DURATION = 75;
     const [duration, setDuration] = useState(FAST_DURATION)
 
@@ -88,7 +97,7 @@ const TrustedBy = () => {
                     setMustFinish(true);
                     setDuration(FAST_DURATION)}}
             >
-                {[...images2, ...images2].map((item, index) => (
+                {[...partnersarray, ...partnersarray].map((item, index) => (
                     <Card image={item} key={index} />
                 ))}
             </motion.div>
