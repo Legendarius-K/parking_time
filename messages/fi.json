@@ -81,6 +81,11 @@
         "about": "Meistä",
         "title": "Parking Time Ruotsi",
         "paragraf": "Olemme teknologiayritys, joka on omistautunut muuttamaan pysäköintikokemusta kaikille sidosryhmille - pysäköijille, pysäköinninvalvojille, kunnille ja kiinteistönomistajille."
+    },
+    "stats": {
+        "downloads": "Lataukset",
+        "sessions": "Pysäköintikerrat",
+        "zones": "Pysäköintivyöhykkeet"
     }
     
     

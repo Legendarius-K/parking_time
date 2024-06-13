@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import Why from "@/components/Why";
 import CarDriving from "@/components/CarDriving";
 import TrustedBy from "@/components/TrustedBy";
+import Stats from "@/components/Stats";
 
 
 
@@ -19,6 +20,7 @@ const Home = () => {
             <How />
             <Why />
             <TrustedBy />
+            <Stats />
         </main>
     );
 }

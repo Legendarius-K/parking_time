@@ -81,5 +81,10 @@
         "about":"Om oss",
         "title": "Parking Time Sverige",
         "paragraf": "Vi är ett startup teknikföretag dedikerat till att förändra parkeringsupplevelsen för alla intressenter - parkerare, parkeringsvakter, kommuner och fastighetsägare."
+    },
+    "stats": {
+        "downloads": "Nedladdningar",
+        "sessions": "Parkeringstillfällen",
+        "zones": "Parkeringszoner"
     }
 }
