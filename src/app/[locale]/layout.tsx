@@ -5,7 +5,8 @@ import Footer from "@/components/Footer";
 import { Roboto } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import { GoogleAnalytics } from "nextjs-google-analytics";
+import Analytics from "@/components/Analytics";
+
 
 const roboto = Roboto({ subsets: ['latin'], weight: '400' })
 
@@ -37,7 +38,7 @@ export default async function RootLayout({
             </head>
             <body className={`${'font-sans font-thin flex flex-col min-h-full box-border'}`}>
                 <NextIntlClientProvider messages={messages}>
-                    <GoogleAnalytics trackPageViews />
+                    <Analytics />
                     <Header />
                     <section className="grow">
                         {children}
