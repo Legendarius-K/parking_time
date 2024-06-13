@@ -1,10 +1,15 @@
 'use client'
 
-import 'keen-slider/keen-slider.min.css'
-import { useKeenSlider } from 'keen-slider/react'
 import React, { useEffect, useState } from "react";
 import { fetchTestimonials } from "@/utils/functions";
 import Image from "next/image";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination'
 
 interface Testimonial {
   id: string;
@@ -18,22 +23,6 @@ interface Testimonial {
 
 const Testimonials = () => {
   const [newTestimonials, setTestimonials] = useState<Testimonial[]>([]);
-  const [loaded, setLoaded] = useState(false);
-
-  const [ref] = useKeenSlider<HTMLDivElement>(
-    {
-      created: () => {
-        setLoaded(true);
-      },
-      slides: {
-        spacing: 18,
-        perView: 1.2,
-        origin: "center",
-      },
-      loop: true,
-      initial: 0,
-    },
-  )
 
   useEffect(() => {
 
@@ -65,29 +54,49 @@ const Testimonials = () => {
             <p className='text-bold text.sm'>Hear from some of our clients.</p>
           </div>
           <div className='flex justify-center'>
-              <div ref={ref} className={`keen-slider ${loaded ? "" : "hidden"}`}>
-                {newTestimonials.map((testimonial) => (
-                  <div key={testimonial.id} className={` keen-slider__slide flex flex-col gap-10 h-[516px] w-20  bg-white p-5 pb-11 rounded-[20px] justify-between shadow-mobile-testimonial`}>
-                  <div className='flex flex-col gap-8 '>
-                    <div className=''>
-                    <Image className="" src={`/${testimonial.logo}`} width={80} height={80} alt={`logo of ${testimonial.logo}`}/>
+            <div className={`w-full md:px-44`}>
+            <Swiper
+              centeredSlides={true}
+              slidesPerView={1.2}
+              loop={true}
+              pagination={{ dynamicBullets:true }} 
+              modules={[Pagination]}
+              breakpoints={{
+                960: {
+                  slidesPerView: 2,
+                  centeredSlides: false,
+                  
+                }
+              }}
+              className="flex w-full h-[600px]"
+            >
+              {newTestimonials.map((testimonial) => (
+                <SwiperSlide className="w-full mb-4">  
+                  <div className='p-4 flex items-center h-full'>
+                    <div key={testimonial.id} className={`flex flex-col gap-10 md:h-auto w-full bg-white p-5 pb-11 md:p-8 mb-8 rounded-[20px] md:rounded-[40px] justify-between shadow-lg`}>
+                    <div className='flex flex-col gap-8 '>
+                      <div className=' flex w-[60%] h-[60px]'>
+                      <Image className="" src={`/${testimonial.logo}`} width={0} height={0} style={{width: 'auto', height: '60px'}} alt={`logo of ${testimonial.logo}`}/>
+                      </div>
+                      <p className="italic">
+                        {testimonial.quote}
+                      </p>
                     </div>
-                    <p className="italic">
-                      {testimonial.quote}
-                    </p>
-                  </div>
-                  <div className=''>
-                    <div className=''>
-                      <Image className="rounded-full" src={`/${testimonial.avatar}`} width={80} height={80} alt={`picture of ${testimonial.name}`}/>
+                    <div className='flex flex-col md:flex-row gap-5 md:items-center'>
+                      <div className='w-[50px] h-[50px]'>
+                        <Image className="rounded-full" src={`/${testimonial.avatar}`} width={80} height={80} style={{width: '60px', maxWidth: '60px', height: '60px'}} alt={`picture of ${testimonial.name}`}/>
+                      </div>
+                      <div className='text-base '>
+                        <p className="text-pt-red">{testimonial.name}</p>
+                        <p className="font-normal">{testimonial.credentials}</p>
+                      </div>
                     </div>
-                    <div className='text-base '>
-                      <p className="text-pt-red">{testimonial.name}</p>
-                      <p className="font-normal">{testimonial.credentials}</p>
                     </div>
-                  </div>
                   </div> 
-                ))}
-              </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            </div>
           </div>
       </div>
     </>
@@ -95,28 +104,3 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
-
-
-// {newTestimonials.map((testimonial) => (
-//   <div key={testimonial.id} className={`flex flex-col gap-10 h-[516px] w-[90%] bg-white p-5 pb-11 rounded-[20px] justify-between shadow-mobile-testimonial keen-slider__slide number-slide${testimonial.id}`}>
-//   <div className='flex flex-col gap-8 '>
-//     <div className=''>
-//     {/* <Image className="" src={"/"} width={50} height={50} alt="logo for falköping kummun"/> */}
-//     </div>
-//     <p className="italic">
-//       {testimonial.quote}
-//     </p>
-//   </div>
-//   <div className=''>
-//     <div className=''>
-//       <Image className="rounded-full" src={`/../../public/${testimonial.avatar}`} width={50} height={50} alt={`picture of ${testimonial.name}`}/>
-//       <p>{`${testimonial.avatar}`}</p>
-//     </div>
-//     <div className='text-base '>
-//       <p className="text-pt-red">{testimonial.name}</p>
-//       <p className="font-normal">{testimonial.credentials}</p>
-//     </div>
-//   </div>
-//   </div> 
-// ))}
-
