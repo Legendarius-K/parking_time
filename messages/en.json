@@ -72,5 +72,20 @@
         "heading4": "Data-driven urban planning",
         "text4": "The digital parking disc can eventually optimize parking resources and urban planning through valuable usage data and behavior patterns, leading to a safer society with better control and access to parking spaces.",
         "about": "Learn more about us"
+    },
+    "contactHero": {
+        "contact": "Contact",
+        "headline": "We would love to hear from you!"
+    },
+    "aboutHero": {
+        "about": "About Us",
+        "title": "Parking Time Sweden",
+        "paragraf": "We are a tech startup dedicated to transforming the parking experience for all stakeholders - parkers, parking attendants, municipalities, and property owners."
+    },
+    "stats": {
+        "downloads": "Downloads",
+        "sessions": "Parking sessions",
+        "zones": "Parking zones"
     }
+        
 }

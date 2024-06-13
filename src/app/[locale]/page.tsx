@@ -1,22 +1,31 @@
 import How from "@/components/How";
 import Hero from "@/components/Home-Hero";
-import SmartParkingSolution from "@/components/SmartParkingSolution"
-import { useTranslations } from "next-intl";
+import SmartParkingSolution from "@/components/SmartParkingSolution";
 import Why from "@/components/Why";
 import CarDriving from "@/components/CarDriving";
+import TrustedBy from "@/components/TrustedBy";
+import Faq from "@/components/Faq";
+import Stats from "@/components/Stats";
+
 
 
 const Home = () => {
-    const t = useTranslations('navigation')
     return (
-        <main className="">
+        <main className="overflow-hidden">
             <Hero />
             <SmartParkingSolution />
             <CarDriving />
             <How />
-            <Why />
+            <div id="why-component">
+                <Why />
+            </div>
+            <TrustedBy />
+            <Stats />
+            <div id="faq-component">
+                <Faq />
+            </div>
         </main>
     );
-}
+};
 
 export default Home;
