@@ -13,9 +13,13 @@ const Download = () => {
                         <p className="font-nunito font-thin w-full md:w-1000%] leading-loose p-[5%]">
                             {t("paragraf")}
                         </p>
-                        <div className="flex mb-[7%] ml-[4%] mb:[2%] md:mb-0">
+                        <div className="flex mb-[7%] ml-[4%] mb:[2%] md:mb-0 cursor-pointer">
+                        <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank" rel="noopener noreferrer">
                             <img className="mr-2" src="/appstore.svg" alt="appstore download logo" />
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=se.parkingtime.app&hl" target="_blank" rel="noopener noreferrer">
                             <img src="/googlestore.svg" alt="googleplay download logo" />
+                        </a>
                         </div>
                         <div className="mt-5 hidden md:block ml-[4%]">
                             <img src="/QR.svg" alt="QR kod" />
