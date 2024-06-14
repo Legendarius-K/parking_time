@@ -73,6 +73,11 @@
         "text4": "Den digitale parkeringsskive kan til sidst optimere parkeringsressourcer og byplanlægning gennem værdifulde brugsdata og adfærdsmønstre, hvilket fører til et mere sikkert samfund med bedre kontrol og adgang til parkeringspladser.",
         "about": "Mere om os"
     },
+    "knowMore": {
+        "title": "Vil du vide mere?",
+        "paragraf": "Kontakt os for at finde ud af mere om vores løsning og hvordan vi kan implementere den i din kommune",
+        "button": "Kontakt os"
+    },
     "download": {
         "title": "Download nu",
         "paragraf": "Appen er gratis at downloade for dig som bruger. Din kommune skal dog være registreret som kunde hos os, for at vores app er gyldig i dit område. Hvis vores app ikke er tilgængelig i din kommune, er du velkommen til at kontakte os eller foreslå os til din kommune!"
@@ -91,6 +96,7 @@
         "title": "Parking Time Sweden",
         "paragraf": "Vi er en tech-startup dedikeret til at transformere parkeringsoplevelsen for alle interessenter - parkerende, parkeringsvagter, kommuner og ejendomsejere."
     }
+    
     
     
 }

@@ -73,6 +73,11 @@
         "text4": "Digitaalinen pysäköintikiekko voi lopulta optimoida pysäköintiresursseja ja kaupunkisuunnittelua arvokkaan käyttödatan ja käyttäytymismallien avulla, mikä johtaa turvallisempaan yhteiskuntaan paremmalla hallinnalla ja pääsylle pysäköintitiloihin.",
         "about": "Lisätietoja meistä"
     },
+    "knowMore": {
+        "title": "Haluatko tietää enemmän?",
+        "paragraf": "Ota meihin yhteyttä saadaksesi lisätietoja ratkaisustamme ja siitä, miten voimme toteuttaa sen kunnassasi",
+        "button": "Ota yhteyttä"
+    },
     "download": {
         "title": "Lataa nyt",
         "paragraf": "Sovelluksen lataaminen on sinulle käyttäjänä ilmaista. Kuntasi on kuitenkin rekisteröidyttävä asiakkaaksi, jotta sovelluksemme on voimassa alueellasi"
@@ -92,6 +97,7 @@
         "title": "Parking Time Ruotsi",
         "paragraf": "Olemme teknologiayritys, joka on omistautunut muuttamaan pysäköintikokemusta kaikille sidosryhmille - pysäköijille, pysäköinninvalvojille, kunnille ja kiinteistönomistajille."
     }
+    
     
     
 }
