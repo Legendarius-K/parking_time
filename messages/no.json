@@ -73,6 +73,10 @@
         "text4": "Den digitale parkeringsskiven kan til slutt optimalisere parkeringsressurser og byplanlegging gjennom verdifull bruksdata og atferdsmønstre, noe som fører til et tryggere samfunn med bedre kontroll og tilgang til parkeringsplasser.",
         "about": "Om oss"
     },
+    "download": {
+        "title": "Last ned nå",
+        "paragraf": "Appen er gratis å laste ned for deg som bruker. Din kommune må imidlertid være registrert som kunde hos oss for at appen vår skal være gyldig i ditt område. Hvis appen vår ikke er tilgjengelig i din kommune, er du velkommen til å kontakte oss eller foreslå oss for din kommune!"
+    },
     "stats": {
         "downloads": "Nedlastinger",
         "sessions": "Parkeringsøkter",
@@ -87,6 +91,7 @@
         "title": "Parking Time Sverige",
         "paragraf": "Vi er et teknologiselskap dedikert til å transformere parkeringsopplevelsen for alle interessenter - bilister, parkeringsvakter, kommuner og eiendomseiere."
     }
+    
     
     
 }

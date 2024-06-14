@@ -73,6 +73,11 @@
         "text4": "Digitaalinen pysäköintikiekko voi lopulta optimoida pysäköintiresursseja ja kaupunkisuunnittelua arvokkaan käyttödatan ja käyttäytymismallien avulla, mikä johtaa turvallisempaan yhteiskuntaan paremmalla hallinnalla ja pääsylle pysäköintitiloihin.",
         "about": "Lisätietoja meistä"
     },
+    "download": {
+        "title": "Lataa nyt",
+        "paragraf": "Sovelluksen lataaminen on sinulle käyttäjänä ilmaista. Kuntasi on kuitenkin rekisteröidyttävä asiakkaaksi, jotta sovelluksemme on voimassa alueellasi"
+    
+    },
     "stats": {
         "downloads": "Lataukset",
         "sessions": "Pysäköintikerrat",

@@ -8,6 +8,7 @@ import Faq from "@/components/Faq";
 import Stats from "@/components/Stats";
 
 import Testimonials from "@/components/Testimonials";
+import Download from "@/components/Download";
 
 
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
             <div id="faq-component">
                 <Faq />
             </div>
+            <Download />
         </main>
     );
 };

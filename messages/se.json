@@ -86,5 +86,9 @@
         "about":"Om oss",
         "title": "Parking Time Sverige",
         "paragraf": "Vi är ett startup teknikföretag dedikerat till att förändra parkeringsupplevelsen för alla intressenter - parkerare, parkeringsvakter, kommuner och fastighetsägare."
+    },
+    "download": {
+        "title": "Ladda ned nu",
+        "paragraf": "Appen är gratis att ladda ner för dig som användare. Din kommun måste dock vara registrerad som kund hos oss för att vår app ska vara giltig i ditt område. Om vår app inte är tillgänglig i din kommun är du välkommen att kontakta oss eller föreslå oss för din kommun!"
     }
 }
