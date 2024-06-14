@@ -14,10 +14,10 @@ const Download = () => {
                             {t("paragraf")}
                         </p>
                         <div className="flex mb-[7%] ml-[4%] mb:[2%] md:mb-0 cursor-pointer">
-                        <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank" rel="noopener noreferrer">
+                        <a href="https://apps.apple.com/se/app/parking-time/id1611019108" target="_blank" rel="noopener noreferrer">
                             <img className="mr-2" src="/appstore.svg" alt="appstore download logo" />
                         </a>
-                        <a href="https://play.google.com/store/apps/details?id=se.parkingtime.app&hl" target="_blank" rel="noopener noreferrer">
+                        <a href="https://play.google.com/store/search?q=parking%20time&c=apps" target="_blank" rel="noopener noreferrer">
                             <img src="/googlestore.svg" alt="googleplay download logo" />
                         </a>
                         </div>
