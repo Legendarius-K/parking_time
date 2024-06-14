@@ -4,8 +4,6 @@ import Hero from "@/components/Home-Hero";
 import SmartParkingSolution from "@/components/SmartParkingSolution"
 import { useTranslations } from "next-intl";
 import Why from "@/components/Why";
-
-import Article from "@/components/Article";
 import Testimonials from "@/components/Testimonials";
 
 
@@ -15,7 +13,6 @@ const Home = () => {
         <main className="">
             <Hero />
             <SmartParkingSolution />
-            <Article/>
             <How />
             <Why />
             <Testimonials />
