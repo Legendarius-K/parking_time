@@ -1,0 +1,103 @@
+{
+    "navigation": {
+        "home": "Warum Parking Time?",
+        "about": "Über uns",
+        "news": "Nachrichten",
+        "faq": "FAQ",
+        "contact": "Kontaktiere uns",
+        "app": "App herunterladen",
+        "language": "Sprache wählen"
+    },
+    "button": {
+        "contact": "Kontaktiere uns",
+        "app": "App herunterladen"
+    },
+    "footer": {
+        "address": "Adresse",
+        "contact": "Kontakt",
+        "links": "Links",
+        "about": "Über uns",
+        "news": "Nachrichten",
+        "policy": "Datenschutzrichtlinie"
+    },
+    "home-hero": {
+        "text1": "Digitaler Parkscheibe - direkt auf Ihrem Handy.",
+        "text2": "Ein Gewinnkonzept in einem neuen, digitalisierten Format.",
+        "contact": "Kontaktiere uns",
+        "app": "App herunterladen",
+        "bullet1": "Einfach zu bedienen",
+        "bullet2": "Kostenloser Download",
+        "bullet3": "Vermeiden Sie Bußgelder",
+        "bullet4": "Reduzieren Sie Stress"
+    },
+    "how": {
+        "headline": "Wie es funktioniert",
+        "heading1": "Geben Sie das Kennzeichen ein",
+        "text1": "Öffnen Sie die App und registrieren Sie sich mit Ihrem Kennzeichen.",
+        "heading2": "Finden Sie Ihre Parkzone",
+        "text2": "Nutzen Sie die Karte, die Suchfunktion oder die Zonenliste, um Ihren Parkplatz zu finden.",
+        "heading3": "Starten Sie Ihre digitale Parkscheibe",
+        "text3": "Nachdem Sie Ihre Parkzone gefunden haben, können Sie die Parkregeln überprüfen, das Parken starten und die App schließen.",
+        "app": "App herunterladen"
+    },
+    "smart-parking": {
+        "headline": "Intelligente Parklösung",
+        "text1": "Die Parkscheibe war lange Zeit ein Instrument zur Förderung von Zirkulation und Aktivität in Stadtzentren. Es ist eine fantastische Erfindung, die sowohl Einwohnern, Besuchern als auch lokalen Unternehmen zugute kommt. Wir möchten Teil dieser Entwicklung sein, indem wir eine kostenlose digitale Parkscheibe erstellen.",
+        "bullet1": "Wir zielen darauf ab, das Wachstum und die Effizienz in städtischen Gebieten zu unterstützen.",
+        "bullet2": "Unsere digitale Parkscheibe vereinfacht den Parkvorgang.",
+        "bullet3": "Jedes Parkwächtersystem kann problemlos in unser System integriert werden.",
+        "text2": "Wir freuen uns darauf, Ihnen in einem Meeting mehr über unsere Lösung zu erzählen.",
+        "contact": "Kontaktiere uns"
+    },
+    "contact": {
+        "contact": "Kontaktiere uns",
+        "text1": "Egal, ob Sie Fragen, Feedback oder Unterstützung benötigen, füllen Sie bitte das unten stehende Formular aus, und unser Team wird sich so schnell wie möglich bei Ihnen melden.",
+        "name": "Vor- und Nachname",
+        "title": "Berufsbezeichnung",
+        "phone": "Telefonnummer",
+        "reason": "Betreff",
+        "choose": "Wählen",
+        "message": "Nachricht",
+        "terms1": "Ich akzeptiere die",
+        "terms2": "Bedingungen"
+    },
+    "why": {
+        "headline": "Warum Parking Time?",
+        "heading1": "Vermeiden Sie Bußgelder und reduzieren Sie Stress",
+        "text1": "Unsere digitale Lösung zieht mehr Besucher an, indem sie physische Scheiben beseitigt und Bußgelder reduziert. Dies vereinfacht das Parken, steigert die Fußgängerfrequenz, die wirtschaftliche Aktivität und die Stadt lebendiger und reduziert gleichzeitig den Stress.",
+        "heading2": "Vereinfachtes Parken für Benutzer",
+        "text2": "Unsere App ermöglicht es Ihnen, die Parkzeit mühelos festzulegen, anzupassen und zu überwachen. Mit einer benutzerfreundlichen Oberfläche können Sie schnell Parkplätze finden und das Parken verwalten. Wir aktualisieren kontinuierlich basierend auf dem Kundenfeedback, um eine effiziente und problemlose Erfahrung zu gewährleisten.",
+        "heading3": "Integration mit vorhandenen Systemen",
+        "text3": "Unser System für Parkwächter lässt sich nahtlos in Ihre bestehende Einrichtung integrieren. Ein einheitliches System bringt Ihnen Vorteile, indem es den Betrieb optimiert und die Erfahrung für das Personal verbessert, indem es die Notwendigkeit von zwei verschiedenen Systemen und Geräten beseitigt. Wir machen diese Integration effizient, intuitiv und einfach!",
+        "heading4": "Datenbasierte Stadtplanung",
+        "text4": "Die digitale Parkscheibe kann schließlich Parkressourcen und Stadtplanung durch wertvolle Nutzungsdaten und Verhaltensmuster optimieren, was zu einer sichereren Gesellschaft mit besserer Kontrolle und Zugang zu Parkplätzen führt.",
+        "about": "Mer om oss"
+    },
+    "knowMore": {
+        "title": "Möchten Sie mehr erfahren?",
+        "paragraf": "Kontaktieren Sie uns, um mehr über unsere Lösung und wie wir sie in Ihrer Gemeinde umsetzen können, zu erfahren",
+        "button": "Kontaktieren Sie uns"
+    },
+    "download": {
+        "title": "Jetzt herunterladen",
+        "paragraf": "Die App ist für dich als Benutzer kostenlos herunterzuladen. Deine Gemeinde muss jedoch als Kunde bei uns registriert sein, damit unsere App in deinem Gebiet gültig ist. Wenn unsere App in deiner Gemeinde nicht verfügbar ist, kannst du uns gerne kontaktieren oder uns deiner Gemeinde vorschlagen!"
+    },
+    "stats": {
+        "downloads": "Downloads",
+        "sessions": "Parkvorgänge",
+        "zones": "Parkzonen"
+    },
+    "contactHero": {
+        "contact": "Kontakt",
+        "headline": "Wir freuen uns darauf, von Ihnen zu hören!"
+    },
+    "aboutHero": {
+        "about": "Über uns",
+        "title": "Parking Time Schweden",
+        "paragraf": "Wir sind ein Technologie-Startup, das sich der Transformation des Parkerlebnisses für alle Beteiligten widmet - Parker, Parkwächter, Gemeinden und Immobilieneigentümer."
+    }
+    
+    
+    
+    
+}
