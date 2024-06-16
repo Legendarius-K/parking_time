@@ -31,15 +31,17 @@ export default async function RootLayout({
     const messages = await getMessages();
 
     return (
-        <html lang={locale} className="h-screen">
+        <html lang={locale} className="h-screen ">
+           
             <head>
+             
                 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
             </head>
-            <body className={`${'font-sans font-thin flex flex-col min-h-full box-border overflow-x-hidden'}`}>
+            <body className={`${'font-sans font-thin flex flex-col min-h-full box-border overflow-x-hidden scroll- '}`}>
                 <NextIntlClientProvider messages={messages}>
                     <GoogleAnalytics />
-                    <Header />
-                    <section className="grow">
+                    <Header  />
+                    <section className="grow !scroll-smooth">
                         {children}
                     </section>
                     <Footer />

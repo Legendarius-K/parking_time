@@ -5,6 +5,8 @@ interface blurProps {
 }
 
 const config: Config = {
+
+  
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -58,6 +60,10 @@ const config: Config = {
   plugins: [
     function ({ addUtilities }:blurProps) {
       addUtilities({
+        'scroll-smooth': {
+          'transition-timing-function': 'cubic-bezier(0.4, 0, 0.2, 1)',
+          'transition-duration': '1000ms',
+        },
         '.webkit-blur-5': {
           '-webkit-backdrop-filter': 'blur(5px)', 
         },
@@ -69,7 +75,13 @@ const config: Config = {
         },
       });
     },
+
+    
   ],
+
+  
 };
+
+
 
 export default config;

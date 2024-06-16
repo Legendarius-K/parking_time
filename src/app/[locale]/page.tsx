@@ -13,10 +13,13 @@ import Download from "@/components/Download";
 
 const Home = () => {
     return (
-        <main className="overflow-hidden">
+        
+        <main className="overflow-hidden ">   
+        
             <Hero />
             <SmartParkingSolution />
             <CarDriving />
+            
             <How />
             <div id="why-component">
                 <Why />

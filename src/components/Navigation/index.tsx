@@ -69,6 +69,8 @@ const Navigation = ({ openBurger, updateIsOpen }: NavigationProps) => {
             <nav className="items-center hidden md:flex">
                 {menuItems.map((item, index) => (
                     <Link
+                  
+   
                         key={index}
                         href={item.link}
                         onClick={item.section ? handleScroll(item.section) : undefined}
