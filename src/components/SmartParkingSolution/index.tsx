@@ -24,6 +24,10 @@ const SmartParkingSolution: React.FC = () => {
     const y2 = useTransform(scrollYProgress, [0, 1], [70, -70]);
     const y3 = useTransform(scrollYProgress, [0, 1], [90, -90]);
     const y4 = useTransform(scrollYProgress, [0, 1], [80, -10]);
+    const x1 = useTransform(scrollYProgress, [0, 1], [20, -20]);
+    const x2 = useTransform(scrollYProgress, [0, 1], [-20, 20]);
+    const x3 = useTransform(scrollYProgress, [0, 1], [-10, 10]);
+    const x4 = useTransform(scrollYProgress, [0, 1], [10, -10]);
 
     const t = useTranslations('smart-parking')
 
@@ -37,25 +41,25 @@ const SmartParkingSolution: React.FC = () => {
                         </div>
                         <motion.div
                             ref={targetRef}
-                            style={{ y: y1 }}
+                            style={{ y: y1, x: x1 }}
                             className='w-[100px] md:w-[140px] absolute -left-4 top-[60px] '>
                             <Image src={reg} alt='reg nr' style={{ width: "100%", height: "auto" }} />
                         </motion.div>
                         <motion.div
                             ref={targetRef}
-                            style={{ y: y2 }}
+                            style={{ y: y2, x: x2 }}
                             className='w-[100px] md:w-[140px] absolute -left-8 bottom-12'>
                             <Image src={rules} alt='rules sign' style={{ width: "100%", height: "auto" }} />
                         </motion.div>
                         <motion.div
                             ref={targetRef}
-                            style={{ y: y3 }}
+                            style={{ y: y3, x: x3 }}
                             className='w-[100px] md:w-[150px] absolute -right-8 md:-right-12 top-14'>
                             <Image src={zones} alt='parking zones' style={{ width: "100%", height: "auto" }} />
                         </motion.div>
                         <motion.div
                             ref={targetRef}
-                            style={{ y: y4 }}
+                            style={{ y: y4, x: x4 }}
                             className='w-[100px] md:w-[140px] absolute -right-8 bottom-20'>
                             <Image src={note} alt='notification' style={{ width: "100%", height: "auto" }} />
                         </motion.div>
