@@ -10,15 +10,15 @@ const OurVisionStory = () => {
         <div className="relative flex flex-col lg:flex-row ml-[10%] mr-[8%] justify-center">
             <div className="order-2 lg:order-1 flex flex-col w-full lg:w-[55%]">
                 <div>
-                    <h1 className="text-3xl lg:text-3xl mb-6 lg:mb-8 mt-[25%]">{t('titleOne')}</h1>
-                    <p className="w-[90%] mb-6 lg:mb-10 text-lg lg:text-base">{t('paragrafOne')}</p>
-                    <p className="w-[85%] text-lg lg:text-base">{t('titleTwo')}</p>
+                    <h1 className="text-3xl lg:text-3xl mb-6 lg:mb-8 mt-[35%]">{t('titleOne')}</h1>
+                    <p className="font-nunito mb-6 lg:mb-8 text-lg lg:text-base">{t('paragrafOne')}</p>
+                    <p className="font-nunito text-lg lg:text-base">{t('paragrafTwo')}</p>
                 </div>
                 <div>
-                    <h1 className="text-3xl lg:text-3xl mt-10 mb-6 lg:mb-8">{t('titleTwo')}</h1>
-                    <p className="w-[100%] mb-6 lg:mb-2 text-lg lg:text-base">{t('paragrafThree')}</p>
+                    <h1 className="text-3xl lg:text-3xl mt-8 mb-6 lg:mb-8">{t('titleTwo')}</h1>
+                    <p className="font-nunito mb-6 lg:mb-2 text-lg lg:text-base">{t('paragrafThree')}</p>
                     <Link href="/contact">
-                        <button className="bg-custom-black text-white w-full lg:w-auto lg:max-w-xs mx-auto px-8 py-3 rounded-full font-light transition hover:bg-gray-300 mt-10 lg:mt-10">
+                        <button className="bg-custom-black text-white w-full lg:w-auto lg:max-w-xs mx-auto px-8 py-3 rounded-full font-light transition hover:bg-gray-300 mt-10 lg:mt-8">
                             {t('button')}
                         </button>
                     </Link>
