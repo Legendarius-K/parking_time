@@ -95,5 +95,13 @@
         "title": "Vill du veta mer?",
         "paragraf": "Kontakta oss för att få veta mer om vår lösning och hur vi kan implementera den i din kommun",
         "button": "Kontakta oss"
+    },
+    "ourStory": {
+        "titleOne": "Vår Vision",
+        "paragrafOne": "Parking Time Sweden är en teknikstartup som syftar till att revolutionera parkeringsupplevelsen för alla inblandade parter – parkeraren, parkeringsvärden, kommunen och fastighetsägaren.",
+        "paragrafTwo": "Vi erbjuder för närvarande en gratis digital parkeringsskiva i en app för att komplettera det befintliga utbudet av parkeringsappar.",
+        "titleTwo": "Vår Historia",
+        "paragrafThree": "Parking Time Sweden grundades 2021 i Luleå. Idag verkar vi över hela Sverige med ambitionen att expandera globalt under de kommande åren, och vi hoppas att du vill vara med oss på vår resa!",
+        "button": "Boka möte"
     }
 }
