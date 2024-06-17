@@ -23,7 +23,7 @@ const SmartParkingSolution: React.FC = () => {
     const y1 = useTransform(scrollYProgress, [0, 1], [150, -150]);
     const y2 = useTransform(scrollYProgress, [0, 1], [70, -70]);
     const y3 = useTransform(scrollYProgress, [0, 1], [90, -90]);
-    const y4 = useTransform(scrollYProgress, [0, 1], [80, -10]);
+    const y4 = useTransform(scrollYProgress, [0, 1], [100, -100]);
     const x1 = useTransform(scrollYProgress, [0, 1], [20, -20]);
     const x2 = useTransform(scrollYProgress, [0, 1], [-20, 20]);
     const x3 = useTransform(scrollYProgress, [0, 1], [-10, 10]);
