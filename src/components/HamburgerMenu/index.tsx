@@ -1,13 +1,11 @@
-'use client'
-
-import Image from 'next/image';
-import { usePathname, useRouter } from 'next/navigation';
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
-import Button from '../Button';
-import { Link } from '@/navigation';
-import LanguageSelector from '../LanguageSelector';
+import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
+import { Link } from "@/navigation";
+import { useState } from "react";
+import Button from "../Button";
+import { motion } from "framer-motion";
+import LanguageSelector from "../LanguageSelector";
+import { useTranslations } from "next-intl";
 
 interface HamburgerMenuProps {
     openBurger: boolean;
@@ -21,17 +19,31 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
     const t = useTranslations('navigation');
     const burgerOpen = openBurger;
 
+    const updateCloseBurger = () => {
+        closeBurger();
+    };
+
+    const scrollToSection = (section: string) => {
+        setTimeout(() => {
+            const element = document.getElementById(section);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 250); // Add 250ms delay before scrolling
+    };
+
     const handleScroll = (section: string) => async (event: React.MouseEvent) => {
         event.preventDefault();
         closeBurger();
         if (path === '/') {
-            document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+            scrollToSection(section);
         } else {
             await router.push('/');
-            const interval = setInterval(() => {
-                if (document.getElementById(section)) {
-                    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
-                    clearInterval(interval);
+            const checkExist = setInterval(() => {
+                const element = document.getElementById(section);
+                if (element) {
+                    scrollToSection(section);
+                    clearInterval(checkExist);
                 }
             }, 100); // Check every 100ms if the element is present
         }
@@ -44,57 +56,41 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
                 viewport={{ once: false }}
             >
-                <Link
-                    onClick={handleScroll('why-component')}
-                    href='/'
-                    className="text-white font-light relative"
-                >
-                    {t('home')}
-                </Link>
+                <Link onClick={handleScroll('why-component')} href="/" className="text-white font-light relative">{t('home')}</Link>
             </motion.div>
+
             <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
+
             <motion.div className="m-4"
                 initial={{ opacity: 0, x: 100 }}
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
                 viewport={{ once: false }}
             >
-                <Link
-                    onClick={closeBurger}
-                    href='/about'
-                    className="text-white font-light relative"
-                >
-                    {t('about')}
-                </Link>
+                <Link onClick={updateCloseBurger} href="/about" className="text-white font-light relative">{t('about')}</Link>
             </motion.div>
+
             <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
+
             <motion.div className="m-4"
                 initial={{ opacity: 0, x: 100 }}
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.7 } }}
                 viewport={{ once: false }}
             >
-                <Link
-                    onClick={closeBurger}
-                    href='/news'
-                    className="text-white font-light relative"
-                >
-                    {t('news')}
-                </Link>
+                <Link onClick={updateCloseBurger} href="/news" className="text-white font-light relative">{t('news')}</Link>
             </motion.div>
+
             <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
+
             <motion.div className="m-4"
                 initial={{ opacity: 0, x: 100 }}
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.9 } }}
                 viewport={{ once: false }}
             >
-                <Link
-                    onClick={handleScroll('faq-component')}
-                    href='/'
-                    className="text-white font-light relative"
-                >
-                    {t('faq')}
-                </Link>
+                <Link onClick={handleScroll('faq-component')} href="/" className="text-white font-light relative">{t('faq')}</Link>
             </motion.div>
+
             <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
+
             <div className="flex">
                 <LanguageSelector closeSelector={burgerOpen} hamburgerMargin="mt-12" addClass="flex ml-4 mt-6 mb-4" hideContact={setHideContactBtn} />
                 <p className="mt-[28px] ml-3 font-nunito font-thin text-white text-sm">{t('language')}</p>
