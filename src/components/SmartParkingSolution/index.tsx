@@ -37,7 +37,7 @@ const SmartParkingSolution: React.FC = () => {
                 <div className='flex justify-center items-center'>
                     <div className="hidden lg:flex relative lg:mr-[70px] w-fit h-fit justify-center md:justify-center">
                         <div className='relative min-w-[80%]'>
-                            <Image className='' src={phoneBg} alt='background' style={{ width: "100%", height: "auto" }} />
+                            <Image className='' layout="responsive" src={phoneBg} alt='background' style={{ width: "100%", height: "auto" }} />
                         </div>
                         <motion.div
                             ref={targetRef}
