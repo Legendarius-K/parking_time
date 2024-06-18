@@ -19,14 +19,14 @@ const SmartParkingSolution: React.FC = () => {
         offset: ['start end', 'end start']
     });
 
-    const y1 = useTransform(scrollYProgress, [0, 1], [150, -150]);
-    const y2 = useTransform(scrollYProgress, [0, 1], [70, -70]);
-    const y3 = useTransform(scrollYProgress, [0, 1], [90, -90]);
-    const y4 = useTransform(scrollYProgress, [0, 1], [100, -100]);
-    const x1 = useTransform(scrollYProgress, [0, 1], [20, -20]);
-    const x2 = useTransform(scrollYProgress, [0, 1], [-20, 20]);
-    const x3 = useTransform(scrollYProgress, [0, 1], [-10, 10]);
-    const x4 = useTransform(scrollYProgress, [0, 1], [10, -10]);
+    const y1 = useTransform(scrollYProgress, [0, 1], [80, -80]);
+    const y2 = useTransform(scrollYProgress, [0, 1], [50, -50]);
+    const y3 = useTransform(scrollYProgress, [0, 1], [70, -70]);
+    const y4 = useTransform(scrollYProgress, [0, 1], [50, -50]);
+    const x1 = useTransform(scrollYProgress, [0, 1], [10, -10]);
+    const x2 = useTransform(scrollYProgress, [0, 1], [-10, 10]);
+    const x3 = useTransform(scrollYProgress, [0, 1], [-7, 7]);
+    const x4 = useTransform(scrollYProgress, [0, 1], [7, -7]);
 
     const t = useTranslations('smart-parking');
 
@@ -46,7 +46,7 @@ const SmartParkingSolution: React.FC = () => {
                         </motion.div>
                         <motion.div
                             ref={targetRef}
-                            style={{ y: y2, x: x2 }}
+                            style={{ y: y2}}
                             className='w-[100px] md:w-[160px] absolute -left-14 bottom-12'>
                             <Image src={rules} alt='rules sign' layout="responsive" style={{ width: "100%", height: "auto" }} />
                         </motion.div>
