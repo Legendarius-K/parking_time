@@ -95,8 +95,40 @@
         "about": "Über uns",
         "title": "Parking Time Schweden",
         "paragraf": "Wir sind ein Technologie-Startup, das sich der Transformation des Parkerlebnisses für alle Beteiligten widmet - Parker, Parkwächter, Gemeinden und Immobilieneigentümer."
+    },
+    "NewsPage":{
+
+        
+            "Simi-Tilte": "Nachrichten",
+            "title": "Wir verändern das Parkerlebnis",
+        
+
+            "SearchBar-PlaceHolder":"Nachrichten suchen",
+
+
+            
+            "NewsBox1-Title": "Positive Auswirkungen in Nässjö",
+            "NewsBox1-paragraf": "Nach einem Jahr Nutzung der App Parking Time für alle zentralen Parkbereiche berichtet die Gemeinde Nässjö über positive Ergebnisse der Digitalisierung der Parkscheibe.",
+            "NewsBox1-Date": "27 Mai 2024",
+            "NewsBox1-ReadMore": "mehr lesen",
+        
+            "NewsBox2-Title": "Parking Time & Changemaker",
+            "NewsBox2-paragraf": "In diesem Frühjahr hat Parking Time mit Studenten von Changemaker Educations zusammengearbeitet, was zu innovativen und kreativen Lösungen geführt hat.",
+            "NewsBox2-Date": "11 Mai 2024",
+            "NewsBox2-ReadMore": "mehr lesen",
+        
+            "NewsBox3-Title": "Gewinner des SKAPA Talent Award",
+            "NewsBox3-paragraf": "Parking Time gewann den SKAPA Talent Award in Norrbotten für seine innovative digitale Parklösung, die für ihr Verständnis der Marktbedürfnisse anerkannt wurde.",
+            "NewsBox3-Date": "27 August 2024",
+            "NewsBox3-ReadMore": "mehr lesen",
+        
+            "Subscribe-section-semititle": "Newsletter",
+            "dont-miss": "Verpassen Sie nicht",
+            "Subscribe-paragraf": "Wir expandieren schnell, bleiben Sie über einen Newsletter auf dem Laufenden",
+            "Subscribe-button": "abonnieren"
+        
+        
     }
-    
     
     
     

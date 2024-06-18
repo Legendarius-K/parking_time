@@ -24,11 +24,36 @@ const News = () => {
 </div>
 
       <main className="text-center p-10 bg-gray-100">
+     
+
+
+
+
+        
+
+
+
+
+      <div className="block  items-center justify-center ">
+
+
+  <div className="inline-flex md:w-[584px] mt-7 flex w-[92%] items-center shadow-md rounded-full border hover:shadow-md">
+    <div className="pl-3">
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 cursor-pointer text-white rounded-full p-1 bg-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+    </div>
+    <input type="text"  placeholder={t("SearchBar-PlaceHolder")} className="w-full bg-transparent rounded-full py-[14px] pl-4 outline-none" />
+  </div>
+
+</div>
+
+
+
+
+
+
         <div className="flex justify-center flex-wrap gap-6 mt-10">
-        
-        
-
-
           <div className="bg-white hover:shadow-xl cursor-pointer	transition-all duration-200 transform hover:scale-90  rounded-lg overflow-hidden w-[370px] text-left">
             <img src="/Positive-Impact.jpeg" alt="Positive Impact in Nässjö" className="w-full h-64" />
             <div className="p-5 ">

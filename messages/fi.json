@@ -96,8 +96,44 @@
         "about": "Meistä",
         "title": "Parking Time Ruotsi",
         "paragraf": "Olemme teknologiayritys, joka on omistautunut muuttamaan pysäköintikokemusta kaikille sidosryhmille - pysäköijille, pysäköinninvalvojille, kunnille ja kiinteistönomistajille."
+    },
+
+    "NewsPage":{
+
+        
+            "Simi-Tilte": "Uutiset",
+            "title": "Muokkaamme pysäköintikokemuksia",
+        
+            "SearchBar-PlaceHolder":"etsiä uutisia",
+
+
+            
+            "NewsBox1-Title": "Positiivinen vaikutus Nässjössä",
+            "NewsBox1-paragraf": "Vuoden käytön jälkeen Parking Time -sovelluksella kaikilla keskeisillä pysäköintialueilla Nässjön kunta raportoi positiivisia tuloksia pysäköintikiekon digitalisoinnista.",
+            "NewsBox1-Date": "27 toukokuuta 2024",
+            "NewsBox1-ReadMore": "lue lisää",
+        
+            "NewsBox2-Title": "Parking Time & Changemaker",
+            "NewsBox2-paragraf": "Tänä keväänä Parking Time teki yhteistyötä Changemaker Educationsin opiskelijoiden kanssa, mikä johti innovatiivisiin ja luoviin ratkaisuihin.",
+            "NewsBox2-Date": "11 toukokuuta 2024",
+            "NewsBox2-ReadMore": "lue lisää",
+        
+            "NewsBox3-Title": "SKAPA Talent Award -voittaja",
+            "NewsBox3-paragraf": "Parking Time voitti SKAPA Talent -palkinnon Norrbottenissa innovatiivisella digitaalisella pysäköintiratkaisullaan, joka on tunnustettu markkinoiden tarpeiden ymmärtämisestä.",
+            "NewsBox3-Date": "27 elokuuta 2024",
+            "NewsBox3-ReadMore": "lue lisää",
+        
+            "Subscribe-section-semititle": "Uutiskirje",
+            "dont-miss": "Älä missaa",
+            "Subscribe-paragraf": "Laajennamme nopeasti, pysy ajan tasalla uutiskirjeen avulla",
+            "Subscribe-button": "tilaa"
+        
+        
     }
     
     
     
+
+
+
 }
