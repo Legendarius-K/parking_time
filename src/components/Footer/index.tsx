@@ -10,7 +10,7 @@ const Footer = () => {
     const t = useTranslations('footer')
 
     return (
-        <footer className="py-12 px-8 md:p-20 bg-pt-primary text-white gap-12 md:gap-5 flex flex-col font-mono">
+        <footer className="py-12 px-8 md:px-20 md:pt-20 pb-4 md:pb-0 bg-pt-primary text-white gap-12 md:gap-5 flex flex-col font-mono">
             <div className="flex justify-between flex-col gap-12 md:gap-8 md:flex-row">
                 <div className="flex gap-6 md:gap-8 flex-col md:flex-row">
                     <Link href="/" className=" w-20">
