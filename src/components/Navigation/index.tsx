@@ -26,16 +26,24 @@ const Navigation = ({ openBurger, updateIsOpen }: NavigationProps) => {
         openBurger();
     };
 
+    const scrollToSection = (section: string) => {
+        const element = document.getElementById(section);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     const handleScroll = (section: string) => async (event: React.MouseEvent) => {
         event.preventDefault();
         if (path === '/') {
-            document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+            scrollToSection(section);
         } else {
             await router.push('/');
-            const interval = setInterval(() => {
-                if (document.getElementById(section)) {
-                    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
-                    clearInterval(interval);
+            const checkExist = setInterval(() => {
+                const element = document.getElementById(section);
+                if (element) {
+                    scrollToSection(section);
+                    clearInterval(checkExist);
                 }
             }, 100); // Check every 100ms if the element is present
         }
