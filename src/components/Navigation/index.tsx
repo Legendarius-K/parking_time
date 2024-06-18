@@ -14,13 +14,24 @@ interface NavigationProps {
 
 const Navigation = ({ openBurger, updateIsOpen }: NavigationProps) => {
     const [isOpen, setOpen] = useState(false);
+    const [pendingScrollSection, setPendingScrollSection] = useState<string | null>(null);
     const path = usePathname();
     const router = useRouter();
     const t = useTranslations('navigation');
 
     useEffect(() => {
-        updateIsOpen ? setOpen(true) : setOpen(false);
+        setOpen(updateIsOpen);
     }, [updateIsOpen]);
+
+    useEffect(() => {
+        if (pendingScrollSection) {
+            const element = document.getElementById(pendingScrollSection);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+                setPendingScrollSection(null);
+            }
+        }
+    }, [pendingScrollSection, path]);
 
     const handleClick = () => {
         openBurger();
@@ -38,38 +49,16 @@ const Navigation = ({ openBurger, updateIsOpen }: NavigationProps) => {
         if (path === '/') {
             scrollToSection(section);
         } else {
+            setPendingScrollSection(section);
             await router.push('/');
-            const checkExist = setInterval(() => {
-                const element = document.getElementById(section);
-                if (element) {
-                    scrollToSection(section);
-                    clearInterval(checkExist);
-                }
-            }, 100); // Check every 100ms if the element is present
         }
     };
 
     const menuItems = [
-        {
-            name: t('home'),
-            link: '/',
-            section: 'why-component'
-        },
-        {
-            name: t('about'),
-            link: '/about',
-            section: ''
-        },
-        {
-            name: t('news'),
-            link: '/news',
-            section: ''
-        },
-        {
-            name: t('faq'),
-            link: '/',
-            section: 'faq-component'
-        },
+        { name: t('home'), link: '/', section: 'why-component' },
+        { name: t('about'), link: '/about', section: '' },
+        { name: t('news'), link: '/news', section: '' },
+        { name: t('faq'), link: '/', section: 'faq-component' },
     ];
 
     return (
