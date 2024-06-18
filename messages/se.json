@@ -95,5 +95,9 @@
         "title": "Vill du veta mer?",
         "paragraf": "Kontakta oss för att få veta mer om vår lösning och hur vi kan implementera den i din kommun",
         "button": "Kontakta oss"
+    },
+    "MeetTheTeam": {
+        "headline": "Möt vårt team",
+        "text": "Varje medlem tillför en unik blandning av expertis, passion och framåtsträvande tänkesätt."
     }
 }
