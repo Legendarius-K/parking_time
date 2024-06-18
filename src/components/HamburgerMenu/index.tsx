@@ -56,7 +56,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
                 viewport={{ once: false }}
             >
-                <Link onClick={handleScroll('why-component')} href="/" className="text-white font-light relative">{t('home')}</Link>
+                <Link onClick={handleScroll('whyComponent')} href="/" className="text-white font-light relative">{t('home')}</Link>
             </motion.div>
 
             <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
@@ -86,7 +86,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.9 } }}
                 viewport={{ once: false }}
             >
-                <Link onClick={handleScroll('faq-component')} href="/" className="text-white font-light relative">{t('faq')}</Link>
+                <Link onClick={handleScroll('faqComponent')} href="/" className="text-white font-light relative">{t('faq')}</Link>
             </motion.div>
 
             <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>

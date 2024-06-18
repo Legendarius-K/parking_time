@@ -16,14 +16,10 @@ const Home = () => {
             <SmartParkingSolution />
             <CarDriving />
             <How />
-            <div id="why-component">
-                <Why />
-            </div>
+            <Why />
             <TrustedBy />
             <Stats />
-            <div id="faq-component">
-                <Faq />
-            </div>
+            <Faq />
         </main>
     );
 };
