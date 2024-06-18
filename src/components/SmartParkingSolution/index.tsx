@@ -29,7 +29,7 @@ const SmartParkingSolution: React.FC = () => {
     const x3 = useTransform(scrollYProgress, [0, 1], [-10, 10]);
     const x4 = useTransform(scrollYProgress, [0, 1], [10, -10]);
 
-    const t = useTranslations('smart-parking')
+    const t = useTranslations('smart-parking') 
 
     return (
         <div className='flex justify-center'>
