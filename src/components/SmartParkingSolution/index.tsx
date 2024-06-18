@@ -35,19 +35,19 @@ const SmartParkingSolution: React.FC = () => {
             <div className="flex flex-col justify-center md:flex-row bg-white p-8 md:p-16 space-y-8 md:space-y-0 md:space-x-8 max-w-[1400px]">
                 <div className='flex justify-center items-center'>
                     <div className="hidden lg:flex relative lg:mr-[70px] w-fit h-fit justify-center md:justify-center">
-                        <div className='relative w-full'>
+                        <div className='relative w-[90%]'>
                             <img className='' src={phoneBg.src} alt='background' style={{ width: "100%", height: "auto" }} />
                         </div>
                         <motion.div
                             ref={targetRef}
                             style={{ y: y1, x: x1 }}
-                            className='w-[100px] md:w-[140px] absolute -left-4 top-[60px]'>
+                            className='w-[100px] md:w-[160px] absolute -left-12 top-[80px]'>
                             <Image src={reg} alt='reg nr' layout="responsive" style={{ width: "100%", height: "auto" }} />
                         </motion.div>
                         <motion.div
                             ref={targetRef}
                             style={{ y: y2, x: x2 }}
-                            className='w-[100px] md:w-[140px] absolute -left-8 bottom-12'>
+                            className='w-[100px] md:w-[160px] absolute -left-14 bottom-12'>
                             <Image src={rules} alt='rules sign' layout="responsive" style={{ width: "100%", height: "auto" }} />
                         </motion.div>
                         <motion.div
@@ -59,7 +59,7 @@ const SmartParkingSolution: React.FC = () => {
                         <motion.div
                             ref={targetRef}
                             style={{ y: y4, x: x4 }}
-                            className='w-[100px] md:w-[140px] absolute -right-8 bottom-20'>
+                            className='w-[100px] md:w-[140px] absolute -right-8 bottom-16'>
                             <Image src={note} alt='notification' layout="responsive" style={{ width: "100%", height: "auto" }} />
                         </motion.div>
                     </div>
