@@ -26,15 +26,15 @@ const Stats = () => {
     useEffect(() => {
         if (isInView) {
             const downloadAnimation = animate(downloadCount, 5000, {
-                duration: 5,
+                duration: 3.5,
             });
 
             const sessionAnimation = animate(sessionCount, 4700, {
-                duration: 4.5,
+                duration: 3,
             });
 
             const pZoneAnimation = animate(pZoneCount, 30, {
-                duration: 4,
+                duration: 2.5,
             });
 
             return () => {

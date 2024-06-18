@@ -14,6 +14,7 @@ const config: Config = {
     extend: {
       screens: {
         'md': '960px',
+        'sd': '340px',
       },
       transitionDuration: {
         400: '400ms', 
