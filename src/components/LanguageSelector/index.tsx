@@ -28,6 +28,8 @@ export default function LanguageSelector({ addClass, hamburgerMargin, closeSelec
     const searchParams = useSearchParams();
     const dropdownRef = useRef<HTMLDivElement>(null);
 
+    
+
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
