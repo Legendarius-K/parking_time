@@ -96,7 +96,6 @@
         "title": "Parking Time Sweden",
         "paragraf": "We are a tech startup dedicated to transforming the parking experience for all stakeholders - parkers, parking attendants, municipalities, and property owners."
     },
-<<<<<<< HEAD
     "MeetTheTeam": {
         "headline": "Meet our team",
         "text": "Each member brings a unique blend of expertise, passion, and forward-thinking mindset."
@@ -111,52 +110,26 @@
 
         "SearchBar-PlaceHolder":"Search News",
 
-=======
-    "NewsPage": {
-        "Simi-Tilte":"News",
-        "title": "We are Transforming Parking Experiences",
-        
-        "SearchBar-PlaceHolder":"Search News",
-        
->>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
             "NewsBox1-Title": "Positive Impact in Nässjö",
             "NewsBox1-paragraf": "After one year of using the Parking Time app for all central parking areas, Nässjö municipality reports positive results from the digitalization of the parking disc.",
             "NewsBox1-Date": "27 May 2024",
             "NewsBox1-ReadMore": "read more",
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
             "NewsBox2-Title": "Parking Time & Changemaker",
             "NewsBox2-paragraf": "This spring, Parking Time collaborated with students at Changemaker Educations, resulting in innovative and creative solutions.",
             "NewsBox2-Date": "11 May 2024",
             "NewsBox2-ReadMore": "read more",
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
             "NewsBox3-Title": "Winner of the SKAPA Talent Award",
             "NewsBox3-paragraf": "Parking Time won the SKAPA Talent award in Norrbotten for its innovative digital parking solution, recognized for understanding market needs.",
             "NewsBox3-Date": "27 Aug 2024",
             "NewsBox3-ReadMore": "read more",
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
             "Subscribe-section-semititle": "Newsletter",
             "dont-miss": "Don't miss",
             "Subscribe-paragraf": "We are expanding quickly, stay updated via a newsletter",
             "Subscribe-button": "subscribe"
         }
-<<<<<<< HEAD
-
-    }
-    
-=======
         
     }
     
->>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57

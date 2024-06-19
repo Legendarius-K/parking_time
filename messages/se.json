@@ -95,13 +95,10 @@
         "title": "Vill du veta mer?",
         "paragraf": "Kontakta oss för att få veta mer om vår lösning och hur vi kan implementera den i din kommun",
         "button": "Kontakta oss"
-<<<<<<< HEAD
     },
     "MeetTheTeam": {
         "headline": "Möt vårt team",
         "text": "Varje medlem tillför en unik blandning av expertis, passion och framåtsträvande tänkesätt."
-=======
->>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
     }
     ,"NewsPage": {
         "Simi-Tilte":"nyheter",
@@ -112,11 +109,7 @@
         "NewsBox1-paragraf":"efter ett års användning av appen Parkeringstid för alla centrala parkeringsområden redovisar Nässjö kommun positiva resultat från digitaliseringen av parkeringsskivan.",
         "NewsBox1-Date":"27 maj 2024",
         "NewsBox1-ReadMore":"läs mer",
-<<<<<<< HEAD
-
-=======
     
->>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
 
 
 
@@ -124,13 +117,8 @@
         "NewsBox2-paragraf":"I våras har Parking Time samarbetat med studenter på Changemaker Educations, vilket resulterat i innovativa och kreativa lösningar.",
         "NewsBox2-Date":"11 maj 2024",
         "NewsBox2-ReadMore":"läs mer",
-<<<<<<< HEAD
-
-
-=======
     
     
->>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
 
 
         "NewsBox3-Title":"Vinnare av SKAPA Talent Award",
@@ -143,8 +131,5 @@
         "Subscribe-paragraf":"Vi expanderar snabbt, håll dig uppdaterad via ett nyhetsbrev",
         "Subscribe-button":"prenumerera"    
     }
-<<<<<<< HEAD
-=======
    
->>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
 }
