@@ -41,13 +41,8 @@ const TrustedBy = () => {
         partner9
     ];
 
-<<<<<<< HEAD
     const FAST_DURATION =50;
     const SLOW_DURATION = 85;
-=======
-    const FAST_DURATION =40;
-    const SLOW_DURATION = 75;
->>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
     const [duration, setDuration] = useState(FAST_DURATION)
 
 
