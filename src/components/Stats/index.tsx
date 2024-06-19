@@ -26,7 +26,6 @@ const Stats = () => {
     useEffect(() => {
         if (isInView) {
             const downloadAnimation = animate(downloadCount, 5000, {
-<<<<<<< HEAD
                 duration: 3.5,
             });
 
@@ -36,17 +35,6 @@ const Stats = () => {
 
             const pZoneAnimation = animate(pZoneCount, 30, {
                 duration: 2.5,
-=======
-                duration: 5,
-            });
-
-            const sessionAnimation = animate(sessionCount, 4700, {
-                duration: 4.5,
-            });
-
-            const pZoneAnimation = animate(pZoneCount, 30, {
-                duration: 4,
->>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
             });
 
             return () => {
