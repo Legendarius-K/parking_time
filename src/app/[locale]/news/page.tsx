@@ -1,30 +1,44 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
- import {createClient } from 'contentful';
+import {createClient } from 'contentful';
 import { get } from 'http';
 import { fetchNews } from '@/app/contentful';
+import { fetchNewsArticle } from '@/utils/functions';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import Image from "next/image";
 
 interface NewsCards {
     Title: string;
-    paragraph: string;
-    date: string;
-    image: string;
+    
   }
 
 
-
-
-
-
-
-  
+  /*paragraph: string;
+    date: string;
+    image: string; */
 const News = () => {
+    const [newNewsCards, setNewsCards] = useState<NewsCards[]>([]);
     const t =useTranslations('NewsPage')
     const [searchTerm, setSearchTerm] = useState('');
+
+    useEffect(() => {
+    
+        const fetchData = async () => {
+          try {
+            const articles = await fetchNewsArticle();
+            const formatedArticle = articles.map((article: any) =>({
+              Title: article.fields.title,
+            }));
+            setNewsCards(formatedArticle);
+          } catch (error) {
+            console.log("error något gick fel")
+          }
+        }
+        fetchData();
+      }, []);
+
   const content = [
     {
         imgSrc: '/Positive-Impact.jpeg',
@@ -59,6 +73,7 @@ const filteredContent = content.filter(item => {
 
     return (
         <>
+        <div>{newNewsCards.map((article) => (<p>{article.Title}</p>))}</div>
         <div className="relative flex justify-center items-start h-[50vh] md:h-[50vh] overflow-hidden">
             <img className="w-full h-full md:block object-cover object-center" src="/NewsMainPic.png" alt="hero picture" />
             <div className="absolute left-0 h-full w-full bg-slate-900/20 backdrop-blur md:bg-slate-900/20 md:backdrop-blur md:w-2/4">
