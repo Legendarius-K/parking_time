@@ -9,16 +9,10 @@ interface HowBoxProps {
     number: string
     heading: string
     text: string
-<<<<<<< HEAD
     transition: number
 }
 
 const HowBox = ({ srcIcon, altIcon, number, heading, text, transition }:HowBoxProps) => {
-=======
-}
-
-const HowBox = ({ srcIcon, altIcon, number, heading, text }:HowBoxProps) => {
->>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
     return (
         <>
             <motion.div className="bg-white rounded-[20px] w-[100%] md:w-[29%] overflow-hidden h-full pb-6 sm:pb-3 shadow-xl"
@@ -30,11 +24,7 @@ const HowBox = ({ srcIcon, altIcon, number, heading, text }:HowBoxProps) => {
                     opacity: 1,
                     y: 0,
                     transition: {
-<<<<<<< HEAD
                         duration: transition 
-=======
-                        duration: 1.3 
->>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
                     }
                 }}
                 viewport={{ once: false }}
