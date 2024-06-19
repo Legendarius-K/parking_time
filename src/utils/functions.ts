@@ -16,6 +16,16 @@ export const fetchTestimonials = async () => {
     return res.items;
   } catch (error) {
     console.error('Error fetching news posts:', error);
+    throw new Error('Failed to fetch testimonial posts.');
+  }
+}
+
+export const fetchNewsArticle = async () => {
+  try {
+    const res = await client.getEntries({ content_type: 'newsArticle' });
+    return res.items;
+  } catch (error) {
+    console.error('Error fetching news posts:', error);
     throw new Error('Failed to fetch news posts.');
   }
 }
