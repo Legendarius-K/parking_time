@@ -30,7 +30,7 @@ const Testimonials = () => {
 
     AOS.init({
       duration: 1000,
-      once: true,
+      once: false,
     });
 
     const fetchData = async () => {
@@ -56,7 +56,7 @@ const Testimonials = () => {
   return (
     <>
       <div className='flex flex-col py-28 gap-6 bg-pt-background' >
-           <div className='flex flex-col justify-center items-center text-center gap-8'  data-aos="zoom-in">{/* texten behöver fixas mer */}
+           <div className='flex flex-col justify-center items-center text-center gap-8' >{/* texten behöver fixas mer */}
             <h3 className='text-bold text-5xl'>Customer testimonials</h3>
             <p className='text-bold text.sm'>Hear from some of our clients.</p>
           </div>
