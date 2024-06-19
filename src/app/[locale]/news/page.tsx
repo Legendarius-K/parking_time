@@ -1,9 +1,9 @@
-
 'use client';
 import React, { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
  import {createClient } from 'contentful';
 import { get } from 'http';
+import { fetchNews } from '@/app/contentful';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import Image from "next/image";

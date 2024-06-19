@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss";
 
 interface blurProps {
@@ -5,16 +6,34 @@ interface blurProps {
 }
 
 const config: Config = {
+
+  
   content: [
+    './src/**/*.{js,jsx,ts,tsx}',
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
+      keyframes: {
+     fadeIn:{
+      '0%': {opacity: '0',},
+      '100%': {opacity: '1',}
+
+     },
+     
+     
+      },
+
+animation: {
+  fadeIn: 'fadeIn 1s ease-in-out infinite',
+
+
+},
+
       screens: {
         'md': '960px',
-        'sd': '340px',
       },
       transitionDuration: {
         400: '400ms', 
@@ -59,6 +78,10 @@ const config: Config = {
   plugins: [
     function ({ addUtilities }:blurProps) {
       addUtilities({
+        'scroll-smooth': {
+          'transition-timing-function': 'cubic-bezier(0.4, 0, 0.2, 1)',
+          'transition-duration': '1000ms',
+        },
         '.webkit-blur-5': {
           '-webkit-backdrop-filter': 'blur(5px)', 
         },
@@ -70,7 +93,13 @@ const config: Config = {
         },
       });
     },
+
+    
   ],
+
+  
 };
+
+
 
 export default config;

@@ -96,6 +96,7 @@
         "title": "Parking Time Sverige",
         "paragraf": "Vi er et teknologiselskap dedikert til å transformere parkeringsopplevelsen for alle interessenter - bilister, parkeringsvakter, kommuner og eiendomseiere."
     },
+<<<<<<< HEAD
     "MeetTheTeam": {
         "headline": "Møt vårt team",
         "text": "Hvert medlem bringer med seg en unik blanding av ekspertise, lidenskap og fremtidsrettet tankesett."
@@ -106,6 +107,13 @@
         "Simi-Tilte": "Nyheter",
         "title": "Vi forvandler parkeringsopplevelser",
 
+=======
+"NewsPage":{
+    
+        "Simi-Tilte": "Nyheter",
+        "title": "Vi forvandler parkeringsopplevelser",
+    
+>>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
         "SearchBar-PlaceHolder":"søk nyheter",
 
 
@@ -113,26 +121,48 @@
         "NewsBox1-paragraf": "Etter ett års bruk av appen Parking Time for alle sentrale parkeringsområder rapporterer Nässjö kommune positive resultater fra digitaliseringen av parkeringsskiven.",
         "NewsBox1-Date": "27 mai 2024",
         "NewsBox1-ReadMore": "les mer",
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
         "NewsBox2-Title": "Parking Time & Changemaker",
         "NewsBox2-paragraf": "Denne våren har Parking Time samarbeidet med studenter på Changemaker Educations, noe som har resultert i innovative og kreative løsninger.",
         "NewsBox2-Date": "11 mai 2024",
         "NewsBox2-ReadMore": "les mer",
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
         "NewsBox3-Title": "Vinner av SKAPA Talent Award",
         "NewsBox3-paragraf": "Parking Time vant SKAPA Talent i Norrbotten for sin innovative digitale parkeringsløsning, anerkjent for å forstå markedets behov.",
         "NewsBox3-Date": "27 august 2024",
         "NewsBox3-ReadMore": "les mer",
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
         "Subscribe-section-semititle": "Nyhetsbrev",
         "dont-miss": "Ikke gå glipp av",
         "Subscribe-paragraf": "Vi ekspanderer raskt, hold deg oppdatert via et nyhetsbrev",
         "Subscribe-button": "abonner"
+<<<<<<< HEAD
 
 
+=======
+    
+    
+>>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
 
 
 }
     
     
+<<<<<<< HEAD
+=======
+    
+    
+>>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
 }

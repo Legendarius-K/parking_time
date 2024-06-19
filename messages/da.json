@@ -96,12 +96,15 @@
         "title": "Parking Time Sweden",
         "paragraf": "Vi er en tech-startup dedikeret til at transformere parkeringsoplevelsen for alle interessenter - parkerende, parkeringsvagter, kommuner og ejendomsejere."
     },
+<<<<<<< HEAD
     "MeetTheTeam": {
         "headline": "Mød vores team",
         "text": "Hvert medlem bringer en unik blanding af ekspertise, passion og fremadskuende tankegang."
     }
     
     ,
+=======
+>>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
     "NewsPage":{
         "Simi-Tilte": "Nyheder",
     "title": "Vi forvandler parkeringsoplevelser",
@@ -129,7 +132,11 @@
     "Subscribe-paragraf": "Vi udvider hurtigt, hold dig opdateret via et nyhedsbrev",
     "Subscribe-button": "abonner"
     }
+<<<<<<< HEAD
 
 
+=======
+    
+>>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
     
 }

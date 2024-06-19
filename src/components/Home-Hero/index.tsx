@@ -8,6 +8,7 @@ const Homehero: React.FC = () => {
   const t = useTranslations('home-hero')
 
   return (
+<<<<<<< HEAD
     <div className="relative flex items-center bg-cover bg-center h-[155vh] sd:h-[100vh] md:min-h-[calc(100vh-80px)]" style={{ backgroundImage: 'url(/hero-bg.png)' }}>
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       <div className="relative flex flex-col items-start justify-center h-full text-white gap-8 px-8 lg:px-16">
@@ -15,6 +16,15 @@ const Homehero: React.FC = () => {
           What time is it? <br /> Parking Time!
         </h1>
         <div className="text-[16px] leading-[30px] text-sm md:text-base lg:text-lg xl:text-xl " style={{ opacity: 1 }}>
+=======
+    <div className="relative bg-cover bg-center h-screen" style={{ backgroundImage: 'url(/hero-bg.png)' }}>
+      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+      <div className="relative flex flex-col items-start justify-center h-full text-white gap-8 px-8 lg:px-16">
+        <h1 className="text-[42px] text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight w-full md:w-3/4 lg:w-2/3 xl:w-1/2" style={{ opacity: 1 }}>
+          What time is it? <br /> Parking Time!
+        </h1>
+        <div className="text-[16px] leading-[30px] text-sm md:text-base lg:text-lg xl:text-xl w-full md:w-3/4 lg:w-2/3 xl:w-1/2" style={{ opacity: 1 }}>
+>>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
           <p>{t('text1')}</p>
           <p>{t('text2')}</p>
         </div>

@@ -6,6 +6,10 @@ import ptLogo from '../../../public/Logotype-1.svg';
 import Navigation from "../Navigation";
 import HamburgerMenu from "../HamburgerMenu";
 import { Link } from "@/navigation";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
 import LanguageSelector from "../LanguageSelector";
 import useWindowSize from "@/hooks/useWindowSize";
 
@@ -34,12 +38,16 @@ const Header = () => {
 
             const currentScrollY = window.scrollY;
 
+<<<<<<< HEAD
             if (currentScrollY === 0) {
                 setIsHeaderVisible(true);
                 return;
             }
 
             if (burgerOpen && Math.abs(currentScrollY - initialScrollY) >25) {
+=======
+            if (burgerOpen && Math.abs(currentScrollY - initialScrollY) > 50) {
+>>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
                 setBurgerOpen(false);
             }
 
@@ -51,9 +59,15 @@ const Header = () => {
                 setHideThreshold(0);
             }
 
+<<<<<<< HEAD
             if (hideThreshold > 100) {
                 setIsHeaderVisible(false);
             } else if (showThreshold > 1) {
+=======
+            if (hideThreshold > 50) {
+                setIsHeaderVisible(false);
+            } else if (showThreshold > 50) {
+>>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
                 setIsHeaderVisible(true);
             }
 
@@ -69,8 +83,14 @@ const Header = () => {
 
     return (
         <>
+<<<<<<< HEAD
             <header className={`md:h-20 h-16 bg-pt-primary/50 md:bg-pt-primary flex items-center justify-between px-6 md:px-20 fixed top-0 left-0 w-full md:relative z-40 backdrop-blur-[18px] webkit-blur-10 transition-transform duration-500 ${isHeaderVisible ? 'transform-none' : '-translate-y-full'}`}>
                 <div className="w-16">
+=======
+             <header className={`md:h-20  scroll-smooth h-16 bg-pt-primary/50 md:bg-pt-primary flex items-center justify-between px-6 md:px-20 fixed top-0 left-0 w-full md:relative z-40 backdrop-blur-[18px] webkit-blur-10 transition-transform duration-500 ${isHeaderVisible ? 'transform-none' : '-translate-y-full'}`}>
+                <div className="w-16">
+                    
+>>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
                     <Link href="/">
                         <Image src={ptLogo} alt="image" />
                     </Link>
