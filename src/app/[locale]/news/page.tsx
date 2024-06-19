@@ -15,44 +15,48 @@ interface NewsCards {
     image: string;
   }
 
-  const t = useTranslations('NewsPage');
-  const [searchTerm, setSearchTerm] = useState('');
 
-  const content = [
-      {
-          imgSrc: '/Positive-Impact.jpeg',
-          imgAlt: 'Positive Impact in Nässjö',
-          title: t('NewsBox1-Title'),
-          paragraph: t('NewsBox1-paragraf'),
-          date: t('NewsBox1-Date'),
-          readMore: t('NewsBox1-ReadMore')
-      },
-      {
-          imgSrc: '/parkingtimeChangemaker.jpeg',
-          imgAlt: 'Parking Time & Changemaker',
-          title: t('NewsBox2-Title'),
-          paragraph: t('NewsBox2-paragraf'),
-          date: t('NewsBox2-Date'),
-          readMore: t('NewsBox2-ReadMore')
-      },
-      {
-          imgSrc: '/SKAPA3.png',
-          imgAlt: 'SKAPA 3',
-          title: t('NewsBox3-Title'),
-          paragraph: t('NewsBox3-paragraf'),
-          date: t('NewsBox3-Date'),
-          readMore: t('NewsBox3-ReadMore')
-      }
-  ];
 
-  const filteredContent = content.filter(item => {
-      return item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          item.paragraph.toLowerCase().includes(searchTerm.toLowerCase());
-  });
+
+
 
 
   
 const News = () => {
+    const t =useTranslations('NewsPage')
+    const [searchTerm, setSearchTerm] = useState('');
+  const content = [
+    {
+        imgSrc: '/Positive-Impact.jpeg',
+        imgAlt: 'Positive Impact in Nässjö',
+        title: t('NewsBox1-Title'),
+        paragraph: t('NewsBox1-paragraf'),
+        date: t('NewsBox1-Date'),
+        readMore: t('NewsBox1-ReadMore')
+    },
+    {
+        imgSrc: '/parkingtimeChangemaker.jpeg',
+        imgAlt: 'Parking Time & Changemaker',
+        title: t('NewsBox2-Title'),
+        paragraph: t('NewsBox2-paragraf'),
+        date: t('NewsBox2-Date'),
+        readMore: t('NewsBox2-ReadMore')
+    },
+    {
+        imgSrc: '/SKAPA3.png',
+        imgAlt: 'SKAPA 3',
+        title: t('NewsBox3-Title'),
+        paragraph: t('NewsBox3-paragraf'),
+        date: t('NewsBox3-Date'),
+        readMore: t('NewsBox3-ReadMore')
+    }
+];
+
+const filteredContent = content.filter(item => {
+    return item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        item.paragraph.toLowerCase().includes(searchTerm.toLowerCase());
+});
+
     return (
         <>
         <div className="relative flex justify-center items-start h-[50vh] md:h-[50vh] overflow-hidden">

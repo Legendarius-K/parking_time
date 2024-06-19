@@ -101,6 +101,35 @@
         "text": "Each member brings a unique blend of expertise, passion, and forward-thinking mindset."
     }
         
+   ,
+
+
+    "NewsPage": {
+        "Simi-Tilte":"News",
+        "title": "We are Transforming Parking Experiences",
+
+        "SearchBar-PlaceHolder":"Search News",
+
+            "NewsBox1-Title": "Positive Impact in Nässjö",
+            "NewsBox1-paragraf": "After one year of using the Parking Time app for all central parking areas, Nässjö municipality reports positive results from the digitalization of the parking disc.",
+            "NewsBox1-Date": "27 May 2024",
+            "NewsBox1-ReadMore": "read more",
+
+            "NewsBox2-Title": "Parking Time & Changemaker",
+            "NewsBox2-paragraf": "This spring, Parking Time collaborated with students at Changemaker Educations, resulting in innovative and creative solutions.",
+            "NewsBox2-Date": "11 May 2024",
+            "NewsBox2-ReadMore": "read more",
+
+            "NewsBox3-Title": "Winner of the SKAPA Talent Award",
+            "NewsBox3-paragraf": "Parking Time won the SKAPA Talent award in Norrbotten for its innovative digital parking solution, recognized for understanding market needs.",
+            "NewsBox3-Date": "27 Aug 2024",
+            "NewsBox3-ReadMore": "read more",
+
+            "Subscribe-section-semititle": "Newsletter",
+            "dont-miss": "Don't miss",
+            "Subscribe-paragraf": "We are expanding quickly, stay updated via a newsletter",
+            "Subscribe-button": "subscribe"
+        }
+
+    }
     
-    
-}
