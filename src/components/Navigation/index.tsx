@@ -26,6 +26,7 @@ const Navigation = ({ openBurger, updateIsOpen }: NavigationProps) => {
         openBurger();
     };
 
+<<<<<<< HEAD
     const scrollToSection = (section: string) => {
         const element = document.getElementById(section);
         if (element) {
@@ -44,6 +45,18 @@ const Navigation = ({ openBurger, updateIsOpen }: NavigationProps) => {
                 if (element) {
                     scrollToSection(section);
                     clearInterval(checkExist);
+=======
+    const handleScroll = (section: string) => async (event: React.MouseEvent) => {
+        event.preventDefault();
+        if (path === '/') {
+            document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            await router.push('/');
+            const interval = setInterval(() => {
+                if (document.getElementById(section)) {
+                    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+                    clearInterval(interval);
+>>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
                 }
             }, 100); // Check every 100ms if the element is present
         }
@@ -77,6 +90,11 @@ const Navigation = ({ openBurger, updateIsOpen }: NavigationProps) => {
             <nav className="items-center hidden md:flex">
                 {menuItems.map((item, index) => (
                     <Link
+<<<<<<< HEAD
+=======
+                  
+   
+>>>>>>> 640b3dc7a347b1a849b7e092b4f7c43bd357dc57
                         key={index}
                         href={item.link}
                         onClick={item.section ? handleScroll(item.section) : undefined}

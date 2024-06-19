@@ -80,7 +80,7 @@ const TrustedBy = () => {
 
     return (
         <main className='h-[216px] w-[100%] pt-4 relative overflow-hidden'>
-            <h2 className='absolute left-1/2  transform -translate-x-1/2 font-mono font-bold text-lg'>Trusted By</h2>
+            <h2 className='absolute left-1/2  transform -translate-x-1/2 font-mono text-xl'>Trusted By</h2>
             <motion.div className='absolute left-0 flex gap-4 '
                 ref={ref}
                 style={{ x: xTranslation }}
