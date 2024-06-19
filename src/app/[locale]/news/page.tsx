@@ -105,6 +105,9 @@ const filteredContent = content.filter(item => {
             <div className="flex justify-center flex-wrap gap-6 mt-10 ">
                 {filteredContent.length > 0 ? (
                     filteredContent.map((item, index) => (
+
+
+
                         <div key={index} className="bg-white hover:shadow-xl cursor-pointer transition-all duration-200 transform hover:scale-90 shadow-xl rounded-lg overflow-hidden w-[370px] text-left ">
                             <img src={item.imgSrc} alt={item.imgAlt} className="w-full h-64" />
                             <div className="p-5">
