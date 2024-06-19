@@ -39,8 +39,9 @@ const News = () => {
     }, []);
 
     const filteredContent = newNewsCards.filter(item => {
-        return item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            item.paragraph.toLowerCase().includes(searchTerm.toLowerCase());
+        return (locale === 'se' ? item.language === 'se' : item.language === 'en') &&
+            (item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            item.paragraph.toLowerCase().includes(searchTerm.toLowerCase()));
     });
 
     return (
@@ -88,19 +89,18 @@ const News = () => {
                 <div className="flex justify-center flex-wrap gap-6 mt-10 ">
                     {filteredContent.length > 0 ? (
                         filteredContent
-                            .filter(item => item.language === locale)
                             .map((item, index) => (
-                                <div key={index} className="bg-white hover:shadow-xl cursor-pointer transition-all duration-200 transform hover:scale-90 shadow-xl rounded-lg overflow-hidden w-[370px] text-left ">
-                                    <img src={item.image} alt={item.image} className="w-full h-64" />
-                                    <div className="p-5">
-                                        <h3 className="text-xl mb-3 font-semibold pb-1">{item.title}</h3>
-                                        <p className="font-thin text-sm pb-5 text-slate-500">{item.paragraph}</p>
-                                        <p className="text-sm text-gray-500 mt-2 pb-5">{item.date}</p>
-                                        <a href="#" className="text-blue-500 font-bold text-custom-black">read more...</a>
-                                    </div>
+                            <div key={index} className="bg-white hover:shadow-xl cursor-pointer transition-all duration-200 transform hover:scale-90 shadow-xl rounded-lg overflow-hidden w-[370px] text-left ">
+                                <img src={item.image} alt={item.image} className="w-full h-64" />
+                                <div className="p-5">
+                                <h3 className="text-xl mb-3 font-semibold pb-1">{item.title}</h3>
+                                <p className="font-thin text-sm pb-5 text-slate-500">{item.paragraph}</p>
+                                <p className="text-sm text-gray-500 mt-2 pb-5">{item.date}</p>
+                                <a href="#" className="text-blue-500 font-bold text-custom-black">read more...</a>
                                 </div>
+                            </div>
                             ))
-                    ) : (
+                        ) : (
                         <p>No results found</p>
                     )}
                 </div>
@@ -118,3 +118,43 @@ const News = () => {
 };
 
 export default News;
+
+/*
+
+{newNewsCards.length > 0 ? (
+                    newNewsCards
+                        .map((item, index) => {
+                        if (locale === 'se' && item.language === 'se') {
+                            return (
+                            <div key={index} className="bg-white hover:shadow-xl cursor-pointer transition-all duration-200 transform hover:scale-90 shadow-xl rounded-lg overflow-hidden w-[370px] text-left ">
+                                <img src={item.image} alt={item.image} className="w-full h-64" />
+                                <div className="p-5">
+                                <h3 className="text-xl mb-3 font-semibold pb-1">{item.title}</h3>
+                                <p className="font-thin text-sm pb-5 text-slate-500">{item.paragraph}</p>
+                                <p className="text-sm text-gray-500 mt-2 pb-5">{item.date}</p>
+                                <a href="#" className="text-blue-500 font-bold text-custom-black">read more...</a>
+                                </div>
+                            </div>
+                            );
+                        } else if (locale !== 'se' && item.language === 'en') {
+                            return (
+                            <div key={index} className="bg-white hover:shadow-xl cursor-pointer transition-all duration-200 transform hover:scale-90 shadow-xl rounded-lg overflow-hidden w-[370px] text-left ">
+                                <img src={item.image} alt={item.image} className="w-full h-64" />
+                                <div className="p-5">
+                                <h3 className="text-xl mb-3 font-semibold pb-1">{item.title}</h3>
+                                <p className="font-thin text-sm pb-5 text-slate-500">{item.paragraph}</p>
+                                <p className="text-sm text-gray-500 mt-2 pb-5">{item.date}</p>
+                                <a href="#" className="text-blue-500 font-bold text-custom-black">read more...</a>
+                                </div>
+                            </div>
+                            );
+                        } else {
+                            return null;
+                        }
+                        })
+                        .filter(item => item !== null) 
+                    ) : (
+                    <p>No results found</p>
+                )}
+
+*/
