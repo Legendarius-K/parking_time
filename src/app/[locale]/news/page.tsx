@@ -8,20 +8,23 @@ import { fetchNewsArticle } from '@/utils/functions';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import Image from "next/image";
+import { useLocale } from "next-intl";
+
 
 interface NewsCards {
-    Title: string;
-    
+    title: string;
+    paragraph: string;
+    date: string;
+    image: string;
+    language: string;
   }
 
 
-  /*paragraph: string;
-    date: string;
-    image: string; */
 const News = () => {
     const [newNewsCards, setNewsCards] = useState<NewsCards[]>([]);
     const t =useTranslations('NewsPage')
     const [searchTerm, setSearchTerm] = useState('');
+    const locale = useLocale();
 
     useEffect(() => {
     
@@ -29,7 +32,11 @@ const News = () => {
           try {
             const articles = await fetchNewsArticle();
             const formatedArticle = articles.map((article: any) =>({
-              Title: article.fields.title,
+              title: article.fields.title,
+              paragraph: article.fields.textContent,
+              date: article.fields.date,
+              image: article.fields.imageUrl,
+              language: article.fields.language,
             }));
             setNewsCards(formatedArticle);
           } catch (error) {
@@ -73,7 +80,7 @@ const filteredContent = content.filter(item => {
 
     return (
         <>
-        <div>{newNewsCards.map((article) => (<p>{article.Title}</p>))}</div>
+        
         <div className="relative flex justify-center items-start h-[50vh] md:h-[50vh] overflow-hidden">
             <img className="w-full h-full md:block object-cover object-center" src="/NewsMainPic.png" alt="hero picture" />
             <div className="absolute left-0 h-full w-full bg-slate-900/20 backdrop-blur md:bg-slate-900/20 md:backdrop-blur md:w-2/4">
@@ -117,21 +124,27 @@ const filteredContent = content.filter(item => {
 
 
 
+
+
             <div className="flex justify-center flex-wrap gap-6 mt-10 ">
-                {filteredContent.length > 0 ? (
-                    filteredContent.map((item, index) => (
+            {newNewsCards.length > 0 ? (
+                newNewsCards
+                    .map((item, index) => 
+                    item.language === locale ? (
                         <div key={index} className="bg-white hover:shadow-xl cursor-pointer transition-all duration-200 transform hover:scale-90 shadow-xl rounded-lg overflow-hidden w-[370px] text-left ">
-                            <img src={item.imgSrc} alt={item.imgAlt} className="w-full h-64" />
-                            <div className="p-5">
-                                <h3 className="text-xl mb-3 font-semibold pb-1">{item.title}</h3>
-                                <p className="font-thin text-sm pb-5 text-slate-500">{item.paragraph}</p>
-                                <p className="text-sm text-gray-500 mt-2 pb-5">{item.date}</p>
-                                <a href="#" className="text-blue-500 font-bold text-custom-black">{item.readMore}</a>
-                            </div>
+                        <img src={item.image} alt={item.image} className="w-full h-64" />
+                        <div className="p-5">
+                            <h3 className="text-xl mb-3 font-semibold pb-1">{item.title}</h3>
+                            <p className="font-thin text-sm pb-5 text-slate-500">{item.paragraph}</p>
+                            <p className="text-sm text-gray-500 mt-2 pb-5">{item.date}</p>
+                            <a href="#" className="text-blue-500 font-bold text-custom-black">read more...</a>
                         </div>
-                    ))
+                        </div>
+                    ) : null
+                    )
+                    .filter(item => item !== null) 
                 ) : (
-                    <p>No results found</p>
+                <p>No results found</p>
                 )}
             </div>
         </main>
@@ -148,3 +161,23 @@ const filteredContent = content.filter(item => {
 };
 
 export default News
+
+/*
+
+{filteredContent.length > 0 ? (
+                    filteredContent.map((item, index) => (
+                        <div key={index} className="bg-white hover:shadow-xl cursor-pointer transition-all duration-200 transform hover:scale-90 shadow-xl rounded-lg overflow-hidden w-[370px] text-left ">
+                            <img src={item.imgSrc} alt={item.imgAlt} className="w-full h-64" />
+                            <div className="p-5">
+                                <h3 className="text-xl mb-3 font-semibold pb-1">{item.title}</h3>
+                                <p className="font-thin text-sm pb-5 text-slate-500">{item.paragraph}</p>
+                                <p className="text-sm text-gray-500 mt-2 pb-5">{item.date}</p>
+                                <a href="#" className="text-blue-500 font-bold text-custom-black">{item.readMore}</a>
+                            </div>
+                        </div>
+                    ))
+                ) : (
+                    <p>No results found</p>
+                )}
+
+*/
