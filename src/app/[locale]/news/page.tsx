@@ -24,8 +24,8 @@ const News = () => {
             try {
                 const articles = await fetchNewsArticle();
                 const formattedArticle = articles.map((article: any) => ({
-                    title: article.fields.title,
-                    paragraph: article.fields.textContent,
+                    title: article.fields.shortTitle,
+                    paragraph: article.fields.shortText,
                     date: article.fields.date,
                     image: article.fields.imageUrl,
                     language: article.fields.language,
