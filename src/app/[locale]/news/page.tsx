@@ -4,6 +4,9 @@ import { useTranslations } from 'next-intl';
 import { fetchNewsArticle } from '@/utils/functions';
 import Image from "next/image";
 import { useLocale } from "next-intl";
+import Link from 'next/link';
+import Button from '../../../components/Button';
+import Article from './Article/[page]';
 
 interface NewsCards {
     title: string;
@@ -11,10 +14,13 @@ interface NewsCards {
     date: string;
     image: string;
     language: string;
+    id: string; // Add an ID field to uniquely identify each article
+    slug: string; // Add slug for unique identification
 }
 
 const News = () => {
     const [newNewsCards, setNewsCards] = useState<NewsCards[]>([]);
+    const [selectedArticle, setSelectedArticle] = useState<NewsCards | null>(null);
     const t = useTranslations('NewsPage');
     const [searchTerm, setSearchTerm] = useState('');
     const locale = useLocale();
@@ -24,25 +30,67 @@ const News = () => {
             try {
                 const articles = await fetchNewsArticle();
                 const formattedArticle = articles.map((article: any) => ({
-                    title: article.fields.title,
-                    paragraph: article.fields.textContent,
+                    title: article.fields.shortTitle,
+                    paragraph: article.fields.shortText,
                     date: article.fields.date,
                     image: article.fields.imageUrl,
                     language: article.fields.language,
+                    id: article.sys.id, // Assuming each article has a unique ID
+                    slug: article.fields.slug,
                 }));
                 setNewsCards(formattedArticle);
             } catch (error) {
-                console.log("error något gick fel")
+                console.log("error något gick fel");
             }
         }
         fetchData();
     }, []);
 
+    // Function to get all slugs
+    const getAllSlugs = () => {
+        return newNewsCards.flat().map(article => article.slug);
+    }
+    
+    const slugs = getAllSlugs();
+
+
+
+
+        
+    const getSlug = (slugURL: string) => {
+
+        slugs.filter(() => {
+            return slugs.find(slug => slug === slugURL);
+        });
+        
+        return selectedArticle?.slug;
+    }
+
+    // Example usage: log slugs to the console
+    useEffect(() => {
+   
+        console.log('Slugs:', slugs);
+
+
+
+    }, [newNewsCards]);
+
+
+
     const filteredContent = newNewsCards.filter(item => {
         return (locale === 'se' ? item.language === 'se' : item.language === 'en') &&
             (item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            item.paragraph.toLowerCase().includes(searchTerm.toLowerCase()));
+            item.paragraph.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            item.date.toLowerCase().includes(searchTerm.toLowerCase()));
     });
+
+    const handleArticleClick = (article: NewsCards) => {
+        setSelectedArticle(article);
+    };
+
+    const handleCloseModal = () => {
+        setSelectedArticle(null);
+    };
 
     return (
         <>
@@ -88,19 +136,20 @@ const News = () => {
 
                 <div className="flex justify-center flex-wrap gap-6 mt-10 ">
                     {filteredContent.length > 0 ? (
-                        filteredContent
-                            .map((item, index) => (
-                            <div key={index} className="bg-white hover:shadow-xl cursor-pointer transition-all duration-200 transform hover:scale-90 shadow-xl rounded-lg overflow-hidden w-[370px] text-left ">
+                        filteredContent.map((item, index) => (
+                            <div key={index} className="bg-white hover:shadow-xl cursor-pointer transition-all duration-200 transform hover:scale-90 shadow-xl rounded-lg overflow-hidden w-[370px] text-left" onClick={() => handleArticleClick(item)}>
                                 <img src={item.image} alt={item.image} className="w-full h-64" />
                                 <div className="p-5">
-                                <h3 className="text-xl mb-3 font-semibold pb-1">{item.title}</h3>
-                                <p className="font-thin text-sm pb-5 text-slate-500">{item.paragraph}</p>
-                                <p className="text-sm text-gray-500 mt-2 pb-5">{item.date}</p>
-                                <a href="#" className="text-blue-500 font-bold text-custom-black">read more...</a>
+                                    <h3 className="text-xl mb-3 font-semibold pb-1">{item.title}</h3>
+                                    <p className="font-thin text-sm pb-5 text-slate-500">{item.paragraph}</p>
+                                    <p className="text-sm text-gray-500 mt-2 pb-5">{item.date}</p>
+                                    
+                                    <Link href={{pathname :`/news/${getSlug(item.slug)}` , query:{Article : item.slug}}} passHref>Read More .......</Link>
+
                                 </div>
                             </div>
-                            ))
-                        ) : (
+                        ))
+                    ) : (
                         <p>No results found</p>
                     )}
                 </div>
@@ -118,4 +167,3 @@ const News = () => {
 };
 
 export default News;
-
