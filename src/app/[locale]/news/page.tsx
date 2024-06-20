@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { fetchNewsArticle } from '@/utils/functions';
 import Image from "next/image";
 import { useLocale } from "next-intl";
+import Link from 'next/link';
 
 interface NewsCards {
     title: string;
@@ -11,6 +12,7 @@ interface NewsCards {
     date: string;
     image: string;
     language: string;
+    slug: string;
 }
 
 const News = () => {
@@ -29,6 +31,7 @@ const News = () => {
                     date: article.fields.date,
                     image: article.fields.imageUrl,
                     language: article.fields.language,
+                    slug: article.fields.slug,
                 }));
                 setNewsCards(formattedArticle);
             } catch (error) {
@@ -96,7 +99,7 @@ const News = () => {
                                 <h3 className="text-xl mb-3 font-semibold pb-1">{item.title}</h3>
                                 <p className="font-thin text-sm pb-5 text-slate-500">{item.paragraph}</p>
                                 <p className="text-sm text-gray-500 mt-2 pb-5">{item.date}</p>
-                                <a href="#" className="text-blue-500 font-bold text-custom-black">read more...</a>
+                                <Link href={`/${locale}/news/[slug]`} as={`/${locale}/news/${item.slug}`} className="text-white font-light relative">Read more...</Link>
                                 </div>
                             </div>
                             ))
