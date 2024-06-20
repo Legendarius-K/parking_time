@@ -50,7 +50,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
     };
 
     return (
-        <div className={`fixed ${burgerOpen ? 'top-[64px]' : '-top-full'} max-h-[calc(100vh-70px)] overflow-auto border-t-[1px] border-neutral-400 font-nunito transition-all ease-in-out duration-700 p-6 pt-12 pb-10 flex flex-col left-0 bg-pt-primary/50 backdrop-blur-[10px] webkit-blur-10 w-full z-20 md:hidden shadow-2xl`}>
+        <div className={`fixed ${burgerOpen ? 'top-[64px]' : '-top-full'} max-h-[calc(100vh-70px)] overflow-auto border-t-[1px] border-neutral-400 font-nunito transition-all ease-in-out duration-700 p-6 pt-12 pb-10 flex flex-col left-0 bg-pt-primary/70 backdrop-blur-[10px] webkit-blur-10 w-full z-20 md:hidden shadow-2xl`}>
             <motion.div className="m-4"
                 initial={{ opacity: 0, x: 100 }}
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}

@@ -9,6 +9,7 @@ import Stats from "@/components/Stats";
 
 import Testimonials from "@/components/Testimonials";
 import Download from "@/components/Download";
+import WantToKnowMore from "@/components/WantToKnowMore";
 
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
             <TrustedBy />
             <Stats />
             <Download />
+            <WantToKnowMore />
             <div id="faq-component">
                 <Faq />
             </div>

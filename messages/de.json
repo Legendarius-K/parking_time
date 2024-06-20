@@ -99,6 +99,11 @@
     "MeetTheTeam": {
         "headline": "Lernen Sie unser Team kennen",
         "text": "Jedes Mitglied bringt eine einzigartige Mischung aus Fachwissen, Leidenschaft und zukunftsorientiertem Denken mit."
+    },
+    "WantToKnowMore": {
+        "headline": "Möchten Sie mehr wissen?",
+        "text": "Kontaktieren Sie uns, um mehr über unsere Lösung und wie wir Ihnen helfen können, zu erfahren.",
+        "contact": "Kontaktieren Sie uns"
     }
     
     

@@ -99,8 +99,10 @@
     "MeetTheTeam": {
         "headline": "Meet our team",
         "text": "Each member brings a unique blend of expertise, passion, and forward-thinking mindset."
+    },
+    "WantToKnowMore": {
+        "headline": "Want to know more?",
+        "text": "Contact us to find out more about our solution and how we can help you.",
+        "contant": "Contact us"
     }
-        
-    
-    
 }

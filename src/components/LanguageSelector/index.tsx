@@ -49,7 +49,7 @@ export default function LanguageSelector({ addClass, hamburgerMargin, closeSelec
         hideContact?.(open);
     }, [open, hideContact]);
 
-    const staggerList = stagger(0.1, { startDelay: 0.25 });
+    const staggerList = stagger(0.1, { startDelay: 0.01 });
 
     useEffect(() => {
         animate(

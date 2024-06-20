@@ -99,5 +99,11 @@
     "MeetTheTeam": {
         "headline": "Möt vårt team",
         "text": "Varje medlem tillför en unik blandning av expertis, passion och framåtsträvande tänkesätt."
+    },
+    "WantToKnowMore": {
+        "headline": "Vill du veta mer?",
+        "text": "Kontakta oss för att ta reda på mer om vår lösning och hur vi kan hjälpa dig.",
+        "contact": "Kontakta oss"
     }
+
 }

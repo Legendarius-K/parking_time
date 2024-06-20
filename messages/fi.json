@@ -100,6 +100,11 @@
     "MeetTheTeam": {
         "headline": "Tapaa tiimimme",
         "text": "Jokainen jäsen tuo mukanaan ainutlaatuisen yhdistelmän asiantuntemusta, intohimoa ja ennakkoluulotonta ajattelutapaa."
+    },
+    "WantToKnowMore": {
+        "headline": "Haluatko tietää lisää?",
+        "text": "Ota yhteyttä saadaksesi lisätietoja ratkaisustamme ja siitä, kuinka voimme auttaa sinua.",
+        "contact": "Ota yhteyttä"
     }
     
     

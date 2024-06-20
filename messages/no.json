@@ -99,9 +99,10 @@
     "MeetTheTeam": {
         "headline": "Møt vårt team",
         "text": "Hvert medlem bringer med seg en unik blanding av ekspertise, lidenskap og fremtidsrettet tankesett."
+    },
+    "WantToKnowMore": {
+        "headline": "Vil du vite mer?",
+        "text": "Kontakt oss for å finne ut mer om vår løsning og hvordan vi kan hjelpe deg.",
+        "contact": "Kontakt oss"
     }
-    
-    
-    
-    
 }

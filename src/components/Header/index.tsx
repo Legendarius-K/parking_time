@@ -69,7 +69,7 @@ const Header = () => {
 
     return (
         <>
-            <header className={`md:h-20 h-16 bg-pt-primary/50 md:bg-pt-primary flex items-center justify-between px-6 md:px-20 fixed top-0 left-0 w-full md:relative z-40 backdrop-blur-[18px] webkit-blur-10 transition-transform duration-500 ${isHeaderVisible ? 'transform-none' : '-translate-y-full'}`}>
+            <header className={`md:h-20 h-16 bg-pt-primary/70 md:bg-pt-primary flex items-center justify-between px-6 md:px-20 fixed top-0 left-0 w-full md:relative z-40 backdrop-blur-[18px] webkit-blur-10 transition-transform duration-500 ${isHeaderVisible ? 'transform-none' : '-translate-y-full'}`}>
                 <div className="w-16">
                     <Link href="/">
                         <Image src={ptLogo} alt="image" />

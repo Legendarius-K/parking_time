@@ -99,8 +99,10 @@
     "MeetTheTeam": {
         "headline": "Mød vores team",
         "text": "Hvert medlem bringer en unik blanding af ekspertise, passion og fremadskuende tankegang."
+    },
+    "WantToKnowMore": {
+        "headline": "Vil du vide mere?",
+        "text": "Kontakt os for at finde ud af mere om vores løsning og hvordan vi kan hjælpe dig.",
+        "contact": "Kontakt os"
     }
-    
-    
-    
 }
