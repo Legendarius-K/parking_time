@@ -39,14 +39,12 @@ const Faq = () => {
 
         if (/windows phone/i.test(userAgent)) {
             setAppStoreLink('https://play.google.com/store/apps/details?id=se.parkingtime.app&hl=en_US&pli=1');
-        }
-
-        if (/android/i.test(userAgent)) {
+        } else if (/android/i.test(userAgent)) {
             setAppStoreLink('https://play.google.com/store/apps/details?id=se.parkingtime.app&hl=en_US&pli=1');
-        }
-
-        if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
+        } else if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
             setAppStoreLink('https://apps.apple.com/se/app/parking-time/id1611019108');
+        } else {
+            setAppStoreLink('/#download')
         }
 
     }, []); 
