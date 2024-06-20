@@ -32,19 +32,24 @@ const Faq = () => {
     const [activeQuestion, setActiveQuestion] = useState<string | null>(null);
     const [appStoreLink, setAppStoreLink] = useState<string>('');
 
-    const t = useTranslations('faq')
+    const t = useTranslations('faq');
 
     useEffect(() => {
         const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
 
+        if (/windows phone/i.test(userAgent)) {
+            setAppStoreLink('https://play.google.com/store/apps/details?id=se.parkingtime.app&hl=en_US&pli=1');
+        }
+
         if (/android/i.test(userAgent)) {
             setAppStoreLink('https://play.google.com/store/apps/details?id=se.parkingtime.app&hl=en_US&pli=1');
-        } else if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
-            setAppStoreLink('https://apps.apple.com/se/app/parking-time/id1611019108');
-        } else {
+        }
+
+        if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
             setAppStoreLink('https://apps.apple.com/se/app/parking-time/id1611019108');
         }
-    }, []);
+
+    }, []); 
 
     const questions = [
         {
