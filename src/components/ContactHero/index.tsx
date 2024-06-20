@@ -9,7 +9,6 @@ const ContactHero = () => {
             <div className="absolute w-2/5 bg-slate-900/20 backdrop-blur inset-0 flex flex-col items-start justify-center py-8 px-4 sm:px-10 md:px-10">
                 <div className="w-full ml-8 flex flex-col">
                     <div className="flex items-center">
-                        <img className="w-3 mr-3" src="/red.svg" alt="red dot" />
                         <p className="text-sm text-white">{t("contact")}</p>
                     </div>
                     <div className="flex flex-col">
