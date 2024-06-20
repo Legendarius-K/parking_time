@@ -11,12 +11,23 @@ const CEOValues = () => {
                     <p className='md:mt-[2%] font-normal hidden md:block'>What we believe in</p>
                     <p className='mt-[2%] md:hidden'>The things we believe in</p>
                 </div>
-                <div className='flex justify-center flex-col md:flex-row w-[100%] md:w[100%] items-center'>
-                    <img className='p-[4%]' src="/Simplicity.svg" alt="simplicity image" />
-                    <img src="/Innovation.svg" alt="innovation image" />
-                    <img className='p-[4%]' src="/User.svg" alt="User friendly image" />
-                </div>
             </div>
+                    <div className='align-top inline-block text-center w-[120px]'>
+                        <img className="w-screen" src="/Simplicity.svg" alt="simplicity image" />
+                        <h1>hello</h1>
+                        <p className='block'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eius necessitatibus dolorem.</p>
+                    </div>
+                    <div className='align-top inline-block text-center w-[120px]'>
+                        <img src="/Innovation.svg" alt="innovation image" />
+                        <h1>hello</h1>
+                        <p className='block	'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eius necessitatibus dolorem.</p>
+                    </div>
+                    <div className='align-top inline-block text-center w-[120px]'>
+                        <img src="/User.svg" alt="User friendly image" /> 
+                        <h1 >hello</h1>
+                        <p className='block	'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eius necessitatibus dolorem.</p>
+                    </div>
+            
             <div className='mt-[8%] ml-[25%] mb-8 w-3/6 italic text-center flex justify-center align-center font-nunito font-light text-xl'>
                 <p>“Of all the things you need to think about during the day, parking should be one of the least. Parking should be so seamless that you hardly need to think about it; it should just work. We call this Smart Parking."</p>
             </div>
@@ -27,4 +38,4 @@ const CEOValues = () => {
     )
 }
 
-export default CEOValues;
+export default CEOValues;//lägg i samma div, gå tillbaka till hur det var innan och gör separata divs med bild, h1 och p x3 och gör samma styling
