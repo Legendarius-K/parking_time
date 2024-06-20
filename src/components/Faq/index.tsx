@@ -32,8 +32,6 @@ const Faq = () => {
     const [activeQuestion, setActiveQuestion] = useState<string | null>(null);
     const [appStoreLink, setAppStoreLink] = useState<string>('');
 
-    const t = useTranslations('faq');
-
     useEffect(() => {
         const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
 
@@ -46,9 +44,11 @@ const Faq = () => {
         } else {
             setAppStoreLink('/#download')
         }
+        
+    }, []);
 
-    }, []); 
-
+    const t = useTranslations('faq');
+    
     const questions = [
         {
             id: 'q1',
