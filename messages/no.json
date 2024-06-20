@@ -99,6 +99,22 @@
     "MeetTheTeam": {
         "headline": "Møt vårt team",
         "text": "Hvert medlem bringer med seg en unik blanding av ekspertise, lidenskap og fremtidsrettet tankesett."
+    },
+    "faq": {
+        "headline1": "Har du et spørsmål?",
+        "subheader1": "Her besvares noen vanlige spørsmål",
+        "q1q": "Hva er Parking Time?",
+        "q1a": "Parking Time er en gratis nedlastbar app som fungerer som en digital parkeringsskive. Du starter bare parkering via appen, og parkeringsvakter kan se hvor lenge din økt har vart.",
+        "q2q": "Hvordan bruker jeg Parking Time?",
+        "q2l": "Last ned appen",
+        "q2a": " og åpne den, registrer deg med ditt registreringsnummer. Bruk kartet, søkefunksjonen eller sonelisten for å finne ønsket parkeringssted. Når du har valgt din parkeringssone, kan du se gjeldende regler, starte parkeringen og enkelt lukke appen.",
+        "q3q": "Hvordan får jeg det i min kommune?",
+        "q3a": "Parking Time er gratis å laste ned, men kan bare brukes i en kommune som er en registrert kunde hos Parking Time Sverige.",
+        "q4q": "Hva er Parking Time?",
+        "q4a": "Du kan kontakte din kommune og spørre om Parking Time kan implementeres.",
+        "headline2": "Har du fortsatt et spørsmål?",
+        "subheader2": "Ta gjerne kontakt hvis du har spørsmål",
+        "contact": "Kontakt oss"
     }
     
     

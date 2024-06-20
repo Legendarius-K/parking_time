@@ -16,7 +16,6 @@ const Home = () => {
         <main className="overflow-hidden">
             <Hero />
             <SmartParkingSolution />
-            {/* <CarDriving /> */}
             <How />
             <div id="why-component">
                 <Why />
