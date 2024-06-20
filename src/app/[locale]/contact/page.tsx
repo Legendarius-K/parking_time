@@ -14,11 +14,17 @@ const Contact = () => {
 
     const t = useTranslations('contact')
 
-    const [openAccordion, toggleAccordion] = useState(false);
+    const [openAccordion1, toggleAccordion1] = useState(false);
+    const [openAccordion2, toggleAccordion2] = useState(false);
 
-    const handleClick = () => {
-        toggleAccordion(!openAccordion);
+    const handleClick1 = () => {
+        toggleAccordion1(!openAccordion1);
     }
+
+    const handleClick2 = () => {
+        toggleAccordion2(!openAccordion2);
+    }
+   
 
     const accordionClick = () => {
         console.log("item in accordion is clicked")
@@ -68,14 +74,14 @@ const Contact = () => {
                         </div>
                         <div className="flex flex-col gap-2 ">
                             <p>{t('reason')} Accordion only</p>
-                            <div onClick={handleClick} className="flex-col bg-pt-background rounded-[10px] py-3 px-[18px] text-pt-darkblue2 cursor-pointer">
+                            <div onClick={handleClick1} className="flex-col bg-pt-background rounded-[10px] py-3 px-[18px] text-pt-darkblue2 cursor-pointer">
                                 <div className="flex justify-between align-center">
                                     <p className="font-bold text-base">{t('choose')}</p>  <Image src={Chevronicon} alt="Pin icon" />
                                 </div>
-                                <section className={`${openAccordion ? 'flex-col' : 'hidden'} gap-2`}>
-                                    <div onClick={accordionClick} className="">placeholder</div>
-                                    <div onClick={accordionClick} className="">placeholder</div>
-                                    <div onClick={accordionClick} className="">placeholder</div>
+                                <section className={`${openAccordion1 ? 'flex-col' : 'hidden'} gap-2 flex`}>
+                                    <div onClick={accordionClick} className="rounded-[10px] border-zinc-400 p-3 hover:bg-white">placeholder</div>
+                                    <div onClick={accordionClick} className="rounded-[10px] border-zinc-400 p-3 hover:bg-white">placeholder</div>
+                                    <div onClick={accordionClick} className="rounded-[10px] border-zinc-400 p-3 hover:bg-white">placeholder</div>
                                 </section>
 
                             </div>
@@ -88,15 +94,15 @@ const Contact = () => {
                         </div>
                         <div className="flex flex-col gap-2 ">
                             <p>{t('reason')} Accordion and Input</p>
-                            <div onClick={handleClick} className="flex-col bg-pt-background rounded-[10px] py-3 px-[18px] text-pt-darkblue2 cursor-pointer">
-                                <div className="flex justify-between align-center">
+                            <div onClick={handleClick2} className={` ${openAccordion2 ? '' : 'cursor-pointer'} flex-col bg-pt-background rounded-[10px] py-3 px-[18px] text-pt-darkblue2 `}>
+                                <div className="flex justify-between align-center cursor-pointer">
                                     <p className=" font-bold text-base" >{t('choose')}</p>  <Image src={Chevronicon} alt="Pin icon" />
                                 </div>
-                                <section className={`${openAccordion ? 'flex-col' : 'hidden'} gap-2`}>
+                                <section className={`${openAccordion2 ? 'flex-col' : 'hidden'} gap-2 flex`}>
                                     <input className="rounded-[10px] border-pt-darkblue2 border-[1px] p-3 font-medium" type="text" name="nameInput" id="" placeholder="Reason for contact" />
-                                    <div onClick={accordionClick} className="">placeholder</div>
-                                    <div onClick={accordionClick} className="">placeholder</div>
-                                    <div onClick={accordionClick} className="">placeholder</div>
+                                    <div onClick={accordionClick} className="rounded-[10px] border-zinc-400 border-[1px] p-3 hover:bg-white">placeholder</div>
+                                    <div onClick={accordionClick} className="rounded-[10px] border-zinc-400 border-[1px] p-3 hover:bg-white">placeholder</div>
+                                    <div onClick={accordionClick} className="rounded-[10px] border-zinc-400 border-[1px] p-3 hover:bg-white">placeholder</div>
                                 </section>
 
                             </div>
