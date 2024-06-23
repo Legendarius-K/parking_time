@@ -9,12 +9,14 @@ import Button from "@/components/Button"
 import Check from "../../../../public/check.svg"
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl"
+import Recaptcha from '@/components/Recaptcha';
 
 const Contact = () => {
 
     const t = useTranslations('contact')
 
     const [openAccordion, toggleAccordion] = useState(false);
+    const [recaptchaValue, setRecaptchaValue] = useState<string | null>(null);
 
     const handleClick = () => {
         toggleAccordion(!openAccordion);
@@ -24,6 +26,35 @@ const Contact = () => {
         console.log("item in accordion is clicked")
     }
 
+    const handleRecaptchaChange = (value: string | null) => {
+        setRecaptchaValue(value);
+    };
+
+    const handleSubmit = async (event: React.FormEvent) => {
+        event.preventDefault();
+
+        if (!recaptchaValue) {
+            alert('Please complete the reCAPTCHA');
+            return;
+        }
+
+        const response = await fetch('/api/verifyRecaptcha', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ recaptchaValue }),
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            alert('Form submitted successfully');
+        } else {
+            alert('reCAPTCHA verification failed');
+        }
+        setRecaptchaValue(null);
+    };
 
     return (
         <div className="flex justify-center">
@@ -96,6 +127,7 @@ const Contact = () => {
                                 </a>
                             </span>
                         </div>
+                        <Recaptcha onChange={handleRecaptchaChange} />
                         <Button btnText={t('contact')} route="/" colors="bg-custom-black text-white"></Button>
                     </div>
                 </div>
@@ -104,4 +136,4 @@ const Contact = () => {
     )
 };
 
-export default Contact
+export default Contact;
