@@ -175,6 +175,6 @@ const PrivacyTextContent = () => {
       </div>
     </main>
   );
-}
+};
 
 export default PrivacyTextContent;

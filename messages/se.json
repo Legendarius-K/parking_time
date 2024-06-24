@@ -75,7 +75,34 @@
     },
     "privacy-policy-header":{
         "Privacy_Policy-title" : "Integritetspolicy",
-        "Privacy_Policy-date":"Ikraftträdandedatum: 3 april 2023"
+        "Privacy_Policy-date":"Ikraftträdandedatum: 3 april 2023",
+
+    "stats": {
+        "downloads": "Nedladdningar",
+        "sessions": "Parkeringstillfällen",
+        "zones": "Parkeringszoner"
+    },
+    "contactHero": {
+        "contact": "Kontakt",
+        "headline": "Vi ser fram emot att höra från dig!"
+    },
+    "aboutHero": {
+        "about":"Om oss",
+        "title": "Parking Time Sverige",
+        "paragraf": "Vi är ett startup teknikföretag dedikerat till att förändra parkeringsupplevelsen för alla intressenter - parkerare, parkeringsvakter, kommuner och fastighetsägare."
+    },
+    "download": {
+        "title": "Ladda ned nu",
+        "paragraf": "Appen är gratis att ladda ner för dig som användare. Din kommun måste dock vara registrerad som kund hos oss för att vår app ska vara giltig i ditt område. Om vår app inte är tillgänglig i din kommun är du välkommen att kontakta oss eller föreslå oss för din kommun!"
+    },
+    "knowMore": {
+        "title": "Vill du veta mer?",
+        "paragraf": "Kontakta oss för att få veta mer om vår lösning och hur vi kan implementera den i din kommun",
+        "button": "Kontakta oss"
+    },
+    "MeetTheTeam": {
+        "headline": "Möt vårt team",
+        "text": "Varje medlem tillför en unik blandning av expertis, passion och framåtsträvande tänkesätt."
     }
     ,
     "PrivacyTextContent":{
@@ -141,4 +168,6 @@
     ,"Text57":"För varje ändamål identifieras en distinkt rättslig grund som säkerställer efterlevnad av relevanta lagkrav. Dessa syften är tydligt avgränsade för att underlätta transparens och ansvarighet i behandlingen av personuppgifter av Parking Time Sweden AB."
 
 }
+    }
+
 }
