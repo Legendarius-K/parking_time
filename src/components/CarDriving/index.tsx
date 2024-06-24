@@ -1,5 +1,3 @@
-import car from '../../../public/car.svg';
-
 const CarDriving = () => {
     return (
         <div className='h-[80px] md:h-[110px] overflow-hidden flex justify-center items-center bg-pt-primary'>

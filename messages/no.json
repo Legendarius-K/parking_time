@@ -72,5 +72,36 @@
         "heading4": "Datadrevet byplanlegging",
         "text4": "Den digitale parkeringsskiven kan til slutt optimalisere parkeringsressurser og byplanlegging gjennom verdifull bruksdata og atferdsmønstre, noe som fører til et tryggere samfunn med bedre kontroll og tilgang til parkeringsplasser.",
         "about": "Om oss"
+    },
+    "knowMore": {
+        "title": "Vil du vite mer?",
+        "paragraf": "Kontakt oss for å finne ut mer om vår løsning og hvordan vi kan implementere den i din kommune",
+        "button": "Kontakt oss"
+    },
+    "download": {
+        "title": "Last ned nå",
+        "paragraf": "Appen er gratis å laste ned for deg som bruker. Din kommune må imidlertid være registrert som kunde hos oss for at appen vår skal være gyldig i ditt område. Hvis appen vår ikke er tilgjengelig i din kommune, er du velkommen til å kontakte oss eller foreslå oss for din kommune!"
+    },
+    "stats": {
+        "downloads": "Nedlastinger",
+        "sessions": "Parkeringsøkter",
+        "zones": "Parkeringssoner"
+    },
+    "contactHero": {
+        "contact": "Kontakt",
+        "headline": "Vi ser frem til å høre fra deg!"
+    },
+    "aboutHero": {
+        "about": "Om oss",
+        "title": "Parking Time Sverige",
+        "paragraf": "Vi er et teknologiselskap dedikert til å transformere parkeringsopplevelsen for alle interessenter - bilister, parkeringsvakter, kommuner og eiendomseiere."
+    },
+    "MeetTheTeam": {
+        "headline": "Møt vårt team",
+        "text": "Hvert medlem bringer med seg en unik blanding av ekspertise, lidenskap og fremtidsrettet tankesett."
     }
+    
+    
+    
+    
 }

@@ -9,7 +9,11 @@ import Button from "@/components/Button"
 import Check from "../../../../public/check.svg"
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl"
+<<<<<<< HEAD
 import Recaptcha from '@/components/Recaptcha';
+=======
+import ContactHero from "@/components/ContactHero"
+>>>>>>> main
 
 const Contact = () => {
 
@@ -26,6 +30,7 @@ const Contact = () => {
         console.log("item in accordion is clicked")
     }
 
+<<<<<<< HEAD
     const handleRecaptchaChange = (value: string | null) => {
         setRecaptchaValue(value);
     };
@@ -56,7 +61,11 @@ const Contact = () => {
         setRecaptchaValue(null);
     };
 
+=======
+>>>>>>> main
     return (
+        <>
+        <ContactHero />
         <div className="flex justify-center">
             <div className="flex justify-center max-w-[1300px]">
                 <div className="flex flex-col md:flex-row mt-[80px] pt-[100px] px-[30px] md:px-16 md:py-[100px] pb-[80px] font-mono gap-[70px] text-pt-darkblue1">
@@ -133,6 +142,7 @@ const Contact = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 };
 
