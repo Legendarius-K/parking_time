@@ -1,8 +1,6 @@
 'use server';
-import { error } from 'console';
 import { Resend } from 'resend';
 import Newsletter from '../../../../email/New_Subscriber_Form';
-import { request } from 'http';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const POST = async (formData: FormData) => {
