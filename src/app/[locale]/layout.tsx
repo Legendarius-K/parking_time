@@ -44,7 +44,6 @@ export default async function RootLayout({
                         {children}
                     </section>
                     <Footer />
-                    <CarDriving />
                 </NextIntlClientProvider>
             </body>
         </html>

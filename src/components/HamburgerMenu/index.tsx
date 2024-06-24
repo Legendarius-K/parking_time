@@ -50,43 +50,43 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
     };
 
     return (
-        <div className={`fixed ${burgerOpen ? 'top-[64px]' : '-top-full'} max-h-[calc(100vh-70px)] overflow-auto border-t-[1px] border-neutral-400 font-nunito transition-all ease-in-out duration-700 p-6 pt-12 pb-10 flex flex-col left-0 bg-pt-primary/50 backdrop-blur-[10px] webkit-blur-10 w-full z-20 md:hidden shadow-2xl`}>
+        <div className={`fixed ${burgerOpen ? 'top-[64px]' : '-top-full'} text-black max-h-[calc(100vh-70px)] overflow-auto border-t-[1px] border-neutral-400 font-nunito transition-all ease-in-out duration-700 p-6 pt-12 pb-10 flex flex-col left-0 bg-pt-primary backdrop-blur-[10px] webkit-blur-10 w-full z-20 md:hidden shadow-2xl`}>
             <motion.div className="m-4"
                 initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0, transition: { duration: 0.2 } }}
+                viewport={{ once: false }}
+            >
+                <Link onClick={handleScroll('why-component')} href="/" className=" font-light relative">{t('home')}</Link>
+            </motion.div>
+
+            <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
+
+            <motion.div className="m-4"
+                initial={{ opacity: 0, x: 120 }}
+                whileInView={{ opacity: 1, x: 0, transition: { duration: 0.3 } }}
+                viewport={{ once: false }}
+            >
+                <Link onClick={updateCloseBurger} href="/about" className="font-light relative">{t('about')}</Link>
+            </motion.div>
+
+            <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
+
+            <motion.div className="m-4"
+                initial={{ opacity: 0, x: 130 }}
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
                 viewport={{ once: false }}
             >
-                <Link onClick={handleScroll('why-component')} href="/" className="text-white font-light relative">{t('home')}</Link>
+                <Link onClick={updateCloseBurger} href="/news" className="font-light relative">{t('news')}</Link>
             </motion.div>
 
             <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
 
             <motion.div className="m-4"
-                initial={{ opacity: 0, x: 100 }}
+                initial={{ opacity: 0, x: 140 }}
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
                 viewport={{ once: false }}
             >
-                <Link onClick={updateCloseBurger} href="/about" className="text-white font-light relative">{t('about')}</Link>
-            </motion.div>
-
-            <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
-
-            <motion.div className="m-4"
-                initial={{ opacity: 0, x: 100 }}
-                whileInView={{ opacity: 1, x: 0, transition: { duration: 0.7 } }}
-                viewport={{ once: false }}
-            >
-                <Link onClick={updateCloseBurger} href="/news" className="text-white font-light relative">{t('news')}</Link>
-            </motion.div>
-
-            <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
-
-            <motion.div className="m-4"
-                initial={{ opacity: 0, x: 100 }}
-                whileInView={{ opacity: 1, x: 0, transition: { duration: 0.9 } }}
-                viewport={{ once: false }}
-            >
-                <Link onClick={handleScroll('faq-component')} href="/" className="text-white font-light relative">{t('faq')}</Link>
+                <Link onClick={handleScroll('faq-component')} href="/" className="font-light relative">{t('faq')}</Link>
             </motion.div>
 
             <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
@@ -96,7 +96,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                 <p className="mt-[28px] ml-3 font-nunito font-thin text-white text-sm">{t('language')}</p>
             </div>
             <div className={`transition-all ${hideContactBtn ? 'h-56' : 'h-16'}`}>
-                {!hideContactBtn && <Button closeBurger={closeBurger} route="/contact" btnText={t('contact')} colors="bg-white text-black" />}
+                {!hideContactBtn && <Button closeBurger={closeBurger} route="/contact" btnText={t('contact')} colors="bg-black text-white" />}
             </div>
         </div>
     );

@@ -7,7 +7,10 @@ import zones from '../../../public/smart-zones.png'
 import note from '../../../public/smart-note.png'
 import rules from '../../../public/smart-rules.png'
 import reg from '../../../public/smart-reg.png'
-import phoneBg from '../../../public/smart-phone-bg.png'
+import phoneBg from '../../../public/smartphone-new.png'
+import phone from '../../../public/smart-phone.png'
+import bg from '../../../public/smart-bg.png'
+import imgGray from '../../../public/smartparking-full-graybg.png'
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion'
 
@@ -31,9 +34,17 @@ const SmartParkingSolution: React.FC = () => {
     const t = useTranslations('smart-parking');
 
     return (
-        <div className='flex justify-center'>
-            <div className="flex flex-col justify-center md:flex-row bg-white p-8 md:p-16 space-y-8 md:space-y-0 md:space-x-8 max-w-[1400px]">
-                <div className='flex justify-center items-center'>
+        <div className='flex justify-center py-16'>
+            <div className="flex flex-col justify-center items-center md:flex-row bg-white p-8 md:p-16 space-y-8 md:space-y-0 md:space-x-8 max-w-[1400px] gap-5">
+
+                <div className='h-fit'>
+                    <Image src={imgGray} alt='Smart parking solutions' style={{ width: "100%", height: "auto" }} />
+                </div>
+
+
+                {/* Parallax animation below. Waiting for images. Temporary image above */}
+
+                {/* <div className='flex justify-center items-center'>
                     <div className="hidden lg:flex relative lg:mr-[70px] w-fit h-fit justify-center md:justify-center">
                         <div className='relative w-[90%]'>
                             <img className='' src={phoneBg.src} alt='background' style={{ width: "100%", height: "auto" }} />
@@ -66,7 +77,7 @@ const SmartParkingSolution: React.FC = () => {
                 </div>
                 <div className="w-full md:w-1/2 flex lg:hidden justify-center md:justify-center">
                     <img src="/Smart-Parking-Solution3.png" alt="Smart Parking Solution" className="w-full md:w-auto object-contain" />
-                </div>
+                </div> */}
                 <div className="w-full md:w-1/2 flex flex-col justify-center space-y-4 md:space-y-6">
                     <h2 className="text-[38px] leading-[43.2px] text-2xl md:text-4xl font-bold pt-darkblue1-900">{t('headline')}</h2>
                     <p className="text-[16px] leading-[24px] text-sm md:text-base pt-darkblue1-700">

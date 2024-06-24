@@ -5,7 +5,7 @@ const ContactHero = () => {
     const t = useTranslations("contactHero")
     return (
         <div className="relative">
-            <img className="hidden md:block w-full object-cover object-center h-96" src="/trees.png" alt="hero picture" />
+            <img className="hidden md:block w-full object-cover object-center h-96" src="/contact-hero-new.jpg" alt="hero picture" />
             <div className="absolute w-2/5 bg-slate-900/20 backdrop-blur inset-0 flex flex-col items-start justify-center py-8 px-4 sm:px-10 md:px-10">
                 <div className="w-full ml-8 flex flex-col">
                     <div className="flex items-center">

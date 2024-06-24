@@ -80,15 +80,15 @@ const Navigation = ({ openBurger, updateIsOpen }: NavigationProps) => {
                         key={index}
                         href={item.link}
                         onClick={item.section ? handleScroll(item.section) : undefined}
-                        className="text-white m-4 font-nunito font-light relative hover:cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-200 before:absolute before:bg-white before:origin-center before:h-[1px] before:w-0 hover:before:w-[55%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-white after:origin-center after:h-[1px] after:w-0 hover:after:w-[55%] after:bottom-0 after:right-[50%]"
+                        className="m-4 font-nunito font-light relative hover:cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-200 before:absolute before:bg-white before:origin-center before:h-[1px] before:w-0 hover:before:w-[55%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-white after:origin-center after:h-[1px] after:w-0 hover:after:w-[55%] after:bottom-0 after:right-[50%]"
                     >
                         {item.name}
                     </Link>
                 ))}
-                <Button route="/contact" btnText={t('contact')} colors="bg-white text-black hover:bg-gray-300" />
+                <Button route="/contact" btnText={t('contact')} colors="bg-black text-white hover:bg-gray-300" />
             </nav>
             <nav onClick={handleClick} className="md:hidden">
-                <Hamburger duration={0.6} rounded color="#fff" toggled={isOpen} toggle={setOpen} />
+                <Hamburger duration={0.6} rounded color="#0B051D" toggled={isOpen} toggle={setOpen} />
             </nav>
         </>
     );

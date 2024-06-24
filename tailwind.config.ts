@@ -23,7 +23,7 @@ const config: Config = {
         '84': '200px',
       },
       colors: {
-        'pt-primary': 'rgb(6, 67, 62)',
+        'pt-primary': '#FFFFFF',
         'pt-secondary': 'rgb(12, 5, 29)',
         'pt-red': '#F85252',
         'pt-background': '#ECF2F1',
