@@ -72,5 +72,78 @@
         "heading4": "Datenbasierte Stadtplanung",
         "text4": "Die digitale Parkscheibe kann schließlich Parkressourcen und Stadtplanung durch wertvolle Nutzungsdaten und Verhaltensmuster optimieren, was zu einer sichereren Gesellschaft mit besserer Kontrolle und Zugang zu Parkplätzen führt.",
         "about": "Mer om oss"
-    }
+    },
+    "privacy-policy-header":{
+        "Privacy_Policy-title":"Datenschutzrichtlinie",
+        "Privacy_Policy-date":"Gültig ab: 3. April 2023"
+ },
+ "PrivacyTextContent": {
+"text-base": "Diese Richtlinie gilt für alle Websites von Parking Time Sweden AB. Die Datenschutzrichtlinie gilt für Parking Time in Verbindung mit Dienstleistungen und Produkten im Zusammenhang mit Käufen, Kundenserviceanfragen, sonstigem Kontakt mit Parking Time sowie Besuchen der Website. Ihre persönlichen Daten sind uns wichtig.",
+"personal_data": "Ihre persönlichen Daten sind uns wichtig",
+"personal_data-text": "Parking Time sammelt und verarbeitet persönliche Daten über Sie, wenn Sie eine unserer Websites besuchen oder einen Kauf tätigen oder Parking Time per E-Mail oder über soziale Medien kontaktieren. Parking Time verpflichtet sich, Ihre Privatsphäre zu schützen und strebt ein hohes Datenschutzniveau an. Diese Datenschutzrichtlinie erklärt, warum und wie wir Ihre persönlichen Informationen sammeln und verwenden. Sie beschreibt auch Ihre Rechte und wie Sie diese ausüben können. Für uns ist es wichtig, dass die persönlichen Daten, die Sie uns als Kunde und Leser anvertrauen, sorgfältig, verantwortungsvoll, transparent und legal behandelt werden.",
+"Text1": "Wer ist verantwortlich für die gesammelten Daten?",
+"Text2": "Parking Time Sweden AB ist verantwortlich für die Verarbeitung Ihrer persönlichen Daten durch Parking Time und stellt sicher, dass diese Verarbeitung gemäß den geltenden gesetzlichen Bestimmungen erfolgt.",
+"Text3": "Was sind persönliche Daten?",
+"Text4": "Persönliche Daten sind alle Arten von Informationen, die direkt oder indirekt einer lebenden Person zugeordnet werden können. Beispiele für persönliche Daten sind Namen, E-Mail-Adressen, Telefonnummern und persönliche Identifikationsnummern. Auch Bilder und Tonaufnahmen gelten als persönliche Daten, selbst wenn keine Namen genannt werden. Verschlüsselte Daten und verschiedene elektronische Identitäten (wie IP-Adressen) werden ebenfalls als persönliche Daten betrachtet, wenn sie mit physischen Personen verknüpft werden können.",
+"Text5": "Woher stammen Ihre persönlichen Daten?",
+"Text6": "Die primäre Quelle für persönliche Daten über Sie sind Sie selbst, wie die Informationen, die Sie bei der Anmeldung für ein Abonnement angeben, wenn Sie uns per E-Mail kontaktieren und eine E-Mail-Kommunikation erhalten/antworten. Persönliche Daten entstehen auch durch das Lesen von Informationen auf unserer Website, die Nutzung von Dienstleistungen und die Kommunikation mit uns. Zum Beispiel können wir Besucher-, Verkehrs- und andere Kommunikationsdaten speichern. Beispiele für solche persönlichen Daten sind Ihre IP-Adresse. Diese Daten werden über Cookies gesammelt und verwendet, um Sie besser zu verstehen, damit wir Ihnen relevante Informationen zukommen lassen können. Dafür benötigen wir Ihre Zustimmung, die Sie durch die Annahme von Cookies beim Besuch unserer Website erteilen.",
+"Text7": "Woher erhält Parking Time Informationen über Parkzonen?",
+"Text8": "Parking Time Sweden AB stellt Parkzonen in der App dar. Informationen über die Parkzonen stammen von den Gemeinden, die die App nutzen. Die Daten werden aus den eigenen Parkkarten der Gemeinden importiert, beispielsweise hier die Parkzonen der Gemeinde Katrineholm. Parking Time Sweden AB ist eine unabhängige Aktiengesellschaft und vertritt keine staatliche Behörde.",
+"Text9": "Persönliche Daten, die wir über Sie sammeln, falls wir sie benötigen",
+"Text10": "Vor- und Nachname.",
+"Text11": "Kennzeichen des Fahrzeugs des Nutzers.",
+"Text12": "GPS-Standort des Nutzers zum Zeitpunkt des Parkens.",
+"Text13": "Kontaktinformationen (Adresse, E-Mail und Telefonnummer).",
+"Text14": "Cookies",
+"Text15": "Mit einem Cookie ist es möglich, die Surfaktivitäten eines Nutzers zu verfolgen. Cookies werden verwendet, um Ihnen als Besucher Zugang zu verschiedenen Funktionen zu ermöglichen und den Inhalt von Newslettern anzupassen. Wir verwenden Cookies, um den Inhalt unserer Werbung anzupassen. Wir verwenden auch Cookies auf unserer Website, um Statistiken über die Nutzung der Website zu sammeln. Ein Cookie ist eine Textdatei, die auf Ihrem Gerät gespeichert wird, damit die Website Ihr Gerät erkennen kann. Dieses Cookie enthält keine persönlichen Informationen. Es gibt zwei Arten von Cookies: dauerhafte und temporäre (sogenannte Sitzungscookies). Dauerhafte Cookies werden als Datei auf Ihrem Gerät für einen längeren Zeitraum gespeichert, während temporäre Cookies vorübergehend auf Ihrem Gerät platziert werden und nur verwendet werden, während Sie auf der Website surfen. Sie werden anschließend gelöscht. Wenn Sie wissen möchten, wann Ihr Gerät ein Cookie empfängt, können Sie Ihren Browser so einstellen, dass er Sie benachrichtigt. Auf diese Weise haben Sie die Möglichkeit, ein Cookie zu akzeptieren oder abzulehnen. Ihr Gerät kann auch so eingestellt werden, dass alle Cookies abgelehnt werden. Beachten Sie, dass bestimmte Funktionen unserer Onlinedienste möglicherweise nicht mehr wie vorgesehen funktionieren, wenn Sie sich entscheiden, keine Cookies zu akzeptieren.",
+"Text16": "Besondere Überlegungen zur Zustimmung für Direktmarketing",
+"Text17": "Vorausgesetzt, dass Sie uns Ihre ausdrückliche Zustimmung gegeben haben, senden und veröffentlichen wir kontinuierlich Informationen und Werbung über verschiedene digitale Kanäle basierend auf Ihrem Profil. Sie können sich jederzeit von der Erhaltung von Marketingkommunikation von uns abmelden, indem Sie auf 'Abmelden' in der E-Mail oder SMS klicken, die wir Ihnen senden. Sie können auch Parking Time per E-Mail unter matildaohman@parkingtime.se kontaktieren, um Hilfe beim Ablehnen unserer Kommunikation zu erhalten.",
+"Text18": "Wie lange speichern wir Ihre Informationen?",
+"Text19": "Ihre persönlichen Daten werden nur so lange gespeichert, wie es notwendig ist, um die Zwecke zu erfüllen, für die die Daten gesammelt wurden. Parking Time kann die Daten länger speichern, wenn dies erforderlich ist, um gesetzlichen Anforderungen nachzukommen oder um die rechtlichen Interessen von Parking Time zu schützen, beispielsweise während eines Gerichtsverfahrens.",
+"Text20": "Mit wem können wir Ihre persönlichen Daten teilen?",
+"Text21": "Ihre persönlichen Daten können mit anderen Unternehmen geteilt werden. Diese sind Datenverarbeiter von Parking Time. Ein Datenverarbeiter ist ein Unternehmen, das Informationen in unserem Auftrag und gemäß unseren Anweisungen verarbeitet. Die Datenverarbeiter von Parking Time erbringen Dienstleistungen in unserem Auftrag, wie das Versenden von Newslettern oder die Lieferung bestellter Waren. Alle Offenlegungen erfolgen in Übereinstimmung mit dem Gesetz, und Ihre persönlichen Daten werden nicht für andere Zwecke verwendet als die, über die wir Sie informiert haben. Wir haben schriftliche Vereinbarungen mit allen Datenverarbeitern, durch die sie die Sicherheit der verarbeiteten persönlichen Daten garantieren und sich verpflichten, unsere Sicherheitsanforderungen sowie die Beschränkungen und Anforderungen in Bezug auf die internationale Übertragung von persönlichen Daten einzuhalten. Wenn Ihre persönlichen Daten mit einem Unternehmen geteilt werden, das ein unabhängiger Datenverantwortlicher ist, gilt die Datenschutzrichtlinie und Datenverarbeitung der Gegenpartei. Wir teilen Ihre persönlichen Daten mit bestimmten Unternehmen, die unabhängige Datenverantwortliche sind. Beispiele für unabhängige Datenverantwortliche, mit denen wir Ihre persönlichen Daten teilen, sind:",
+"Text22": "Staatliche Behörden bei Verdacht auf Straftaten.",
+"Text23": "Wo verarbeiten wir Ihre persönlichen Daten?",
+"Text24": "Wir bemühen uns stets sicherzustellen, dass Ihre persönlichen Daten innerhalb der EU/EWR verarbeitet werden, und alle unsere eigenen IT-Systeme befinden sich innerhalb der EU/EWR.",
+"Text25": "Ihre Rechte",
+"Text26": "Nach der EU-Datenschutzgesetzgebung haben Sie bestimmte gesetzliche Rechte als Einzelperson in Bezug auf die persönlichen Daten, die wir über Sie verarbeiten. Wenn Sie auf Informationen über sich selbst oder nahestehende Personen stoßen, die Sie aus irgendeinem Grund nicht veröffentlicht sehen möchten, wenden Sie sich bitte per E-Mail an uns unter matildaohman@parkingtime.se.",
+"Text27": "Sie haben auch das Recht, eine Beschwerde bei der nationalen Datenschutzbehörde, der Datenschutzbehörde, einzureichen, wenn Sie der Ansicht sind, dass unsere Verarbeitung Ihrer persönlichen Daten nicht den Anforderungen der EU-Datenschutzgesetzgebung entspricht.",
+"Text28": "Zugang zu Ihren persönlichen Daten: Sie haben das Recht, Zugang zu Ihren persönlichen Daten zu erhalten und zu erfahren, wie sie verarbeitet werden. Berichtigung, Löschung oder Einschränkung: Sie haben das Recht, Daten zu korrigieren, die Sie für ungenau halten. In bestimmten Fällen haben Sie auch das Recht, Ihre persönlichen Daten löschen zu lassen. Dies gilt jedoch nicht, wenn Ihre persönlichen Daten weiterhin aufbewahrt werden müssen, beispielsweise wenn das Gesetz von uns verlangt, die Daten zu speichern oder wenn die Daten zur Erfüllung eines Vertrags benötigt werden, den wir mit Ihnen abgeschlossen haben. Sie haben auch das Recht zu verlangen, dass die Verarbeitung von persönlichen Daten für einen kurzen Zeitraum eingeschränkt wird, während wir mögliche Ungenauigkeiten untersuchen. Widerruf der Einwilligung: Wenn Sie der Verarbeitung bestimmter Daten zugestimmt haben, haben Sie jederzeit das Recht, Ihre Einwilligung zu widerrufen.",
+"Text29": "Einspruch gegen Interessenabwägung: Wenn die Verarbeitung auf einer sogenannten Interessenabwägung basiert, haben Sie das Recht, der Verarbeitung jederzeit zu widersprechen. Einspruch gegen Direktmarketing: Sie haben das Recht, der Verarbeitung Ihrer persönlichen Daten für Direktmarketingzwecke jederzeit zu widersprechen. In diesem Fall dürfen die persönlichen Daten nicht mehr für solche Zwecke verarbeitet werden. Datenportabilität: Sie haben das Recht auf Datenportabilität, was bedeutet, dass Sie unter bestimmten Umständen das Recht haben, die persönlichen Daten, die Sie uns gegeben haben, zu erhalten, um die Daten einem anderen Datenverantwortlichen übermitteln zu können.",
+"Text30": "Kontaktinformationen",
+"Text31": "Wenn Sie eines Ihrer gesetzlichen Rechte ausüben möchten, senden Sie uns bitte eine schriftliche und persönlich unterzeichnete Anfrage an die unten angegebene Adresse. Sie können auch jederzeit Parking Time über unsere Website kontaktieren, wenn Sie Fragen zur Verarbeitung Ihrer persönlichen Daten haben. Wir werden schriftlich an Ihre registrierte Adresse antworten. Sie können sich auch an Parking Time wenden, um Kommentare oder Beschwerden zur Handhabung Ihrer persönlichen Daten per E-Mail an matildaohman@parkingtime.se zu senden.",
+"Text32": "Parking Time Sweden AB",
+"Text33": "Postadresse:",
+"Text34": "Nyköpingsvägen 52, 611 50 NYKÖPING",
+"Text35": "Zweck und rechtliche Grundlage für die Verarbeitung Ihrer persönlichen Daten",
+"Text36": "Die Verarbeitung Ihrer persönlichen Daten dient bestimmten Zwecken, die auf rechtlichen Grundlagen beruhen, die nachstehend beschrieben werden. Darüber hinaus klären wir, wie Ihre persönlichen Daten zu Parkzwecken verarbeitet werden.",
+"Text37": "Erfüllung von Bestellungen für Dienstleistungen und Abonnements",
+"Text38": "Rechtsgrundlage: Erfüllung eines Vertrags, an dem Sie beteiligt sind.",
+"Text39": "Gezielte Werbung",
+"Text40": "Nach Ihrer Zustimmung senden wir Newsletter.",
+"Text41": "Rechtsgrundlage:",
+"Text42": "Ihre Zustimmung zu dieser Art der Verarbeitung.",
+"Text43": "Interessenabwägung.",
+"Text44": "Korrespondenz bezüglich Anfragen",
+"Text45": "Bearbeitung von Anfragen, die an Parking Time gerichtet sind, per E-Mail",
+"Text46": "matildaohman@parkingtime.se",
+"Text47": "oder an andere verantwortliche Personen bei Parking Time, erhalten per E-Mail, Telefon oder digitale Kanäle, einschließlich aller sozialen Plattformen.",
+"Text48": "Rechtsgrundlage: Interessenabwägung.",
+"Text49": "Untersuchung von Beschwerden",
+"Text50": "Bearbeitung von Beschwerden, die per E-Mail, Telefon oder anderen digitalen Kanälen, einschließlich sozialer Medien, eingegangen sind.",
+"Text51": "Rechtsgrundlage:",
+"Text52": "Erfüllung eines Vertrags, an dem Sie beteiligt sind.",
+"Text53": "Interessenabwägung.",
+"Text54": "Finanzmanagement, Buchhaltung und Berichterstattung",
+"Text55": "Verwendung Ihrer Transaktionen für unsere Buchhaltungs- und Berichtszwecke.",
+"Text56": "Rechtsgrundlage: Erfüllung gesetzlicher Verpflichtungen.",
+"Text57": "Für jeden Zweck wird eine eindeutige rechtliche Grundlage identifiziert, um die Einhaltung relevanter gesetzlicher Anforderungen sicherzustellen. Diese Zwecke sind klar abgegrenzt, um Transparenz und Verantwortlichkeit bei der Verarbeitung von persönlichen Daten durch Parking Time Sweden AB zu erleichtern."
+}
+
+
+
+
+
+
+
 }

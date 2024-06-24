@@ -72,5 +72,78 @@
         "heading4": "Dataohjattu kaupunkisuunnittelu",
         "text4": "Digitaalinen pysäköintikiekko voi lopulta optimoida pysäköintiresursseja ja kaupunkisuunnittelua arvokkaan käyttödatan ja käyttäytymismallien avulla, mikä johtaa turvallisempaan yhteiskuntaan paremmalla hallinnalla ja pääsylle pysäköintitiloihin.",
         "about": "Lisätietoja meistä"
-    }
+    },
+    "privacy-policy-header":{
+        "Privacy_Policy-title":"Tietosuojakäytäntö",
+        "Privacy_Policy-date" :"Voimaantulo: huhtikuu 3, 2023"
+
+
+
+
+
+    },
+    "PrivacyTextContent": {
+"text-base": "Tämä käytäntö koskee kaikkia Parking Time Sweden AB verkkosivustoja. Henkilötietokäytäntö koskee Parking Timea palveluiden ja tuotteiden osalta, jotka liittyvät ostoksiin, asiakaspalveluun, muuhun yhteydenpitoon Parking Timen kanssa sekä verkkosivustolla vierailuun. Henkilötietosi ovat meille tärkeitä.",
+"personal_data": "Henkilötietosi ovat meille tärkeitä",
+"personal_data-text": "Parking Time kerää ja käsittelee henkilötietojasi, kun vierailet tai teet ostoksen jollakin verkkosivustollamme tai otat yhteyttä Parking Timeen sähköpostitse tai sosiaalisen median kautta. Parking Time on sitoutunut suojaamaan yksityisyyttäsi ja pyrkii korkeaan tietosuojatasoon. Tämä tietosuojakäytäntö selittää, miksi ja miten keräämme ja käytämme henkilökohtaisia tietojasi. Se kuvaa myös oikeuksiasi ja kuinka voit käyttää niitä. Meille on tärkeää, että asiakkailta ja lukijoilta saamasi henkilötiedot käsitellään huolellisesti, vastuullisesti, avoimesti ja laillisesti.",
+"Text1": "Kuka on vastuussa keräämistämme tiedoista?",
+"Text2": "Parking Time Sweden AB on vastuussa henkilötietojesi käsittelystä Parking Timen toimesta ja varmistaa, että käsittely tapahtuu sovellettavan lainsäädännön mukaisesti.",
+"Text3": "Mitä ovat henkilötiedot?",
+"Text4": "Henkilötiedot ovat kaikenlaista tietoa, joka voidaan suoraan tai epäsuorasti yhdistää elävään henkilöön. Esimerkkejä henkilötiedoista ovat nimet, sähköpostiosoitteet, puhelinnumerot ja henkilötunnukset. Myös kuvat ja äänitallenteet lasketaan henkilötiedoiksi, vaikka nimiä ei mainittaisikaan. Myös salatut tiedot ja erilaiset sähköiset identiteetit (kuten IP-osoitteet) katsotaan henkilötiedoiksi, jos ne voidaan yhdistää fyysisiin henkilöihin.",
+"Text5": "Mistä henkilötietosi tulevat?",
+"Text6": "Ensisijainen lähde henkilötiedoillesi olet sinä itse, kuten tiedot, jotka annat rekisteröityessäsi tilaukseen, ottaessasi meihin yhteyttä sähköpostitse ja vastaanottaessasi/vastatessasi sähköpostiviesteihin. Henkilötietoja syntyy myös siitä, että luet tietoja verkkosivustollamme, käytät palveluita ja olet meihin yhteydessä. Esimerkiksi voimme tallentaa vierailu-, liikenne- ja muita viestintätietoja. Esimerkkejä tällaisista henkilötiedoista ovat IP-osoitteesi. Nämä tiedot kerätään evästeiden avulla ja niitä käytetään ymmärtämään sinua paremmin, jotta voimme kohdistaa sinulle relevanttia tietoa. Tämän tekemiseksi tarvitsemme suostumuksesi, jonka annat hyväksymällä evästeet vieraillessasi verkkosivustollamme.",
+"Text7": "Mistä Parking Time saa tiedot pysäköintialueista?",
+"Text8": "Parking Time Sweden AB esittää pysäköintialueet sovelluksessa. Tiedot pysäköintialueista tulevat kunnilta, jotka käyttävät sovellusta. Tiedot on tuotu kuntien omilta pysäköintikartoilta, esimerkiksi Katrineholmin kunnan pysäköintialueet täällä. Parking Time Sweden AB on itsenäinen osakeyhtiö eikä edusta mitään valtion viranomaista.",
+"Text9": "Henkilötiedot, jotka keräämme sinusta, jos tarvitsemme niitä",
+"Text10": "Etu- ja sukunimi.",
+"Text11": "Käyttäjän ajoneuvon rekisterinumero.",
+"Text12": "Käyttäjän GPS-sijainti pysäköintiajankohtana.",
+"Text13": "Yhteystiedot (osoite, sähköposti ja puhelinnumero).",
+"Text14": "Evästeet",
+"Text15": "Evästeillä voidaan seurata käyttäjän selaustoimintaa. Evästeitä käytetään tarjoamaan sinulle vierailijana pääsy erilaisiin toimintoihin ja mukauttamaan uutiskirjeiden sisältöä. Käytämme evästeitä mainonnan sisällön räätälöimiseksi. Käytämme evästeitä myös verkkosivustollamme kerätäksemme tilastoja verkkosivuston käytöstä. Eväste on tekstimuotoinen tiedosto, joka tallennetaan laitteellesi, jotta verkkosivusto voi tunnistaa laitteesi. Tämä eväste ei sisällä henkilökohtaisia tietoja. On olemassa kahdenlaisia evästeitä: pysyviä ja tilapäisiä (niin sanottuja istuntokohtaisia evästeitä). Pysyvät evästeet tallennetaan tiedostona laitteellesi pidemmäksi ajaksi, kun taas tilapäiset evästeet sijoitetaan laitteellesi tilapäisesti ja niitä käytetään vain, kun selaat verkkosivustoa. Ne poistetaan jälkikäteen. Jos haluat tietää, milloin laitteesi vastaanottaa evästeen, voit asettaa selaimesi ilmoittamaan siitä sinulle. Näin sinulla on mahdollisuus hyväksyä tai hylätä eväste. Laitteesi voidaan myös asettaa hylkäämään kaikki evästeet. Huomaa, että jos valitset olla hyväksymättä evästeitä, jotkin online-palveluidemme toiminnot eivät ehkä enää toimi tarkoitetulla tavalla.",
+"Text16": "Erityiset huomioon otettavat asiat suostumuksessa suoramarkkinointiin",
+"Text17": "Edellyttäen, että olet antanut meille nimenomaisen suostumuksesi, lähetämme ja julkaisemme jatkuvasti tietoa ja markkinointia eri digitaalisissa kanavissa profiilisi perusteella. Voit milloin tahansa kieltäytyä vastaanottamasta markkinointiviestintää meiltä napsauttamalla 'peruuta tilaus' sähköpostiviestissä tai tekstiviestissä, jonka lähetämme sinulle. Voit myös ottaa yhteyttä Parking Timeen sähköpostitse osoitteessa matildaohman@parkingtime.se saadaksesi apua kieltäytyessäsi viestinnästämme.",
+"Text18": "Kuinka kauan säilytämme tietojasi?",
+"Text19": "Henkilötietojasi säilytetään vain niin kauan kuin on tarpeen niiden säilyttämiseksi, jotta voidaan täyttää ne tarkoitukset, joita varten tiedot kerättiin. Parking Time voi säilyttää tietoja pidempään, jos se on tarpeen lakisääteisten vaatimusten täyttämiseksi tai Parking Timen oikeudellisten etujen suojaamiseksi, esimerkiksi oikeusprosessin aikana.",
+"Text20": "Kenen kanssa voimme jakaa henkilötietojasi?",
+"Text21": "Henkilötietojasi voidaan jakaa muiden yritysten kanssa. Nämä ovat Parking Timen tietojenkäsittelijöitä. Tietojenkäsittelijä on yritys, joka käsittelee tietoja puolestamme ja ohjeidemme mukaan. Parking Timen tietojenkäsittelijät suorittavat palveluita puolestamme, kuten uutiskirjeiden lähettämistä tai tilattujen tuotteiden toimittamista. Kaikki tietojen luovutukset tapahtuvat lain mukaisesti, ja henkilötietojasi ei käytetä muihin tarkoituksiin kuin niihin, joista olemme sinua tiedottaneet. Meillä on kirjalliset sopimukset kaikkien tietojenkäsittelijöiden kanssa, joissa he takaavat käsiteltävien henkilötietojen turvallisuuden ja sitoutuvat noudattamaan turvallisuusvaatimuksiamme sekä rajoituksia ja vaatimuksia, jotka koskevat henkilötietojen kansainvälistä siirtoa. Kun henkilötietosi jaetaan yrityksen kanssa, joka on itsenäinen rekisterinpitäjä, sovelletaan vastapuolen tietosuojakäytäntöä ja tietojenkäsittelyä. Jaamme henkilötietojasi tiettyjen yritysten kanssa, jotka ovat itsenäisiä rekisterinpitäjiä. Esimerkkejä itsenäisistä rekisterinpitäjistä, joiden kanssa jaamme henkilötietojasi, ovat:",
+"Text22": "Valtion viranomaiset epäillyn rikoksen yhteydessä.",
+"Text23": "Missä käsittelemme henkilötietojasi?",
+"Text24": "Pyrimme aina varmistamaan, että henkilötietojasi käsitellään EU/ETA-alueella, ja kaikki omat IT-järjestelmämme ovat EU/ETA-alueella.",
+"Text25": "Oikeutesi",
+"Text26": "EU tietosuojalainsäädännön mukaan sinulla on tietyt lailliset oikeudet yksilönä suhteessa niihin henkilötietoihin, joita käsittelemme sinusta. Jos kohtaat tietoja itsestäsi tai läheisistäsi, joita et jostain syystä halua julkaistavan Parking Timen verkkosivustolla, arvostamme, jos otat yhteyttä meihin sähköpostitse osoitteessa matildaohman@parkingtime.se.",
+"Text27": "Sinulla on myös oikeus tehdä valitus kansalliselle tietosuojaviranomaiselle, tietosuojavaltuutetulle, jos katsot, että henkilötietojesi käsittely ei täytä EU tietosuojalainsäädännön vaatimuksia.",
+"Text28": "Pääsy henkilötietoihisi: Sinulla on oikeus saada pääsy henkilötietoihisi ja tietää, miten niitä käsitellään. Oikaisu, poisto tai rajoitus: Sinulla on oikeus oikaista tietoja, jotka katsot virheellisiksi. Tietyissä tapauksissa sinulla on myös oikeus saada henkilötietosi poistetuksi. Tämä ei kuitenkaan koske tilanteita, joissa henkilötietosi on edelleen säilytettävä, esimerkiksi jos laki vaatii meitä säilyttämään tiedot tai jos tiedot ovat tarpeen sopimuksen täyttämiseksi, jonka olemme tehneet kanssasi. Sinulla on myös oikeus pyytää, että henkilötietojen käsittelyä rajoitetaan lyhyeksi ajaksi, kunnes tutkimme mahdolliset virheellisyydet. Suostumuksen peruuttaminen: Jos olet antanut suostumuksesi tiettyyn käsittelyyn, sinulla on aina oikeus peruuttaa suostumuksesi.",
+"Text29": "Vastalause intressien tasapainottamista vastaan: Kun käsittely perustuu niin sanottuun intressien tasapainottamiseen, sinulla on oikeus vastustaa käsittelyä milloin tahansa. Vastalause suoramarkkinointia vastaan: Sinulla on oikeus vastustaa henkilötietojesi käsittelyä suoramarkkinointitarkoituksiin milloin tahansa. Tällöin henkilötietoja ei enää saa käsitellä tällaisiin tarkoituksiin. Tietojen siirrettävyys: Sinulla on oikeus tietojen siirrettävyyteen, mikä tarkoittaa, että tietyissä olosuhteissa sinulla on oikeus saada meille antamasi henkilötiedot, jotta voit siirtää tiedot toiselle rekisterinpitäjälle.",
+"Text30": "Yhteystiedot",
+"Text31": "Jos haluat käyttää jotakin laillista oikeuttasi, pyydämme sinua lähettämään kirjallisen ja henkilökohtaisesti allekirjoitetun pyynnön alla olevaan osoitteeseen. Voit aina myös ottaa yhteyttä Parking Timeen verkkosivustomme kautta, jos sinulla on kysymyksiä henkilötietojesi käsittelystä. Vastaamme kirjallisesti rekisteröityyn osoitteeseesi. Voit myös ottaa yhteyttä Parking Timeen kaikissa kommenteissa tai valituksissa henkilötietojesi käsittelyn suhteen sähköpostitse osoitteeseen matildaohman@parkingtime.se.",
+"Text32": "Parking Time Sweden AB",
+"Text33": "Postiosoite:",
+"Text34": "Nyköpingsvägen 52, 611 50 NYKÖPING",
+"Text35": "Henkilötietojesi käsittelyn tarkoitus ja oikeudellinen perusta",
+"Text36": "Henkilötietojesi käsittely palvelee erityisiä tarkoituksia, jotka perustuvat alla kuvattuihin oikeudellisiin perusteisiin. Lisäksi tarkennamme, kuinka henkilötietojasi käsitellään pysäköintitarkoituksiin.",
+"Text37": "Palvelujen ja tilausten täyttäminen",
+"Text38": "Oikeudellinen perusta: Sinun kanssasi tehdyn sopimuksen täyttäminen.",
+"Text39": "Kohdennettu markkinointi",
+"Text40": "Suostumuksesi jälkeen lähetämme uutiskirjeitä.",
+"Text41": "Oikeudellinen perusta:",
+"Text42": "Suostumuksesi tähän käsittelyyn.",
+"Text43": "Intressien tasapainottaminen.",
+"Text44": "Kirjeenvaihto koskien tiedusteluja",
+"Text45": "Käsittelemme Parking Timelle osoitettuja tiedusteluja sähköpostitse",
+"Text46": "matildaohman@parkingtime.se",
+"Text47": "tai muille Parking Timen vastuuhenkilöille, vastaanotettuina sähköpostitse, puhelimitse tai digitaalisissa kanavissa, mukaan lukien kaikki sosiaaliset alustat.",
+"Text48": "Oikeudellinen perusta: Intressien tasapainottaminen.",
+"Text49": "Valitusten tutkiminen",
+"Text50": "Käsittelemme sähköpostitse, puhelimitse tai muilla digitaalisilla kanavilla, mukaan lukien sosiaalinen media, vastaanotettuja valituksia.",
+"Text51": "Oikeudellinen perusta:",
+"Text52": "Sinun kanssasi tehdyn sopimuksen täyttäminen.",
+"Text53": "Intressien tasapainottaminen.",
+"Text54": "Talouden hallinta, kirjanpito ja raportointi",
+"Text55": "Käytämme tapahtumiasi kirjanpito- ja raportointitarkoituksiimme.",
+"Text56": "Oikeudellinen perusta: Lakisääteisten velvoitteiden täyttäminen.",
+"Text57": "Jokaiselle tarkoitukselle on määritelty erillinen oikeudellinen perusta, joka varmistaa, että noudatamme asiaankuuluvia lakivaatimuksia. Nämä tarkoitukset on selkeästi rajattu avoimuuden ja vastuullisuuden edistämiseksi Parking Time Sweden AB henkilötietojen käsittelyssä."
+}
+
+    
 }
