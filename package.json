@@ -9,13 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "framer-motion": "^11.2.10",
     "hamburger-react": "^2.5.1",
     "next": "14.2.3",
     "next-intl": "^3.14.1",
     "postcss": "^8.4.38",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-toastify": "^10.0.5"
   },
   "devDependencies": {
     "@types/node": "^20",
