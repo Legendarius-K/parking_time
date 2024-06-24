@@ -9,6 +9,7 @@ import { useState, useRef } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useTranslations } from "next-intl"
+import ContactHero from "@/components/ContactHero"
 
 const Contact = () => {
     const [name, setName] = useState(''); 
@@ -89,8 +90,10 @@ const Contact = () => {
           console.log('Form has errors. Please correct them.');
         }
     };
-
+  
     return (
+        <>
+        <ContactHero />
         <div className="flex justify-center">
             <ToastContainer></ToastContainer>
             <div className="flex justify-center max-w-[1300px]">              
@@ -221,6 +224,7 @@ const Contact = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 };
 

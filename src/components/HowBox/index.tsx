@@ -9,24 +9,25 @@ interface HowBoxProps {
     number: string
     heading: string
     text: string
+    transition: number
 }
 
-const HowBox = ({ srcIcon, altIcon, number, heading, text }:HowBoxProps) => {
+const HowBox = ({ srcIcon, altIcon, number, heading, text, transition }:HowBoxProps) => {
     return (
         <>
             <motion.div className="bg-white rounded-[20px] w-[100%] md:w-[29%] overflow-hidden h-full pb-6 sm:pb-3 shadow-xl"
                 initial={{
                     opacity: 0,
-                    y: 50
+                    y: 80
                 }}
                 whileInView={{
                     opacity: 1,
                     y: 0,
                     transition: {
-                        duration: 1 
+                        duration: transition 
                     }
                 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
             >
                 <div className="flex relative h-[91px]">
                     <div className="m-6">

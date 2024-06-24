@@ -73,5 +73,36 @@
         "heading4": "Datenbasierte Stadtplanung",
         "text4": "Die digitale Parkscheibe kann schließlich Parkressourcen und Stadtplanung durch wertvolle Nutzungsdaten und Verhaltensmuster optimieren, was zu einer sichereren Gesellschaft mit besserer Kontrolle und Zugang zu Parkplätzen führt.",
         "about": "Mer om oss"
+    },
+    "knowMore": {
+        "title": "Möchten Sie mehr erfahren?",
+        "paragraf": "Kontaktieren Sie uns, um mehr über unsere Lösung und wie wir sie in Ihrer Gemeinde umsetzen können, zu erfahren",
+        "button": "Kontaktieren Sie uns"
+    },
+    "download": {
+        "title": "Jetzt herunterladen",
+        "paragraf": "Die App ist für dich als Benutzer kostenlos herunterzuladen. Deine Gemeinde muss jedoch als Kunde bei uns registriert sein, damit unsere App in deinem Gebiet gültig ist. Wenn unsere App in deiner Gemeinde nicht verfügbar ist, kannst du uns gerne kontaktieren oder uns deiner Gemeinde vorschlagen!"
+    },
+    "stats": {
+        "downloads": "Downloads",
+        "sessions": "Parkvorgänge",
+        "zones": "Parkzonen"
+    },
+    "contactHero": {
+        "contact": "Kontakt",
+        "headline": "Wir freuen uns darauf, von Ihnen zu hören!"
+    },
+    "aboutHero": {
+        "about": "Über uns",
+        "title": "Parking Time Schweden",
+        "paragraf": "Wir sind ein Technologie-Startup, das sich der Transformation des Parkerlebnisses für alle Beteiligten widmet - Parker, Parkwächter, Gemeinden und Immobilieneigentümer."
+    },
+    "MeetTheTeam": {
+        "headline": "Lernen Sie unser Team kennen",
+        "text": "Jedes Mitglied bringt eine einzigartige Mischung aus Fachwissen, Leidenschaft und zukunftsorientiertem Denken mit."
     }
+    
+    
+    
+    
 }

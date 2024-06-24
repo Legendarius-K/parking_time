@@ -14,6 +14,7 @@ const config: Config = {
     extend: {
       screens: {
         'md': '960px',
+        'sd': '340px',
       },
       transitionDuration: {
         400: '400ms', 
@@ -65,7 +66,7 @@ const config: Config = {
           '-webkit-backdrop-filter': 'blur(3px)',
         },
         '.webkit-blur-10': {
-          '-webkit-backdrop-filter': 'blur(10px)',
+          '-webkit-backdrop-filter': 'blur(18px)',
         },
       });
     },

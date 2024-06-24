@@ -1,12 +1,14 @@
+import React from 'react';
+import PrivacyHeader from '@/components/PrivacyPolicy/PrivacyHeader';
+import PrivacyTextContent from '@/components/PrivacyPolicy/PrivacyTextContent';
 
-
-const privacy = () => {
+const PrivacyPolicyPage = () => {
     return (
-        <>
-            Privacy Policy
-        </>
-    )
-};
+        <div>
+            <PrivacyHeader />
+            <PrivacyTextContent />
+        </div>
+    );
+}
 
-export default privacy
-
+export default PrivacyPolicyPage;
