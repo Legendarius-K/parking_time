@@ -84,7 +84,7 @@ const News = () => {
         <>
             <div className="relative flex justify-center items-start h-[50vh] md:h-[50vh] overflow-hidden">
                 <img className="w-full h-full md:block object-cover object-center" src="/NewsMainPic.png" alt="hero picture" />
-                <div className="absolute left-0 h-full w-full bg-slate-900/20 backdrop-blur md:bg-slate-900/20 md:backdrop-blur md:w-2/4">
+                <div className="absolute left-0 h-full w-full bg-slate-900/20 backdrop-blur md:bg-slate-900/20 md:backdrop-blur md:w-2/5">
                     <div className="hidden md:block absolute top-0 right-0 h-full w-1/2"></div>
                 </div>
                 <div className="absolute inset-0 flex flex-col justify-center items-start z-10 p-2 sm:p-16 md:p-18">
@@ -103,14 +103,14 @@ const News = () => {
                 <div className="absolute inset-0 bg-slate-900/20 opacity-10"></div>
             </div>
 
-            <main className="text-center pt-10 bg-gray-100">
 
-                <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-4xl mx-auto">
+            
+
+            <main className="text-center pt-32 pb-32 bg-gray-100 ">
+
+                <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-4xl mx-auto pb-7">
                    
-                   
-                   
-                   
-                    <div className="inline-flex w- md:w-[484px] p-2  ml-8 mr-8  md:ml-0 md:mr-0 items-center shadow-md  rounded-sm border hover:shadow-md ">
+                    <div className="inline-flex w-[370px] md:w-[484px] p-2  ml-8 mr-8 bg-white  md:ml-0 md:mr-0 items-center shadow-sm rounded-lg border hover:shadow-md ">
                    
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 cursor-pointer text-white rounded-full p-1 bg-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -119,7 +119,7 @@ const News = () => {
                         <input
                             type="text"
                             placeholder={t('SearchBar-PlaceHolder')}
-                            className="w-full bg-transparent rounded-sm py-[1px] pl-4 outline-none "
+                            className="w-full bg-transparent rounded-lg py-[1px] pl-4 outline-none "
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                         />
@@ -132,7 +132,7 @@ const News = () => {
 
                     <div className="flex items-center space-x-2 mt-4 md:mt-0 md:ml-4">
                         <span className="text-black font-semibold">{t('sort-by')+""}</span>
-                        <select value={sortOrder} onChange={handleSortChange} className="text-base  text-gray-800 outline-none border-2 shadow-md p-2 rounded-sm">
+                        <select value={sortOrder} onChange={handleSortChange} className="text-base  text-gray-800 bg-white outline-none border-2 shadow-sm p-2 rounded-xl">
                             <option value="newest">{t('newest')}</option>
                             <option value="oldest">{t('oldest')}</option>
                         </select>
@@ -140,6 +140,9 @@ const News = () => {
                     
                 </div>
                 
+
+
+
 
                 <div className="flex justify-center flex-wrap gap-6 mt-10 ">
                     {sortedContent.length > 0 ? (
@@ -151,7 +154,7 @@ const News = () => {
                                         <h3 className="text-xl mb-3 font-semibold pb-1">{item.title}</h3>
                                         <p className="font-thin text-sm pb-5 text-slate-500">{item.paragraph}</p>
                                         <p className="text-sm text-gray-500 mt-2 pb-5">{item.date}</p>
-                                        Read more...
+                                        Read more
                                     </div>
                                 </Link>
                             </div>
@@ -161,19 +164,42 @@ const News = () => {
                     )}
                 </div>
             </main>
+            <div className="text-center p-10 pb-24 pt-7 bg-gray-100">
+    <h3 className="text-sm mb-2 font-semibold">{t('Subscribe-section-semititle')}</h3>
+    <h1 className="text-4xl mb-2 font-semibold">{t('dont-miss')}</h1>
+    <p className="mb-5 font-thin text-base pb-5 text-slate-500">{t('Subscribe-paragraf')}</p>
 
-            <div className="text-center p-10 pb-24 pt-7 bg-gray-100 ">
-                <h3 className="text-sm mb-2 font-semibold">{t('Subscribe-section-semititle')}</h3>
-                <h1 className="text-4xl mb-2 font-semibold">{t('dont-miss')}</h1>
-                <p className="mb-5 font-thin text-base pb-5 text-slate-500">{t('Subscribe-paragraf')}</p>
+    <form className="flex flex-col md:flex-row justify-center items-center relative" action={async (formData) => {
+        await POST(formData)
+    }}>
+        <div className="relative w-full md:w-96 mb-4 md:mb-0">
+            <input 
+                type="email" 
+                name="UserEmail" 
+                maxLength={500} 
+                required 
+                placeholder="example@example.com" 
+                className="p-2 border rounded-full w-full md:pr-20" 
+            />
+            <input 
+                type="submit" 
+                value={t('Subscribe-button')} 
+                className="hidden md:block bg-black text-white mx-1 px-5 py-1 absolute right-1 top-1/2 transform -translate-y-1/2 rounded-full cursor-pointer" 
+            />
+        </div>
 
-                <form className="flex justify-center items-center" action={async (formData) => {
-                    await POST(formData)
-                }}>
-                    <input type="email" name='UserEmail' maxLength={500} required placeholder="example@example.com" className="p-2 border rounded-l-full w-64" />
-                    <input type="submit" value={t('Subscribe-button')} className="bg-black text-white px-5 py-1 relative rounded-r-full h-[40px] cursor-pointer" />
-                </form>
-            </div>
+        <input 
+            type="submit" 
+            value={t('Subscribe-button')} 
+            className="block md:hidden bg-black text-white px-5 py-2 w-full rounded-full cursor-pointer" 
+        />
+    </form>
+</div>
+
+
+
+
+            
         </>
     );
 };
