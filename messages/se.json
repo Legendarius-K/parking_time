@@ -73,10 +73,6 @@
         "text4": "Den digitala parkeringsskivan kan så småningom optimera parkeringsresurser och stadsplanering genom värdefull användningsdata och beteendemönster, vilket leder till ett säkrare samhälle med bättre kontroll och tillgång till parkeringsplatser.",
         "about": "Mer om oss"
     },
-    "privacy-policy-header":{
-        "Privacy_Policy-title" : "Integritetspolicy",
-        "Privacy_Policy-date":"Ikraftträdandedatum: 3 april 2023",
-
     "stats": {
         "downloads": "Nedladdningar",
         "sessions": "Parkeringstillfällen",
@@ -103,6 +99,12 @@
     "MeetTheTeam": {
         "headline": "Möt vårt team",
         "text": "Varje medlem tillför en unik blandning av expertis, passion och framåtsträvande tänkesätt."
+    },
+    "privacy-policy-header":{
+        "Privacy_Policy-title" : "Integritetspolicy",
+        "Privacy_Policy-date":"Ikraftträdandedatum: 3 april 2023"
+
+    
     }
     ,
     "PrivacyTextContent":{
@@ -170,4 +172,3 @@
 }
     }
 
-}
