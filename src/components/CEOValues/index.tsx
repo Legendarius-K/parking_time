@@ -14,7 +14,7 @@ const CEOValues = () => {
             </div>
             <div className='flex justify-center bg-pt-background md:flex-row flex-col items-center mb-[2%]'>
                 <div className='align-top inline-block text-center w-[200px] mb-[10%] md:mb-[5%] mx-auto'>
-                    <img className="w-full" src="/Simplicity.svg" alt="simplicity image" />
+                    <img className="w-full" src="/simplicity.svg" alt="simplicity image" />
                     <h1 className='text-xl font-semibold mb-[4%]'>{t('simplicityTitle')}</h1>
                     <p className='block font-nunito'>{t('simplicityParagraf')}</p>
                 </div>
