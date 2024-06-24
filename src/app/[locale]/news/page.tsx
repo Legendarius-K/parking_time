@@ -131,7 +131,7 @@ const News = () => {
 
 
                     <div className="flex items-center space-x-2 mt-4 md:mt-0 md:ml-4">
-                        <span className="text-black font-semibold">{t('sort-by')+": "}</span>
+                        <span className="text-black font-semibold">{t('sort-by')+":"}</span>
                         <select value={sortOrder} onChange={handleSortChange} className="text-base  text-gray-800 outline-none border-2 shadow-md p-2 rounded-sm">
                             <option value="newest">{t('newest')}</option>
                             <option value="oldest">{t('oldest')}</option>
