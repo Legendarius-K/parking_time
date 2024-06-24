@@ -53,49 +53,50 @@ const Testimonials = () => {
             <h3 className='text-bold text-5xl'>Customer testimonials</h3>
             <p className='text-bold text.sm'>Hear from some of our clients.</p>
           </div>
-          <div className='flex justify-center'>
-            <div className={`w-full md:px-44`}>
-            <Swiper
-              centeredSlides={true}
-              slidesPerView={1.2}
-              loop={true}
-              pagination={{ dynamicBullets:true }} 
-              modules={[Pagination]}
-              breakpoints={{
-                960: {
-                  slidesPerView: 2,
-                  centeredSlides: false,
-                  
-                }
-              }}
-              className="flex w-full h-[600px]"
-            >
-              {newTestimonials.map((testimonial) => (
-                <SwiperSlide className="w-full mb-4">  
-                  <div className='p-4 flex items-center h-full'>
-                    <div key={testimonial.id} className={`flex flex-col gap-10 md:h-auto w-full bg-white p-5 pb-11 md:p-8 mb-8 rounded-[20px] md:rounded-[40px] justify-between shadow-lg`}>
-                    <div className='flex flex-col gap-8 '>
-                      <div className=' flex w-[60%] h-[60px]'>
-                      <Image className="" src={`/${testimonial.logo}`} width={0} height={0} style={{width: 'auto', height: '60px'}} alt={`logo of ${testimonial.logo}`}/>
+          <div className='flex w-full justify-center overflow-visible'>
+            <div className={`flex w-[70%] overflow-visible mx-auto bg-green-500`}>
+              <Swiper
+                centeredSlides={true}
+                slidesPerView={1.2}
+                spaceBetween={20} 
+                pagination={{ dynamicBullets:true }} 
+                modules={[Pagination, Navigation]}
+                loop={true}
+                breakpoints={{
+                  960: {
+                    slidesPerView: 2,
+                    centeredSlides: false,
+                    spaceBetween: "20" 
+                  }
+                }}
+                className="flex w-[70%] h-[600px] overflow-visible bg-red-500"
+              >
+                {newTestimonials.map((testimonial) => (
+                  <SwiperSlide key={testimonial.id} className="w-full mb-4 h-100">  
+                    <div className='p-4 flex items-center h-full'>
+                      <div  className={`flex flex-col gap-10 md:h-auto w-full bg-white p-5 pb-11 md:p-8 mb-8 rounded-[20px] md:rounded-[40px] justify-between shadow-lg`}>
+                      <div className='flex flex-col gap-8 '>
+                        <div className=' flex w-[60%] h-[60px]'>
+                        <Image className="" src={`/${testimonial.logo}`} width={0} height={0} style={{width: 'auto', height: '60px'}} alt={`logo of ${testimonial.logo}`}/>
+                        </div>
+                        <p className="italic">
+                          {testimonial.quote}
+                        </p>
                       </div>
-                      <p className="italic">
-                        {testimonial.quote}
-                      </p>
-                    </div>
-                    <div className='flex flex-col md:flex-row gap-5 md:items-center'>
-                      <div className='w-[50px] h-[50px]'>
-                        <Image className="rounded-full" src={`/${testimonial.avatar}`} width={80} height={80} style={{width: '60px', maxWidth: '60px', height: '60px'}} alt={`picture of ${testimonial.name}`}/>
+                      <div className='flex flex-col md:flex-row gap-5 md:items-center'>
+                        <div className='w-[50px] h-[50px]'>
+                          <Image className="rounded-full" src={`/${testimonial.avatar}`} width={80} height={80} style={{width: '60px', maxWidth: '60px', height: '60px'}} alt={`picture of ${testimonial.name}`}/>
+                        </div>
+                        <div className='text-base '>
+                          <p className="text-pt-red">{testimonial.name}</p>
+                          <p className="font-normal">{testimonial.credentials}</p>
+                        </div>
                       </div>
-                      <div className='text-base '>
-                        <p className="text-pt-red">{testimonial.name}</p>
-                        <p className="font-normal">{testimonial.credentials}</p>
                       </div>
-                    </div>
-                    </div>
-                  </div> 
-                </SwiperSlide>
-              ))}
-            </Swiper>
+                    </div> 
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
           </div>
       </div>
