@@ -18,7 +18,9 @@
     "nextjs-google-analytics": "^2.3.3",
     "postcss": "^8.4.38",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-use-measure": "^2.1.1",
+    "swiper": "^11.1.4"
   },
   "devDependencies": {
     "@types/node": "^20",
