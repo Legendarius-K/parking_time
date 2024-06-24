@@ -9,7 +9,7 @@ const WantToKnowMore = () => {
     const t = useTranslations('WantToKnowMore')
 
     return (
-        <main className="bg-pt-primary mt-[65px] p-5 text-white py-28 md:py-20 md:pb-24 flex justify-center">
+        <main className="bg-neutral-700 mt-[65px] p-5 text-white py-28 md:py-20 md:pb-24 flex justify-center">
             <section className="w-full max-w-[1400px] flex flex-col md:flex-row items-center justify-center md:justify-around">
                 <div className="flex flex-col items-center w-full md:w-[40%]">
                     <div className="h-fit max-w-[300px] w-[62%] my-8">
