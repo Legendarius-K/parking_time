@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "contentful": "^10.11.10",
+    "dotenv": "^16.4.5",
     "framer-motion": "^11.2.10",
     "hamburger-react": "^2.5.1",
     "next": "14.2.3",
@@ -17,7 +19,8 @@
     "postcss": "^8.4.38",
     "react": "^18",
     "react-dom": "^18",
-    "react-use-measure": "^2.1.1"
+    "react-use-measure": "^2.1.1",
+    "swiper": "^11.1.4"
   },
   "devDependencies": {
     "@types/node": "^20",

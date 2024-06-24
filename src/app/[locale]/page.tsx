@@ -7,6 +7,8 @@ import TrustedBy from "@/components/TrustedBy";
 import Faq from "@/components/Faq";
 import Stats from "@/components/Stats";
 
+import Testimonials from "@/components/Testimonials";
+import Download from "@/components/Download";
 
 
 const Home = () => {
@@ -14,12 +16,18 @@ const Home = () => {
         <main className="overflow-hidden">
             <Hero />
             <SmartParkingSolution />
-            <CarDriving />
+            {/* <CarDriving /> */}
             <How />
-            <Why />
+            <div id="why-component">
+                <Why />
+            </div>
+            <Testimonials />
             <TrustedBy />
             <Stats />
-            <Faq />
+            <Download />
+            <div id="faq-component">
+                <Faq />
+            </div>
         </main>
     );
 };

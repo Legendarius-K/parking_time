@@ -6,6 +6,7 @@ import { Roboto } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import GoogleAnalytics from "@/components/Analytics";
+import CarDriving from "@/components/CarDriving";
 
 const roboto = Roboto({ subsets: ['latin'], weight: '400' })
 
@@ -43,6 +44,7 @@ export default async function RootLayout({
                         {children}
                     </section>
                     <Footer />
+                    <CarDriving />
                 </NextIntlClientProvider>
             </body>
         </html>
