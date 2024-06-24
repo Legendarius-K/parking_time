@@ -99,5 +99,19 @@
     "MeetTheTeam": {
         "headline": "Möt vårt team",
         "text": "Varje medlem tillför en unik blandning av expertis, passion och framåtsträvande tänkesätt."
+    },
+    "OurValues": {
+        "title": "Våra Värderingar",
+        "titleParagraf": "Vad vi tror på",
+        "titleParagrafTwo": "Det vi tror på",
+        "simplicityTitle": "Enkelhet",
+        "simplicityParagraf": "Vi strävar efter att skapa en enkel och smidig upplevelse.",
+        "innovationTitle": "Nyskapande",
+        "innovationParagraf": "Söker alltid att förbättra och göra vår app till en ledare inom sitt område.",
+        "userFriendlyTitle": "Användarvänlig",
+        "userFriendlyParagraf": "Det är avgörande att vår tjänst möter användarnas behov och förbättrar deras parkeringsupplevelse.",
+        "CEOQuote": "Av alla saker du behöver tänka på under dagen borde parkering vara en av de minsta. Parkering bör vara så smidig att du knappt behöver tänka på den; den ska bara fungera. Vi kallar detta Smart Parkering.",
+        "CEOEnd": "- Matilda, VD och grundare."
+
     }
 }
