@@ -70,11 +70,6 @@ const Article: React.FC<ArticleProps> = ({ params }) => {
     fetchData();
   }, [adjustedSlug]);
 
-  useEffect(() => {
-    if (article && !article.paragraph.trim()) {
-      alert('No article content');
-    }
-  }, [article]);
 
   useEffect(() => {
     router.push(newUrl);
@@ -95,12 +90,6 @@ const Article: React.FC<ArticleProps> = ({ params }) => {
       </div>
     );
   }
-
-  const paragraphs = article.paragraph.split('. ').map((sentence, index) => (
-    <p key={index} className="text-gray-800 mb-2">
-      {sentence.trim() + (index < article.paragraph.split('. ').length - 1 ? '.' : '')}
-    </p>
-  ));
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-white py-14 md:py-0">
@@ -127,7 +116,7 @@ const Article: React.FC<ArticleProps> = ({ params }) => {
         <img src={article.image} alt="Group" className="w-full rounded-lg mb-6" />
 
         <div className="text-gray-800 mb-4 pb-20">
-          {paragraphs}
+          <p>{article.paragraph}</p>
         </div>
         
         <a
