@@ -37,7 +37,7 @@ const SmartParkingSolution: React.FC = () => {
         <div className='flex justify-center py-16'>
             <div className="flex flex-col justify-center items-center md:flex-row bg-white p-8 md:p-16 space-y-8 md:space-y-0 md:space-x-8 max-w-[1400px] gap-5">
 
-                <div className='h-fit'>
+                <div className='h-fit w-full md:w-1/2'>
                     <Image src={imgGray} alt='Smart parking solutions' style={{ width: "100%", height: "auto" }} />
                 </div>
 
