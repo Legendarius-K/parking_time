@@ -56,6 +56,7 @@
         "title": "Stilling",
         "phone": "Telefonnummer",
         "reason": "Emne",
+        "reason-placeholder": "Årsak til kontakt",
         "choose": "Velg",
         "message": "Skriv en melding",
         "terms1": "Jeg godtar",

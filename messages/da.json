@@ -52,10 +52,11 @@
     "contact": {
         "contact": "Kontakt os",
         "text1": "Uanset om du har et spørgsmål, feedback eller har brug for hjælp, bedes du udfylde formularen nedenfor, og vores team vil vende tilbage til dig hurtigst muligt.",
-        "name": "For- og efternavn",
+        "name": "For og efternavn",
         "title": "Arbejdsstilling",
         "phone": "Telefonnummer",
         "reason": "Emne",
+        "reason-placeholder": "Årsag til kontakt",
         "choose": "Vælg",
         "message": "Skriv en besked",
         "terms1": "Jeg accepterer",
