@@ -11,6 +11,13 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useTranslations } from "next-intl"
 import ContactHero from "@/components/ContactHero"
 
+type ErrorsType = {
+    name?: string;
+    email?: string;
+    message?: string;
+    checkbox?: string;
+};
+
 const Contact = () => {
     const [name, setName] = useState(''); 
     const [email, setEmail] = useState(''); 
@@ -18,11 +25,11 @@ const Contact = () => {
     const [title, setTitle] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
     const [reason, setReason] = useState('');  
-    const [errors, setErrors] = useState({}); 
+    const [errors, setErrors] = useState<ErrorsType>({}); 
     const [submitted, setSubmitted] = useState(false);
     const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
     const t = useTranslations('contact')
-    const form = useRef();
+    const form = useRef<HTMLFormElement>(null);
 
     const notifySuccess = () => {
         toast.success('Form submitted successfully!', {
@@ -32,7 +39,7 @@ const Contact = () => {
    
     const validateForm = () => { 
 
-        let errors = {}; 
+        let errors: ErrorsType = {}; 
   
         if (!name) { 
             errors.name = 'Name is required.'; 
@@ -58,11 +65,11 @@ const Contact = () => {
         return Object.keys(errors).length === 0; 
     }; 
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e : any) => {
         e.preventDefault();
         setSubmitted(true);
         
-        if (validateForm()) {
+        if (validateForm() && form.current) {
           emailjs
             .sendForm('service_b3do2pt', 'template_2ehdyff', form.current, {
               publicKey: '3WiSQ3V1YWjMsLH05',
@@ -229,6 +236,3 @@ const Contact = () => {
 };
 
 export default Contact
-
-
-//making a comment to see if my commit actually works
