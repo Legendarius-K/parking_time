@@ -19,7 +19,7 @@ const News = () => {
     const [newNewsCards, setNewsCards] = useState<NewsCards[]>([]);
     const [selectedArticle, setSelectedArticle] = useState<NewsCards | null>(null);
     const [searchTerm, setSearchTerm] = useState('');
-    const [sortOrder, setSortOrder] = useState('newest');
+    const [sortOrder, setSortOrder] = useState(''); // default value
     const t = useTranslations('NewsPage');
     const locale = useLocale();
 
@@ -49,7 +49,7 @@ const News = () => {
     const getAllSlugs = () => {
         return newNewsCards.flat().map(article => article.slug);
     }
-    
+
     const slugs = getAllSlugs();
 
     useEffect(() => {
@@ -59,8 +59,8 @@ const News = () => {
     const filteredContent = newNewsCards.filter(item => {
         return (locale === 'se' ? item.language === 'se' : item.language === 'en') &&
             (item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            item.paragraph.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            item.date.toLowerCase().includes(searchTerm.toLowerCase()));
+                item.paragraph.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                item.date.toLowerCase().includes(searchTerm.toLowerCase()));
     });
 
     const handleArticleClick = (article: NewsCards) => {
@@ -95,7 +95,6 @@ const News = () => {
                     <div className="flex items-center">
                         <div>
                             <p className="text-white text-sm leading-loose md:leading-loose mt-16 flex items-center ml-4">
-                            
                                 {t('Simi-Tilte')}
                             </p>
                         </div>
@@ -110,13 +109,13 @@ const News = () => {
             <main className="text-center pt-32 pb-32 bg-gray-100 ">
 
                 <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-4xl mx-auto pb-7 space-y-4 md:space-y-0 md:space-x-4 relative">
-                   
+
                     <div className="inline-flex w-[370px] md:w-[484px] p-2 bg-white items-center shadow-sm rounded-lg border hover:shadow-md ">
-                   
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 cursor-pointer text-white rounded-full p-1 bg-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                            </svg>
-                        
+
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 cursor-pointer text-white rounded-full p-1 bg-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+
                         <input
                             type="text"
                             placeholder={t('SearchBar-PlaceHolder')}
@@ -124,18 +123,19 @@ const News = () => {
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                         />
-                        
+
                     </div>
 
-                    <div className="relative flex flex-col justify-center items-center  md:flex-row">
+                    <div className="relative flex flex-col justify-center items-center md:flex-row">
                         <h2 className='p-1 md:pr-2 font-bold'>{t('sort-by')}:</h2>
                         <button
                             id="multiLevelDropdownButton"
                             onClick={toggleMultiDropdown}
-                            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            className="text-black bg-[#ffffff] hover:bg-[#e2e2e2] focus:ring-4 focus:outline-none focus:ring-blue-300 shadow-md font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                             type="button"
                         >
-                            {t('sort-by')}
+                            <p>{sortOrder ? t(sortOrder) : t('Select')}</p>
+
                             <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
                             </svg>
@@ -154,7 +154,6 @@ const News = () => {
                             </div>
                         )}
                     </div>
-
                 </div>
                 <div className="flex justify-center flex-wrap gap-6 mt-10 ">
                     {sortedContent.length > 0 ? (
@@ -175,8 +174,6 @@ const News = () => {
                         <p>{t('No_Results')}</p>
                     )}
                 </div>
-
-             
             </main>
             <div className="text-center p-10 pb-24 pt-7 bg-gray-100">
                 <h3 className="text-sm mb-2 font-semibold">{t('Subscribe-section-semititle')}</h3>
@@ -187,25 +184,25 @@ const News = () => {
                     await POST(formData)
                 }}>
                     <div className="relative w-full md:w-96 mb-4 md:mb-0">
-                        <input 
-                            type="email" 
-                            name="UserEmail" 
-                            maxLength={500} 
-                            required 
-                            placeholder="example@example.com" 
-                            className="p-2 border rounded-full w-full md:pr-20" 
+                        <input
+                            type="email"
+                            name="UserEmail"
+                            maxLength={500}
+                            required
+                            placeholder="example@example.com"
+                            className="p-2 border rounded-full w-full md:pr-20"
                         />
-                        <input 
-                            type="submit" 
-                            value={t('Subscribe-button')} 
-                            className="hidden md:block bg-black text-white mx-1 px-5 py-1 absolute right-1 top-1/2 transform -translate-y-1/2 rounded-full cursor-pointer" 
+                        <input
+                            type="submit"
+                            value={t('Subscribe-button')}
+                            className="hidden md:block bg-black text-white mx-1 px-5 py-1 absolute right-1 top-1/2 transform -translate-y-1/2 rounded-full cursor-pointer"
                         />
                     </div>
 
-                    <input 
-                        type="submit" 
-                        value={t('Subscribe-button')} 
-                        className="block md:hidden bg-black text-white px-5 py-2 w-full rounded-full cursor-pointer" 
+                    <input
+                        type="submit"
+                        value={t('Subscribe-button')}
+                        className="block md:hidden bg-black text-white px-5 py-2 w-full rounded-full cursor-pointer"
                     />
                 </form>
             </div>
