@@ -113,11 +113,11 @@
         "q4q": "Hva er Parking Time?",
         "q4a": "Du kan kontakte din kommune og spørre om Parking Time kan implementeres.",
         "headline2": "Har du fortsatt et spørsmål?",
-        "subheader2": "Ta gjerne kontakt hvis du har spørsmål",
+        "subheader2": "Ta gjerne kontakt hvis du har spørsmål"
+    },
+    "WantToKnowMore": {
+        "headline": "Vil du vite mer?",
+        "text": "Kontakt oss for å finne ut mer om vår løsning og hvordan vi kan hjelpe deg.",
         "contact": "Kontakt oss"
     }
-    
-    
-    
-    
 }

@@ -113,7 +113,11 @@
         "q4q": "Was ist Parking Time?",
         "q4a": "Sie können Ihre Gemeinde kontaktieren und fragen, ob Parking Time implementiert werden kann.",
         "headline2": "Hast du noch Fragen?",
-        "subheader2": "Zögern Sie nicht, uns zu kontaktieren, wenn Sie Fragen haben",
+        "subheader2": "Zögern Sie nicht, uns zu kontaktieren, wenn Sie Fragen haben"
+    },
+    "WantToKnowMore": {
+        "headline": "Möchten Sie mehr wissen?",
+        "text": "Kontaktieren Sie uns, um mehr über unsere Lösung und wie wir Ihnen helfen können, zu erfahren.",
         "contact": "Kontaktieren Sie uns"
     }
     

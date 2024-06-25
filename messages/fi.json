@@ -81,7 +81,6 @@
     "download": {
         "title": "Lataa nyt",
         "paragraf": "Sovelluksen lataaminen on sinulle käyttäjänä ilmaista. Kuntasi on kuitenkin rekisteröidyttävä asiakkaaksi, jotta sovelluksemme on voimassa alueellasi"
-    
     },
     "stats": {
         "downloads": "Lataukset",
@@ -114,10 +113,11 @@
         "q4q": "Mikä on Parking Time?",
         "q4a": "Voit ottaa yhteyttä kuntasi ja kysyä, voidaanko Parking Time ottaa käyttöön.",
         "headline2": "Onko sinulla edelleen kysyttävää?",
-        "subheader2": "Ota rohkeasti yhteyttä, jos sinulla on kysyttävää",
+        "subheader2": "Ota rohkeasti yhteyttä, jos sinulla on kysyttävää"
+    },
+    "WantToKnowMore": {
+        "headline": "Haluatko tietää lisää?",
+        "text": "Ota yhteyttä saadaksesi lisätietoja ratkaisustamme ja siitä, kuinka voimme auttaa sinua.",
         "contact": "Ota yhteyttä"
     }
-    
-    
-    
 }

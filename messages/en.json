@@ -115,8 +115,10 @@
         "headline2": "Still have a question?",
         "subheader2": "Feel free to contact us if you have any questions",
         "contact": "Contact Us"
+    },
+    "WantToKnowMore": {
+        "headline": "Want to know more?",
+        "text": "Contact us to find out more about our solution and how we can help you.",
+        "contant": "Contact us"
     }
-        
-    
-    
 }

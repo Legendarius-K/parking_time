@@ -23,14 +23,14 @@
     "home-hero": {
         "text1": "Digital parkeringsskiva - direkt i din mobil.",
         "text2": "Ett vinnande koncept i ett nytt, digitaliserat format.",
-        "contact":"Kontakta oss",
-        "app":"Hämta appen",
+        "contact": "Kontakta oss",
+        "app": "Hämta appen",
         "bullet1": "Enkel att använda",
         "bullet2": "Gratis nedladding",
         "bullet3": "Undvik böter",
         "bullet4": "Reducera stress"
     },
-    "how" : {
+    "how": {
         "headline": "Hur det fungerar",
         "heading1": "Fyll i registrerings-nummer",
         "text1": "Öppna appen, registrera dig med ditt registreringsnummer.",
@@ -47,10 +47,10 @@
         "bullet2": "Vår digitala parkeringsskiva förenklar parkeringsprocessen.",
         "bullet3": "Vilket parkeringsvaktsystem som helst kan enkelt integreras med vårt system.",
         "text2": "Vi ser fram emot att berätta mer om vår lösning vid ett möte.",
-        "contact":"Kontakta oss"
+        "contact": "Kontakta oss"
     },
     "contact": {
-        "contact":"Kontakta oss",
+        "contact": "Kontakta oss",
         "text1": "Oavsett om du har en fråga, feedback eller behöver hjälp, vänligen fyll i formuläret nedan så återkommer vårt team till dig så snart som möjligt.",
         "name": "För- och efternamn",
         "title": "Arbetstitel",
@@ -83,7 +83,7 @@
         "headline": "Vi ser fram emot att höra från dig!"
     },
     "aboutHero": {
-        "about":"Om oss",
+        "about": "Om oss",
         "title": "Parking Time Sverige",
         "paragraf": "Vi är ett startup teknikföretag dedikerat till att förändra parkeringsupplevelsen för alla intressenter - parkerare, parkeringsvakter, kommuner och fastighetsägare."
     },
@@ -113,7 +113,11 @@
         "q4q": "Vad är Parking Time?",
         "q4a": "Du kan kontakta din kommun och fråga om Parking Time kan implementeras.",
         "headline2": "Har du fortfarande frågor?",
-        "subheader2": "Kontakta oss gärna om du har några frågor",
+        "subheader2": "Kontakta oss gärna om du har några frågor"
+    },
+    "WantToKnowMore": {
+        "headline": "Vill du veta mer?",
+        "text": "Kontakta oss för att ta reda på mer om vår lösning och hur vi kan hjälpa dig.",
         "contact": "Kontakta oss"
     }
 }
