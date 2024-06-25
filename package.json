@@ -23,6 +23,7 @@
     "react-dom": "^18",
     "react-toastify": "^10.0.5",
     "react-use-measure": "^2.1.1",
+    "resend": "^3.3.0",
     "swiper": "^11.1.4"
   },
   "devDependencies": {

@@ -149,4 +149,48 @@
         "headline" : "Kundreferenser",
         "subtext" : "Hör från några av våra kunder."
     }
+
+    ,"NewsPage": {
+        "Simi-Tilte":"nyheter",
+        "title": "Vi Förvandlar Parkeringsupplevelser!",
+        "SearchBar-PlaceHolder":"Sök Nyheter",
+        "No_Results":"Inga nyheter hittades",
+        "sort-by":"Sortera efter",
+        "newest":"Nyaste",
+        "oldest":"Äldsta",
+        "Select" : "Välj",
+        "success-message":"Tack för att du prenumererar!",
+        "faild-message":"prenumerationen misslyckades!",
+
+
+
+        "NewsBox1-Title":"Positiv påverkan i Nässjö",
+        "NewsBox1-paragraf":"efter ett års användning av appen Parkeringstid för alla centrala parkeringsområden redovisar Nässjö kommun positiva resultat från digitaliseringen av parkeringsskivan.",
+        "NewsBox1-Date":"27 maj 2024",
+        "NewsBox1-ReadMore":"läs mer",
+
+
+
+        "NewsBox2-Title":"Parking Time & Changemaker",
+        "NewsBox2-paragraf":"I våras har Parking Time samarbetat med studenter på Changemaker Educations, vilket resulterat i innovativa och kreativa lösningar.",
+        "NewsBox2-Date":"11 maj 2024",
+        "NewsBox2-ReadMore":"läs mer",
+    
+    
+
+
+        "NewsBox3-Title":"Vinnare av SKAPA Talent Award",
+        "NewsBox3-paragraf":"Parking Time vann SKAPA Talent i Norrbotten för sin innovativa digitala parkeringslösning, erkänd för att förstå marknadens behov.",
+        "NewsBox3-Date":"27 Aug 2024",
+        "NewsBox3-ReadMore":"läs mer",
+
+        "Subscribe-section-semititle":"Nyhetsbrev",
+        "dont-miss":"Missa inte",
+        "Subscribe-paragraf":"Vi expanderar snabbt, håll dig uppdaterad via ett nyhetsbrev",
+        "Subscribe-button":"prenumerera"    
+    }
+
+
+
+
 }
