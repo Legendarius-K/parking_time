@@ -134,7 +134,7 @@ const News = () => {
                             className="text-black bg-[#ffffff] hover:bg-[#e2e2e2] focus:ring-4 focus:outline-none focus:ring-blue-300 shadow-md font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-[#ffffff] dark:hover:bg-[#e2e2e2]  dark:focus:ring-[#ffffff]"
                             type="button"
                         >
-                            <p>{sortOrder ? t(sortOrder) : t('Select')}</p>
+                            <p className='text-black font-bold'>{sortOrder ? t(sortOrder) : t('Select')}</p>
 
                             <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
@@ -145,10 +145,10 @@ const News = () => {
                             <div className="absolute z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-white mt-44 ml-44 md:ml-36 md:mt-36">
                                 <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
                                     <li>
-                                        <a onClick={() => handleSortChange('newest')} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#e2e2e2] dark:hover:text-white cursor-pointer">{t('newest')}</a>
+                                        <a onClick={() => handleSortChange('newest')} className="block px-4 py-2 text-black font-bold hover:bg-gray-100 dark:hover:bg-[#e2e2e2] dark:hover:text-white cursor-pointer">{t('newest')}</a>
                                     </li>
                                     <li>
-                                        <a onClick={() => handleSortChange('oldest')} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#e2e2e2] dark:hover:text-white cursor-pointer">{t('oldest')}</a>
+                                        <a onClick={() => handleSortChange('oldest')} className="block px-4 py-2 text-black font-bold hover:bg-gray-100 dark:hover:bg-[#e2e2e2] dark:hover:text-white cursor-pointer">{t('oldest')}</a>
                                     </li>
                                 </ul>
                             </div>
