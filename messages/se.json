@@ -152,6 +152,8 @@
         "newest":"Nyaste",
         "oldest":"Äldsta",
         "Select" : "Välj",
+        "success-message":"Tack för att du prenumererar!",
+        "faild-message":"prenumerationen misslyckades!",
 
 
 

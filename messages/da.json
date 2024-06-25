@@ -154,6 +154,8 @@
         "newest":"Nyest først",
         "oldest":"Ældst først",
         "Select" : "Vælg",
+        "success-message": "Tak for din tilmelding!",
+    "failed-message": "Tilmeldingen mislykkedes!",
     "NewsBox1-Title": "Positiv indflydelse i Nässjö",
     "NewsBox1-paragraf": "Efter et års brug af appen Parking Time for alle centrale parkeringsområder rapporterer Nässjö kommune positive resultater fra digitaliseringen af parkeringsskiven.",
     "NewsBox1-Date": "27 maj 2024",

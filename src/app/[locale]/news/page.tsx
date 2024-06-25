@@ -87,7 +87,7 @@ const News = () => {
     });
 
     const notifySuccess = () => {
-        toast.success('Thank you for subscribing!', {
+        toast.success(t('success-message'), {
             position: "top-center"
         });
     };
@@ -99,7 +99,7 @@ const News = () => {
             return email;    
         }else{
 
-            toast.error("subscription failed!", {
+            toast.error(t('faild-message'), {
                 position: "top-center"
             });  
 
