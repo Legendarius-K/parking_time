@@ -7,6 +7,7 @@ import linkedInIcon from '../../../public/LinkedIn.svg'
 import { Link } from '@/navigation';
 import { useTranslations } from "next-intl";
 import { copyToClipboard } from '/src/utils/copyToClipboard.ts';
+import React, { useState } from 'react';
 
 const Footer = () => {
     const [copied, setCopied] = useState(false);
