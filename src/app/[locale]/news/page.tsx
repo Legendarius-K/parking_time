@@ -3,7 +3,7 @@
 const News = () => {
     return (
         <>
-           News
+           News 
         </>
     )
 };
