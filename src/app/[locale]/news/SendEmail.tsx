@@ -16,7 +16,7 @@ if(!UserEmail || typeof UserEmail !== 'string' || !UserEmail.includes('@')) {
         error: "Invalid email"
     }
 }
-
+//.
     try {
     
         const response = await resend.emails.send({
