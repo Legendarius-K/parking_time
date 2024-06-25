@@ -6,8 +6,6 @@ import { useLocale } from "next-intl";
 import Link from 'next/link';
 import { POST } from './SendEmail';
 
-
-
 interface NewsCards {
     title: string;
     paragraph: string;
@@ -26,8 +24,7 @@ const News = () => {
     const locale = useLocale();
 
     const [multiDropdownOpen, setMultiDropdownOpen] = useState(false);
-  const toggleMultiDropdown = () => setMultiDropdownOpen(!multiDropdownOpen);
-
+    const toggleMultiDropdown = () => setMultiDropdownOpen(!multiDropdownOpen);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -74,8 +71,9 @@ const News = () => {
         setSelectedArticle(null);
     };
 
-    const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        setSortOrder(e.target.value);
+    const handleSortChange = (sortOrder: string) => {
+        setSortOrder(sortOrder);
+        setMultiDropdownOpen(false);
     };
 
     const sortedContent = [...filteredContent].sort((a, b) => {
@@ -111,7 +109,7 @@ const News = () => {
 
             <main className="text-center pt-32 pb-32 bg-gray-100 ">
 
-                <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-4xl mx-auto pb-7 space-y-4 md:space-y-0 md:space-x-4">
+                <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-4xl mx-auto pb-7 space-y-4 md:space-y-0 md:space-x-4 relative">
                    
                     <div className="inline-flex w-[370px] md:w-[484px] p-2 bg-white items-center shadow-sm rounded-lg border hover:shadow-md ">
                    
@@ -129,48 +127,33 @@ const News = () => {
                         
                     </div>
 
+                    <div className="relative flex flex-col justify-center items-center  md:flex-row">
+                        <h2 className='p-1 md:pr-2 font-bold'>{t('sort-by')}:</h2>
+                        <button
+                            id="multiLevelDropdownButton"
+                            onClick={toggleMultiDropdown}
+                            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            type="button"
+                        >
+                            {t('sort-by')}
+                            <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
 
-
-
-  <button
-        id="multiLevelDropdownButton"
-        onClick={toggleMultiDropdown}
-        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        type="button"
-      >
-       {t('sort-by')}
-        <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
-        </svg>
-      </button>
-
-      {multiDropdownOpen && (
-        <div  className="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-          <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" >
-            <li>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">{t('newest')}</a>
-            </li>
-            <li>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">{t('oldest')}</a>
-            </li>
-          </ul>
-        </div>
-      )}
-
-
-
-
-
-
-                    
-
-                    {/* <div className="flex items-center justify-center">
-                        <span className="text-black font-semibold">{t('sort-by') + ""}</span>
-                        <select value={sortOrder} onChange={handleSortChange} className="text-base text-gray-800 bg-white outline-none border-2 shadow-sm p-2 rounded-xl ml-2">
-                            <option value="newest">{t('newest')}</option>
-                            <option value="oldest">{t('oldest')}</option>
-                        </select>
-                    </div> */}
+                        {multiDropdownOpen && (
+                            <div className="absolute z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 mt-44 ml-44 md:ml-36 md:mt-36">
+                                <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
+                                    <li>
+                                        <a onClick={() => handleSortChange('newest')} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer">{t('newest')}</a>
+                                    </li>
+                                    <li>
+                                        <a onClick={() => handleSortChange('oldest')} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer">{t('oldest')}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        )}
+                    </div>
 
                 </div>
                 <div className="flex justify-center flex-wrap gap-6 mt-10 ">

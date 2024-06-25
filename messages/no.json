@@ -142,7 +142,7 @@
         "CEOQuote": "Av alle ting du må tenke på i løpet av dagen, bør parkering være en av de minste. Parkering bør være så sømløs at du knapt trenger å tenke på det; det skal bare fungere. Vi kaller dette Smart Parkering.",
         "CEOEnd": "- Matilda, administrerende direktør og grunnlegger."
     }   
-   , "NewsPage":{
+    , "NewsPage":{
 
         "Simi-Tilte": "Nyheter",
         "title": "Vi forvandler parkeringsopplevelser!",
@@ -172,9 +172,7 @@
         "Subscribe-paragraf": "Vi ekspanderer raskt, hold deg oppdatert via et nyhetsbrev",
         "Subscribe-button": "abonner"
     
-    
+    }
 
-
-}
     
 }
