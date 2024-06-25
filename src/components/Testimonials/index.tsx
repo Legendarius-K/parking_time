@@ -88,10 +88,13 @@ const Testimonials = () => {
                         </p>
                       </div>
                       <div className='flex flex-col md:flex-row gap-5 md:items-center'>
-                        <div className='text-base '>
+                        <div className='text-base flex flex-col'>
                           <p className="text-pt-red">{testimonial.name}</p>
                           <p className="font-normal">{testimonial.credentials}</p>
-                          <div className="flex gap-1"><p>E-mail:</p><p className="underline cursor-pointer">{testimonial.email}</p></div>
+                          <div className="flex flex-col md:flex-row gap-1">
+                            <p>E-mail:</p>
+                            <p className="underline cursor-pointer">{testimonial.email}</p>
+                          </div>
                         </div>
                       </div>
                       </div>
