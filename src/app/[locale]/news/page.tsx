@@ -105,9 +105,9 @@ const News = () => {
 
             <main className="text-center pt-32 pb-32 bg-gray-100 ">
 
-                <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-4xl mx-auto pb-7">
+                <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-4xl mx-auto pb-7 space-y-4 md:space-y-0 md:space-x-4">
                    
-                    <div className="inline-flex w-[370px] md:w-[484px] p-2  ml-8 mr-8 bg-white  md:ml-0 md:mr-0 items-center shadow-sm rounded-lg border hover:shadow-md ">
+                    <div className="inline-flex w-[370px] md:w-[484px] p-2 bg-white items-center shadow-sm rounded-lg border hover:shadow-md ">
                    
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 cursor-pointer text-white rounded-full p-1 bg-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -120,6 +120,15 @@ const News = () => {
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                         />
+                        
+                    </div>
+
+                    <div className="flex items-center justify-center">
+                        <span className="text-black font-semibold">{t('sort-by') + ""}</span>
+                        <select value={sortOrder} onChange={handleSortChange} className="text-base text-gray-800 bg-white outline-none border-2 shadow-sm p-2 rounded-xl ml-2">
+                            <option value="newest">{t('newest')}</option>
+                            <option value="oldest">{t('oldest')}</option>
+                        </select>
                     </div>
 
                 </div>
@@ -143,13 +152,7 @@ const News = () => {
                     )}
                 </div>
 
-                <div className="flex flex-col items-center mt-4 md:mt-8">
-                    <span className="text-black font-semibold">{t('sort-by') + ""}</span>
-                    <select value={sortOrder} onChange={handleSortChange} className="text-base text-gray-800 bg-white outline-none border-2 shadow-sm p-2 rounded-xl mt-2 md:mt-0">
-                        <option value="newest">{t('newest')}</option>
-                        <option value="oldest">{t('oldest')}</option>
-                    </select>
-                </div>
+             
             </main>
             <div className="text-center p-10 pb-24 pt-7 bg-gray-100">
                 <h3 className="text-sm mb-2 font-semibold">{t('Subscribe-section-semititle')}</h3>
