@@ -96,6 +96,14 @@
         "title": "Parking Time Sweden",
         "paragraf": "Vi er en tech-startup dedikeret til at transformere parkeringsoplevelsen for alle interessenter - parkerende, parkeringsvagter, kommuner og ejendomsejere."
     },
+    "ourStory": {
+        "titleOne": "Vores vision",
+        "paragrafOne": "Parking Time Sweden er en teknologisk startup, der sigter mod at revolutionere parkeringsoplevelsen for alle involverede parter – parkerende, parkeringsvagter, kommunen og ejendomsejere.",
+        "paragrafTwo": "Vi tilbyder i øjeblikket en gratis digital parkeringsskive i en app for at supplere det eksisterende udvalg af parkeringsapps.",
+        "titleTwo": "Vores historie",
+        "paragrafThree": "Parking Time Sweden blev grundlagt i 2021 i Luleå. I dag opererer vi over hele Sverige med ambitionen om at udvide globalt i de kommende år. Vi håber, at du vil være med på vores rejse!",
+        "button": "Book møde"
+    },
     "MeetTheTeam": {
         "headline": "Mød vores team",
         "text": "Hvert medlem bringer en unik blanding af ekspertise, passion og fremadskuende tankegang."
@@ -119,5 +127,18 @@
         "headline": "Vil du vide mere?",
         "text": "Kontakt os for at finde ud af mere om vores løsning og hvordan vi kan hjælpe dig.",
         "contact": "Kontakt os"
+    },
+    "OurValues": {
+        "title": "Vores Værdier",
+        "titleParagraf": "Hvad vi tror på",
+        "titleParagrafTwo": "Det vi tror på",
+        "simplicityTitle": "Simplicitet",
+        "simplicityParagraf": "Vi stræber efter at skabe en enkel og problemfri oplevelse.",
+        "innovationTitle": "Innovation",
+        "innovationParagraf": "Vi søger altid at forbedre og gøre vores app til en leder inden for sit område.",
+        "userFriendlyTitle": "Brugervenlig",
+        "userFriendlyParagraf": "Det er afgørende, at vores service imødekommer brugernes behov og forbedrer deres parkeringsoplevelse.",
+        "CEOQuote": "Af alle ting, du skal tænke på i løbet af dagen, burde parkering være en af de mindste. Parkering bør være så problemfri, at du næsten ikke behøver at tænke på det; det skal bare fungere. Vi kalder det Smart Parkering.",
+        "CEOEnd": "- Matilda, administrerende direktør og stifter."
     }
 }

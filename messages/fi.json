@@ -96,6 +96,14 @@
         "title": "Parking Time Ruotsi",
         "paragraf": "Olemme teknologiayritys, joka on omistautunut muuttamaan pysäköintikokemusta kaikille sidosryhmille - pysäköijille, pysäköinninvalvojille, kunnille ja kiinteistönomistajille."
     },
+    "ourStory": {
+        "titleOne": "Visiomme",
+        "paragrafOne": "Parking Time Sweden on teknologia-alan startup, jonka tavoitteena on mullistaa pysäköintikokemus kaikille osapuolille – pysäköijälle, pysäköinninvalvojalle, kunnalle ja kiinteistön omistajalle.",
+        "paragrafTwo": "Tarjoamme tällä hetkellä ilmaisen digitaalisen pysäköintikiekon sovelluksessa täydentämään olemassa olevaa pysäköintisovellusten valikoimaa.",
+        "titleTwo": "Historiamme",
+        "paragrafThree": "Parking Time Sweden perustettiin vuonna 2021 Luleåssa. Tällä hetkellä toimimme ympäri Ruotsia ja tavoitteenamme on laajentua globaalisti tulevina vuosina. Toivomme, että lähdet mukaan matkallemme!",
+        "button": "Varaa tapaaminen"
+    },   
     "MeetTheTeam": {
         "headline": "Tapaa tiimimme",
         "text": "Jokainen jäsen tuo mukanaan ainutlaatuisen yhdistelmän asiantuntemusta, intohimoa ja ennakkoluulotonta ajattelutapaa."
@@ -119,5 +127,18 @@
         "headline": "Haluatko tietää lisää?",
         "text": "Ota yhteyttä saadaksesi lisätietoja ratkaisustamme ja siitä, kuinka voimme auttaa sinua.",
         "contact": "Ota yhteyttä"
+    },
+    "OurValues": {
+        "title": "Arvomme",
+        "titleParagraf": "Mihin uskomme",
+        "titleParagrafTwo": "Ne uskomme",
+        "simplicityTitle": "Yksinkertaisuus",
+        "simplicityParagraf": "Pyrimme luomaan yksinkertaisen ja sujuvan käyttökokemuksen.",
+        "innovationTitle": "Innovaatio",
+        "innovationParagraf": "Pyrimme jatkuvasti parantamaan ja tekemään sovelluksestamme alan johtavan.",
+        "userFriendlyTitle": "Käyttäjäystävällisyys",
+        "userFriendlyParagraf": "On tärkeää, että palvelumme vastaa käyttäjien tarpeisiin ja parantaa heidän pysäköintikokemustaan.",
+        "CEOQuote": "Kaikista asioista, joita sinun täytyy ajatella päivän aikana, pysäköinti pitäisi olla yksi vähäisimmistä. Pysäköinnin pitäisi olla niin sujuvaa, että sinun ei juuri tarvitse ajatella sitä; sen tulisi vain toimia. Kutsumme tätä Älykkääksi Pysäköinniksi.",
+        "CEOEnd": "- Matilda, toimitusjohtaja ja perustaja."
     }
 }
