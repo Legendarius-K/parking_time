@@ -40,7 +40,6 @@ const Testimonials = () => {
           logo: testimonial.fields.logo?.fields.file.fileName,
           avatar: testimonial.fields.avatar?.fields.file.fileName,
         }));
-        formatedTestimonials = formatedTestimonials.concat(formatedTestimonials);
         setTestimonials(formatedTestimonials);
       } catch (error) {
         console.log("error något gick fel")
@@ -63,7 +62,7 @@ const Testimonials = () => {
                 centeredSlides={true}
                 slidesPerView={1.2}
                 initialSlide={3}
-                loopAdditionalSlides={3}
+                loopAdditionalSlides={4}
                 loopAddBlankSlides={true}
                 loop={true}
                 pagination={{ dynamicBullets:true }} 
