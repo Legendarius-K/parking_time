@@ -23,8 +23,8 @@ const Home = () => {
             </div>
             <Testimonials />
             <TrustedBy />
-            <Stats />
             <Download />
+            <Stats />
             <div id="faq-component">
                 <Faq />
             </div>
