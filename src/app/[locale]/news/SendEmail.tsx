@@ -1,13 +1,16 @@
 'use server';
+
 import { Resend } from 'resend';
 import Newsletter from '../../../components/email/New_Subscriber_Form';
 
-const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
+const resend = new Resend(process.env.REACT_APP_RESEND_API_KEY);
+
+
 
 export const POST = async (formData: FormData) => {
     console.log("The Server is running");
     const UserEmail = formData.get('UserEmail');
-
+console.log(process.env.REACT_APP_RESEND_API_KEY)
 
 if(!UserEmail || typeof UserEmail !== 'string' || !UserEmail.includes('@')) {
 
