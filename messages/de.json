@@ -56,6 +56,7 @@
         "title": "Berufsbezeichnung",
         "phone": "Telefonnummer",
         "reason": "Betreff",
+        "reason-placeholder": "Grund für Kontakt",
         "choose": "Wählen",
         "message": "Nachricht",
         "terms1": "Ich akzeptiere die",
