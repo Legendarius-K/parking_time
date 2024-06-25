@@ -81,7 +81,7 @@ const Faq = () => {
     };
 
     return (
-        <main id="faqComponent" className="bg-pt-gray2 py-24 p-8 text-pretty font-nunito">
+        <main id="faqComponent" className="bg-neutral-100 py-24 p-8 text-pretty font-nunito">
             <section className="content flex flex-col items-center">
                 <div className="upper text-center mb-5">
                     <h3 className="text-lg">FAQ</h3>
@@ -97,11 +97,11 @@ const Faq = () => {
                         onClick={() => handleClick(q.id)}
                     />
                 ))}
-                <div className="lower text-center flex flex-col items-center">
+                {/* <div className="lower text-center flex flex-col items-center">
                     <h2 className="text-4xl font-sans mx-2 my-5 mt-16">{t('headline2')}</h2>
                     <p className="text-lg my-4">{t('subheader2')}</p>
                     <Button route="/contact" btnText={t('contact')} colors="bg-black text-white" />
-                </div>
+                </div> */}
             </section>
         </main>
     );

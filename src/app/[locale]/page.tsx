@@ -25,10 +25,10 @@ const Home = () => {
             <TrustedBy />
             <Download />
             <Stats />
-            <WantToKnowMore />
             <div id="faq-component">
                 <Faq />
             </div>
+            <WantToKnowMore />
         </main>
     );
 };

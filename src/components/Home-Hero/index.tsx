@@ -48,10 +48,10 @@ const Homehero: React.FC = () => {
       </div>
       <div className="absolute bottom-0 left-0 w-full bg-neutral-300 px-8 py-3.5 text-center text-white">
         <ul className="text-black grid grid-cols-2 md:flex md:justify-around text-xs md:text-sm lg:text-base list-disc list-inside gap-4">
-          <li className="font-roboto font-medium leading-8 text-left px-4">{t('bullet1')}</li>
-          <li className="font-roboto font-medium leading-8 text-left px-4">{t('bullet2')}</li>
-          <li className="font-roboto font-medium leading-8 text-left px-4">{t('bullet3')}</li>
-          <li className="font-roboto font-medium leading-8 text-left px-4">{t('bullet4')}</li>
+          <p className="font-roboto font-medium leading-8 text-left px-4">{t('bullet1')}</p>
+          <p className="font-roboto font-medium leading-8 text-left px-4">{t('bullet2')}</p>
+          <p className="font-roboto font-medium leading-8 text-left px-4">{t('bullet3')}</p>
+          <p className="font-roboto font-medium leading-8 text-left px-4">{t('bullet4')}</p>
         </ul>
       </div>
   </div>

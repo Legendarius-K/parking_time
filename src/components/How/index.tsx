@@ -51,9 +51,6 @@ const How = () => {
 
                     <HowBox srcIcon={ptClock} altIcon='A Clock' number='03' heading={t('heading3')} text={t('text3')} transition={0.6} />
                 </div>
-                <div className='mt-9 w-full px-3 flex justify-center'>
-                    <Button targetBlank={true} route={appStoreLink} btnText={t('app')} colors='bg-black text-white' />
-                </div>
             </section>
         </div>
     );
