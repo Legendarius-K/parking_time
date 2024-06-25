@@ -138,12 +138,13 @@ const News = () => {
                     <div className="flex items-center">
                         <div>
                             <p className="text-white text-sm leading-loose md:leading-loose mt-16 flex items-center ml-4">
-                                {t('Simi-Tilte')}
+                            {t('Simi-Tilte')}
                             </p>
                         </div>
+
                     </div>
                     <div className="mt-4 ml-4">
-                        <h1 className="text-5xl md:text-5xl md:w-7/12 w-full text-white">{t('title')}</h1>
+                        <h1 className="text-3xl md:text-5xl md:w-7/12 w-full text-white">{t('title')}</h1>
                     </div>
                 </div>
                 <div className="absolute inset-0 bg-slate-900/20 opacity-10"></div>
