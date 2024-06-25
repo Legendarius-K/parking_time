@@ -101,6 +101,10 @@
     "MeetTheTeam": {
         "headline": "Tapaa tiimimme",
         "text": "Jokainen jäsen tuo mukanaan ainutlaatuisen yhdistelmän asiantuntemusta, intohimoa ja ennakkoluulotonta ajattelutapaa."
+    },
+    "testimonial": {
+        "headline": "Asiakaspalautteet",
+        "subtext": "Kuule mitä asiakkaamme sanovat."
     }
     
     

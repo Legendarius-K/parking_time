@@ -100,5 +100,9 @@
     "MeetTheTeam": {
         "headline": "Möt vårt team",
         "text": "Varje medlem tillför en unik blandning av expertis, passion och framåtsträvande tänkesätt."
+    },
+    "testimonial": {
+        "headline" : "Kundreferenser",
+        "subtext" : "Hör från några av våra kunder."
     }
 }

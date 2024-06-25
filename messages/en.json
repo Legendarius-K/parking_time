@@ -100,8 +100,10 @@
     "MeetTheTeam": {
         "headline": "Meet our team",
         "text": "Each member brings a unique blend of expertise, passion, and forward-thinking mindset."
+    },
+    "testimonial": {
+        "headline" : "Customer testimonials",
+        "subtext" : "Hear from some of our clients."
     }
         
-    
-    
 }
