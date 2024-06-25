@@ -103,9 +103,6 @@ const News = () => {
                 <div className="absolute inset-0 bg-slate-900/20 opacity-10"></div>
             </div>
 
-
-            
-
             <main className="text-center pt-32 pb-32 bg-gray-100 ">
 
                 <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-4xl mx-auto pb-7">
@@ -125,25 +122,7 @@ const News = () => {
                         />
                     </div>
 
-
-
-                    
-
-
-                    <div className="flex items-center space-x-2 mt-4 md:mt-0 md:ml-4">
-                        <span className="text-black font-semibold">{t('sort-by')+""}</span>
-                        <select value={sortOrder} onChange={handleSortChange} className="text-base  text-gray-800 bg-white outline-none border-2 shadow-sm p-2 rounded-xl">
-                            <option value="newest">{t('newest')}</option>
-                            <option value="oldest">{t('oldest')}</option>
-                        </select>
-                    </div>
-                    
                 </div>
-                
-
-
-
-
                 <div className="flex justify-center flex-wrap gap-6 mt-10 ">
                     {sortedContent.length > 0 ? (
                         sortedContent.map((item, index) => (
@@ -163,43 +142,46 @@ const News = () => {
                         <p>{t('No_Results')}</p>
                     )}
                 </div>
+
+                <div className="flex flex-col items-center mt-4 md:mt-8">
+                    <span className="text-black font-semibold">{t('sort-by') + ""}</span>
+                    <select value={sortOrder} onChange={handleSortChange} className="text-base text-gray-800 bg-white outline-none border-2 shadow-sm p-2 rounded-xl mt-2 md:mt-0">
+                        <option value="newest">{t('newest')}</option>
+                        <option value="oldest">{t('oldest')}</option>
+                    </select>
+                </div>
             </main>
             <div className="text-center p-10 pb-24 pt-7 bg-gray-100">
-    <h3 className="text-sm mb-2 font-semibold">{t('Subscribe-section-semititle')}</h3>
-    <h1 className="text-4xl mb-2 font-semibold">{t('dont-miss')}</h1>
-    <p className="mb-5 font-thin text-base pb-5 text-slate-500">{t('Subscribe-paragraf')}</p>
+                <h3 className="text-sm mb-2 font-semibold">{t('Subscribe-section-semititle')}</h3>
+                <h1 className="text-4xl mb-2 font-semibold">{t('dont-miss')}</h1>
+                <p className="mb-5 font-thin text-base pb-5 text-slate-500">{t('Subscribe-paragraf')}</p>
 
-    <form className="flex flex-col md:flex-row justify-center items-center relative" action={async (formData) => {
-        await POST(formData)
-    }}>
-        <div className="relative w-full md:w-96 mb-4 md:mb-0">
-            <input 
-                type="email" 
-                name="UserEmail" 
-                maxLength={500} 
-                required 
-                placeholder="example@example.com" 
-                className="p-2 border rounded-full w-full md:pr-20" 
-            />
-            <input 
-                type="submit" 
-                value={t('Subscribe-button')} 
-                className="hidden md:block bg-black text-white mx-1 px-5 py-1 absolute right-1 top-1/2 transform -translate-y-1/2 rounded-full cursor-pointer" 
-            />
-        </div>
+                <form className="flex flex-col md:flex-row justify-center items-center relative" action={async (formData) => {
+                    await POST(formData)
+                }}>
+                    <div className="relative w-full md:w-96 mb-4 md:mb-0">
+                        <input 
+                            type="email" 
+                            name="UserEmail" 
+                            maxLength={500} 
+                            required 
+                            placeholder="example@example.com" 
+                            className="p-2 border rounded-full w-full md:pr-20" 
+                        />
+                        <input 
+                            type="submit" 
+                            value={t('Subscribe-button')} 
+                            className="hidden md:block bg-black text-white mx-1 px-5 py-1 absolute right-1 top-1/2 transform -translate-y-1/2 rounded-full cursor-pointer" 
+                        />
+                    </div>
 
-        <input 
-            type="submit" 
-            value={t('Subscribe-button')} 
-            className="block md:hidden bg-black text-white px-5 py-2 w-full rounded-full cursor-pointer" 
-        />
-    </form>
-</div>
-
-
-
-
-            
+                    <input 
+                        type="submit" 
+                        value={t('Subscribe-button')} 
+                        className="block md:hidden bg-black text-white px-5 py-2 w-full rounded-full cursor-pointer" 
+                    />
+                </form>
+            </div>
         </>
     );
 };
