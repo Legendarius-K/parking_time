@@ -5,6 +5,8 @@ import { fetchNewsArticle } from '@/utils/functions';
 import { useLocale } from "next-intl";
 import Link from 'next/link';
 import { POST } from './SendEmail';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 interface NewsCards {
     title: string;
@@ -84,8 +86,49 @@ const News = () => {
         }
     });
 
+    const notifySuccess = () => {
+        toast.success('Thank you for subscribing!', {
+            position: "top-center"
+        });
+    };
+
+    const CheckEmail = (email: any) => {
+        console.log(email)
+        if(email.get('UserEmail')==="elaffree85@gmail.com"){
+            notifySuccess();
+            return email;    
+        }else{
+
+            toast.error("subscription failed!", {
+                position: "top-center"
+            });  
+
+
+        }
+
+        return email
+    }
+    // const handleSubmit = async (event) => {
+    //     event.preventDefault();
+    //     const formData = new FormData(event.target);
+    //     const success = await POST(formData);
+    //     console.log("THE SUCCESS : "+ success)
+    //     if (!success) {
+    //         console.error("Failed to send email:", success);
+    //             toast.error("Email not sent", {
+    //                 position: "top-center"
+    //             });  
+    //     }
+    //     else{
+        
+    //             console.log("Email sent successfully:", success);
+    //             notifySuccess();
+    //     } 
+    // };
+
     return (
         <>
+        <ToastContainer></ToastContainer>
             <div className="relative flex justify-center items-start h-[50vh] md:h-[50vh] overflow-hidden">
                 <img className="w-full h-full md:block object-cover object-center" src="/NewsMainPic.png" alt="hero picture" />
                 <div className="absolute left-0 h-full w-full bg-slate-900/20 backdrop-blur md:bg-slate-900/20 md:backdrop-blur md:w-2/5">
@@ -181,7 +224,8 @@ const News = () => {
                 <p className="mb-5 font-thin text-base pb-5 text-slate-500">{t('Subscribe-paragraf')}</p>
 
                 <form className="flex flex-col md:flex-row justify-center items-center relative" action={async (formData) => {
-                    await POST(formData)
+                    await POST(CheckEmail(formData))
+                    
                 }}>
                     <div className="relative w-full md:w-96 mb-4 md:mb-0">
                         <input
