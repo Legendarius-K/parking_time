@@ -104,7 +104,6 @@
         "headline": "Lernen Sie unser Team kennen",
         "text": "Jedes Mitglied bringt eine einzigartige Mischung aus Fachwissen, Leidenschaft und zukunftsorientiertem Denken mit."
     },
-
     "faq": {
         "headline1": "Hast du eine Frage?",
         "subheader1": "Hier werden einige häufig gestellte Fragen beantwortet",
@@ -146,5 +145,9 @@
         "titleTwo": "Unsere Geschichte",
         "paragrafThree": "Parking Time Sweden wurde 2021 in Luleå gegründet. Heute sind wir in ganz Schweden tätig mit dem Ziel, in den kommenden Jahren global zu expandieren. Wir hoffen, dass Sie uns auf unserer Reise begleiten möchten!",
         "button": "Meeting buchen"
+    },
+    "testimonial": {
+        "headline": "Kundenbewertungen",
+        "subtext": "Hören Sie von einigen unserer Kunden."
     }
 }

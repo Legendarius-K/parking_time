@@ -144,5 +144,9 @@
         "titleTwo": "Vår Historia",
         "paragrafThree": "Parking Time Sweden grundades 2021 i Luleå. Idag finns vi över hela Sverige med ambitionen att expandera globalt under de kommande åren, och vi hoppas att du vill vara med oss på vår resa!",
         "button": "Boka möte"
+    },
+    "testimonial": {
+        "headline" : "Kundreferenser",
+        "subtext" : "Hör från några av våra kunder."
     }
 }

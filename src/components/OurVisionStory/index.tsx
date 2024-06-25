@@ -9,7 +9,7 @@ const OurVisionStory = () => {
     const t = useTranslations("ourStory");
     return (
         <div className='flex justify-center'>
-            <div className="relative flex flex-col lg:flex-row items-center justify-center px-10 mt-20 max-w-[1300px]">
+            <div className="relative flex flex-col lg:flex-row items-center justify-center px-10 mt-20 max-w-[1300px] pb-20">
                 <div className="order-2 lg:order-1 flex flex-col w-full lg:w-[65%] lg:mr-[3%]">
                     <div>
                         <h1 className="text-3xl lg:text-3xl mb-6 lg:mb-8 ">{t('titleOne')}</h1>
@@ -29,14 +29,6 @@ const OurVisionStory = () => {
                 <div className='order-1 h-fit w-full mb-14 lg:mb-0 max-w-[800px] hidden sm:block'>
                     <Image src={story} alt='Story' style={{ width: "100%", height: "auto" }} />
                 </div>
-                {/* <div className="order-1 md:flex md:justify-center md:items-center lg:order-2 w-full lg:w-[100%] mb-10 mt-[8%] lg:block hidden">
-                    <img
-                        src="/story.svg"
-                        alt="our story picture"
-                        className="max-w-full w-full h-auto object-cover transition-opacity duration-300 lg:max-w-none lg:w-auto"
-                        style={{ maxWidth: "115%" }}
-                    />
-                </div> */}
             </div>
         </div>
     );

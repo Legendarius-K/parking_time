@@ -124,7 +124,6 @@
         "text": "Kontakt oss for å finne ut mer om vår løsning og hvordan vi kan hjelpe deg.",
         "contact": "Kontakt oss"
     },
-
     "OurValues": {
         "title": "Våre Verdier",
         "titleParagraf": "Hva vi tror på",
@@ -145,5 +144,13 @@
         "titleTwo": "Vår historie",
         "paragrafThree": "Parking Time Sweden ble grunnlagt i 2021 i Luleå. I dag opererer vi over hele Sverige med ambisjoner om å ekspandere globalt i årene som kommer. Vi håper du blir med oss på reisen!",
         "button": "Bestill møte"
+    },
+    "testimonial": {
+        "headline": "Kundetilbakemeldinger",
+        "subtext": "Hør fra noen av våre kunder."
     }
+    
+    
+    
+    
 }
