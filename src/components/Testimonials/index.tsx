@@ -18,7 +18,11 @@ interface Testimonial {
   slug?: string;
   quote: string;
   logo: string;
+<<<<<<< HEAD
   avatar: string;
+=======
+  email: string;
+>>>>>>> hotfix-testimon
 }
 
 
@@ -38,9 +42,8 @@ const Testimonials = () => {
           slug: testimonial.fields.slug,
           quote: testimonial.fields.quote,
           logo: testimonial.fields.logo?.fields.file.fileName,
-          avatar: testimonial.fields.avatar?.fields.file.fileName,
+          email: testimonial.fields.email,
         }));
-        formatedTestimonials = formatedTestimonials.concat(formatedTestimonials);
         setTestimonials(formatedTestimonials);
       } catch (error) {
         console.log("error något gick fel")
@@ -63,9 +66,6 @@ const Testimonials = () => {
                 centeredSlides={true}
                 slidesPerView={1.2}
                 initialSlide={3}
-                loopAdditionalSlides={3}
-                loopAddBlankSlides={true}
-                loop={true}
                 pagination={{ dynamicBullets:true }} 
                 modules={[Pagination, Navigation]}
                 breakpoints={{
