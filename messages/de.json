@@ -120,6 +120,27 @@
         "userFriendlyParagraf": "Es ist entscheidend, dass unser Service die Bedürfnisse der Nutzer erfüllt und ihr Parkerlebnis verbessert.",
         "CEOQuote": "Von all den Dingen, an die du während des Tages denken musst, sollte Parken eines der geringsten sein. Parken sollte so reibungslos sein, dass du kaum darüber nachdenken musst; es sollte einfach funktionieren. Wir nennen dies Smart Parken.",
         "CEOEnd": "- Matilda, CEO und Gründerin."
+    },
+    "faq": {
+        "headline1": "Hast du eine Frage?",
+        "subheader1": "Hier werden einige häufig gestellte Fragen beantwortet",
+        "q1q": "Was ist Parking Time?",
+        "q1a": "Parking Time ist eine kostenlose App, die als digitale Parkscheibe funktioniert. Sie starten einfach das Parken über die App, und Parkplatzwächter können sehen, wie lange Ihre Sitzung gedauert hat.",
+        "q2q": "Wie verwende ich Parking Time?",
+        "q2l": "Laden Sie die App herunter",
+        "q2a": " und öffnen Sie sie dann, registrieren Sie sich mit Ihrem Autokennzeichen. Verwenden Sie die Karte, die Suchfunktion oder die Zonenliste, um Ihren gewünschten Parkplatz zu finden. Sobald Sie Ihre Parkzone ausgewählt haben, können Sie alle geltenden Regeln überprüfen, das Parken starten und die App dann einfach schließen.",
+        "q3q": "Wie bekomme ich es in meiner Gemeinde?",
+        "q3a": "Parking Time ist kostenlos herunterladbar, kann jedoch nur in einer Gemeinde verwendet werden, die Kunde von Parking Time Schweden ist.",
+        "q4q": "Was ist Parking Time?",
+        "q4a": "Sie können Ihre Gemeinde kontaktieren und fragen, ob Parking Time implementiert werden kann.",
+        "headline2": "Hast du noch Fragen?",
+        "subheader2": "Zögern Sie nicht, uns zu kontaktieren, wenn Sie Fragen haben",
+        "contact": "Kontakt"
+    },
+    "WantToKnowMore": {
+        "headline": "Möchten Sie mehr wissen?",
+        "text": "Kontaktieren Sie uns, um mehr über unsere Lösung und wie wir Ihnen helfen können, zu erfahren.",
+        "contact": "Kontaktieren Sie uns"
     }
     
 }

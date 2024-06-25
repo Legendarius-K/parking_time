@@ -120,7 +120,26 @@
         "userFriendlyParagraf": "It's crucial that our service meets users' needs and enhances their parking experience.",
         "CEOQuote": "Of all the things you need to think about during the day, parking should be one of the least. Parking should be so seamless that you hardly need to think about it; it should just work. We call this Smart Parking.",
         "CEOEnd": "- Matilda, CEO and Founder."
+    },
+    "faq": {
+        "headline1": "Do you have a question?",
+        "subheader1": "Here are some common questions answered",
+        "q1q": "What is Parking Time?",
+        "q1a": "Parking Time is a free to download app that works as a digital parking disc. You just start parking through the app, and parking attendants can view how long your session has lasted.",
+        "q2q": "How do I use Parking Time?",
+        "q2l": "Download the app",
+        "q2a": " and then open it, register with your car's registration number. Use the map, search function, or zone list to find your desired parking location. Once you select your parking zone, you can review any applicable rules, start parking, and then simply close the app.",
+        "q3q": "How do I get it in my municipality?",
+        "q3a": "Parking Time is free to download, but can only be used in a municipality that is a registered customer of Parking Time Sweden.",
+        "q4q": "What is Parking Time?",
+        "q4a": "You can contact your municipality and ask if Parking Time can be implemented.",
+        "headline2": "Still have a question?",
+        "subheader2": "Feel free to contact us if you have any questions",
+        "contact": "Contact Us"
+    },
+    "WantToKnowMore": {
+        "headline": "Want to know more?",
+        "text": "Contact us to find out more about our solution and how we can help you.",
+        "contant": "Contact us"
     }
-    
-    
 }

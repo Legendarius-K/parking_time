@@ -120,5 +120,26 @@
         "userFriendlyParagraf": "Det er afgørende, at vores service imødekommer brugernes behov og forbedrer deres parkeringsoplevelse.",
         "CEOQuote": "Af alle ting, du skal tænke på i løbet af dagen, burde parkering være en af de mindste. Parkering bør være så problemfri, at du næsten ikke behøver at tænke på det; det skal bare fungere. Vi kalder det Smart Parkering.",
         "CEOEnd": "- Matilda, administrerende direktør og stifter."
+    },
+    "faq": {
+        "headline1": "Har du et spørgsmål?",
+        "subheader1": "Her besvares nogle almindelige spørgsmål",
+        "q1q": "Hvad er Parking Time?",
+        "q1a": "Parking Time er en gratis app, der fungerer som en digital parkeringsskive. Du starter bare parkering via appen, og parkeringsvagter kan se, hvor længe din session har varet.",
+        "q2q": "Hvordan bruger jeg Parking Time?",
+        "q2l": "Download appen",
+        "q2a": " og åbn den derefter, registrer dig med dit registreringsnummer. Brug kortet, søgefunktionen eller zonelisten til at finde din ønskede parkeringsplads. Når du har valgt din parkeringszone, kan du gennemse eventuelle gældende regler, starte parkeringen og derefter simpelthen lukke appen.",
+        "q3q": "Hvordan får jeg det i min kommune?",
+        "q3a": "Parking Time er gratis at downloade, men kan kun bruges i en kommune, der er en registreret kunde hos Parking Time Sverige.",
+        "q4q": "Hvad er Parking Time?",
+        "q4a": "Du kan kontakte din kommune og spørge, om Parking Time kan implementeres.",
+        "headline2": "Har du stadig et spørgsmål?",
+        "subheader2": "Du er velkommen til at kontakte os, hvis du har spørgsmål",
+        "contact": "Kontakt"
+    },    
+    "WantToKnowMore": {
+        "headline": "Vil du vide mere?",
+        "text": "Kontakt os for at finde ud af mere om vores løsning og hvordan vi kan hjælpe dig.",
+        "contact": "Kontakt os"
     }
 }
