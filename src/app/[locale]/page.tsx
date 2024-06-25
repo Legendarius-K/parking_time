@@ -1,21 +1,35 @@
 import How from "@/components/How";
-import Image from "next/image";
 import Hero from "@/components/Home-Hero";
-import SmartParkingSolution from "@/components/SmartParkingSolution"
-import { useTranslations } from "next-intl";
+import SmartParkingSolution from "@/components/SmartParkingSolution";
 import Why from "@/components/Why";
+import CarDriving from "@/components/CarDriving";
+import TrustedBy from "@/components/TrustedBy";
+import Faq from "@/components/Faq";
+import Stats from "@/components/Stats";
+
+import Testimonials from "@/components/Testimonials";
+import Download from "@/components/Download";
 
 
 const Home = () => {
-    const t = useTranslations('navigation')
     return (
-        <main className="">
+        <main className="overflow-hidden">
             <Hero />
             <SmartParkingSolution />
+            {/* <CarDriving /> */}
             <How />
-            <Why />
+            <div id="why-component">
+                <Why />
+            </div>
+            <Testimonials />
+            <TrustedBy />
+            <Stats />
+            <Download />
+            <div id="faq-component">
+                <Faq />
+            </div>
         </main>
     );
-}
+};
 
 export default Home;

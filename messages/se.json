@@ -72,5 +72,53 @@
         "heading4": "Datadriven stadsplanering",
         "text4": "Den digitala parkeringsskivan kan så småningom optimera parkeringsresurser och stadsplanering genom värdefull användningsdata och beteendemönster, vilket leder till ett säkrare samhälle med bättre kontroll och tillgång till parkeringsplatser.",
         "about": "Mer om oss"
+    },
+    "stats": {
+        "downloads": "Nedladdningar",
+        "sessions": "Parkeringstillfällen",
+        "zones": "Parkeringszoner"
+    },
+    "contactHero": {
+        "contact": "Kontakt",
+        "headline": "Vi ser fram emot att höra från dig!"
+    },
+    "aboutHero": {
+        "about":"Om oss",
+        "title": "Parking Time Sverige",
+        "paragraf": "Vi är ett startup teknikföretag dedikerat till att förändra parkeringsupplevelsen för alla intressenter - parkerare, parkeringsvakter, kommuner och fastighetsägare."
+    },
+    "download": {
+        "title": "Ladda ned nu",
+        "paragraf": "Appen är gratis att ladda ner för dig som användare. Din kommun måste dock vara registrerad som kund hos oss för att vår app ska vara giltig i ditt område. Om vår app inte är tillgänglig i din kommun är du välkommen att kontakta oss eller föreslå oss för din kommun!"
+    },
+    "knowMore": {
+        "title": "Vill du veta mer?",
+        "paragraf": "Kontakta oss för att få veta mer om vår lösning och hur vi kan implementera den i din kommun",
+        "button": "Kontakta oss"
+    },
+    "ourStory": {
+        "titleOne": "Vår Vision",
+        "paragrafOne": "Parking Time Sweden är en teknikstartup som syftar till att revolutionera parkeringsupplevelsen för alla inblandade parter – parkeraren, parkeringsvärden, kommunen och fastighetsägaren.",
+        "paragrafTwo": "Vi erbjuder för närvarande en gratis digital parkeringsskiva i en app för att komplettera det befintliga utbudet av parkeringsappar.",
+        "titleTwo": "Vår Historia",
+        "paragrafThree": "Parking Time Sweden grundades 2021 i Luleå. Idag finns vi över hela Sverige med ambitionen att expandera globalt under de kommande åren, och vi hoppas att du vill vara med oss på vår resa!",
+        "button": "Boka möte"
+    },
+    "MeetTheTeam": {
+        "headline": "Möt vårt team",
+        "text": "Varje medlem tillför en unik blandning av expertis, passion och framåtsträvande tänkesätt."
+    },
+    "OurValues": {
+        "title": "Våra Värderingar",
+        "titleParagraf": "Vad vi tror på",
+        "titleParagrafTwo": "Det vi tror på",
+        "simplicityTitle": "Enkelhet",
+        "simplicityParagraf": "Vi strävar efter att skapa en enkel och smidig upplevelse.",
+        "innovationTitle": "Nyskapande",
+        "innovationParagraf": "Söker alltid att förbättra och göra vår app till en ledare inom sitt område.",
+        "userFriendlyTitle": "Användarvänlig",
+        "userFriendlyParagraf": "Det är avgörande att vår tjänst möter användarnas behov och förbättrar deras parkeringsupplevelse.",
+        "CEOQuote": "Av alla saker du behöver tänka på under dagen borde parkering vara en av de minsta. Parkering bör vara så smidig att du knappt behöver tänka på den; den ska bara fungera. Vi kallar detta Smart Parkering.",
+        "CEOEnd": "- Matilda, VD och grundare."
     }
 }

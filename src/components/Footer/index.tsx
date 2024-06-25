@@ -4,7 +4,7 @@ import Image from "next/image";
 import ptLogo from '../../../public/pt-logo-v2.svg'
 import instagramIcon from '../../../public/Instagram.svg'
 import linkedInIcon from '../../../public/LinkedIn.svg'
-import { useState } from "react";
+import { Link } from '@/navigation';
 import { useTranslations } from "next-intl";
 import { copyToClipboard } from '/src/utils/copyToClipboard.ts';
 
@@ -17,12 +17,12 @@ const Footer = () => {
     };
 
     return (
-        <footer className="py-12 px-8 md:p-20 bg-pt-primary text-white gap-12 md:gap-5 flex flex-col font-mono">
+        <footer className="py-12 px-8 md:px-20 md:pt-20 pb-4 md:pb-0 bg-pt-primary text-white gap-12 md:gap-5 flex flex-col font-mono">
             <div className="flex justify-between flex-col gap-12 md:gap-8 md:flex-row">
                 <div className="flex gap-6 md:gap-8 flex-col md:flex-row">
-                    <a href="/" className=" w-20">
+                    <Link href="/" className=" w-20">
                         <Image src={ptLogo} alt="image" className="min-w-20" />
-                    </a>
+                    </Link>
                     <div className="flex flex-col text-base">
                         <p className="font-semibold md:font-bold text-lg font-sans pb-1 md:pb-0">{t('address')}:</p>
                         <p className="font-normal">Nyköpingsvägen 52 | 611 50</p>
@@ -40,34 +40,34 @@ const Footer = () => {
                             </p>
                         </div>
                         <div className="flex gap-3">
-                            <a target="_blank" href="https://www.instagram.com/parkingtimesweden/">
+                            <Link target="_blank" href="https://www.instagram.com/parkingtimesweden/">
                                 <Image src={instagramIcon} alt="image" />
-                            </a>
-                            <a target="_blank" href="https://www.linkedin.com/company/parking-time-sweden/">
+                            </Link>
+                            <Link target="_blank" href="https://www.linkedin.com/company/parking-time-sweden/">
                                 <Image src={linkedInIcon} alt="image" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
                 <div className="flex flex-col md:gap-0 gap-3">
                     <div className="font-semibold md:font-bold text-lg">{t('links')}</div>
                     <div className="flex flex-col md:flex-row gap-6 text-sm md:text-base font-semibold md:font-medium underline">
-                        <a href="/contact">
+                        <Link href="/contact">
                             <p>{t('contact')}</p>
-                        </a>
-                        <a href="/about">
+                        </Link>
+                        <Link href="/about">
                             <p>{t('about')}</p>
-                        </a>
-                        <a href="/news">
+                        </Link>
+                        <Link href="/news">
                             <p>{t('news')}</p>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
             <div className="border-solid border-0 border-t">
                 <div className="flex flex-col-reverse md:flex-row gap-6 justify-between pt-6">
                     <div className="text-sm font-normal">© 2024 Parking Time AB</div>
-                    <a href="/privacy" className="underline font-normal md:font-medium text-sm md:text-base">{t('policy')}</a>
+                    <Link href="/privacy" className="underline font-normal md:font-medium text-sm md:text-base">{t('policy')}</Link>
                 </div>
             </div>
         </footer>

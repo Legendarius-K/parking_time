@@ -72,5 +72,54 @@
         "heading4": "Datenbasierte Stadtplanung",
         "text4": "Die digitale Parkscheibe kann schließlich Parkressourcen und Stadtplanung durch wertvolle Nutzungsdaten und Verhaltensmuster optimieren, was zu einer sichereren Gesellschaft mit besserer Kontrolle und Zugang zu Parkplätzen führt.",
         "about": "Mer om oss"
+    },
+    "knowMore": {
+        "title": "Möchten Sie mehr erfahren?",
+        "paragraf": "Kontaktieren Sie uns, um mehr über unsere Lösung und wie wir sie in Ihrer Gemeinde umsetzen können, zu erfahren",
+        "button": "Kontaktieren Sie uns"
+    },
+    "download": {
+        "title": "Jetzt herunterladen",
+        "paragraf": "Die App ist für dich als Benutzer kostenlos herunterzuladen. Deine Gemeinde muss jedoch als Kunde bei uns registriert sein, damit unsere App in deinem Gebiet gültig ist. Wenn unsere App in deiner Gemeinde nicht verfügbar ist, kannst du uns gerne kontaktieren oder uns deiner Gemeinde vorschlagen!"
+    },
+    "stats": {
+        "downloads": "Downloads",
+        "sessions": "Parkvorgänge",
+        "zones": "Parkzonen"
+    },
+    "contactHero": {
+        "contact": "Kontakt",
+        "headline": "Wir freuen uns darauf, von Ihnen zu hören!"
+    },
+    "aboutHero": {
+        "about": "Über uns",
+        "title": "Parking Time Schweden",
+        "paragraf": "Wir sind ein Technologie-Startup, das sich der Transformation des Parkerlebnisses für alle Beteiligten widmet - Parker, Parkwächter, Gemeinden und Immobilieneigentümer."
+    },
+    "ourStory": {
+        "titleOne": "Unsere Vision",
+        "paragrafOne": "Parking Time Sweden ist ein Technologie-Startup, das darauf abzielt, das Parkerlebnis für alle Beteiligten zu revolutionieren – den Parkenden, den Parkplatzwächter, die Gemeinde und den Grundstückseigentümer.",
+        "paragrafTwo": "Wir bieten derzeit eine kostenlose digitale Parkscheibe in einer App an, um das bestehende Angebot an Park-Apps zu ergänzen.",
+        "titleTwo": "Unsere Geschichte",
+        "paragrafThree": "Parking Time Sweden wurde 2021 in Luleå gegründet. Heute sind wir in ganz Schweden tätig mit dem Ziel, in den kommenden Jahren global zu expandieren. Wir hoffen, dass Sie uns auf unserer Reise begleiten möchten!",
+        "button": "Meeting buchen"
+    },
+    "MeetTheTeam": {
+        "headline": "Lernen Sie unser Team kennen",
+        "text": "Jedes Mitglied bringt eine einzigartige Mischung aus Fachwissen, Leidenschaft und zukunftsorientiertem Denken mit."
+    },
+    "OurValues": {
+        "title": "Unsere Werte",
+        "titleParagraf": "Woran wir glauben",
+        "titleParagrafTwo": "Worin wir glauben",
+        "simplicityTitle": "Einfachheit",
+        "simplicityParagraf": "Wir streben danach, ein einfaches und reibungsloses Erlebnis zu schaffen.",
+        "innovationTitle": "Innovation",
+        "innovationParagraf": "Wir streben immer danach, unsere App zu verbessern und sie zu einem führenden Produkt in ihrem Bereich zu machen.",
+        "userFriendlyTitle": "Benutzerfreundlichkeit",
+        "userFriendlyParagraf": "Es ist entscheidend, dass unser Service die Bedürfnisse der Nutzer erfüllt und ihr Parkerlebnis verbessert.",
+        "CEOQuote": "Von all den Dingen, an die du während des Tages denken musst, sollte Parken eines der geringsten sein. Parken sollte so reibungslos sein, dass du kaum darüber nachdenken musst; es sollte einfach funktionieren. Wir nennen dies Smart Parken.",
+        "CEOEnd": "- Matilda, CEO und Gründerin."
     }
+    
 }

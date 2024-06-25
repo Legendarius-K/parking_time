@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
-interface blurProps {
-  addUtilities: any
+interface BlurProps {
+  addUtilities: any;
 }
 
 const config: Config = {
@@ -14,6 +14,7 @@ const config: Config = {
     extend: {
       screens: {
         'md': '960px',
+        'sd': '340px',
       },
       transitionDuration: {
         400: '400ms', 
@@ -56,7 +57,7 @@ const config: Config = {
     },
   },
   plugins: [
-    function ({ addUtilities }:blurProps) {
+    function ({ addUtilities }: BlurProps) {
       addUtilities({
         '.webkit-blur-5': {
           '-webkit-backdrop-filter': 'blur(5px)', 
