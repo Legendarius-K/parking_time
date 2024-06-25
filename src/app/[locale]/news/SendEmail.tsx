@@ -1,6 +1,7 @@
 'use server';
 import { Resend } from 'resend';
 import Newsletter from '../../../../email/New_Subscriber_Form';
+
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const POST = async (formData: FormData) => {
@@ -20,7 +21,7 @@ if(!UserEmail || typeof UserEmail !== 'string' || !UserEmail.includes('@')) {
     
         const response = await resend.emails.send({
             from: 'Subscription Form <onboarding@resend.dev>',
-            to:[UserEmail],
+            to:"elaffree85@gmail.com",
             subject: 'Welcome to Parking Time! ',
             reply_to : UserEmail,
             react : <Newsletter/>,
