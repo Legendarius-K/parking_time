@@ -103,10 +103,22 @@
         "titleTwo": "Vår historie",
         "paragrafThree": "Parking Time Sweden ble grunnlagt i 2021 i Luleå. I dag opererer vi over hele Sverige med ambisjoner om å ekspandere globalt i årene som kommer. Vi håper du blir med oss på reisen!",
         "button": "Bestill møte"
-    }
-    
-    
-    
-    
-    
+    },
+    "MeetTheTeam": {
+        "headline": "Møt vårt team",
+        "text": "Hvert medlem bringer med seg en unik blanding av ekspertise, lidenskap og fremtidsrettet tankesett."
+    },
+    "OurValues": {
+        "title": "Våre Verdier",
+        "titleParagraf": "Hva vi tror på",
+        "titleParagrafTwo": "Det vi tror på",
+        "simplicityTitle": "Enkelhet",
+        "simplicityParagraf": "Vi streber etter å skape en enkel og smidig opplevelse.",
+        "innovationTitle": "Innovasjon",
+        "innovationParagraf": "Vi søker alltid å forbedre og gjøre vår app til en leder innen sitt felt.",
+        "userFriendlyTitle": "Brukervennlig",
+        "userFriendlyParagraf": "Det er avgjørende at vår tjeneste møter brukernes behov og forbedrer deres parkeringsopplevelse.",
+        "CEOQuote": "Av alle ting du må tenke på i løpet av dagen, bør parkering være en av de minste. Parkering bør være så sømløs at du knapt trenger å tenke på det; det skal bare fungere. Vi kaller dette Smart Parkering.",
+        "CEOEnd": "- Matilda, administrerende direktør og grunnlegger."
+    }   
 }

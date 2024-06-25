@@ -34,7 +34,12 @@ const Header = () => {
 
             const currentScrollY = window.scrollY;
 
-            if (burgerOpen && Math.abs(currentScrollY - initialScrollY) > 50) {
+            if (currentScrollY === 0) {
+                setIsHeaderVisible(true);
+                return;
+            }
+
+            if (burgerOpen && Math.abs(currentScrollY - initialScrollY) >25) {
                 setBurgerOpen(false);
             }
 
@@ -46,9 +51,9 @@ const Header = () => {
                 setHideThreshold(0);
             }
 
-            if (hideThreshold > 50) {
+            if (hideThreshold > 100) {
                 setIsHeaderVisible(false);
-            } else if (showThreshold > 50) {
+            } else if (showThreshold > 1) {
                 setIsHeaderVisible(true);
             }
 

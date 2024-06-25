@@ -13,7 +13,7 @@ const AboutHero = () => {
   <div className="absolute inset-0 flex flex-col justify-center items-start z-10 p-2 sm:p-16 md:p-18">
     <div className="flex items-center">
       <div>
-        <p className="text-white text-sm leading-loose md:leading-loose mt-16 flex items-center ml-4"><img className="w-3 mr-3" src="/red.svg" alt="red dot" /> {t("about")}</p>
+        <p className="text-white text-sm leading-loose md:leading-loose mt-16 flex items-center ml-4">{t("about")}</p>
       </div>
     </div>
     <div className="mt-4 ml-4">
