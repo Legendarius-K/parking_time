@@ -10,6 +10,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination'
+import { tree } from "next/dist/build/templates/app-page";
 
 interface Testimonial {
   id: string;
@@ -21,6 +22,7 @@ interface Testimonial {
   avatar: string;
 }
 
+
 const Testimonials = () => {
   const [newTestimonials, setTestimonials] = useState<Testimonial[]>([]);
 
@@ -29,7 +31,7 @@ const Testimonials = () => {
     const fetchData = async () => {
       try {
         const testimonials = await fetchTestimonials();
-        const formatedTestimonials = testimonials.map((testimonial: any) =>({
+        let formatedTestimonials = testimonials.map((testimonial: any) =>({
           id: testimonial.sys.id,
           name: testimonial.fields.name,
           credentials: testimonial.fields.credentials,
@@ -38,6 +40,7 @@ const Testimonials = () => {
           logo: testimonial.fields.logo?.fields.file.fileName,
           avatar: testimonial.fields.avatar?.fields.file.fileName,
         }));
+        formatedTestimonials = formatedTestimonials.concat(formatedTestimonials);
         setTestimonials(formatedTestimonials);
       } catch (error) {
         console.log("error något gick fel")
@@ -53,49 +56,48 @@ const Testimonials = () => {
             <h3 className='text-bold text-5xl'>Customer testimonials</h3>
             <p className='text-bold text.sm'>Hear from some of our clients.</p>
           </div>
-          <div className='flex justify-center'>
-            <div className={`w-full md:px-44`}>
-            <Swiper
-              centeredSlides={true}
-              slidesPerView={1.2}
-              loop={true}
-              pagination={{ dynamicBullets:true }} 
-              modules={[Pagination]}
-              breakpoints={{
-                960: {
-                  slidesPerView: 2,
-                  centeredSlides: false,
-                  
-                }
-              }}
-              className="flex w-full h-[600px]"
-            >
-              {newTestimonials.map((testimonial) => (
-                <SwiperSlide className="w-full mb-4">  
-                  <div className='p-4 flex items-center h-full'>
-                    <div key={testimonial.id} className={`flex flex-col gap-10 md:h-auto w-full bg-white p-5 pb-11 md:p-8 mb-8 rounded-[20px] md:rounded-[40px] justify-between shadow-lg`}>
-                    <div className='flex flex-col gap-8 '>
-                      <div className=' flex w-[60%] h-[60px]'>
-                      <Image className="" src={`/${testimonial.logo}`} width={0} height={0} style={{width: 'auto', height: '60px'}} alt={`logo of ${testimonial.logo}`}/>
+          <div className='flex w-full justify-center overflow-visible'>
+            <div className={`flex w-full overflow-visible mx-auto`}>
+              <Swiper
+                className="!overflow-visible flex w-[90%] min-h-[600px]"
+                centeredSlides={true}
+                slidesPerView={1.2}
+                initialSlide={3}
+                loopAdditionalSlides={3}
+                loopAddBlankSlides={true}
+                loop={true}
+                pagination={{ dynamicBullets:true }} 
+                modules={[Pagination, Navigation]}
+                breakpoints={{
+                  900: {
+                    slidesPerView: 2,
+                    centeredSlides: false,
+                  }
+                }}
+              >
+                 {newTestimonials.map((testimonial) => (
+                  <SwiperSlide key={testimonial.id} className="w-full mb-4 h-full">  
+                    <div className='p-4 flex items-center h-full'>
+                      <div  className={`flex flex-col gap-10 h-full md:h-[80%] w-full bg-white p-5 pb-11 md:p-8 mb-8 rounded-[20px] md:rounded-[40px] justify-between shadow-lg overflow-hidden`}>
+                      <div className='flex flex-col gap-8 '>
+                        <div className=' flex w-[60%] h-[60px]'>
+                        <Image className="" src={`/${testimonial.logo}`} width={0} height={0} style={{width: 'auto', height: '60px'}} alt={`logo of ${testimonial.logo}`}/>
+                        </div>
+                        <p className="italic">
+                          {testimonial.quote}
+                        </p>
                       </div>
-                      <p className="italic">
-                        {testimonial.quote}
-                      </p>
-                    </div>
-                    <div className='flex flex-col md:flex-row gap-5 md:items-center'>
-                      <div className='w-[50px] h-[50px]'>
-                        <Image className="rounded-full" src={`/${testimonial.avatar}`} width={80} height={80} style={{width: '60px', maxWidth: '60px', height: '60px'}} alt={`picture of ${testimonial.name}`}/>
+                      <div className='flex flex-col md:flex-row gap-5 md:items-center'>
+                        <div className='text-base '>
+                          <p className="text-pt-red">{testimonial.name}</p>
+                          <p className="font-normal">{testimonial.credentials}</p>
+                        </div>
                       </div>
-                      <div className='text-base '>
-                        <p className="text-pt-red">{testimonial.name}</p>
-                        <p className="font-normal">{testimonial.credentials}</p>
                       </div>
-                    </div>
-                    </div>
-                  </div> 
-                </SwiperSlide>
-              ))}
-            </Swiper>
+                    </div> 
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
           </div>
       </div>
@@ -104,3 +106,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
