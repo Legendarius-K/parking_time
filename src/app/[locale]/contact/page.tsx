@@ -224,8 +224,8 @@ const Contact = () => {
                         </div>
                         {submitted && errors.checkbox && <span className="text-red-500 text-sm">{errors.checkbox}</span>}
                         </div>
-                        <div className='m-auto '>
-                            <input className="bg-pt-secondary text-white w-full max-w-[400px] flex justify-center px-8 py-3 rounded-full font-light m-4 transition cursor-pointer" type="submit" value="Contact us" />
+                        <div className='md:mr-auto'>
+                            <input className="bg-pt-secondary text-white w-full max-w-[400px] flex justify-center px-8 py-3 rounded-full font-light md:mr-4 transition cursor-pointer" type="submit" value="Contact us" />
                         </div>
                     </form>
                 </div>
