@@ -104,7 +104,7 @@ const Contact = () => {
         <div className="flex justify-center">
             <ToastContainer></ToastContainer>
             <div className="flex justify-center max-w-[1300px]">              
-                <div className="flex flex-col md:flex-row mt-[80px] pt-[100px] px-[30px] md:px-16 md:py-[100px] pb-[80px] font-mono gap-[70px] text-pt-darkblue1">
+                <div className="flex flex-col md:flex-row mt-[80px] pt-[50px] px-[30px] md:px-16 md:py-[100px] pb-[80px] font-mono gap-[70px] text-pt-darkblue1">
                     <div className="flex flex-col md:w-[50%] gap-7">
                         <p className="text-5xl font-sans font-bold text-pt-secondary">{t('contact')}</p>
                         <p className="text-base font-semibold text-pt-darkblue2 leading-8 md:w-[75%]">{t('text1')}</p>
@@ -134,7 +134,6 @@ const Contact = () => {
                                 }`} 
                                 type="text" 
                                 name="name_user" 
-                                id="" 
                                 placeholder={t('name')} 
                             />
                             {submitted && errors.name && <span className="text-red-500 text-sm">{errors.name}</span>}
@@ -148,7 +147,6 @@ const Contact = () => {
                                 className="rounded-[10px] border-pt-darkblue2 border-[1px] p-3 font-medium" 
                                 type="text" 
                                 name="user_title" 
-                                id="" 
                                 placeholder={t('title')} 
                             />
                         </div>
@@ -163,7 +161,6 @@ const Contact = () => {
                                     }`} 
                                     type="text" 
                                     name="user_email" 
-                                    id="" 
                                     placeholder="ex. name@email.com" 
                                 />
                                 {submitted && errors.email && <span className="text-red-500 text-sm">{errors.email}</span>}
@@ -176,7 +173,6 @@ const Contact = () => {
                                     className="rounded-[10px] border-pt-darkblue2 border-[1px] p-3 font-medium" 
                                     type="text" 
                                     name="user_phoneNumber" 
-                                    id="" 
                                     placeholder="+46708123456" 
                                 />
                             </div>
@@ -194,7 +190,6 @@ const Contact = () => {
                                 onChange={(e) => setMessage(e.target.value)}
                                 value={message} 
                                 name="message" 
-                                id="" 
                                 placeholder={t('message')} 
                                 className={`rounded-[10px] border-pt-darkblue2 border-[1px] p-3 min-h-24 font-medium ${
                                     submitted && errors.message ? 'border-red-500 bg-red-100' : 'border-gray-300'
