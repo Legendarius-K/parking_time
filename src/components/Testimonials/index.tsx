@@ -18,11 +18,7 @@ interface Testimonial {
   slug?: string;
   quote: string;
   logo: string;
-<<<<<<< HEAD
-  avatar: string;
-=======
   email: string;
->>>>>>> hotfix-testimon
 }
 
 
