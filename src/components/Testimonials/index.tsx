@@ -19,7 +19,6 @@ interface Testimonial {
   slug?: string;
   quote: string;
   logo: string;
-  avatar: string;
   email: string;
 }
 
@@ -40,7 +39,6 @@ const Testimonials = () => {
           slug: testimonial.fields.slug,
           quote: testimonial.fields.quote,
           logo: testimonial.fields.logo?.fields.file.fileName,
-          avatar: testimonial.fields.avatar?.fields.file.fileName,
           email: testimonial.fields.email,
         }));
         setTestimonials(formatedTestimonials);
