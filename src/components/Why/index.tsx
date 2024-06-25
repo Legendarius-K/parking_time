@@ -12,8 +12,8 @@ const Why = () => {
 
     return (
         <>
-            <div className="flex flex-wrap justify-center gap-6 bg-pt-primary h-full mt-sm pt-12 pb-12">
-            <h1 className="text-white text-4xl font-bold text-center mt-12 bg-pt-primary" >{t('headline')}</h1>
+            <div id="whyComponent" className="flex flex-wrap justify-center gap-6 bg-pt-primary h-full mt-sm pt-12 pb-12">
+                <h1 className="text-white text-4xl font-bold text-center mt-12 bg-pt-primary" >{t('headline')}</h1>
                 <ul className="flex flex-wrap w-full gap-4 justify-center">
                     <li className="text-white p-6 w-full md:w-4/12 ">
                         <Image className="mb-6" src={why1} alt="vector" />
