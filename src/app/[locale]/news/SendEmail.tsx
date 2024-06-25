@@ -2,7 +2,7 @@
 import { Resend } from 'resend';
 import Newsletter from '../../../../email/New_Subscriber_Form';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 
 export const POST = async (formData: FormData) => {
     console.log("The Server is running");
