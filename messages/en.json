@@ -137,6 +137,7 @@
         "CEOQuote": "Of all the things you need to think about during the day, parking should be one of the least. Parking should be so seamless that you hardly need to think about it; it should just work. We call this Smart Parking.",
         "CEOEnd": "- Matilda, CEO and Founder."
     },
+<<<<<<< HEAD
     "ourStory": {
         "titleOne": "Our Vision",
         "paragrafOne": "Parking Time Sweden is a tech startup aiming to revolutionize the parking experience for all parties involved – the parker, the parking attendant, the municipality, and the property owner.",
@@ -145,6 +146,8 @@
         "paragrafThree": "Parking Time Sweden was founded in 2021 in Luleå. Today, we operate throughout Sweden with the ambition to expand globally in the coming years, and we hope to have you with us on our journey!",
         "button": "Book a meeting"
     },
+=======
+>>>>>>> hotfix/contact
     "testimonial": {
         "headline" : "Customer testimonials",
         "subtext" : "Hear from some of our clients."

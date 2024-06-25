@@ -16,6 +16,7 @@ type ErrorsType = {
     email?: string;
     message?: string;
     checkbox?: string;
+    number?: string;
 };
 
 const Contact = () => {
@@ -47,8 +48,14 @@ const Contact = () => {
   
         if (!email) { 
             errors.email = 'Email is required.'; 
-        } else if (!/\S+@\S+\.\S+/.test(email)) { 
+        } else if (!/^(?:[a-zA-Z0-9!#$%&'+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'+/=?^_`{|}~-]+)*)@(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}|[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*\.[a-zA-Z]{2,})$/.test(email)) { 
             errors.email = 'Email is invalid.'; 
+        }
+
+        if(phoneNumber){
+            if(!/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}([-\s\.]?[0-9]{2,4}){2}$/.test(phoneNumber)){
+                errors.number = "are you sure your number is correct?";
+            }
         }
 
         if (!message) { 
@@ -125,7 +132,10 @@ const Contact = () => {
                     </div>
                     <form className="flex flex-col md:w-[50%] gap-8 font-semibold" ref={form} onSubmit={handleSubmit}>
                         <div className="flex flex-col gap-2">
-                            <p>{t('name')}*</p>
+                            <div className='flex gap-1' >
+                                <p>{t('name')}</p>
+                                <p className='text-red-500' >*</p>
+                            </div>
                             <input 
                                 onChange={(e) => setName(e.target.value)}
                                 value={name} 
@@ -152,7 +162,10 @@ const Contact = () => {
                         </div>
                         <div className="flex flex-col md:flex-row gap-8 md:gap-4">
                             <div className="flex flex-col gap-2 md:w-[60%]">
-                                <p>Email*</p>
+                            <div className='flex gap-1' >
+                                <p>Email</p>
+                                <p className='text-red-500' >*</p>
+                            </div>
                                 <input 
                                     onChange={(e) => setEmail(e.target.value)} 
                                     value={email}
@@ -173,8 +186,10 @@ const Contact = () => {
                                     className="rounded-[10px] border-pt-darkblue2 border-[1px] p-3 font-medium" 
                                     type="text" 
                                     name="user_phoneNumber" 
-                                    placeholder="+46708123456" 
+                                    placeholder="+46 70 070 70 70" 
                                 />
+                                {submitted && errors.number && <span className="text-red-500 text-sm">{errors.number}</span>}
+
                             </div>
                         </div>
                             <div className="flex flex-col gap-2 ">
@@ -185,7 +200,10 @@ const Contact = () => {
                             </div>
                         
                         <div className="flex flex-col gap-2">
-                            <p>{t('message')}*</p>
+                            <div className='flex gap-1' >
+                                <p>{t('message')}</p>
+                                <p className='text-red-500' >*</p>
+                            </div>
                             <textarea 
                                 onChange={(e) => setMessage(e.target.value)}
                                 value={message} 
@@ -214,7 +232,7 @@ const Contact = () => {
                                 <a className="px-1 cursor-pointer underline" href="">
                                     <p>{t('terms2')}</p>
                                 </a>
-                                <p>*</p>
+                                <p className='text-red-500'>*</p>
                             </span>
                         </div>
                         {submitted && errors.checkbox && <span className="text-red-500 text-sm">{errors.checkbox}</span>}
