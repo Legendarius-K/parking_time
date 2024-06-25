@@ -81,7 +81,7 @@ const Faq = () => {
     };
 
     return (
-        <main className="bg-pt-background mt-[64px] py-24 p-8 text-pretty font-nunito">
+        <main className="bg-pt-background py-24 p-8 text-pretty font-nunito">
             <section className="content flex flex-col items-center">
                 <div className="upper text-center mb-5">
                     <h3 className="text-lg">FAQ</h3>
