@@ -98,12 +98,11 @@
         "about": "About Us",
         "title": "Parking Time Sweden",
         "paragraf": "We are a tech startup dedicated to transforming the parking experience for all stakeholders - parkers, parking attendants, municipalities, and property owners."
-    },
+    }, 
     "MeetTheTeam": {
         "headline": "Meet our team",
         "text": "Each member brings a unique blend of expertise, passion, and forward-thinking mindset."
     },
-
     "faq": {
         "headline1": "Do you have a question?",
         "subheader1": "Here are some common questions answered",
