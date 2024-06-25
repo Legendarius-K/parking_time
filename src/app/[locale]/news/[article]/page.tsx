@@ -30,13 +30,14 @@ const Article: React.FC<ArticleProps> = ({ params }) => {
   const locale = useLocale();
   const router = useRouter();
 
-  const translationDict: { [key: string]: { [key: string]: string } } = {
-    en: { and: 'and', och: 'and' },
-    se: { and: 'och', och: 'och' },
-  };
-
   const adjustSlugForLocale = (slug: string, locale: string) => {
-    return slug.split('-').map(word => translationDict[locale][word] || word).join('-');
+    const translationDict: { [key: string]: { [key: string]: string } } = {
+      en: { and: 'and', och: 'and' },
+      se: { and: 'och', och: 'och' },
+    };
+
+    const translations = translationDict[locale] || {};
+    return Object.keys(translations).reduce((acc, key) => acc.replace(new RegExp(`\\b${key}\\b`, 'g'), translations[key]), slug);
   };
 
   const adjustedSlug = adjustSlugForLocale(originalSlug, locale);
@@ -70,8 +71,9 @@ const Article: React.FC<ArticleProps> = ({ params }) => {
     fetchData();
   }, [adjustedSlug]);
 
-
   useEffect(() => {
+
+   
     router.push(newUrl);
   }, [locale, adjustedSlug]);
 
@@ -92,6 +94,7 @@ const Article: React.FC<ArticleProps> = ({ params }) => {
   }
 
   return (
+  
     <div className="min-h-screen flex items-center justify-center bg-white py-14 md:py-0">
       <motion.div
         className="w-full max-w-4xl m-4 mx-auto bg-white p-6 rounded-lg"
@@ -133,97 +136,3 @@ const Article: React.FC<ArticleProps> = ({ params }) => {
 };
 
 export default Article;
-
-
-
-
-
-
-// 'use client';
-// import React, { useState, useEffect } from 'react';
-// import { fetchNewsArticle } from '@/utils/functions';
-// import { motion } from 'framer-motion';
-
-// interface ArticleContent {
-//   title: string;
-//   paragraph: string;
-//   date: string;
-//   image: string;
-//   language: string;
-// }
-
-// const Article = ({ params }) => {
-//   const slug = params.article;
-//   const [article, setArticle] = useState<ArticleContent | null>(null);
-//   const [articleExists, setArticleExists] = useState(false);
-
-//   useEffect(() => {
-//     const fetchData = async () => {
-//       try {
-//         const articles = await fetchNewsArticle();
-//         const filteredArticle = articles.find((article) => article.fields.slug === slug);
-//         if (filteredArticle) {
-//           const formattedArticle: ArticleContent = {
-//             title: filteredArticle.fields.longTitle,
-//             paragraph: filteredArticle.fields.longText,
-//             date: filteredArticle.fields.date,
-//             image: filteredArticle.fields.imageUrl,
-//             language: filteredArticle.fields.language,
-//           };
-//           setArticle(formattedArticle);
-//           setArticleExists(true);
-//         }
-//       } catch (error) {
-//         console.log("error något gick fel");
-//       }
-//     }
-//     fetchData();
-//   }, [slug]);
-
-//   if (!articleExists) {
-//     return <div>Article does not exist</div>;
-//   }
-
-//   if (!article) {
-//     return <div>Loading...</div>;
-//   }
-
-//   return (
-//     <div className="min-h-screen flex items-center justify-center bg-gray-100 py-24 md:py-0">
-//       <motion.div
-//         className="w-full max-w-4xl m-4 mx-auto bg-white p-6 rounded-lg shadow-md"
-//         initial={{ opacity: 0, y: 20 }}
-//         animate={{ opacity: 1, y: 0 }}
-//         transition={{ duration: 0.5 }}
-//       >
-//         <div className="flex items-center mb-6">
-//           <img
-//             src={article.image}
-//             alt="Author"
-//             className="w-12 h-12 rounded-full mr-4"
-//           />
-//           <div>
-//             <h2 className="text-xl text-gray-400 font-light">Melisha Lindell</h2>
-//             <p className="text-gray-600">{article.date.includes("2024") ? article.date.slice(-5) : article.date}</p>
-//           </div>
-//         </div>
-
-//         <h1 className="text-3xl font-bold mb-6">{article.title}</h1>
-
-//         <img src={article.image} alt="Group" className="w-full rounded-lg mb-6" />
-
-//         <p className="text-gray-800 mb-4">{article.paragraph}</p>
-//         <a
-//           href="https://www.foundersloft.se"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//           className="text-gray-600 font-bold hover:underline"
-//         >
-//           Besök artikeln på Founders Loft
-//         </a>
-//       </motion.div>
-//     </div>
-//   );
-// };
-
-// export default Article;
