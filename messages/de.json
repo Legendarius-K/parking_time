@@ -142,6 +142,10 @@
         "userFriendlyParagraf": "Es ist entscheidend, dass unser Service die Bedürfnisse der Nutzer erfüllt und ihr Parkerlebnis verbessert.",
         "CEOQuote": "Von all den Dingen, an die du während des Tages denken musst, sollte Parken eines der geringsten sein. Parken sollte so reibungslos sein, dass du kaum darüber nachdenken musst; es sollte einfach funktionieren. Wir nennen dies Smart Parken.",
         "CEOEnd": "- Matilda, CEO und Gründerin."
+    },
+    "testimonial": {
+        "headline": "Kundenbewertungen",
+        "subtext": "Hören Sie von einigen unserer Kunden."
     }
     
 }

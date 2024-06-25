@@ -142,5 +142,9 @@
         "userFriendlyParagraf": "On tärkeää, että palvelumme vastaa käyttäjien tarpeisiin ja parantaa heidän pysäköintikokemustaan.",
         "CEOQuote": "Kaikista asioista, joita sinun täytyy ajatella päivän aikana, pysäköinti pitäisi olla yksi vähäisimmistä. Pysäköinnin pitäisi olla niin sujuvaa, että sinun ei juuri tarvitse ajatella sitä; sen tulisi vain toimia. Kutsumme tätä Älykkääksi Pysäköinniksi.",
         "CEOEnd": "- Matilda, toimitusjohtaja ja perustaja."
+    },
+    "testimonial": {
+        "headline": "Asiakaspalautteet",
+        "subtext": "Kuule mitä asiakkaamme sanovat."
     }
 }

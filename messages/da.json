@@ -142,5 +142,9 @@
         "userFriendlyParagraf": "Det er afgørende, at vores service imødekommer brugernes behov og forbedrer deres parkeringsoplevelse.",
         "CEOQuote": "Af alle ting, du skal tænke på i løbet af dagen, burde parkering være en af de mindste. Parkering bør være så problemfri, at du næsten ikke behøver at tænke på det; det skal bare fungere. Vi kalder det Smart Parkering.",
         "CEOEnd": "- Matilda, administrerende direktør og stifter."
+    },
+    "testimonial": {
+        "headline": "Kundeudtalelser",
+        "subtext": "Hør fra nogle af vores kunder."
     }
 }

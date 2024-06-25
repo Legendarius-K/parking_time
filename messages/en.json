@@ -142,7 +142,12 @@
         "userFriendlyParagraf": "It's crucial that our service meets users' needs and enhances their parking experience.",
         "CEOQuote": "Of all the things you need to think about during the day, parking should be one of the least. Parking should be so seamless that you hardly need to think about it; it should just work. We call this Smart Parking.",
         "CEOEnd": "- Matilda, CEO and Founder."
+    },
+    
+    
+    "testimonial": {
+        "headline" : "Customer testimonials",
+        "subtext" : "Hear from some of our clients."
     }
-    
-    
+        
 }
