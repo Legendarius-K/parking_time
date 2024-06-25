@@ -4,7 +4,7 @@ const Download = () => {
     const t = useTranslations('download')
         return (
             <>
-                <div className="flex flex-col md:flex-row mb-[8%] md:mr-[1%] items-center justify-center mt-[8%] content-normal">
+                <div id='download' className="flex flex-col md:flex-row mb-[8%] md:mr-[1%] items-center justify-center mt-[8%] content-normal">
                     <div className="order-1 md:order-2 mb-[2%] mb:mb-0 flex justify-center items-center md:w-auto">
                         <img src="/iphone.svg" alt="hand with iphone" className="w-full" />
                     </div>

@@ -1,9 +1,27 @@
-import React from 'react';
+'use client'
+
+import React, { useEffect, useState } from 'react';
 import { Link } from '@/navigation';
 import Button from '../Button';
 import { useTranslations } from 'next-intl';
 
 const Homehero: React.FC = () => {
+  const [appStoreLink, setAppStoreLink] = useState<string>('');
+
+  useEffect(() => {
+    const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
+
+    if (/windows phone/i.test(userAgent)) {
+      setAppStoreLink('https://play.google.com/store/apps/details?id=se.parkingtime.app&hl=en_US&pli=1');
+    } else if (/android/i.test(userAgent)) {
+      setAppStoreLink('https://play.google.com/store/apps/details?id=se.parkingtime.app&hl=en_US&pli=1');
+    } else if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
+      setAppStoreLink('https://apps.apple.com/se/app/parking-time/id1611019108');
+    } else {
+      setAppStoreLink('/#download')
+    }
+
+  }, []);
 
   const t = useTranslations('home-hero')
 
@@ -20,7 +38,7 @@ const Homehero: React.FC = () => {
           <p>{t('text2')}</p>
         </div>
         <div className="flex flex-col md:flex-row w-full gap-4 px-3 md:px-0">
-          <Link className='max-w-[300px]' href="https://apps.apple.com/se/app/parking-time/id1611019108" target='_blank'>
+          <Link className='max-w-[300px]' href={appStoreLink} target='_blank'>
             <button className="bg-custom-black text-white w-full max-w-[400px] flex justify-center px-12 py-3 rounded-full font-light transition" style={{ opacity: 1 }}>{t('app')}</button>
           </Link>
           <Link className='max-w-[300px]' href="/contact">

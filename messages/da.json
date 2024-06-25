@@ -54,10 +54,11 @@
     "contact": {
         "contact": "Kontakt os",
         "text1": "Uanset om du har et spørgsmål, feedback eller har brug for hjælp, bedes du udfylde formularen nedenfor, og vores team vil vende tilbage til dig hurtigst muligt.",
-        "name": "For- og efternavn",
+        "name": "For og efternavn",
         "title": "Arbejdsstilling",
         "phone": "Telefonnummer",
         "reason": "Emne",
+        "reason-placeholder": "Årsag til kontakt",
         "choose": "Vælg",
         "message": "Skriv en besked",
         "terms1": "Jeg accepterer",
@@ -101,8 +102,47 @@
     "MeetTheTeam": {
         "headline": "Mød vores team",
         "text": "Hvert medlem bringer en unik blanding af ekspertise, passion og fremadskuende tankegang."
+    },
+    "faq": {
+        "headline1": "Har du et spørgsmål?",
+        "subheader1": "Her besvares nogle almindelige spørgsmål",
+        "q1q": "Hvad er Parking Time?",
+        "q1a": "Parking Time er en gratis app, der fungerer som en digital parkeringsskive. Du starter bare parkering via appen, og parkeringsvagter kan se, hvor længe din session har varet.",
+        "q2q": "Hvordan bruger jeg Parking Time?",
+        "q2l": "Download appen",
+        "q2a": " og åbn den derefter, registrer dig med dit registreringsnummer. Brug kortet, søgefunktionen eller zonelisten til at finde din ønskede parkeringsplads. Når du har valgt din parkeringszone, kan du gennemse eventuelle gældende regler, starte parkeringen og derefter simpelthen lukke appen.",
+        "q3q": "Hvordan får jeg det i min kommune?",
+        "q3a": "Parking Time er gratis at downloade, men kan kun bruges i en kommune, der er en registreret kunde hos Parking Time Sverige.",
+        "q4q": "Hvad er Parking Time?",
+        "q4a": "Du kan kontakte din kommune og spørge, om Parking Time kan implementeres.",
+        "headline2": "Har du stadig et spørgsmål?",
+        "subheader2": "Du er velkommen til at kontakte os, hvis du har spørgsmål",
+        "contact": "Kontakt os"
+    },    
+    "WantToKnowMore": {
+        "headline": "Vil du vide mere?",
+        "text": "Kontakt os for at finde ud af mere om vores løsning og hvordan vi kan hjælpe dig.",
+        "contact": "Kontakt os"
+    },
+    "OurValues": {
+        "title": "Vores Værdier",
+        "titleParagraf": "Hvad vi tror på",
+        "titleParagrafTwo": "Det vi tror på",
+        "simplicityTitle": "Simplicitet",
+        "simplicityParagraf": "Vi stræber efter at skabe en enkel og problemfri oplevelse.",
+        "innovationTitle": "Innovation",
+        "innovationParagraf": "Vi søger altid at forbedre og gøre vores app til en leder inden for sit område.",
+        "userFriendlyTitle": "Brugervenlig",
+        "userFriendlyParagraf": "Det er afgørende, at vores service imødekommer brugernes behov og forbedrer deres parkeringsoplevelse.",
+        "CEOQuote": "Af alle ting, du skal tænke på i løbet af dagen, burde parkering være en af de mindste. Parkering bør være så problemfri, at du næsten ikke behøver at tænke på det; det skal bare fungere. Vi kalder det Smart Parkering.",
+        "CEOEnd": "- Matilda, administrerende direktør og stifter."
+    },
+    "ourStory": {
+        "titleOne": "Vores vision",
+        "paragrafOne": "Parking Time Sweden er en teknologisk startup, der sigter mod at revolutionere parkeringsoplevelsen for alle involverede parter – parkerende, parkeringsvagter, kommunen og ejendomsejere.",
+        "paragrafTwo": "Vi tilbyder i øjeblikket en gratis digital parkeringsskive i en app for at supplere det eksisterende udvalg af parkeringsapps.",
+        "titleTwo": "Vores historie",
+        "paragrafThree": "Parking Time Sweden blev grundlagt i 2021 i Luleå. I dag opererer vi over hele Sverige med ambitionen om at udvide globalt i de kommende år. Vi håber, at du vil være med på vores rejse!",
+        "button": "Book møde"
     }
-    
-    
-    
 }

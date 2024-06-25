@@ -36,7 +36,7 @@ const MeetTheTeam = () => {
 
 const TeamMember = ({ image, name, title, duration }: TeamMemberProps) => {
     return (
-        <motion.div className="bg-white rounded-3xl my-5 md:w-1/5 w-fit flex flex-col items-center"
+        <motion.div className="bg-white shadow-lg rounded-3xl my-5 md:w-1/5 w-fit flex flex-col items-center"
             initial={{
                 opacity: 0,
                 y: 80

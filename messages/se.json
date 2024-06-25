@@ -25,14 +25,14 @@
         "slogan": "Vi gör parkering enkelt!",
         "text1": "Digital parkeringsskiva - direkt i din mobil.",
         "text2": "Ett vinnande koncept i ett nytt, digitaliserat format.",
-        "contact":"Kontakta oss",
-        "app":"Hämta appen",
+        "contact": "Kontakta oss",
+        "app": "Hämta appen",
         "bullet1": "Enkel att använda",
         "bullet2": "Gratis nedladding",
         "bullet3": "Undvik böter",
         "bullet4": "Reducera stress"
     },
-    "how" : {
+    "how": {
         "headline": "Hur det fungerar",
         "heading1": "Fyll i registrerings-nummer",
         "text1": "Öppna appen, registrera dig med ditt registreringsnummer.",
@@ -49,15 +49,16 @@
         "bullet2": "Vår digitala parkeringsskiva förenklar parkeringsprocessen.",
         "bullet3": "Vilket parkeringsvaktsystem som helst kan enkelt integreras med vårt system.",
         "text2": "Vi ser fram emot att berätta mer om vår lösning vid ett möte.",
-        "contact":"Kontakta oss"
+        "contact": "Kontakta oss"
     },
     "contact": {
-        "contact":"Kontakta oss",
+        "contact": "Kontakta oss",
         "text1": "Oavsett om du har en fråga, feedback eller behöver hjälp, vänligen fyll i formuläret nedan så återkommer vårt team till dig så snart som möjligt.",
-        "name": "För- och efternamn",
+        "name": "För och efternamn",
         "title": "Arbetstitel",
         "phone": "Telefonnummer",
         "reason": "Ämne",
+        "reason-placeholder": "orsak till kontakt",
         "choose": "Välj",
         "message": "Skriv ett meddelande",
         "terms1": "Jag accepterar",
@@ -85,7 +86,7 @@
         "headline": "Vi ser fram emot att höra från dig!"
     },
     "aboutHero": {
-        "about":"Om oss",
+        "about": "Om oss",
         "title": "Parking Time Sverige",
         "paragraf": "Vi är ett startup teknikföretag dedikerat till att förändra parkeringsupplevelsen för alla intressenter - parkerare, parkeringsvakter, kommuner och fastighetsägare."
     },
@@ -101,5 +102,48 @@
     "MeetTheTeam": {
         "headline": "Möt vårt team",
         "text": "Varje medlem tillför en unik blandning av expertis, passion och framåtsträvande tänkesätt."
+    },
+
+    "faq": {
+        "headline1": "Har du en fråga?",
+        "subheader1": "Här besvaras några vanliga frågor",
+        "q1q": "Vad är Parking Time?",
+        "q1a": "Parking Time är en gratis app som fungerar som en digital parkeringsskiva. Du startar bara parkering genom appen, och parkeringsvakter kan se hur länge din session har pågått.",
+        "q2q": "Hur använder jag Parking Time?",
+        "q2l": "Ladda ner appen",
+        "q2a": " och öppna den sedan, registrera dig med ditt registreringsnummer. Använd kartan, sökfunktionen eller zonlistan för att hitta din önskade parkeringsplats. När du har valt din parkeringszon kan du granska eventuella regler, starta parkeringen och sedan enkelt stänga appen.",
+        "q3q": "Hur får jag det i min kommun?",
+        "q3a": "Parking Time är gratis att ladda ner, men kan endast användas i en kommun som är en registrerad kund hos Parking Time Sverige.",
+        "q4q": "Vad är Parking Time?",
+        "q4a": "Du kan kontakta din kommun och fråga om Parking Time kan implementeras.",
+        "headline2": "Har du fortfarande frågor?",
+        "subheader2": "Kontakta oss gärna om du har några frågor",
+        "contact": "Kontakta oss"
+    },
+    "WantToKnowMore": {
+        "headline": "Vill du veta mer?",
+        "text": "Kontakta oss för att ta reda på mer om vår lösning och hur vi kan hjälpa dig.",
+        "contact": "Kontakta oss"
+    },
+    "OurValues": {
+        "title": "Våra Värderingar",
+        "titleParagraf": "Vad vi tror på",
+        "titleParagrafTwo": "Det vi tror på",
+        "simplicityTitle": "Enkelhet",
+        "simplicityParagraf": "Vi strävar efter att skapa en enkel och smidig upplevelse.",
+        "innovationTitle": "Nyskapande",
+        "innovationParagraf": "Söker alltid att förbättra och göra vår app till en ledare inom sitt område.",
+        "userFriendlyTitle": "Användarvänlig",
+        "userFriendlyParagraf": "Det är avgörande att vår tjänst möter användarnas behov och förbättrar deras parkeringsupplevelse.",
+        "CEOQuote": "Av alla saker du behöver tänka på under dagen borde parkering vara en av de minsta. Parkering bör vara så smidig att du knappt behöver tänka på den; den ska bara fungera. Vi kallar detta Smart Parkering.",
+        "CEOEnd": "- Matilda, VD och grundare."
+    },
+    "ourStory": {
+        "titleOne": "Vår Vision",
+        "paragrafOne": "Parking Time Sweden är en teknikstartup som syftar till att revolutionera parkeringsupplevelsen för alla inblandade parter – parkeraren, parkeringsvärden, kommunen och fastighetsägaren.",
+        "paragrafTwo": "Vi erbjuder för närvarande en gratis digital parkeringsskiva i en app för att komplettera det befintliga utbudet av parkeringsappar.",
+        "titleTwo": "Vår Historia",
+        "paragrafThree": "Parking Time Sweden grundades 2021 i Luleå. Idag finns vi över hela Sverige med ambitionen att expandera globalt under de kommande åren, och vi hoppas att du vill vara med oss på vår resa!",
+        "button": "Boka möte"
     }
 }

@@ -9,6 +9,7 @@ import Stats from "@/components/Stats";
 
 import Testimonials from "@/components/Testimonials";
 import Download from "@/components/Download";
+import WantToKnowMore from "@/components/WantToKnowMore";
 
 
 const Home = () => {
@@ -16,7 +17,6 @@ const Home = () => {
         <main className="overflow-hidden">
             <Hero />
             <SmartParkingSolution />
-            {/* <CarDriving /> */}
             <How />
             <div id="why-component">
                 <Why />
@@ -25,6 +25,7 @@ const Home = () => {
             <TrustedBy />
             <Download />
             <Stats />
+            <WantToKnowMore />
             <div id="faq-component">
                 <Faq />
             </div>

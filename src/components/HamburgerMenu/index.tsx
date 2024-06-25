@@ -23,50 +23,15 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
         closeBurger();
     };
 
-    const scrollToSection = (section: string) => {
-        setTimeout(() => {
-            const element = document.getElementById(section);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
-        }, 100); 
-    };
-
-    const handleScroll = (section: string) => async (event: React.MouseEvent) => {
-        event.preventDefault();
-        closeBurger();
-        if (path === '/') {
-            scrollToSection(section);
-        } else {
-            await router.push('/');
-            const checkExist = setInterval(() => {
-                const element = document.getElementById(section);
-                if (element) {
-                    scrollToSection(section);
-                    clearInterval(checkExist);
-                }
-            }, 100);
-        }
-    };
-
     return (
         <div className={`fixed ${burgerOpen ? 'top-[64px]' : '-top-full'} text-black max-h-[calc(100vh-70px)] overflow-auto border-t-[1px] border-neutral-400 font-nunito transition-all ease-in-out duration-700 p-6 pt-12 pb-10 flex flex-col left-0 bg-pt-primary backdrop-blur-[10px] webkit-blur-10 w-full z-20 md:hidden shadow-2xl`}>
-            <motion.div className="m-4"
-                initial={{ opacity: 0, x: 100 }}
-                whileInView={{ opacity: 1, x: 0, transition: { duration: 0.2 } }}
-                viewport={{ once: false }}
-            >
-                <Link onClick={handleScroll('why-component')} href="/" className=" font-light relative">{t('home')}</Link>
-            </motion.div>
-
-            <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
 
             <motion.div className="m-4"
                 initial={{ opacity: 0, x: 120 }}
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.3 } }}
                 viewport={{ once: false }}
             >
-                <Link onClick={updateCloseBurger} href="/about" className="font-light relative">{t('about')}</Link>
+                <Link onClick={updateCloseBurger} href="/#whyComponent" className="text-black font-light relative">{t('home')}</Link>
             </motion.div>
 
             <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
@@ -76,7 +41,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
                 viewport={{ once: false }}
             >
-                <Link onClick={updateCloseBurger} href="/news" className="font-light relative">{t('news')}</Link>
+                <Link onClick={updateCloseBurger} href="/about" className="text-black font-light relative">{t('about')}</Link>
             </motion.div>
 
             <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
@@ -86,14 +51,24 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
                 viewport={{ once: false }}
             >
-                <Link onClick={handleScroll('faq-component')} href="/" className="font-light relative">{t('faq')}</Link>
+                <Link onClick={updateCloseBurger} href="/news" className="text-black font-light relative">{t('news')}</Link>
+            </motion.div>
+
+            <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
+
+            <motion.div className="m-4"
+                initial={{ opacity: 0, x: 150 }}
+                whileInView={{ opacity: 1, x: 0, transition: { duration: 0.6 } }}
+                viewport={{ once: false }}
+            >
+                <Link onClick={updateCloseBurger} href="/#faqComponent" className="text-black font-light relative">{t('faq')}</Link>
             </motion.div>
 
             <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
 
             <div className="flex">
                 <LanguageSelector closeSelector={burgerOpen} hamburgerMargin="mt-12" addClass="flex ml-4 mt-6 mb-4" hideContact={setHideContactBtn} />
-                <p className="mt-[28px] ml-3 font-nunito font-thin text-white text-sm">{t('language')}</p>
+                <p className="mt-[28px] ml-3 font-nunito font-thin text-black text-sm">{t('language')}</p>
             </div>
             <div className={`transition-all ${hideContactBtn ? 'h-56' : 'h-16'}`}>
                 {!hideContactBtn && <Button closeBurger={closeBurger} route="/contact" btnText={t('contact')} colors="bg-black text-white" />}

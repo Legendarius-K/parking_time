@@ -58,6 +58,7 @@
         "title": "Työnimike",
         "phone": "Puhelinnumero",
         "reason": "Aihe",
+        "reason-placeholder": "Syy yhteydenottoon",
         "choose": "Valitse",
         "message": "Viesti",
         "terms1": "Hyväksyn",
@@ -83,7 +84,6 @@
     "download": {
         "title": "Lataa nyt",
         "paragraf": "Sovelluksen lataaminen on sinulle käyttäjänä ilmaista. Kuntasi on kuitenkin rekisteröidyttävä asiakkaaksi, jotta sovelluksemme on voimassa alueellasi"
-    
     },
     "stats": {
         "downloads": "Lataukset",
@@ -102,8 +102,47 @@
     "MeetTheTeam": {
         "headline": "Tapaa tiimimme",
         "text": "Jokainen jäsen tuo mukanaan ainutlaatuisen yhdistelmän asiantuntemusta, intohimoa ja ennakkoluulotonta ajattelutapaa."
-    }
-    
-    
-    
+    },
+    "faq": {
+        "headline1": "Onko sinulla kysyttävää?",
+        "subheader1": "Tässä vastataan yleisiin kysymyksiin",
+        "q1q": "Mikä on Parking Time?",
+        "q1a": "Parking Time on ilmainen ladattava sovellus, joka toimii digitaalisena pysäköintikiekkona. Aloitat pysäköinnin sovelluksen kautta, ja pysäköinninvalvojat voivat nähdä, kuinka kauan istuntosi on kestänyt.",
+        "q2q": "Kuinka käytän Parking Time?",
+        "q2l": "Lataa sovellus",
+        "q2a": " ja avaa se, rekisteröidy autosi rekisterinumerolla. Käytä karttaa, hakutoimintoa tai vyöhykeluetteloa löytääksesi haluamasi pysäköintipaikan. Valittuasi pysäköintivyöhykkeen voit tarkistaa soveltuvat säännöt, aloittaa pysäköinnin ja sulkea sovelluksen yksinkertaisesti.",
+        "q3q": "Miten saan sen kunnalleni?",
+        "q3a": "Parking Time on ilmainen ladata, mutta sitä voi käyttää vain kunnassa, joka on Parking Time Ruotsin rekisteröity asiakas.",
+        "q4q": "Mikä on Parking Time?",
+        "q4a": "Voit ottaa yhteyttä kuntasi ja kysyä, voidaanko Parking Time ottaa käyttöön.",
+        "headline2": "Onko sinulla edelleen kysyttävää?",
+        "subheader2": "Ota rohkeasti yhteyttä, jos sinulla on kysyttävää",
+        "contact": "Ota yhteyttä"
+    },
+    "WantToKnowMore": {
+        "headline": "Haluatko tietää lisää?",
+        "text": "Ota yhteyttä saadaksesi lisätietoja ratkaisustamme ja siitä, kuinka voimme auttaa sinua.",
+        "contact": "Ota yhteyttä"
+    },
+    "OurValues": {
+        "title": "Arvomme",
+        "titleParagraf": "Mihin uskomme",
+        "titleParagrafTwo": "Ne uskomme",
+        "simplicityTitle": "Yksinkertaisuus",
+        "simplicityParagraf": "Pyrimme luomaan yksinkertaisen ja sujuvan käyttökokemuksen.",
+        "innovationTitle": "Innovaatio",
+        "innovationParagraf": "Pyrimme jatkuvasti parantamaan ja tekemään sovelluksestamme alan johtavan.",
+        "userFriendlyTitle": "Käyttäjäystävällisyys",
+        "userFriendlyParagraf": "On tärkeää, että palvelumme vastaa käyttäjien tarpeisiin ja parantaa heidän pysäköintikokemustaan.",
+        "CEOQuote": "Kaikista asioista, joita sinun täytyy ajatella päivän aikana, pysäköinti pitäisi olla yksi vähäisimmistä. Pysäköinnin pitäisi olla niin sujuvaa, että sinun ei juuri tarvitse ajatella sitä; sen tulisi vain toimia. Kutsumme tätä Älykkääksi Pysäköinniksi.",
+        "CEOEnd": "- Matilda, toimitusjohtaja ja perustaja."
+    },
+    "ourStory": {
+        "titleOne": "Visiomme",
+        "paragrafOne": "Parking Time Sweden on teknologia-alan startup, jonka tavoitteena on mullistaa pysäköintikokemus kaikille osapuolille – pysäköijälle, pysäköinninvalvojalle, kunnalle ja kiinteistön omistajalle.",
+        "paragrafTwo": "Tarjoamme tällä hetkellä ilmaisen digitaalisen pysäköintikiekon sovelluksessa täydentämään olemassa olevaa pysäköintisovellusten valikoimaa.",
+        "titleTwo": "Historiamme",
+        "paragrafThree": "Parking Time Sweden perustettiin vuonna 2021 Luleåssa. Tällä hetkellä toimimme ympäri Ruotsia ja tavoitteenamme on laajentua globaalisti tulevina vuosina. Toivomme, että lähdet mukaan matkallemme!",
+        "button": "Varaa tapaaminen"
+    }    
 }
