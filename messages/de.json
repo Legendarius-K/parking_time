@@ -108,19 +108,6 @@
         "headline": "Lernen Sie unser Team kennen",
         "text": "Jedes Mitglied bringt eine einzigartige Mischung aus Fachwissen, Leidenschaft und zukunftsorientiertem Denken mit."
     },
-    "OurValues": {
-        "title": "Unsere Werte",
-        "titleParagraf": "Woran wir glauben",
-        "titleParagrafTwo": "Worin wir glauben",
-        "simplicityTitle": "Einfachheit",
-        "simplicityParagraf": "Wir streben danach, ein einfaches und reibungsloses Erlebnis zu schaffen.",
-        "innovationTitle": "Innovation",
-        "innovationParagraf": "Wir streben immer danach, unsere App zu verbessern und sie zu einem führenden Produkt in ihrem Bereich zu machen.",
-        "userFriendlyTitle": "Benutzerfreundlichkeit",
-        "userFriendlyParagraf": "Es ist entscheidend, dass unser Service die Bedürfnisse der Nutzer erfüllt und ihr Parkerlebnis verbessert.",
-        "CEOQuote": "Von all den Dingen, an die du während des Tages denken musst, sollte Parken eines der geringsten sein. Parken sollte so reibungslos sein, dass du kaum darüber nachdenken musst; es sollte einfach funktionieren. Wir nennen dies Smart Parken.",
-        "CEOEnd": "- Matilda, CEO und Gründerin."
-    },
     "faq": {
         "headline1": "Hast du eine Frage?",
         "subheader1": "Hier werden einige häufig gestellte Fragen beantwortet",
@@ -135,12 +122,25 @@
         "q4a": "Sie können Ihre Gemeinde kontaktieren und fragen, ob Parking Time implementiert werden kann.",
         "headline2": "Hast du noch Fragen?",
         "subheader2": "Zögern Sie nicht, uns zu kontaktieren, wenn Sie Fragen haben",
-        "contact": "Kontakt"
+        "contact": "Kontaktieren Sie uns"
     },
     "WantToKnowMore": {
         "headline": "Möchten Sie mehr wissen?",
         "text": "Kontaktieren Sie uns, um mehr über unsere Lösung und wie wir Ihnen helfen können, zu erfahren.",
         "contact": "Kontaktieren Sie uns"
+    },
+    "OurValues": {
+        "title": "Unsere Werte",
+        "titleParagraf": "Woran wir glauben",
+        "titleParagrafTwo": "Worin wir glauben",
+        "simplicityTitle": "Einfachheit",
+        "simplicityParagraf": "Wir streben danach, ein einfaches und reibungsloses Erlebnis zu schaffen.",
+        "innovationTitle": "Innovation",
+        "innovationParagraf": "Wir streben immer danach, unsere App zu verbessern und sie zu einem führenden Produkt in ihrem Bereich zu machen.",
+        "userFriendlyTitle": "Benutzerfreundlichkeit",
+        "userFriendlyParagraf": "Es ist entscheidend, dass unser Service die Bedürfnisse der Nutzer erfüllt und ihr Parkerlebnis verbessert.",
+        "CEOQuote": "Von all den Dingen, an die du während des Tages denken musst, sollte Parken eines der geringsten sein. Parken sollte so reibungslos sein, dass du kaum darüber nachdenken musst; es sollte einfach funktionieren. Wir nennen dies Smart Parken.",
+        "CEOEnd": "- Matilda, CEO und Gründerin."
     }
     
 }

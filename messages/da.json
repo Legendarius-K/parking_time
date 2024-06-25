@@ -108,19 +108,6 @@
         "headline": "Mød vores team",
         "text": "Hvert medlem bringer en unik blanding af ekspertise, passion og fremadskuende tankegang."
     },
-    "OurValues": {
-        "title": "Vores Værdier",
-        "titleParagraf": "Hvad vi tror på",
-        "titleParagrafTwo": "Det vi tror på",
-        "simplicityTitle": "Simplicitet",
-        "simplicityParagraf": "Vi stræber efter at skabe en enkel og problemfri oplevelse.",
-        "innovationTitle": "Innovation",
-        "innovationParagraf": "Vi søger altid at forbedre og gøre vores app til en leder inden for sit område.",
-        "userFriendlyTitle": "Brugervenlig",
-        "userFriendlyParagraf": "Det er afgørende, at vores service imødekommer brugernes behov og forbedrer deres parkeringsoplevelse.",
-        "CEOQuote": "Af alle ting, du skal tænke på i løbet af dagen, burde parkering være en af de mindste. Parkering bør være så problemfri, at du næsten ikke behøver at tænke på det; det skal bare fungere. Vi kalder det Smart Parkering.",
-        "CEOEnd": "- Matilda, administrerende direktør og stifter."
-    },
     "faq": {
         "headline1": "Har du et spørgsmål?",
         "subheader1": "Her besvares nogle almindelige spørgsmål",
@@ -135,11 +122,24 @@
         "q4a": "Du kan kontakte din kommune og spørge, om Parking Time kan implementeres.",
         "headline2": "Har du stadig et spørgsmål?",
         "subheader2": "Du er velkommen til at kontakte os, hvis du har spørgsmål",
-        "contact": "Kontakt"
+        "contact": "Kontakt os"
     },    
     "WantToKnowMore": {
         "headline": "Vil du vide mere?",
         "text": "Kontakt os for at finde ud af mere om vores løsning og hvordan vi kan hjælpe dig.",
         "contact": "Kontakt os"
+    },
+    "OurValues": {
+        "title": "Vores Værdier",
+        "titleParagraf": "Hvad vi tror på",
+        "titleParagrafTwo": "Det vi tror på",
+        "simplicityTitle": "Simplicitet",
+        "simplicityParagraf": "Vi stræber efter at skabe en enkel og problemfri oplevelse.",
+        "innovationTitle": "Innovation",
+        "innovationParagraf": "Vi søger altid at forbedre og gøre vores app til en leder inden for sit område.",
+        "userFriendlyTitle": "Brugervenlig",
+        "userFriendlyParagraf": "Det er afgørende, at vores service imødekommer brugernes behov og forbedrer deres parkeringsoplevelse.",
+        "CEOQuote": "Af alle ting, du skal tænke på i løbet af dagen, burde parkering være en af de mindste. Parkering bør være så problemfri, at du næsten ikke behøver at tænke på det; det skal bare fungere. Vi kalder det Smart Parkering.",
+        "CEOEnd": "- Matilda, administrerende direktør og stifter."
     }
 }

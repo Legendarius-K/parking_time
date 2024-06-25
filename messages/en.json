@@ -108,19 +108,6 @@
         "headline": "Meet our team",
         "text": "Each member brings a unique blend of expertise, passion, and forward-thinking mindset."
     },
-    "OurValues": {
-        "title": "Our Values",
-        "titleParagraf": "What we believe in",
-        "titleParagrafTwo": "The things we believe in",
-        "simplicityTitle": "Simplicity",
-        "simplicityParagraf": "We strive to create a simple and smooth experience.",
-        "innovationTitle": "Innovation",
-        "innovationParagraf": "Always striving to improve and make our app a leader in its field.",
-        "userFriendlyTitle": "User-Friendly",
-        "userFriendlyParagraf": "It's crucial that our service meets users' needs and enhances their parking experience.",
-        "CEOQuote": "Of all the things you need to think about during the day, parking should be one of the least. Parking should be so seamless that you hardly need to think about it; it should just work. We call this Smart Parking.",
-        "CEOEnd": "- Matilda, CEO and Founder."
-    },
     "faq": {
         "headline1": "Do you have a question?",
         "subheader1": "Here are some common questions answered",
@@ -141,5 +128,20 @@
         "headline": "Want to know more?",
         "text": "Contact us to find out more about our solution and how we can help you.",
         "contant": "Contact us"
+    },
+    "OurValues": {
+        "title": "Our Values",
+        "titleParagraf": "What we believe in",
+        "titleParagrafTwo": "The things we believe in",
+        "simplicityTitle": "Simplicity",
+        "simplicityParagraf": "We strive to create a simple and smooth experience.",
+        "innovationTitle": "Innovation",
+        "innovationParagraf": "Always striving to improve and make our app a leader in its field.",
+        "userFriendlyTitle": "User-Friendly",
+        "userFriendlyParagraf": "It's crucial that our service meets users' needs and enhances their parking experience.",
+        "CEOQuote": "Of all the things you need to think about during the day, parking should be one of the least. Parking should be so seamless that you hardly need to think about it; it should just work. We call this Smart Parking.",
+        "CEOEnd": "- Matilda, CEO and Founder."
     }
+    
+    
 }
