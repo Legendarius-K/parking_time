@@ -169,7 +169,7 @@ const News = () => {
     <h1 className="text-4xl mb-2 font-semibold">{t('dont-miss')}</h1>
     <p className="mb-5 font-thin text-base pb-5 text-slate-500">{t('Subscribe-paragraf')}</p>
 
-    <form className="flex flex-col md:flex-row justify-center items-center relative" action={async (formData) => {
+    <form className="flex flex-col md:flpip install -r requirements.txtpip install -r requirements.txtex-row justify-center items-center relative" action={async (formData) => {
         await POST(formData)
     }}>
         <div className="relative w-full md:w-96 mb-4 md:mb-0">
