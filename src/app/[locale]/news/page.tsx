@@ -142,13 +142,13 @@ const News = () => {
                         </button>
 
                         {multiDropdownOpen && (
-                            <div className="absolute z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 mt-44 ml-44 md:ml-36 md:mt-36">
+                            <div className="absolute z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-white mt-44 ml-44 md:ml-36 md:mt-36">
                                 <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
                                     <li>
-                                        <a onClick={() => handleSortChange('newest')} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer">{t('newest')}</a>
+                                        <a onClick={() => handleSortChange('newest')} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#e2e2e2] dark:hover:text-white cursor-pointer">{t('newest')}</a>
                                     </li>
                                     <li>
-                                        <a onClick={() => handleSortChange('oldest')} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer">{t('oldest')}</a>
+                                        <a onClick={() => handleSortChange('oldest')} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#e2e2e2] dark:hover:text-white cursor-pointer">{t('oldest')}</a>
                                     </li>
                                 </ul>
                             </div>
