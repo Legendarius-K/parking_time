@@ -9,8 +9,7 @@ import { Navigation, Pagination } from "swiper/modules";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination'
-import { tree } from "next/dist/build/templates/app-page";
+import 'swiper/css/pagination';
 
 interface Testimonial {
   id: string;
@@ -20,7 +19,6 @@ interface Testimonial {
   quote: string;
   logo: string;
   avatar: string;
-  email: string;
 }
 
 
@@ -40,8 +38,8 @@ const Testimonials = () => {
           quote: testimonial.fields.quote,
           logo: testimonial.fields.logo?.fields.file.fileName,
           avatar: testimonial.fields.avatar?.fields.file.fileName,
-          email: testimonial.fields.email,
         }));
+        formatedTestimonials = formatedTestimonials.concat(formatedTestimonials);
         setTestimonials(formatedTestimonials);
       } catch (error) {
         console.log("error något gick fel")
@@ -64,8 +62,9 @@ const Testimonials = () => {
                 centeredSlides={true}
                 slidesPerView={1.2}
                 initialSlide={3}
-                loopAdditionalSlides={4}
+                loopAdditionalSlides={3}
                 loopAddBlankSlides={true}
+                loop={true}
                 pagination={{ dynamicBullets:true }} 
                 modules={[Pagination, Navigation]}
                 breakpoints={{
@@ -88,13 +87,9 @@ const Testimonials = () => {
                         </p>
                       </div>
                       <div className='flex flex-col md:flex-row gap-5 md:items-center'>
-                        <div className='text-base flex flex-col'>
+                        <div className='text-base '>
                           <p className="text-pt-red">{testimonial.name}</p>
                           <p className="font-normal">{testimonial.credentials}</p>
-                          <div className="flex flex-col md:flex-row gap-1">
-                            <p>E-mail:</p>
-                            <p className="underline cursor-pointer">{testimonial.email}</p>
-                          </div>
                         </div>
                       </div>
                       </div>
