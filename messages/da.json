@@ -56,6 +56,7 @@
         "title": "Arbejdsstilling",
         "phone": "Telefonnummer",
         "reason": "Emne",
+        "reason-placeholder": "Årsag til kontakt",
         "choose": "Vælg",
         "message": "Skriv en besked",
         "terms1": "Jeg accepterer",

@@ -56,6 +56,7 @@
         "title": "Työnimike",
         "phone": "Puhelinnumero",
         "reason": "Aihe",
+        "reason-placeholder": "Syy yhteydenottoon",
         "choose": "Valitse",
         "message": "Viesti",
         "terms1": "Hyväksyn",
