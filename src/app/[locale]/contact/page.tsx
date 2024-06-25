@@ -10,6 +10,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useTranslations } from "next-intl"
 import ContactHero from "@/components/ContactHero"
+import { Link } from '@/navigation';
 
 type ErrorsType = {
     name?: string;
@@ -229,9 +230,9 @@ const Contact = () => {
                             </div>
                             <span className="flex align-middle font-medium">
                                 <p >{t('terms1')}</p>
-                                <a className="px-1 cursor-pointer underline" href="">
+                                <Link className="px-1 cursor-pointer underline" href="/privacy" target='_blank'>
                                     <p>{t('terms2')}</p>
-                                </a>
+                                </Link>
                                 <p className='text-red-500'>*</p>
                             </span>
                         </div>
