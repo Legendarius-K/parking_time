@@ -6,6 +6,8 @@ import { useLocale } from "next-intl";
 import Link from 'next/link';
 import { POST } from './SendEmail';
 
+
+
 interface NewsCards {
     title: string;
     paragraph: string;
@@ -22,6 +24,10 @@ const News = () => {
     const [sortOrder, setSortOrder] = useState('newest');
     const t = useTranslations('NewsPage');
     const locale = useLocale();
+
+    const [multiDropdownOpen, setMultiDropdownOpen] = useState(false);
+  const toggleMultiDropdown = () => setMultiDropdownOpen(!multiDropdownOpen);
+
 
     useEffect(() => {
         const fetchData = async () => {
@@ -123,13 +129,48 @@ const News = () => {
                         
                     </div>
 
-                    <div className="flex items-center justify-center">
+
+
+
+  <button
+        id="multiLevelDropdownButton"
+        onClick={toggleMultiDropdown}
+        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        type="button"
+      >
+       {t('sort-by')}
+        <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+        </svg>
+      </button>
+
+      {multiDropdownOpen && (
+        <div  className="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+          <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" >
+            <li>
+              <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">{t('newest')}</a>
+            </li>
+            <li>
+              <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">{t('oldest')}</a>
+            </li>
+          </ul>
+        </div>
+      )}
+
+
+
+
+
+
+                    
+
+                    {/* <div className="flex items-center justify-center">
                         <span className="text-black font-semibold">{t('sort-by') + ""}</span>
                         <select value={sortOrder} onChange={handleSortChange} className="text-base text-gray-800 bg-white outline-none border-2 shadow-sm p-2 rounded-xl ml-2">
                             <option value="newest">{t('newest')}</option>
                             <option value="oldest">{t('oldest')}</option>
                         </select>
-                    </div>
+                    </div> */}
 
                 </div>
                 <div className="flex justify-center flex-wrap gap-6 mt-10 ">
