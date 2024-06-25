@@ -3,7 +3,7 @@
 const Faq = () => {
     return (
         <>
-            <div>faq</div>
+            <div id="faqComponent" >faq</div>
         </>
     )
 };

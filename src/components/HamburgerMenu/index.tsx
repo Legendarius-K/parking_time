@@ -23,32 +23,6 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
         closeBurger();
     };
 
-    const scrollToSection = (section: string) => {
-        setTimeout(() => {
-            const element = document.getElementById(section);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
-        }, 100); 
-    };
-
-    const handleScroll = (section: string) => async (event: React.MouseEvent) => {
-        event.preventDefault();
-        closeBurger();
-        if (path === '/') {
-            scrollToSection(section);
-        } else {
-            await router.push('/');
-            const checkExist = setInterval(() => {
-                const element = document.getElementById(section);
-                if (element) {
-                    scrollToSection(section);
-                    clearInterval(checkExist);
-                }
-            }, 100);
-        }
-    };
-
     return (
         <div className={`fixed ${burgerOpen ? 'top-[64px]' : '-top-full'} max-h-[calc(100vh-70px)] overflow-auto border-t-[1px] border-neutral-400 font-nunito transition-all ease-in-out duration-700 p-6 pt-12 pb-10 flex flex-col left-0 bg-pt-primary/50 backdrop-blur-[10px] webkit-blur-10 w-full z-20 md:hidden shadow-2xl`}>
             <motion.div className="m-4"
@@ -56,7 +30,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
                 viewport={{ once: false }}
             >
-                <Link onClick={handleScroll('why-component')} href="/" className="text-white font-light relative">{t('home')}</Link>
+                <Link href="/#whyComponent" className="text-white font-light relative">{t('home')}</Link>
             </motion.div>
 
             <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
@@ -86,7 +60,7 @@ const HamburgerMenu = ({ openBurger, closeBurger }: HamburgerMenuProps) => {
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.9 } }}
                 viewport={{ once: false }}
             >
-                <Link onClick={handleScroll('faq-component')} href="/" className="text-white font-light relative">{t('faq')}</Link>
+                <Link href="/#faqComponent" className="text-white font-light relative">{t('faq')}</Link>
             </motion.div>
 
             <div className="h-[1px] w-3/5 bg-neutral-400 opacity-60"></div>
