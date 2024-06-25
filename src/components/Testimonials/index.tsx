@@ -63,8 +63,6 @@ const Testimonials = () => {
                 centeredSlides={true}
                 slidesPerView={1.2}
                 initialSlide={3}
-                loopAdditionalSlides={4}
-                loopAddBlankSlides={true}
                 pagination={{ dynamicBullets:true }} 
                 modules={[Pagination, Navigation]}
                 breakpoints={{
