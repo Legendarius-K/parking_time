@@ -9,7 +9,7 @@ const Homehero: React.FC = () => {
 
   return (
     <div className="relative flex items-center bg-cover bg-center h-[155vh] sd:h-[100vh] md:min-h-[calc(100vh-80px)]" style={{ backgroundImage: 'url(/hero-new.jpg)' }}>
-      <div className="absolute inset-0 bg-black bg-opacity-30 md:w-[47%] w-full"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-30 md:w-[46%] w-full"></div>
       <div className="relative flex flex-col items-start justify-center h-full text-white gap-8 px-8 lg:px-16">
         <h1 className="text-[42px] text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight " style={{ opacity: 1 }}>
           Parking Time <br /> {t('sweden')}

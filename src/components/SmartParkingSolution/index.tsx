@@ -85,15 +85,15 @@ const SmartParkingSolution: React.FC = () => {
                     </p>
                     <ul className="space-y-2 md:space-y-4">
                         <li className="flex items-center space-x-2">
-                            <span className="text-pt-red font-semibold">›</span>
+                            <img src='/redcheck.png' alt='Red check' />
                             <span className="text-[16px] leading-[24px] text-sm md:text-base pt-darkblue1 font-semibold py-0.5 md:py-0">{t('bullet1')}</span>
                         </li>
                         <li className="flex items-center space-x-2">
-                            <span className="text-pt-red font-semibold">›</span>
+                            <img src='/redcheck.png' alt='Red check' />
                             <span className="text-[16px] leading-[24px] text-sm md:text-base pt-darkblue1 font-semibold py-0.5 md:py-0">{t('bullet2')}</span>
                         </li>
                         <li className="flex items-center space-x-2">
-                            <span className="text-pt-red font-semibold">›</span>
+                            <img src='/redcheck.png' alt='Red check' />
                             <span className="text-[16px] leading-[24px] text-sm md:text-base pt-darkblue1 font-semibold py-0.5 md:py-0">{t('bullet3')}</span>
                         </li>
                     </ul>
