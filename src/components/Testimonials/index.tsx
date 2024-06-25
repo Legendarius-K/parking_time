@@ -20,6 +20,7 @@ interface Testimonial {
   quote: string;
   logo: string;
   avatar: string;
+  email: string;
 }
 
 
@@ -39,6 +40,7 @@ const Testimonials = () => {
           quote: testimonial.fields.quote,
           logo: testimonial.fields.logo?.fields.file.fileName,
           avatar: testimonial.fields.avatar?.fields.file.fileName,
+          email: testimonial.fields.email,
         }));
         setTestimonials(formatedTestimonials);
       } catch (error) {
@@ -89,6 +91,7 @@ const Testimonials = () => {
                         <div className='text-base '>
                           <p className="text-pt-red">{testimonial.name}</p>
                           <p className="font-normal">{testimonial.credentials}</p>
+                          <div className="flex gap-1"><p>E-mail:</p><p className="underline cursor-pointer">{testimonial.email}</p></div>
                         </div>
                       </div>
                       </div>
